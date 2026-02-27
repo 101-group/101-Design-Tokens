@@ -62,8 +62,8 @@ deploy_css:
     - test -n "$SSH_HOST"
     - test -n "$SSH_USER"
     - test -n "$DEPLOY_PATH"
-    - ssh -p "${SSH_PORT:-22}" -o IdentitiesOnly=yes -o StrictHostKeyChecking=yes "${SSH_USER}@${SSH_HOST}" "echo ssh_ok"
-    - rsync -avz -e "ssh -p ${SSH_PORT:-22} -o IdentitiesOnly=yes -o StrictHostKeyChecking=yes" dist/tokens.css "${SSH_USER}@${SSH_HOST}:${DEPLOY_PATH}/tokens.css"
+    - ssh -p "${SSH_PORT:-22}" -o StrictHostKeyChecking=yes "${SSH_USER}@${SSH_HOST}" "echo ssh_ok"
+    - rsync -avz -e "ssh -p ${SSH_PORT:-22} -o StrictHostKeyChecking=yes" dist/tokens.css "${SSH_USER}@${SSH_HOST}:${DEPLOY_PATH}/tokens.css"
   rules:
     - if: '$CI_COMMIT_BRANCH == $CI_DEFAULT_BRANCH && $SSH_HOST && $SSH_USER && $DEPLOY_PATH && ($SSH_PRIVATE_KEY || $SSH_PRIVATE_KEY_DEPLOY)'
       when: on_success
