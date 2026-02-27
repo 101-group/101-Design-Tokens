@@ -27,7 +27,8 @@ deploy_css:
     - chmod 700 ~/.ssh
     - |
       if [ -f "$SSH_PRIVATE_KEY" ]; then
-        cat "$SSH_PRIVATE_KEY" | tr -d '\r' > ~/.ssh/id_ci
+        KEY_RAW="$(cat "$SSH_PRIVATE_KEY")"
+        printf "%b" "$KEY_RAW" | tr -d '\r' > ~/.ssh/id_ci
       elif [ -n "$SSH_PRIVATE_KEY" ]; then
         printf "%b" "$SSH_PRIVATE_KEY" | tr -d '\r' > ~/.ssh/id_ci
       elif [ -n "$SSH_PRIVATE_KEY_B64" ]; then
