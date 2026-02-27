@@ -26,11 +26,13 @@ deploy_css:
     - mkdir -p ~/.ssh
     - chmod 700 ~/.ssh
     - |
+      KEY_RAW=""
       if [ -f "$SSH_PRIVATE_KEY" ]; then
-        cp "$SSH_PRIVATE_KEY" ~/.ssh/id_ci
+        KEY_RAW="$(cat "$SSH_PRIVATE_KEY")"
       else
-        echo "$SSH_PRIVATE_KEY" | tr -d '\r' > ~/.ssh/id_ci
+        KEY_RAW="$SSH_PRIVATE_KEY"
       fi
+      printf "%b" "$KEY_RAW" | tr -d '\r' > ~/.ssh/id_ci
     - chmod 600 ~/.ssh/id_ci
     - test -s ~/.ssh/id_ci
     - ssh-keygen -y -f ~/.ssh/id_ci > ~/.ssh/id_ci.pub
