@@ -26,17 +26,17 @@ deploy_css:
     - mkdir -p ~/.ssh
     - chmod 700 ~/.ssh
     - |
-      if [ -n "$SSH_PRIVATE_KEY_B64" ]; then
+      if [ -f "$SSH_PRIVATE_KEY" ]; then
+        cat "$SSH_PRIVATE_KEY" | tr -d '\r' > ~/.ssh/id_ci
+      elif [ -n "$SSH_PRIVATE_KEY" ]; then
+        printf "%b" "$SSH_PRIVATE_KEY" | tr -d '\r' > ~/.ssh/id_ci
+      elif [ -n "$SSH_PRIVATE_KEY_B64" ]; then
         if [ -f "$SSH_PRIVATE_KEY_B64" ]; then
           B64_RAW="$(cat "$SSH_PRIVATE_KEY_B64")"
         else
           B64_RAW="$SSH_PRIVATE_KEY_B64"
         fi
         printf '%s' "$B64_RAW" | tr -d '\r\n ' | base64 -d > ~/.ssh/id_ci
-      elif [ -f "$SSH_PRIVATE_KEY" ]; then
-        cat "$SSH_PRIVATE_KEY" | tr -d '\r' > ~/.ssh/id_ci
-      elif [ -n "$SSH_PRIVATE_KEY" ]; then
-        printf "%b" "$SSH_PRIVATE_KEY" | tr -d '\r' > ~/.ssh/id_ci
       else
         echo "ERROR: SSH key is not set. Provide SSH_PRIVATE_KEY or SSH_PRIVATE_KEY_B64."
         exit 1
