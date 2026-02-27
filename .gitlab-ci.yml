@@ -23,10 +23,10 @@ deploy_css:
       artifacts: true
   before_script:
     - apk add --no-cache openssh-client rsync
-    - eval "$(ssh-agent -s)"
-    - echo "$SSH_PRIVATE_KEY" | tr -d '\r' | ssh-add -
     - mkdir -p ~/.ssh
     - chmod 700 ~/.ssh
+    - echo "$SSH_PRIVATE_KEY" | tr -d '\r' > ~/.ssh/id_ci
+    - chmod 600 ~/.ssh/id_ci
     - |
       if [ -n "$SSH_KNOWN_HOSTS" ]; then
         echo "$SSH_KNOWN_HOSTS" > ~/.ssh/known_hosts
@@ -38,7 +38,7 @@ deploy_css:
     - test -n "$SSH_HOST"
     - test -n "$SSH_USER"
     - test -n "$DEPLOY_PATH"
-    - rsync -avz -e "ssh -p ${SSH_PORT:-22}" dist/tokens.css "${SSH_USER}@${SSH_HOST}:${DEPLOY_PATH}/tokens.css"
+    - rsync -avz -e "ssh -p ${SSH_PORT:-22} -i ~/.ssh/id_ci -o IdentitiesOnly=yes -o StrictHostKeyChecking=yes" dist/tokens.css "${SSH_USER}@${SSH_HOST}:${DEPLOY_PATH}/tokens.css"
   rules:
     - if: '$CI_COMMIT_BRANCH == $CI_DEFAULT_BRANCH && $SSH_HOST && $SSH_USER && $DEPLOY_PATH && $SSH_PRIVATE_KEY'
       when: on_success
