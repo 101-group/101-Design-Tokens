@@ -27,8 +27,8 @@ deploy_css:
     - chmod 700 ~/.ssh
     - |
       if [ -f "$SSH_PRIVATE_KEY" ]; then
-        KEY_RAW="$(cat "$SSH_PRIVATE_KEY")"
-        printf "%b" "$KEY_RAW" | tr -d '\r' > ~/.ssh/id_ci
+        cp "$SSH_PRIVATE_KEY" ~/.ssh/id_ci
+        tr -d '\r' < ~/.ssh/id_ci > ~/.ssh/id_ci.tmp && mv ~/.ssh/id_ci.tmp ~/.ssh/id_ci
       elif [ -n "$SSH_PRIVATE_KEY" ]; then
         printf "%b" "$SSH_PRIVATE_KEY" | tr -d '\r' > ~/.ssh/id_ci
       elif [ -n "$SSH_PRIVATE_KEY_B64" ]; then
@@ -43,6 +43,8 @@ deploy_css:
         exit 1
       fi
     - grep -qE '^-----BEGIN (OPENSSH|RSA|EC) PRIVATE KEY-----$' ~/.ssh/id_ci
+    - echo "CI key sha256:"
+    - sha256sum ~/.ssh/id_ci | awk '{print $1}'
     - chmod 600 ~/.ssh/id_ci
     - test -s ~/.ssh/id_ci
     - ssh-keygen -y -f ~/.ssh/id_ci > ~/.ssh/id_ci.pub
