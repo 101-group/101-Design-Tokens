@@ -48,7 +48,7 @@ Set these in GitLab project settings (`Settings -> CI/CD -> Variables`):
 - `SSH_PORT` - optional, default `22`
 - `SSH_USER` - SSH user
 - `SSH_PRIVATE_KEY` - private key for deploy user (plain or file variable)
-- `SSH_PRIVATE_KEY_B64` - alternative: base64 encoded private key (recommended if multiline key formatting breaks in UI)
+- `SSH_PRIVATE_KEY_DEPLOY` - optional override key for deploy job (if not set, `SSH_PRIVATE_KEY` is used)
 - `DEPLOY_PATH` - absolute directory on server where `tokens.css` must be uploaded
 
 Optional (recommended):

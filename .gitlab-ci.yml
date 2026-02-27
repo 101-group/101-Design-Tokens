@@ -23,33 +23,34 @@ deploy_css:
       artifacts: true
   before_script:
     - apk add --no-cache openssh-client rsync
+    - eval "$(ssh-agent -s)"
     - mkdir -p ~/.ssh
     - chmod 700 ~/.ssh
     - |
-      if [ -f "$SSH_PRIVATE_KEY" ]; then
-        cp "$SSH_PRIVATE_KEY" ~/.ssh/id_ci
-        tr -d '\r' < ~/.ssh/id_ci > ~/.ssh/id_ci.tmp && mv ~/.ssh/id_ci.tmp ~/.ssh/id_ci
-      elif [ -n "$SSH_PRIVATE_KEY" ]; then
-        printf "%b" "$SSH_PRIVATE_KEY" | tr -d '\r' > ~/.ssh/id_ci
-      elif [ -n "$SSH_PRIVATE_KEY_B64" ]; then
-        if [ -f "$SSH_PRIVATE_KEY_B64" ]; then
-          B64_RAW="$(cat "$SSH_PRIVATE_KEY_B64")"
-        else
-          B64_RAW="$SSH_PRIVATE_KEY_B64"
-        fi
-        printf '%s' "$B64_RAW" | tr -d '\r\n ' | base64 -d > ~/.ssh/id_ci
-      else
-        echo "ERROR: SSH key is not set. Provide SSH_PRIVATE_KEY or SSH_PRIVATE_KEY_B64."
+      DEPLOY_SSH_KEY="${SSH_PRIVATE_KEY_DEPLOY:-${SSH_PRIVATE_KEY:-}}"
+      if [ -z "${DEPLOY_SSH_KEY:-}" ]; then
+        echo "ERROR: SSH key is empty (expected SSH_PRIVATE_KEY_DEPLOY or SSH_PRIVATE_KEY)."
         exit 1
       fi
-    - grep -qE '^-----BEGIN (OPENSSH|RSA|EC) PRIVATE KEY-----$' ~/.ssh/id_ci
-    - echo "CI key sha256:"
-    - sha256sum ~/.ssh/id_ci | awk '{print $1}'
-    - chmod 600 ~/.ssh/id_ci
-    - test -s ~/.ssh/id_ci
-    - ssh-keygen -y -f ~/.ssh/id_ci > ~/.ssh/id_ci.pub
-    - echo "CI deploy key fingerprint:"
-    - ssh-keygen -lf ~/.ssh/id_ci.pub
+
+      if [ -f "$DEPLOY_SSH_KEY" ]; then
+        RAW_DEPLOY_SSH_KEY="$(cat "$DEPLOY_SSH_KEY")"
+      else
+        RAW_DEPLOY_SSH_KEY="$DEPLOY_SSH_KEY"
+      fi
+
+      TMP_SSH_KEY_FILE="$(mktemp)"
+      printf '%b\n' "$RAW_DEPLOY_SSH_KEY" | tr -d '\r' > "$TMP_SSH_KEY_FILE"
+      chmod 600 "$TMP_SSH_KEY_FILE"
+
+      if ! head -n 1 "$TMP_SSH_KEY_FILE" | grep -Eq '^-----BEGIN [A-Z0-9 ]*PRIVATE KEY-----$'; then
+        echo "ERROR: SSH key format is invalid: missing BEGIN PRIVATE KEY header."
+        rm -f "$TMP_SSH_KEY_FILE"
+        exit 1
+      fi
+
+      ssh-add "$TMP_SSH_KEY_FILE"
+      rm -f "$TMP_SSH_KEY_FILE"
     - |
       if [ -n "$SSH_KNOWN_HOSTS" ]; then
         echo "$SSH_KNOWN_HOSTS" > ~/.ssh/known_hosts
@@ -61,8 +62,8 @@ deploy_css:
     - test -n "$SSH_HOST"
     - test -n "$SSH_USER"
     - test -n "$DEPLOY_PATH"
-    - ssh -p "${SSH_PORT:-22}" -i ~/.ssh/id_ci -o IdentitiesOnly=yes -o StrictHostKeyChecking=yes "${SSH_USER}@${SSH_HOST}" "echo ssh_ok"
-    - rsync -avz -e "ssh -p ${SSH_PORT:-22} -i ~/.ssh/id_ci -o IdentitiesOnly=yes -o StrictHostKeyChecking=yes" dist/tokens.css "${SSH_USER}@${SSH_HOST}:${DEPLOY_PATH}/tokens.css"
+    - ssh -p "${SSH_PORT:-22}" -o IdentitiesOnly=yes -o StrictHostKeyChecking=yes "${SSH_USER}@${SSH_HOST}" "echo ssh_ok"
+    - rsync -avz -e "ssh -p ${SSH_PORT:-22} -o IdentitiesOnly=yes -o StrictHostKeyChecking=yes" dist/tokens.css "${SSH_USER}@${SSH_HOST}:${DEPLOY_PATH}/tokens.css"
   rules:
-    - if: '$CI_COMMIT_BRANCH == $CI_DEFAULT_BRANCH && $SSH_HOST && $SSH_USER && $DEPLOY_PATH && ($SSH_PRIVATE_KEY || $SSH_PRIVATE_KEY_B64)'
+    - if: '$CI_COMMIT_BRANCH == $CI_DEFAULT_BRANCH && $SSH_HOST && $SSH_USER && $DEPLOY_PATH && ($SSH_PRIVATE_KEY || $SSH_PRIVATE_KEY_DEPLOY)'
       when: on_success
