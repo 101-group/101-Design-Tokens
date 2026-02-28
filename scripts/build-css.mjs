@@ -178,6 +178,11 @@ const rootEntries = dedupeAndSort([
   ...buildEntries(lightSecondaryTokens, "light")
 ]);
 
+const lightEntries = dedupeAndSort([
+  ...buildEntries(lightPrimaryTokens, "light"),
+  ...buildEntries(lightSecondaryTokens, "light")
+]);
+
 const darkEntries = dedupeAndSort([
   ...buildEntries(darkPrimaryTokens, "dark"),
   ...buildEntries(darkSecondaryTokens, "dark")
@@ -188,6 +193,8 @@ const cssOutput = [
   "",
   renderBlock(":root", rootEntries),
   "",
+  renderBlock('[data-theme="light"]', lightEntries),
+  "",
   renderBlock('[data-theme="dark"]', darkEntries),
   ""
 ].join("\n");
@@ -197,4 +204,5 @@ await writeFile(OUTPUT_FILE, cssOutput, "utf8");
 
 console.log(`Generated ${OUTPUT_FILE}`);
 console.log(`:root variables: ${rootEntries.length}`);
+console.log(`[data-theme=\"light\"] variables: ${lightEntries.length}`);
 console.log(`[data-theme=\"dark\"] variables: ${darkEntries.length}`);
