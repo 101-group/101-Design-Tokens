@@ -79,32 +79,32 @@ const globalSet = isPlainObject(setContainer.global) ? setContainer.global : {};
 const componentsSet = isPlainObject(setContainer.components)
   ? setContainer.components
   : {};
-const lightSet = isPlainObject(setContainer.light)
-  ? setContainer.light
-  : isPlainObject(source.light)
-    ? source.light
-    : {};
-const darkSet = isPlainObject(setContainer.dark)
-  ? setContainer.dark
-  : isPlainObject(source.dark)
-    ? source.dark
-    : {};
+const lightSetPrimary = isPlainObject(setContainer.light) ? setContainer.light : {};
+const darkSetPrimary = isPlainObject(setContainer.dark) ? setContainer.dark : {};
+const lightSetSecondary = isPlainObject(source.light) ? source.light : {};
+const darkSetSecondary = isPlainObject(source.dark) ? source.dark : {};
 
 const globalTokens = new Map();
 const componentTokens = new Map();
-const lightTokens = new Map();
-const darkTokens = new Map();
+const lightPrimaryTokens = new Map();
+const darkPrimaryTokens = new Map();
+const lightSecondaryTokens = new Map();
+const darkSecondaryTokens = new Map();
 
 collectTokens(globalSet, ["global"], globalTokens);
 collectTokens(componentsSet, ["components"], componentTokens);
-collectTokens(lightSet, ["light"], lightTokens);
-collectTokens(darkSet, ["dark"], darkTokens);
+collectTokens(lightSetPrimary, ["light"], lightPrimaryTokens);
+collectTokens(darkSetPrimary, ["dark"], darkPrimaryTokens);
+collectTokens(lightSetSecondary, ["light"], lightSecondaryTokens);
+collectTokens(darkSetSecondary, ["dark"], darkSecondaryTokens);
 
 const allTokens = new Map([
   ...globalTokens.entries(),
   ...componentTokens.entries(),
-  ...lightTokens.entries(),
-  ...darkTokens.entries()
+  ...lightPrimaryTokens.entries(),
+  ...darkPrimaryTokens.entries(),
+  ...lightSecondaryTokens.entries(),
+  ...darkSecondaryTokens.entries()
 ]);
 
 if (allTokens.size === 0) {
@@ -174,10 +174,14 @@ function buildEntries(tokensMap, stripPrefix) {
 const rootEntries = dedupeAndSort([
   ...buildEntries(globalTokens),
   ...buildEntries(componentTokens),
-  ...buildEntries(lightTokens, "light")
+  ...buildEntries(lightPrimaryTokens, "light"),
+  ...buildEntries(lightSecondaryTokens, "light")
 ]);
 
-const darkEntries = buildEntries(darkTokens, "dark");
+const darkEntries = dedupeAndSort([
+  ...buildEntries(darkPrimaryTokens, "dark"),
+  ...buildEntries(darkSecondaryTokens, "dark")
+]);
 
 const cssOutput = [
   "/* Auto-generated from tokens.json. Do not edit manually. */",
