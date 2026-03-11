@@ -1,3 +1,8 @@
+import { mkdir, readFile, writeFile } from "node:fs/promises";
+import path from "node:path";
+import process from "node:process";
+import { pathToFileURL } from "node:url";
+
 function buildCss(context) {
   var tokens = Array.isArray(context.tokens) ? context.tokens : [];
   var helpers = context.helpers || {};
@@ -949,3 +954,68 @@ function buildCss(context) {
   }
   return css.join("\n");
 }
+
+const SOURCE_FILE = path.resolve(process.cwd(), "tokens.json");
+const OUTPUT_FILE = path.resolve(process.cwd(), "dist", "tokens.css");
+
+function isSourceObject(value) {
+  return Boolean(value) && typeof value === "object" && !Array.isArray(value);
+}
+
+function collectVariableTokens(node, pathParts, out) {
+  if (!isSourceObject(node)) {
+    return;
+  }
+
+  if (isSourceObject(node.modes)) {
+    out.push({
+      $type: node.$type ?? "unknown",
+      collection: typeof node.collection === "string" ? node.collection : "",
+      path: pathParts.join("."),
+      pathParts: pathParts.slice(),
+      modes: node.modes,
+    });
+    return;
+  }
+
+  const keys = Object.keys(node);
+  for (let index = 0; index < keys.length; index += 1) {
+    const key = keys[index];
+    if (key.startsWith("$")) {
+      continue;
+    }
+    collectVariableTokens(node[key], pathParts.concat([key]), out);
+  }
+}
+
+async function run() {
+  const rawSource = await readFile(SOURCE_FILE, "utf8");
+  const source = JSON.parse(rawSource);
+  const tokens = [];
+
+  collectVariableTokens(source.variables, [], tokens);
+
+  if (!tokens.length) {
+    throw new Error("No variable tokens with modes were found in tokens.json");
+  }
+
+  const cssOutput = buildCss({ tokens, source });
+
+  await mkdir(path.dirname(OUTPUT_FILE), { recursive: true });
+  await writeFile(OUTPUT_FILE, `${cssOutput}\n`, "utf8");
+
+  console.log(`Generated ${OUTPUT_FILE}`);
+  console.log(`Token records: ${tokens.length}`);
+}
+
+if (process.argv[1] && import.meta.url === pathToFileURL(process.argv[1]).href) {
+  try {
+    await run();
+  } catch (error) {
+    const message = error instanceof Error ? error.message : String(error);
+    console.error(message);
+    process.exit(1);
+  }
+}
+
+export { buildCss };
