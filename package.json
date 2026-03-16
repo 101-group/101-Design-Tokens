@@ -4,6 +4,7 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "build:css": "node scripts/build-css.mjs"
+    "build:css": "node scripts/build-css.mjs",
+    "build:icons": "node scripts/build-icons.mjs"
   }
 }

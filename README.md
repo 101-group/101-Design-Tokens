@@ -2,11 +2,15 @@
 
 This repository stores design tokens in `tokens.json` and generates a ready-to-serve CSS file.
 
+It also stores canonical SVG icons in `icons/` and builds a web-consumable icon output in `dist/icons/web/`.
+
 ## Output
 
 Build command creates:
 
 - `dist/tokens.css`
+- `dist/icons/web/mono/*.svg`
+- `dist/icons/web/colored/*.svg`
 
 The file contains:
 
@@ -29,7 +33,23 @@ Or with npm:
 
 ```bash
 npm run build:css
+npm run build:icons
 ```
+
+### Icons
+
+Source of truth:
+
+- `icons/mono/*.svg`
+- `icons/colored/*.svg`
+
+Build output for web:
+
+- `dist/icons/web/mono/*.svg`
+- `dist/icons/web/colored/*.svg`
+
+The icons build copies already cleaned SVG files from `icons/` into a stable consumable output for `web`.
+It does not re-optimize or transform the files.
 
 ## GitLab CI/CD
 
