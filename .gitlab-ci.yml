@@ -84,3 +84,60 @@ deploy_css:
   rules:
     - if: '$CI_COMMIT_BRANCH == $CI_DEFAULT_BRANCH && $SSH_HOST && $SSH_USER && ($TOKENS_DEPLOY_PATH || $DEPLOY_PATH) && ($SSH_PRIVATE_KEY || $SSH_PRIVATE_KEY_DEPLOY)'
       when: on_success
+
+delete_legacy_icons_backup:
+  stage: deploy
+  image: alpine:3.20
+  before_script:
+    - apk add --no-cache openssh-client
+    - eval "$(ssh-agent -s)"
+    - mkdir -p ~/.ssh
+    - chmod 700 ~/.ssh
+    - |
+      DEPLOY_SSH_KEY="${SSH_PRIVATE_KEY_DEPLOY:-${SSH_PRIVATE_KEY:-}}"
+      if [ -z "${DEPLOY_SSH_KEY:-}" ]; then
+        echo "ERROR: SSH key is empty (expected SSH_PRIVATE_KEY_DEPLOY or SSH_PRIVATE_KEY)."
+        exit 1
+      fi
+
+      if [ -f "$DEPLOY_SSH_KEY" ]; then
+        RAW_DEPLOY_SSH_KEY="$(cat "$DEPLOY_SSH_KEY")"
+      else
+        RAW_DEPLOY_SSH_KEY="$DEPLOY_SSH_KEY"
+      fi
+
+      TMP_SSH_KEY_FILE="$(mktemp)"
+      printf '%b\n' "$RAW_DEPLOY_SSH_KEY" | tr -d '\r' > "$TMP_SSH_KEY_FILE"
+      chmod 600 "$TMP_SSH_KEY_FILE"
+
+      if ! head -n 1 "$TMP_SSH_KEY_FILE" | grep -Eq '^-----BEGIN [A-Z0-9 ]*PRIVATE KEY-----$'; then
+        echo "ERROR: SSH key format is invalid: missing BEGIN PRIVATE KEY header."
+        rm -f "$TMP_SSH_KEY_FILE"
+        exit 1
+      fi
+
+      ssh-add "$TMP_SSH_KEY_FILE"
+      rm -f "$TMP_SSH_KEY_FILE"
+    - |
+      if [ -n "$SSH_KNOWN_HOSTS" ]; then
+        echo "$SSH_KNOWN_HOSTS" > ~/.ssh/known_hosts
+      else
+        ssh-keyscan -p "${SSH_PORT:-22}" "$SSH_HOST" > ~/.ssh/known_hosts
+      fi
+    - chmod 644 ~/.ssh/known_hosts
+  script:
+    - test -n "$SSH_HOST"
+    - test -n "$SSH_USER"
+    - |
+      LEGACY_ICONS_BACKUP_PATH="/home/www/code/101-web/dist/design-icons_backup_2391435408"
+      ssh -p "${SSH_PORT:-22}" -o StrictHostKeyChecking=yes "${SSH_USER}@${SSH_HOST}" "
+        if [ ! -e \"$LEGACY_ICONS_BACKUP_PATH\" ]; then
+          echo 'legacy icons backup directory does not exist, nothing to do'
+          exit 0
+        fi
+        rm -rf \"$LEGACY_ICONS_BACKUP_PATH\"
+        echo \"deleted $LEGACY_ICONS_BACKUP_PATH\"
+      "
+  rules:
+    - if: '$CI_COMMIT_BRANCH == $CI_DEFAULT_BRANCH && $SSH_HOST && $SSH_USER && ($SSH_PRIVATE_KEY || $SSH_PRIVATE_KEY_DEPLOY)'
+      when: manual
