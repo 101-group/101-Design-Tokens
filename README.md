@@ -2,7 +2,7 @@
 
 This repository stores design tokens in `tokens.json` and generates a ready-to-serve CSS file.
 
-It also stores canonical SVG icons in `icons/` and builds a web-consumable icon output in `dist/icons/web/`.
+It also stores canonical SVG icons in `icons/` and builds a web-consumable icon output in `dist/icons/web/` for build-time consumption by `web`.
 
 ## Output
 
@@ -60,7 +60,6 @@ Stages:
 1. `build_css` - generates `dist/tokens.css` and stores it as artifact.
 2. `build_icons` - generates `dist/icons/web/*` and stores them as artifact.
 3. `deploy_css` - uploads `dist/tokens.css` to your server via `rsync` over SSH.
-4. `deploy_icons` - uploads `dist/icons/web/*` to your server via `rsync` over SSH.
 
 ### Required CI/CD variables
 
@@ -73,7 +72,6 @@ Set these in GitLab project settings (`Settings -> CI/CD -> Variables`):
 - `SSH_PRIVATE_KEY_DEPLOY` - optional override key for deploy job (if not set, `SSH_PRIVATE_KEY` is used)
 - `TOKENS_DEPLOY_PATH` - absolute directory on server where `tokens.css` must be uploaded
 - `DEPLOY_PATH` - legacy fallback variable for `tokens.css` deploy path during migration
-- `ICONS_DEPLOY_PATH` - absolute directory on server that is served as `https://web.101-app.com/design-icons/`
 
 Optional (recommended):
 
@@ -86,11 +84,5 @@ Deploy jobs run only on default branch and only when required variables are pres
 After successful deploy, files will be available at:
 
 - `${TOKENS_DEPLOY_PATH}/tokens.css`
-- `${ICONS_DEPLOY_PATH}/monochrome/*.svg`
-- `${ICONS_DEPLOY_PATH}/multicolor/*.svg`
 
-Expected public URLs:
-
-- `https://web.101-app.com/assets/tokens.css`
-- `https://web.101-app.com/design-icons/monochrome/analytics.svg`
-- `https://web.101-app.com/design-icons/multicolor/balance-project-own.svg`
+Icons are not published as runtime URLs. `web` consumes `dist/icons/web/*` directly at build time via its local alias configuration.

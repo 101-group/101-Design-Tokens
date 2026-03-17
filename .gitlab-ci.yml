@@ -27,8 +27,6 @@ build_icons:
       - dist/icons/web
     expire_in: 1 week
   rules:
-    - if: '$CI_COMMIT_BRANCH == $CI_DEFAULT_BRANCH && $SSH_HOST && $SSH_USER && $ICONS_DEPLOY_PATH && ($SSH_PRIVATE_KEY || $SSH_PRIVATE_KEY_DEPLOY)'
-      when: on_success
     - if: '$CI_PIPELINE_SOURCE == "push" || $CI_PIPELINE_SOURCE == "merge_request_event"'
       when: on_success
 
@@ -85,61 +83,4 @@ deploy_css:
     - rsync -avz -e "ssh -p ${SSH_PORT:-22} -o StrictHostKeyChecking=yes" dist/tokens.css "${SSH_USER}@${SSH_HOST}:${TOKENS_DEPLOY_PATH:-$DEPLOY_PATH}/tokens.css"
   rules:
     - if: '$CI_COMMIT_BRANCH == $CI_DEFAULT_BRANCH && $SSH_HOST && $SSH_USER && ($TOKENS_DEPLOY_PATH || $DEPLOY_PATH) && ($SSH_PRIVATE_KEY || $SSH_PRIVATE_KEY_DEPLOY)'
-      when: on_success
-
-deploy_icons:
-  stage: deploy
-  image: alpine:3.20
-  needs:
-    - job: build_icons
-      artifacts: true
-  before_script:
-    - apk add --no-cache openssh-client rsync
-    - eval "$(ssh-agent -s)"
-    - mkdir -p ~/.ssh
-    - chmod 700 ~/.ssh
-    - |
-      DEPLOY_SSH_KEY="${SSH_PRIVATE_KEY_DEPLOY:-${SSH_PRIVATE_KEY:-}}"
-      if [ -z "${DEPLOY_SSH_KEY:-}" ]; then
-        echo "ERROR: SSH key is empty (expected SSH_PRIVATE_KEY_DEPLOY or SSH_PRIVATE_KEY)."
-        exit 1
-      fi
-
-      if [ -f "$DEPLOY_SSH_KEY" ]; then
-        RAW_DEPLOY_SSH_KEY="$(cat "$DEPLOY_SSH_KEY")"
-      else
-        RAW_DEPLOY_SSH_KEY="$DEPLOY_SSH_KEY"
-      fi
-
-      TMP_SSH_KEY_FILE="$(mktemp)"
-      printf '%b\n' "$RAW_DEPLOY_SSH_KEY" | tr -d '\r' > "$TMP_SSH_KEY_FILE"
-      chmod 600 "$TMP_SSH_KEY_FILE"
-
-      if ! head -n 1 "$TMP_SSH_KEY_FILE" | grep -Eq '^-----BEGIN [A-Z0-9 ]*PRIVATE KEY-----$'; then
-        echo "ERROR: SSH key format is invalid: missing BEGIN PRIVATE KEY header."
-        rm -f "$TMP_SSH_KEY_FILE"
-        exit 1
-      fi
-
-      ssh-add "$TMP_SSH_KEY_FILE"
-      rm -f "$TMP_SSH_KEY_FILE"
-    - |
-      if [ -n "$SSH_KNOWN_HOSTS" ]; then
-        echo "$SSH_KNOWN_HOSTS" > ~/.ssh/known_hosts
-      else
-        ssh-keyscan -p "${SSH_PORT:-22}" "$SSH_HOST" > ~/.ssh/known_hosts
-      fi
-    - chmod 644 ~/.ssh/known_hosts
-  script:
-    - test -n "$SSH_HOST"
-    - test -n "$SSH_USER"
-    - test -n "$ICONS_DEPLOY_PATH"
-    - test -d dist/icons/web
-    - test -d dist/icons/web/monochrome
-    - test -d dist/icons/web/multicolor
-    - ssh -p "${SSH_PORT:-22}" -o StrictHostKeyChecking=yes "${SSH_USER}@${SSH_HOST}" "echo ssh_ok"
-    - ssh -p "${SSH_PORT:-22}" -o StrictHostKeyChecking=yes "${SSH_USER}@${SSH_HOST}" "mkdir -p \"${ICONS_DEPLOY_PATH}\""
-    - rsync -avz --delete -e "ssh -p ${SSH_PORT:-22} -o StrictHostKeyChecking=yes" dist/icons/web/ "${SSH_USER}@${SSH_HOST}:${ICONS_DEPLOY_PATH}/"
-  rules:
-    - if: '$CI_COMMIT_BRANCH == $CI_DEFAULT_BRANCH && $SSH_HOST && $SSH_USER && $ICONS_DEPLOY_PATH && ($SSH_PRIVATE_KEY || $SSH_PRIVATE_KEY_DEPLOY)'
       when: on_success
