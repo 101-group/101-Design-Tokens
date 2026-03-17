@@ -12,7 +12,7 @@ build_css:
       - dist/tokens.css
     expire_in: 1 week
   rules:
-    - if: '$CI_COMMIT_BRANCH == $CI_DEFAULT_BRANCH && $SSH_HOST && $SSH_USER && $DEPLOY_PATH && ($SSH_PRIVATE_KEY || $SSH_PRIVATE_KEY_DEPLOY)'
+    - if: '$CI_COMMIT_BRANCH == $CI_DEFAULT_BRANCH && $SSH_HOST && $SSH_USER && ($TOKENS_DEPLOY_PATH || $DEPLOY_PATH) && ($SSH_PRIVATE_KEY || $SSH_PRIVATE_KEY_DEPLOY)'
       when: on_success
     - if: '$CI_PIPELINE_SOURCE == "push" || $CI_PIPELINE_SOURCE == "merge_request_event"'
       when: on_success
@@ -78,13 +78,13 @@ deploy_css:
   script:
     - test -n "$SSH_HOST"
     - test -n "$SSH_USER"
-    - test -n "$DEPLOY_PATH"
+    - test -n "${TOKENS_DEPLOY_PATH:-$DEPLOY_PATH}"
     - test -f dist/tokens.css
     - ssh -p "${SSH_PORT:-22}" -o StrictHostKeyChecking=yes "${SSH_USER}@${SSH_HOST}" "echo ssh_ok"
-    - ssh -p "${SSH_PORT:-22}" -o StrictHostKeyChecking=yes "${SSH_USER}@${SSH_HOST}" "mkdir -p \"${DEPLOY_PATH}\""
-    - rsync -avz -e "ssh -p ${SSH_PORT:-22} -o StrictHostKeyChecking=yes" dist/tokens.css "${SSH_USER}@${SSH_HOST}:${DEPLOY_PATH}/tokens.css"
+    - ssh -p "${SSH_PORT:-22}" -o StrictHostKeyChecking=yes "${SSH_USER}@${SSH_HOST}" "mkdir -p \"${TOKENS_DEPLOY_PATH:-$DEPLOY_PATH}\""
+    - rsync -avz -e "ssh -p ${SSH_PORT:-22} -o StrictHostKeyChecking=yes" dist/tokens.css "${SSH_USER}@${SSH_HOST}:${TOKENS_DEPLOY_PATH:-$DEPLOY_PATH}/tokens.css"
   rules:
-    - if: '$CI_COMMIT_BRANCH == $CI_DEFAULT_BRANCH && $SSH_HOST && $SSH_USER && $DEPLOY_PATH && ($SSH_PRIVATE_KEY || $SSH_PRIVATE_KEY_DEPLOY)'
+    - if: '$CI_COMMIT_BRANCH == $CI_DEFAULT_BRANCH && $SSH_HOST && $SSH_USER && ($TOKENS_DEPLOY_PATH || $DEPLOY_PATH) && ($SSH_PRIVATE_KEY || $SSH_PRIVATE_KEY_DEPLOY)'
       when: on_success
 
 deploy_icons:

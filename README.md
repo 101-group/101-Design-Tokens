@@ -71,20 +71,21 @@ Set these in GitLab project settings (`Settings -> CI/CD -> Variables`):
 - `SSH_USER` - SSH user
 - `SSH_PRIVATE_KEY` - private key for deploy user (plain or file variable)
 - `SSH_PRIVATE_KEY_DEPLOY` - optional override key for deploy job (if not set, `SSH_PRIVATE_KEY` is used)
-- `DEPLOY_PATH` - absolute directory on server where `tokens.css` must be uploaded
+- `TOKENS_DEPLOY_PATH` - absolute directory on server where `tokens.css` must be uploaded
+- `DEPLOY_PATH` - legacy fallback variable for `tokens.css` deploy path during migration
 - `ICONS_DEPLOY_PATH` - absolute directory on server that is served as `https://web.101-app.com/design-icons/`
 
 Optional (recommended):
 
 - `SSH_KNOWN_HOSTS` - prefilled known_hosts entry for strict host verification
 
-Deploy jobs run only on default branch and only when required variables are present.
+Deploy jobs run only on default branch and only when required variables are present. `deploy_css` prefers `TOKENS_DEPLOY_PATH` and falls back to legacy `DEPLOY_PATH` during migration.
 
 ## Server result
 
 After successful deploy, files will be available at:
 
-- `${DEPLOY_PATH}/tokens.css`
+- `${TOKENS_DEPLOY_PATH}/tokens.css`
 - `${ICONS_DEPLOY_PATH}/mono/*.svg`
 - `${ICONS_DEPLOY_PATH}/colored/*.svg`
 
