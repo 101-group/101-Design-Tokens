@@ -5,7 +5,7 @@ import path from "node:path";
 const ROOT_DIR = process.cwd();
 const ICONS_SOURCE_DIR = path.join(ROOT_DIR, "icons");
 const ICONS_DIST_DIR = path.join(ROOT_DIR, "dist", "icons", "web");
-const ICON_CATEGORIES = ["mono", "colored"];
+const ICON_CATEGORIES = ["monochrome", "multicolor"];
 
 const isSvgFileName = (fileName) => path.extname(fileName).toLowerCase() === ".svg";
 

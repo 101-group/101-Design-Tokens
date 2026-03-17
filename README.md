@@ -9,8 +9,8 @@ It also stores canonical SVG icons in `icons/` and builds a web-consumable icon 
 Build command creates:
 
 - `dist/tokens.css`
-- `dist/icons/web/mono/*.svg`
-- `dist/icons/web/colored/*.svg`
+- `dist/icons/web/monochrome/*.svg`
+- `dist/icons/web/multicolor/*.svg`
 
 The CSS file contains:
 
@@ -40,13 +40,13 @@ npm run build:icons
 
 Source of truth:
 
-- `icons/mono/*.svg`
-- `icons/colored/*.svg`
+- `icons/monochrome/*.svg`
+- `icons/multicolor/*.svg`
 
 Build output for web:
 
-- `dist/icons/web/mono/*.svg`
-- `dist/icons/web/colored/*.svg`
+- `dist/icons/web/monochrome/*.svg`
+- `dist/icons/web/multicolor/*.svg`
 
 The icons build copies already cleaned SVG files from `icons/` into a stable consumable output for `web`.
 It does not re-optimize or transform the files.
@@ -86,11 +86,11 @@ Deploy jobs run only on default branch and only when required variables are pres
 After successful deploy, files will be available at:
 
 - `${TOKENS_DEPLOY_PATH}/tokens.css`
-- `${ICONS_DEPLOY_PATH}/mono/*.svg`
-- `${ICONS_DEPLOY_PATH}/colored/*.svg`
+- `${ICONS_DEPLOY_PATH}/monochrome/*.svg`
+- `${ICONS_DEPLOY_PATH}/multicolor/*.svg`
 
 Expected public URLs:
 
 - `https://web.101-app.com/assets/tokens.css`
-- `https://web.101-app.com/design-icons/mono/analytics.svg`
-- `https://web.101-app.com/design-icons/colored/balance-project-own.svg`
+- `https://web.101-app.com/design-icons/monochrome/analytics.svg`
+- `https://web.101-app.com/design-icons/multicolor/balance-project-own.svg`

@@ -135,8 +135,8 @@ deploy_icons:
     - test -n "$SSH_USER"
     - test -n "$ICONS_DEPLOY_PATH"
     - test -d dist/icons/web
-    - test -d dist/icons/web/mono
-    - test -d dist/icons/web/colored
+    - test -d dist/icons/web/monochrome
+    - test -d dist/icons/web/multicolor
     - ssh -p "${SSH_PORT:-22}" -o StrictHostKeyChecking=yes "${SSH_USER}@${SSH_HOST}" "echo ssh_ok"
     - ssh -p "${SSH_PORT:-22}" -o StrictHostKeyChecking=yes "${SSH_USER}@${SSH_HOST}" "mkdir -p \"${ICONS_DEPLOY_PATH}\""
     - rsync -avz --delete -e "ssh -p ${SSH_PORT:-22} -o StrictHostKeyChecking=yes" dist/icons/web/ "${SSH_USER}@${SSH_HOST}:${ICONS_DEPLOY_PATH}/"
