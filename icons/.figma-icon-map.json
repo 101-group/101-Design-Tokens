@@ -1,0 +1,656 @@
+{
+  "version": 1,
+  "icons": [
+    {
+      "figmaComponentId": "1069:6878",
+      "path": "icons/monochrome/account-fill.svg",
+      "category": "monochrome",
+      "sourceName": "account-fill",
+      "pageName": "􀥧     Icons"
+    },
+    {
+      "figmaComponentId": "1069:6949",
+      "path": "icons/monochrome/account.svg",
+      "category": "monochrome",
+      "sourceName": "account",
+      "pageName": "􀥧     Icons"
+    },
+    {
+      "figmaComponentId": "9244:16863",
+      "path": "icons/monochrome/add.svg",
+      "category": "monochrome",
+      "sourceName": "add",
+      "pageName": "􀥧     Icons"
+    },
+    {
+      "figmaComponentId": "9881:1681",
+      "path": "icons/monochrome/adress.svg",
+      "category": "monochrome",
+      "sourceName": "adress",
+      "pageName": "􀥧     Icons"
+    },
+    {
+      "figmaComponentId": "9322:4130",
+      "path": "icons/monochrome/ai.svg",
+      "category": "monochrome",
+      "sourceName": "ai",
+      "pageName": "􀥧     Icons"
+    },
+    {
+      "figmaComponentId": "2941:557",
+      "path": "icons/monochrome/analytics.svg",
+      "category": "monochrome",
+      "sourceName": "analytics",
+      "pageName": "􀥧     Icons"
+    },
+    {
+      "figmaComponentId": "10969:31207",
+      "path": "icons/monochrome/api.svg",
+      "category": "monochrome",
+      "sourceName": "api",
+      "pageName": "􀥧     Icons"
+    },
+    {
+      "figmaComponentId": "7955:36697",
+      "path": "icons/monochrome/archive-add.svg",
+      "category": "monochrome",
+      "sourceName": "archive-add",
+      "pageName": "􀥧     Icons"
+    },
+    {
+      "figmaComponentId": "7956:69",
+      "path": "icons/monochrome/archive-remove.svg",
+      "category": "monochrome",
+      "sourceName": "archive-remove",
+      "pageName": "􀥧     Icons"
+    },
+    {
+      "figmaComponentId": "2941:535",
+      "path": "icons/monochrome/archive.svg",
+      "category": "monochrome",
+      "sourceName": "archive",
+      "pageName": "􀥧     Icons"
+    },
+    {
+      "figmaComponentId": "1069:7039",
+      "path": "icons/monochrome/arrow-down.svg",
+      "category": "monochrome",
+      "sourceName": "arrow-down",
+      "pageName": "􀥧     Icons"
+    },
+    {
+      "figmaComponentId": "1069:7033",
+      "path": "icons/monochrome/arrow-left.svg",
+      "category": "monochrome",
+      "sourceName": "arrow-left",
+      "pageName": "􀥧     Icons"
+    },
+    {
+      "figmaComponentId": "1069:7035",
+      "path": "icons/monochrome/arrow-right.svg",
+      "category": "monochrome",
+      "sourceName": "arrow-right",
+      "pageName": "􀥧     Icons"
+    },
+    {
+      "figmaComponentId": "9592:5189",
+      "path": "icons/monochrome/arrow-turn-down-right.svg",
+      "category": "monochrome",
+      "sourceName": "arrow-turn-down-right",
+      "pageName": "􀥧     Icons"
+    },
+    {
+      "figmaComponentId": "2941:746",
+      "path": "icons/monochrome/arrow-turn-left-down.svg",
+      "category": "monochrome",
+      "sourceName": "arrow-turn-left-down",
+      "pageName": "􀥧     Icons"
+    },
+    {
+      "figmaComponentId": "1069:7037",
+      "path": "icons/monochrome/arrow-up.svg",
+      "category": "monochrome",
+      "sourceName": "arrow-up",
+      "pageName": "􀥧     Icons"
+    },
+    {
+      "figmaComponentId": "9466:4465",
+      "path": "icons/monochrome/balance.svg",
+      "category": "monochrome",
+      "sourceName": "balance",
+      "pageName": "􀥧     Icons"
+    },
+    {
+      "figmaComponentId": "8302:5100",
+      "path": "icons/monochrome/bill.svg",
+      "category": "monochrome",
+      "sourceName": "bill",
+      "pageName": "􀥧     Icons"
+    },
+    {
+      "figmaComponentId": "8766:5197",
+      "path": "icons/monochrome/calculator.svg",
+      "category": "monochrome",
+      "sourceName": "calculator",
+      "pageName": "􀥧     Icons"
+    },
+    {
+      "figmaComponentId": "1069:7001",
+      "path": "icons/monochrome/calendar.svg",
+      "category": "monochrome",
+      "sourceName": "calendar",
+      "pageName": "􀥧     Icons"
+    },
+    {
+      "figmaComponentId": "1069:6902",
+      "path": "icons/monochrome/camera-fill.svg",
+      "category": "monochrome",
+      "sourceName": "camera-fill",
+      "pageName": "􀥧     Icons"
+    },
+    {
+      "figmaComponentId": "1069:6975",
+      "path": "icons/monochrome/camera.svg",
+      "category": "monochrome",
+      "sourceName": "camera",
+      "pageName": "􀥧     Icons"
+    },
+    {
+      "figmaComponentId": "3062:8881",
+      "path": "icons/monochrome/card-fill.svg",
+      "category": "monochrome",
+      "sourceName": "card-fill",
+      "pageName": "􀥧     Icons"
+    },
+    {
+      "figmaComponentId": "3062:8880",
+      "path": "icons/monochrome/card.svg",
+      "category": "monochrome",
+      "sourceName": "card",
+      "pageName": "􀥧     Icons"
+    },
+    {
+      "figmaComponentId": "6056:5602",
+      "path": "icons/monochrome/checkbox-circle-mixed-fill.svg",
+      "category": "monochrome",
+      "sourceName": "checkbox-circle-mixed-fill",
+      "pageName": "􀥧     Icons"
+    },
+    {
+      "figmaComponentId": "5961:7914",
+      "path": "icons/monochrome/checkbox-circle-selected-fill.svg",
+      "category": "monochrome",
+      "sourceName": "checkbox-circle-selected-fill",
+      "pageName": "􀥧     Icons"
+    },
+    {
+      "figmaComponentId": "7824:32680",
+      "path": "icons/monochrome/checkbox-circle-selected.svg",
+      "category": "monochrome",
+      "sourceName": "checkbox-circle-selected",
+      "pageName": "􀥧     Icons"
+    },
+    {
+      "figmaComponentId": "5961:7917",
+      "path": "icons/monochrome/checkbox-circle-unselected.svg",
+      "category": "monochrome",
+      "sourceName": "checkbox-circle-unselected",
+      "pageName": "􀥧     Icons"
+    },
+    {
+      "figmaComponentId": "1069:7065",
+      "path": "icons/monochrome/checkmark.svg",
+      "category": "monochrome",
+      "sourceName": "checkmark",
+      "pageName": "􀥧     Icons"
+    },
+    {
+      "figmaComponentId": "10961:30424",
+      "path": "icons/monochrome/chevrone-collapse-off.svg",
+      "category": "monochrome",
+      "sourceName": "chevrone-collapse-off",
+      "pageName": "􀥧     Icons"
+    },
+    {
+      "figmaComponentId": "10961:30425",
+      "path": "icons/monochrome/chevrone-collapse-on.svg",
+      "category": "monochrome",
+      "sourceName": "chevrone-collapse-on",
+      "pageName": "􀥧     Icons"
+    },
+    {
+      "figmaComponentId": "7769:28293",
+      "path": "icons/monochrome/chevrone-left.svg",
+      "category": "monochrome",
+      "sourceName": "chevrone-left",
+      "pageName": "􀥧     Icons"
+    },
+    {
+      "figmaComponentId": "10961:30401",
+      "path": "icons/monochrome/chevrone-right.svg",
+      "category": "monochrome",
+      "sourceName": "chevrone-right",
+      "pageName": "􀥧     Icons"
+    },
+    {
+      "figmaComponentId": "1069:7059",
+      "path": "icons/monochrome/clear.svg",
+      "category": "monochrome",
+      "sourceName": "clear",
+      "pageName": "􀥧     Icons"
+    },
+    {
+      "figmaComponentId": "2563:6342",
+      "path": "icons/monochrome/clock.svg",
+      "category": "monochrome",
+      "sourceName": "clock",
+      "pageName": "􀥧     Icons"
+    },
+    {
+      "figmaComponentId": "1069:6914",
+      "path": "icons/monochrome/close.svg",
+      "category": "monochrome",
+      "sourceName": "close",
+      "pageName": "􀥧     Icons"
+    },
+    {
+      "figmaComponentId": "1069:7007",
+      "path": "icons/monochrome/copy.svg",
+      "category": "monochrome",
+      "sourceName": "copy",
+      "pageName": "􀥧     Icons"
+    },
+    {
+      "figmaComponentId": "9191:7984",
+      "path": "icons/monochrome/customer.svg",
+      "category": "monochrome",
+      "sourceName": "customer",
+      "pageName": "􀥧     Icons"
+    },
+    {
+      "figmaComponentId": "9151:5354",
+      "path": "icons/monochrome/deadline.svg",
+      "category": "monochrome",
+      "sourceName": "deadline",
+      "pageName": "􀥧     Icons"
+    },
+    {
+      "figmaComponentId": "1069:6951",
+      "path": "icons/monochrome/delete.svg",
+      "category": "monochrome",
+      "sourceName": "delete",
+      "pageName": "􀥧     Icons"
+    },
+    {
+      "figmaComponentId": "8007:428",
+      "path": "icons/monochrome/deleted-folder.svg",
+      "category": "monochrome",
+      "sourceName": "deleted-folder",
+      "pageName": "􀥧     Icons"
+    },
+    {
+      "figmaComponentId": "1069:6900",
+      "path": "icons/monochrome/doc-excel-fill.svg",
+      "category": "monochrome",
+      "sourceName": "doc.excel-fill",
+      "pageName": "􀥧     Icons"
+    },
+    {
+      "figmaComponentId": "1069:6971",
+      "path": "icons/monochrome/doc-excel.svg",
+      "category": "monochrome",
+      "sourceName": "doc.excel",
+      "pageName": "􀥧     Icons"
+    },
+    {
+      "figmaComponentId": "1069:6965",
+      "path": "icons/monochrome/doc-export.svg",
+      "category": "monochrome",
+      "sourceName": "doc-export",
+      "pageName": "􀥧     Icons"
+    },
+    {
+      "figmaComponentId": "1069:6969",
+      "path": "icons/monochrome/doc-file.svg",
+      "category": "monochrome",
+      "sourceName": "doc-file",
+      "pageName": "􀥧     Icons"
+    },
+    {
+      "figmaComponentId": "1069:6963",
+      "path": "icons/monochrome/doc-import.svg",
+      "category": "monochrome",
+      "sourceName": "doc-import",
+      "pageName": "􀥧     Icons"
+    },
+    {
+      "figmaComponentId": "7769:35155",
+      "path": "icons/monochrome/doc-pdf-fill.svg",
+      "category": "monochrome",
+      "sourceName": "doc-pdf-fill",
+      "pageName": "􀥧     Icons"
+    },
+    {
+      "figmaComponentId": "7769:35151",
+      "path": "icons/monochrome/doc-pdf.svg",
+      "category": "monochrome",
+      "sourceName": "doc-pdf",
+      "pageName": "􀥧     Icons"
+    },
+    {
+      "figmaComponentId": "1069:6967",
+      "path": "icons/monochrome/doc.svg",
+      "category": "monochrome",
+      "sourceName": "doc",
+      "pageName": "􀥧     Icons"
+    },
+    {
+      "figmaComponentId": "1069:7003",
+      "path": "icons/monochrome/download.svg",
+      "category": "monochrome",
+      "sourceName": "download",
+      "pageName": "􀥧     Icons"
+    },
+    {
+      "figmaComponentId": "5490:1792",
+      "path": "icons/monochrome/dublicate.svg",
+      "category": "monochrome",
+      "sourceName": "dublicate",
+      "pageName": "􀥧     Icons"
+    },
+    {
+      "figmaComponentId": "1069:7069",
+      "path": "icons/monochrome/edit-slider.svg",
+      "category": "monochrome",
+      "sourceName": "edit.slider",
+      "pageName": "􀥧     Icons"
+    },
+    {
+      "figmaComponentId": "4696:111",
+      "path": "icons/monochrome/edit.svg",
+      "category": "monochrome",
+      "sourceName": "edit",
+      "pageName": "􀥧     Icons"
+    },
+    {
+      "figmaComponentId": "7775:32027",
+      "path": "icons/monochrome/error.svg",
+      "category": "monochrome",
+      "sourceName": "error",
+      "pageName": "􀥧     Icons"
+    },
+    {
+      "figmaComponentId": "1069:7025",
+      "path": "icons/monochrome/exit.svg",
+      "category": "monochrome",
+      "sourceName": "exit",
+      "pageName": "􀥧     Icons"
+    },
+    {
+      "figmaComponentId": "2941:543",
+      "path": "icons/monochrome/feedback.svg",
+      "category": "monochrome",
+      "sourceName": "feedback",
+      "pageName": "􀥧     Icons"
+    },
+    {
+      "figmaComponentId": "1069:7027",
+      "path": "icons/monochrome/file-add.svg",
+      "category": "monochrome",
+      "sourceName": "file-add",
+      "pageName": "􀥧     Icons"
+    },
+    {
+      "figmaComponentId": "2865:1617",
+      "path": "icons/monochrome/filter-off.svg",
+      "category": "monochrome",
+      "sourceName": "filter-off",
+      "pageName": "􀥧     Icons"
+    },
+    {
+      "figmaComponentId": "2865:1620",
+      "path": "icons/monochrome/filter-on.svg",
+      "category": "monochrome",
+      "sourceName": "filter-on",
+      "pageName": "􀥧     Icons"
+    },
+    {
+      "figmaComponentId": "8323:11766",
+      "path": "icons/monochrome/folder.svg",
+      "category": "monochrome",
+      "sourceName": "folder",
+      "pageName": "􀥧     Icons"
+    },
+    {
+      "figmaComponentId": "2941:551",
+      "path": "icons/monochrome/foundation-fill.svg",
+      "category": "monochrome",
+      "sourceName": "foundation-fill",
+      "pageName": "􀥧     Icons"
+    },
+    {
+      "figmaComponentId": "2941:549",
+      "path": "icons/monochrome/foundation.svg",
+      "category": "monochrome",
+      "sourceName": "foundation",
+      "pageName": "􀥧     Icons"
+    },
+    {
+      "figmaComponentId": "1143:3704",
+      "path": "icons/monochrome/grabber.svg",
+      "category": "monochrome",
+      "sourceName": "grabber",
+      "pageName": "􀥧     Icons"
+    },
+    {
+      "figmaComponentId": "2941:499",
+      "path": "icons/monochrome/help.svg",
+      "category": "monochrome",
+      "sourceName": "help",
+      "pageName": "􀥧     Icons"
+    },
+    {
+      "figmaComponentId": "1069:6991",
+      "path": "icons/monochrome/info.svg",
+      "category": "monochrome",
+      "sourceName": "info",
+      "pageName": "􀥧     Icons"
+    },
+    {
+      "figmaComponentId": "1069:7031",
+      "path": "icons/monochrome/link-arrow.svg",
+      "category": "monochrome",
+      "sourceName": "link-arrow",
+      "pageName": "􀥧     Icons"
+    },
+    {
+      "figmaComponentId": "1069:7029",
+      "path": "icons/monochrome/link.svg",
+      "category": "monochrome",
+      "sourceName": "link",
+      "pageName": "􀥧     Icons"
+    },
+    {
+      "figmaComponentId": "1069:7011",
+      "path": "icons/monochrome/more.svg",
+      "category": "monochrome",
+      "sourceName": "more",
+      "pageName": "􀥧     Icons"
+    },
+    {
+      "figmaComponentId": "7770:1102",
+      "path": "icons/monochrome/paste.svg",
+      "category": "monochrome",
+      "sourceName": "paste",
+      "pageName": "􀥧     Icons"
+    },
+    {
+      "figmaComponentId": "1069:6939",
+      "path": "icons/monochrome/pricelist.svg",
+      "category": "monochrome",
+      "sourceName": "pricelist",
+      "pageName": "􀥧     Icons"
+    },
+    {
+      "figmaComponentId": "9691:1082",
+      "path": "icons/monochrome/products.svg",
+      "category": "monochrome",
+      "sourceName": "products",
+      "pageName": "􀥧     Icons"
+    },
+    {
+      "figmaComponentId": "9151:5339",
+      "path": "icons/monochrome/project-manager.svg",
+      "category": "monochrome",
+      "sourceName": "project-manager",
+      "pageName": "􀥧     Icons"
+    },
+    {
+      "figmaComponentId": "2941:533",
+      "path": "icons/monochrome/project.svg",
+      "category": "monochrome",
+      "sourceName": "project",
+      "pageName": "􀥧     Icons"
+    },
+    {
+      "figmaComponentId": "3557:25950",
+      "path": "icons/monochrome/return-from-deleted.svg",
+      "category": "monochrome",
+      "sourceName": "return-from-deleted",
+      "pageName": "􀥧     Icons"
+    },
+    {
+      "figmaComponentId": "9607:11224",
+      "path": "icons/monochrome/settings.svg",
+      "category": "monochrome",
+      "sourceName": "settings",
+      "pageName": "􀥧     Icons"
+    },
+    {
+      "figmaComponentId": "2941:547",
+      "path": "icons/monochrome/sort-arrow.svg",
+      "category": "monochrome",
+      "sourceName": "sort-arrow",
+      "pageName": "􀥧     Icons"
+    },
+    {
+      "figmaComponentId": "1069:7053",
+      "path": "icons/monochrome/sort-chevron.svg",
+      "category": "monochrome",
+      "sourceName": "sort-chevron",
+      "pageName": "􀥧     Icons"
+    },
+    {
+      "figmaComponentId": "10049:6199",
+      "path": "icons/monochrome/template.svg",
+      "category": "monochrome",
+      "sourceName": "template",
+      "pageName": "􀥧     Icons"
+    },
+    {
+      "figmaComponentId": "2941:517",
+      "path": "icons/monochrome/transaction-estimate.svg",
+      "category": "monochrome",
+      "sourceName": "transaction-estimate",
+      "pageName": "􀥧     Icons"
+    },
+    {
+      "figmaComponentId": "2941:515",
+      "path": "icons/monochrome/transaction-income.svg",
+      "category": "monochrome",
+      "sourceName": "transaction-income",
+      "pageName": "􀥧     Icons"
+    },
+    {
+      "figmaComponentId": "2941:519",
+      "path": "icons/monochrome/transaction-invoice.svg",
+      "category": "monochrome",
+      "sourceName": "transaction-invoice",
+      "pageName": "􀥧     Icons"
+    },
+    {
+      "figmaComponentId": "1069:7019",
+      "path": "icons/monochrome/transaction-list.svg",
+      "category": "monochrome",
+      "sourceName": "transaction-list",
+      "pageName": "􀥧     Icons"
+    },
+    {
+      "figmaComponentId": "2941:523",
+      "path": "icons/monochrome/transaction-transfer.svg",
+      "category": "monochrome",
+      "sourceName": "transaction-transfer",
+      "pageName": "􀥧     Icons"
+    },
+    {
+      "figmaComponentId": "1069:6874",
+      "path": "icons/monochrome/user-fill.svg",
+      "category": "monochrome",
+      "sourceName": "user-fill",
+      "pageName": "􀥧     Icons"
+    },
+    {
+      "figmaComponentId": "1069:6945",
+      "path": "icons/monochrome/user.svg",
+      "category": "monochrome",
+      "sourceName": "user",
+      "pageName": "􀥧     Icons"
+    },
+    {
+      "figmaComponentId": "1069:6872",
+      "path": "icons/monochrome/user2-fill.svg",
+      "category": "monochrome",
+      "sourceName": "user2-fill",
+      "pageName": "􀥧     Icons"
+    },
+    {
+      "figmaComponentId": "1069:6943",
+      "path": "icons/monochrome/user2.svg",
+      "category": "monochrome",
+      "sourceName": "user2",
+      "pageName": "􀥧     Icons"
+    },
+    {
+      "figmaComponentId": "2941:609",
+      "path": "icons/multicolor/balance-foundation-accountable.svg",
+      "category": "multicolor",
+      "sourceName": "balance-foundation-accountable",
+      "pageName": "􀥧     Icons"
+    },
+    {
+      "figmaComponentId": "2941:611",
+      "path": "icons/multicolor/balance-foundation-own.svg",
+      "category": "multicolor",
+      "sourceName": "balance-foundation-own",
+      "pageName": "􀥧     Icons"
+    },
+    {
+      "figmaComponentId": "3062:8868",
+      "path": "icons/multicolor/balance-project-accountable.svg",
+      "category": "multicolor",
+      "sourceName": "balance-project-accountable",
+      "pageName": "􀥧     Icons"
+    },
+    {
+      "figmaComponentId": "7770:873",
+      "path": "icons/multicolor/balance-project-own.svg",
+      "category": "multicolor",
+      "sourceName": "balance-project-own",
+      "pageName": "􀥧     Icons"
+    },
+    {
+      "figmaComponentId": "9879:2868",
+      "path": "icons/multicolor/transfer-fund-to-project.svg",
+      "category": "multicolor",
+      "sourceName": "transfer-fund-to-project",
+      "pageName": "􀥧     Icons"
+    },
+    {
+      "figmaComponentId": "9879:2867",
+      "path": "icons/multicolor/transfer-project-to-fund.svg",
+      "category": "multicolor",
+      "sourceName": "transfer-project-to-fund",
+      "pageName": "􀥧     Icons"
+    }
+  ]
+}
