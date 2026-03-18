@@ -5,6 +5,9 @@
   "type": "module",
   "scripts": {
     "build:css": "node scripts/build-css.mjs",
-    "build:icons": "node scripts/build-icons.mjs"
+    "build:icons": "node scripts/build-icons.mjs",
+    "build:icons:web-package": "node scripts/build-icons-web-package.mjs",
+    "check:icons:web-package": "npm pack --dry-run ./dist/npm/design-icons-web",
+    "publish:icons:web-package": "node scripts/publish-icons-web-package.mjs"
   }
 }
