@@ -14,7 +14,7 @@ build_css:
     expire_in: 1 week
   rules:
     - if: '$CI_COMMIT_BRANCH == $CI_DEFAULT_BRANCH && $SSH_HOST && $SSH_USER && ($TOKENS_DEPLOY_PATH || $DEPLOY_PATH) && ($SSH_PRIVATE_KEY || $SSH_PRIVATE_KEY_DEPLOY)'
-      when: on_success
+      when: manual
     - if: '$CI_PIPELINE_SOURCE == "push" || $CI_PIPELINE_SOURCE == "merge_request_event"'
       when: on_success
 
