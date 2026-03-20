@@ -1,38 +1,39 @@
-# Design Tokens Pipeline
+# Пайплайн design-tokens
 
-This repository stores design tokens in `tokens.json` and generates a ready-to-serve CSS file.
+Этот репозиторий хранит дизайн-токены в `tokens.json` и собирает готовый CSS-файл для раздачи.
 
-It also stores canonical SVG icons in `icons/` and builds a web-consumable icon output in `dist/icons/web/` for build-time consumption by `web`.
+Также репозиторий хранит канонические SVG-иконки в `icons/` и собирает web-output в `dist/icons/web/` для потребления в `web` на этапе сборки.
 
-The same web output is also staged and published as the npm package `@101/design-icons-web`.
+Этот же web-output затем подготавливается и публикуется как npm-пакет `@101/design-icons-web`.
 
-## Output
+## Что создаётся на выходе
 
-Build command creates:
+Команда сборки создаёт:
 
 - `dist/tokens.css`
 - `dist/icons/web/monochrome/*.svg`
 - `dist/icons/web/multicolor/*.svg`
 - `dist/npm/design-icons-web/*`
 
-The CSS file contains:
+CSS-файл содержит:
 
-- `:root` variables (global + components + light theme as default)
-- `[data-theme="dark"]` overrides for dark theme
+- CSS-переменные в `:root`
+- переопределения переменных для светлой и тёмной темы через `[data-theme]`
+- сгенерированные CSS-классы из style-токенов, например для типографики и эффектов
 
-## Local build
+## Локальная сборка
 
-Requirements:
+Требования:
 
 - Node.js 18+
 
-Run:
+Запуск:
 
 ```bash
 node scripts/build-css.mjs
 ```
 
-Or with npm:
+Или через npm:
 
 ```bash
 npm run build:css
@@ -41,78 +42,94 @@ npm run build:icons:web-package
 npm run check:icons:web-package
 ```
 
-### Icons
+### Иконки
 
-Source of truth:
+Источник истины:
 
 - `icons/monochrome/*.svg`
 - `icons/multicolor/*.svg`
 
-Build output for web:
+Выходные файлы для web:
 
 - `dist/icons/web/monochrome/*.svg`
 - `dist/icons/web/multicolor/*.svg`
 
-The icons build copies already cleaned SVG files from `icons/` into a stable consumable output for `web`.
-It does not re-optimize or transform the files.
+Сборка иконок просто копирует уже подготовленные SVG из `icons/` в стабильный выходной набор для `web`.
+На этом этапе файлы не переоптимизируются и не трансформируются.
 
-### Web package
+### Web-пакет
 
-The staged npm package for `web` is created in:
+Подготовленный npm-пакет для `web` создаётся в:
 
 - `dist/npm/design-icons-web/package.json`
 - `dist/npm/design-icons-web/monochrome/*.svg`
 - `dist/npm/design-icons-web/multicolor/*.svg`
 
-Consumer import contract:
+Контракт импорта для потребителя:
 
 ```ts
 import ProjectIcon from "@101/design-icons-web/monochrome/project.svg?component";
 ```
 
-The package version is resolved from the release tag `design-icons-web-vX.Y.Z`.
-Without a matching tag, local staging uses `0.0.0-development`.
+Локальный staging использует версию `0.0.0-development`.
+Публикуемая версия назначается во время release job и автоматически повышает patch последней опубликованной версии.
 
 ## GitLab CI/CD
 
-Pipeline file: `.gitlab-ci.yml`
+Файл пайплайна: `.gitlab-ci.yml`
 
-Stages:
+Стадии:
 
-1. `build_css` - generates `dist/tokens.css` and stores it as artifact.
-2. `build_icons` - generates `dist/icons/web/*` and stores them as artifact.
-3. `build_icons_web_package` - stages `@101/design-icons-web` in `dist/npm/design-icons-web` and validates it with `npm pack --dry-run`.
-4. `publish_icons_web_package` - publishes `@101/design-icons-web` to GitLab Package Registry for tags matching `design-icons-web-vX.Y.Z`.
-5. `deploy_css` - uploads `dist/tokens.css` to your server via `rsync` over SSH.
+1. `build_css` — собирает `dist/tokens.css` и сохраняет его как артефакт.
+2. `build_icons_web_package` — вручную собирает staged-пакет `@101/design-icons-web` в `dist/npm/design-icons-web` и валидирует его через `npm pack --dry-run`.
+3. `publish_icons_web_package` — ручной job публикации на ветке по умолчанию; доступен только после успешного `build_icons_web_package` в том же pipeline, проверяет, менялся ли `icons/` с последнего релиза, вычисляет следующую patch-версию, пересобирает пакет с этой версией и публикует его в GitLab Package Registry.
+4. `deploy_css` — вручную загружает `dist/tokens.css` на сервер через `rsync` по SSH.
 
-### Required CI/CD variables
+### Release flow для web-иконок
 
-Set these in GitLab project settings (`Settings -> CI/CD -> Variables`):
+1. Обновить SVG в `icons/`.
+2. Сделать `push` в GitLab.
+3. Вручную запустить `build_icons_web_package`.
+4. На ветке по умолчанию вручную запустить `publish_icons_web_package` в том же pipeline после успешного `build_icons_web_package`.
+5. Job публикации сначала проверит, были ли изменения в `icons/` с момента последней опубликованной версии. Если изменений нет, job остановится и новый пакет не опубликует.
+6. Если изменения есть, job автоматически определит следующую patch-версию:
+   - если последняя опубликованная версия `1.0.0`, будет опубликована `1.0.1`
+   - если пакет ещё ни разу не публиковался, будет опубликована `1.0.0`
+7. После этого `web` может обновить зависимость `@101/design-icons-web` до новой версии.
 
-- `SSH_HOST` - target server host
-- `SSH_PORT` - optional, default `22`
-- `SSH_USER` - SSH user
-- `SSH_PRIVATE_KEY` - private key for deploy user (plain or file variable)
-- `SSH_PRIVATE_KEY_DEPLOY` - optional override key for deploy job (if not set, `SSH_PRIVATE_KEY` is used)
-- `TOKENS_DEPLOY_PATH` - absolute directory on server where `tokens.css` must be uploaded
-- `DEPLOY_PATH` - legacy fallback variable for `tokens.css` deploy path during migration
+### Обязательные CI/CD-переменные
 
-Optional (recommended):
+Задаются в настройках проекта GitLab (`Settings -> CI/CD -> Variables`):
 
-- `SSH_KNOWN_HOSTS` - prefilled known_hosts entry for strict host verification
+- `SSH_HOST` — хост целевого сервера
+- `SSH_PORT` — опционально, по умолчанию `22`
+- `SSH_USER` — SSH-пользователь
+- `SSH_PRIVATE_KEY` — приватный ключ для deploy-пользователя (plain value или file variable)
+- `SSH_PRIVATE_KEY_DEPLOY` — опциональный override ключ для deploy job; если не задан, используется `SSH_PRIVATE_KEY`
+- `TOKENS_DEPLOY_PATH` — абсолютный путь на сервере, куда нужно загрузить `tokens.css`
+- `DEPLOY_PATH` — legacy fallback-переменная для пути деплоя `tokens.css` на время миграции
 
-Package publishing uses GitLab CI-provided variables:
+Опционально, но рекомендуется:
+
+- `SSH_KNOWN_HOSTS` — заранее сохранённая запись known_hosts для строгой проверки хоста
+
+Для публикации пакета используются переменные GitLab CI:
 
 - `CI_API_V4_URL`
 - `CI_PROJECT_ID`
-- `CI_JOB_TOKEN` or `NODE_AUTH_TOKEN`
+- `CI_JOB_TOKEN`, `NODE_AUTH_TOKEN` или `NPM_TOKEN`
 
-Deploy jobs run only on default branch and only when required variables are present. `deploy_css` prefers `TOKENS_DEPLOY_PATH` and falls back to legacy `DEPLOY_PATH` during migration.
+Опционально можно явно переопределить registry через:
 
-## Server result
+- `DESIGN_ICONS_WEB_PACKAGE_REGISTRY`
 
-After successful deploy, files will be available at:
+Deploy jobs запускаются только на ветке по умолчанию и только если заданы обязательные переменные. `deploy_css` предпочитает `TOKENS_DEPLOY_PATH` и использует `DEPLOY_PATH` только как legacy fallback на время миграции.
+
+## Что получается на сервере
+
+После успешного деплоя файл будет доступен по пути:
 
 - `${TOKENS_DEPLOY_PATH}/tokens.css`
 
-Icons are not published as runtime URLs. `web` is expected to consume the published npm package `@101/design-icons-web`, which contains raw SVG files for build-time imports.
+Иконки не публикуются как runtime URL.
+`web` должен потреблять опубликованный npm-пакет `@101/design-icons-web`, внутри которого лежат raw SVG для импортов на этапе сборки.

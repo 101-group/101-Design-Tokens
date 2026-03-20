@@ -47,6 +47,24 @@ const runBuildIcons = async () => {
   });
 };
 
+const resolveSourceCommit = async () => {
+  const ciCommitSha = process.env.CI_COMMIT_SHA?.trim();
+  if (ciCommitSha) {
+    return ciCommitSha;
+  }
+
+  try {
+    const { stdout } = await execFileAsync("git", ["rev-parse", "HEAD"], {
+      cwd: ROOT_DIR,
+      env: process.env,
+    });
+
+    return stdout.trim() || undefined;
+  } catch {
+    return undefined;
+  }
+};
+
 const validateDirectoryEntries = (directoryName, entries) => {
   const invalidEntry = entries.find((entry) => !entry.isFile() || !isSvgFileName(entry.name));
   if (!invalidEntry) {
@@ -78,7 +96,7 @@ const copyCategoryIcons = async (categoryName) => {
   return svgEntries.length;
 };
 
-const createPackageMetadata = (version) => {
+const createPackageMetadata = (version, sourceCommit) => {
   return {
     name: PACKAGE_NAME,
     version,
@@ -89,6 +107,7 @@ const createPackageMetadata = (version) => {
     publishConfig: {
       access: "restricted",
     },
+    ...(sourceCommit ? { designTokensSourceCommit: sourceCommit } : {}),
   };
 };
 
@@ -113,6 +132,7 @@ const rebuildIconsOutput = async () => {
 
 const buildWebIconsPackage = async () => {
   const packageVersion = resolvePackageVersion();
+  const sourceCommit = await resolveSourceCommit();
 
   await rebuildIconsOutput();
   await rm(PACKAGE_DIST_DIR, { recursive: true, force: true });
@@ -128,7 +148,7 @@ const buildWebIconsPackage = async () => {
 
   await writeFile(
     packageJsonPath,
-    `${JSON.stringify(createPackageMetadata(packageVersion), null, 2)}\n`,
+    `${JSON.stringify(createPackageMetadata(packageVersion, sourceCommit), null, 2)}\n`,
     "utf8",
   );
   await writeFile(readmePath, createReadme(packageVersion), "utf8");
