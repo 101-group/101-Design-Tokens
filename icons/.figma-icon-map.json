@@ -436,6 +436,13 @@
       "pageName": "􀥧     Icons"
     },
     {
+      "figmaComponentId": "2941:579",
+      "path": "icons/monochrome/gear.svg",
+      "category": "monochrome",
+      "sourceName": "gear",
+      "pageName": "􀥧     Icons"
+    },
+    {
       "figmaComponentId": "1143:3704",
       "path": "icons/monochrome/grabber.svg",
       "category": "monochrome",
@@ -447,6 +454,20 @@
       "path": "icons/monochrome/help.svg",
       "category": "monochrome",
       "sourceName": "help",
+      "pageName": "􀥧     Icons"
+    },
+    {
+      "figmaComponentId": "1069:6935",
+      "path": "icons/monochrome/hide.svg",
+      "category": "monochrome",
+      "sourceName": "hide",
+      "pageName": "􀥧     Icons"
+    },
+    {
+      "figmaComponentId": "2117:28465",
+      "path": "icons/monochrome/infinity.svg",
+      "category": "monochrome",
+      "sourceName": "infinity",
       "pageName": "􀥧     Icons"
     },
     {
@@ -471,10 +492,73 @@
       "pageName": "􀥧     Icons"
     },
     {
+      "figmaComponentId": "7778:20639",
+      "path": "icons/monochrome/minus-circle-fill.svg",
+      "category": "monochrome",
+      "sourceName": "minus-circle-fill",
+      "pageName": "􀥧     Icons"
+    },
+    {
+      "figmaComponentId": "7778:20631",
+      "path": "icons/monochrome/minus-circle.svg",
+      "category": "monochrome",
+      "sourceName": "minus-circle",
+      "pageName": "􀥧     Icons"
+    },
+    {
       "figmaComponentId": "1069:7011",
       "path": "icons/monochrome/more.svg",
       "category": "monochrome",
       "sourceName": "more",
+      "pageName": "􀥧     Icons"
+    },
+    {
+      "figmaComponentId": "1069:6884",
+      "path": "icons/monochrome/notifications-fill.svg",
+      "category": "monochrome",
+      "sourceName": "notifications-fill",
+      "pageName": "􀥧     Icons"
+    },
+    {
+      "figmaComponentId": "1069:6886",
+      "path": "icons/monochrome/notifications-unread-fill.svg",
+      "category": "monochrome",
+      "sourceName": "notifications-unread-fill",
+      "pageName": "􀥧     Icons"
+    },
+    {
+      "figmaComponentId": "1069:6957",
+      "path": "icons/monochrome/notifications-unread.svg",
+      "category": "monochrome",
+      "sourceName": "notifications-unread",
+      "pageName": "􀥧     Icons"
+    },
+    {
+      "figmaComponentId": "1069:6955",
+      "path": "icons/monochrome/notifications.svg",
+      "category": "monochrome",
+      "sourceName": "notifications",
+      "pageName": "􀥧     Icons"
+    },
+    {
+      "figmaComponentId": "1069:6931",
+      "path": "icons/monochrome/password.svg",
+      "category": "monochrome",
+      "sourceName": "password",
+      "pageName": "􀥧     Icons"
+    },
+    {
+      "figmaComponentId": "2941:583",
+      "path": "icons/monochrome/past-down.svg",
+      "category": "monochrome",
+      "sourceName": "past-down",
+      "pageName": "􀥧     Icons"
+    },
+    {
+      "figmaComponentId": "2941:581",
+      "path": "icons/monochrome/past-up.svg",
+      "category": "monochrome",
+      "sourceName": "past-up",
       "pageName": "􀥧     Icons"
     },
     {
@@ -485,10 +569,66 @@
       "pageName": "􀥧     Icons"
     },
     {
+      "figmaComponentId": "4986:3279",
+      "path": "icons/monochrome/phone.svg",
+      "category": "monochrome",
+      "sourceName": "phone",
+      "pageName": "􀥧     Icons"
+    },
+    {
+      "figmaComponentId": "2941:525",
+      "path": "icons/monochrome/photo.svg",
+      "category": "monochrome",
+      "sourceName": "photo",
+      "pageName": "􀥧     Icons"
+    },
+    {
+      "figmaComponentId": "2941:527",
+      "path": "icons/monochrome/photo2.svg",
+      "category": "monochrome",
+      "sourceName": "photo2",
+      "pageName": "􀥧     Icons"
+    },
+    {
+      "figmaComponentId": "2941:531",
+      "path": "icons/monochrome/plus-circle-fill.svg",
+      "category": "monochrome",
+      "sourceName": "plus-circle-fill",
+      "pageName": "􀥧     Icons"
+    },
+    {
+      "figmaComponentId": "5961:7911",
+      "path": "icons/monochrome/plus-circle.svg",
+      "category": "monochrome",
+      "sourceName": "plus-circle",
+      "pageName": "􀥧     Icons"
+    },
+    {
+      "figmaComponentId": "1069:7061",
+      "path": "icons/monochrome/plus.svg",
+      "category": "monochrome",
+      "sourceName": "plus",
+      "pageName": "􀥧     Icons"
+    },
+    {
+      "figmaComponentId": "2941:507",
+      "path": "icons/monochrome/policy.svg",
+      "category": "monochrome",
+      "sourceName": "policy",
+      "pageName": "􀥧     Icons"
+    },
+    {
       "figmaComponentId": "1069:6939",
       "path": "icons/monochrome/pricelist.svg",
       "category": "monochrome",
       "sourceName": "pricelist",
+      "pageName": "􀥧     Icons"
+    },
+    {
+      "figmaComponentId": "2941:567",
+      "path": "icons/monochrome/privacy.svg",
+      "category": "monochrome",
+      "sourceName": "privacy",
       "pageName": "􀥧     Icons"
     },
     {
@@ -513,6 +653,34 @@
       "pageName": "􀥧     Icons"
     },
     {
+      "figmaComponentId": "2941:509",
+      "path": "icons/monochrome/qrcode-scan.svg",
+      "category": "monochrome",
+      "sourceName": "qrcode-scan",
+      "pageName": "􀥧     Icons"
+    },
+    {
+      "figmaComponentId": "2941:511",
+      "path": "icons/monochrome/qrcode.svg",
+      "category": "monochrome",
+      "sourceName": "qrcode",
+      "pageName": "􀥧     Icons"
+    },
+    {
+      "figmaComponentId": "3148:2819",
+      "path": "icons/monochrome/receipt.svg",
+      "category": "monochrome",
+      "sourceName": "receipt",
+      "pageName": "􀥧     Icons"
+    },
+    {
+      "figmaComponentId": "1805:7179",
+      "path": "icons/monochrome/refresh.svg",
+      "category": "monochrome",
+      "sourceName": "refresh",
+      "pageName": "􀥧     Icons"
+    },
+    {
       "figmaComponentId": "3557:25950",
       "path": "icons/monochrome/return-from-deleted.svg",
       "category": "monochrome",
@@ -520,10 +688,66 @@
       "pageName": "􀥧     Icons"
     },
     {
+      "figmaComponentId": "9098:6229",
+      "path": "icons/monochrome/roulette-fill.svg",
+      "category": "monochrome",
+      "sourceName": "roulette-fill",
+      "pageName": "􀥧     Icons"
+    },
+    {
+      "figmaComponentId": "9098:6225",
+      "path": "icons/monochrome/roulette.svg",
+      "category": "monochrome",
+      "sourceName": "roulette",
+      "pageName": "􀥧     Icons"
+    },
+    {
+      "figmaComponentId": "8508:4994",
+      "path": "icons/monochrome/safari.svg",
+      "category": "monochrome",
+      "sourceName": "safari",
+      "pageName": "􀥧     Icons"
+    },
+    {
+      "figmaComponentId": "1069:6941",
+      "path": "icons/monochrome/sales.svg",
+      "category": "monochrome",
+      "sourceName": "sales",
+      "pageName": "􀥧     Icons"
+    },
+    {
+      "figmaComponentId": "1069:7023",
+      "path": "icons/monochrome/search.svg",
+      "category": "monochrome",
+      "sourceName": "search",
+      "pageName": "􀥧     Icons"
+    },
+    {
       "figmaComponentId": "9607:11224",
       "path": "icons/monochrome/settings.svg",
       "category": "monochrome",
       "sourceName": "settings",
+      "pageName": "􀥧     Icons"
+    },
+    {
+      "figmaComponentId": "2941:491",
+      "path": "icons/monochrome/share-android.svg",
+      "category": "monochrome",
+      "sourceName": "share-android",
+      "pageName": "􀥧     Icons"
+    },
+    {
+      "figmaComponentId": "1069:7005",
+      "path": "icons/monochrome/share-ios.svg",
+      "category": "monochrome",
+      "sourceName": "share-ios",
+      "pageName": "􀥧     Icons"
+    },
+    {
+      "figmaComponentId": "1069:6933",
+      "path": "icons/monochrome/show.svg",
+      "category": "monochrome",
+      "sourceName": "show",
       "pageName": "􀥧     Icons"
     },
     {
@@ -538,6 +762,27 @@
       "path": "icons/monochrome/sort-chevron.svg",
       "category": "monochrome",
       "sourceName": "sort-chevron",
+      "pageName": "􀥧     Icons"
+    },
+    {
+      "figmaComponentId": "2941:537",
+      "path": "icons/monochrome/tag.svg",
+      "category": "monochrome",
+      "sourceName": "tag",
+      "pageName": "􀥧     Icons"
+    },
+    {
+      "figmaComponentId": "1069:6906",
+      "path": "icons/monochrome/telegram-fill.svg",
+      "category": "monochrome",
+      "sourceName": "telegram-fill",
+      "pageName": "􀥧     Icons"
+    },
+    {
+      "figmaComponentId": "1069:6979",
+      "path": "icons/monochrome/telegram.svg",
+      "category": "monochrome",
+      "sourceName": "telegram",
       "pageName": "􀥧     Icons"
     },
     {
@@ -576,10 +821,31 @@
       "pageName": "􀥧     Icons"
     },
     {
+      "figmaComponentId": "3053:535",
+      "path": "icons/monochrome/transaction-not-confirmed.svg",
+      "category": "monochrome",
+      "sourceName": "transaction.not.confirmed",
+      "pageName": "􀥧     Icons"
+    },
+    {
       "figmaComponentId": "2941:523",
       "path": "icons/monochrome/transaction-transfer.svg",
       "category": "monochrome",
       "sourceName": "transaction-transfer",
+      "pageName": "􀥧     Icons"
+    },
+    {
+      "figmaComponentId": "9099:22664",
+      "path": "icons/monochrome/undo.svg",
+      "category": "monochrome",
+      "sourceName": "undo",
+      "pageName": "􀥧     Icons"
+    },
+    {
+      "figmaComponentId": "1069:6995",
+      "path": "icons/monochrome/user-details.svg",
+      "category": "monochrome",
+      "sourceName": "user-details",
       "pageName": "􀥧     Icons"
     },
     {
@@ -611,6 +877,27 @@
       "pageName": "􀥧     Icons"
     },
     {
+      "figmaComponentId": "2941:513",
+      "path": "icons/monochrome/video-broadcast.svg",
+      "category": "monochrome",
+      "sourceName": "video-broadcast",
+      "pageName": "􀥧     Icons"
+    },
+    {
+      "figmaComponentId": "2728:767",
+      "path": "icons/monochrome/warning-fill.svg",
+      "category": "monochrome",
+      "sourceName": "warning-fill",
+      "pageName": "􀥧     Icons"
+    },
+    {
+      "figmaComponentId": "2728:770",
+      "path": "icons/monochrome/warning.svg",
+      "category": "monochrome",
+      "sourceName": "warning",
+      "pageName": "􀥧     Icons"
+    },
+    {
       "figmaComponentId": "2941:609",
       "path": "icons/multicolor/balance-foundation-accountable.svg",
       "category": "multicolor",
@@ -636,6 +923,48 @@
       "path": "icons/multicolor/balance-project-own.svg",
       "category": "multicolor",
       "sourceName": "balance-project-own",
+      "pageName": "􀥧     Icons"
+    },
+    {
+      "figmaComponentId": "2935:22531",
+      "path": "icons/multicolor/event-status-cancel-customer.svg",
+      "category": "multicolor",
+      "sourceName": "event-status-cancel-customer",
+      "pageName": "􀥧     Icons"
+    },
+    {
+      "figmaComponentId": "2935:22533",
+      "path": "icons/multicolor/event-status-cancel-manager.svg",
+      "category": "multicolor",
+      "sourceName": "event-status-cancel-manager",
+      "pageName": "􀥧     Icons"
+    },
+    {
+      "figmaComponentId": "2935:22529",
+      "path": "icons/multicolor/event-status-confirmed-customer.svg",
+      "category": "multicolor",
+      "sourceName": "event-status-confirmed-customer",
+      "pageName": "􀥧     Icons"
+    },
+    {
+      "figmaComponentId": "2935:22527",
+      "path": "icons/multicolor/event-status-confirmed-manager.svg",
+      "category": "multicolor",
+      "sourceName": "event-status-confirmed-manager",
+      "pageName": "􀥧     Icons"
+    },
+    {
+      "figmaComponentId": "2935:22525",
+      "path": "icons/multicolor/event-status-waiting.svg",
+      "category": "multicolor",
+      "sourceName": "event-status-waiting",
+      "pageName": "􀥧     Icons"
+    },
+    {
+      "figmaComponentId": "8637:6162",
+      "path": "icons/multicolor/receipt-done.svg",
+      "category": "multicolor",
+      "sourceName": "receipt-done",
       "pageName": "􀥧     Icons"
     },
     {
