@@ -1,7 +1,6 @@
 stages:
   - build
-  - publish
-  - deploy
+  - release
 
 build_css:
   stage: build
@@ -16,7 +15,7 @@ build_css:
     - if: '$CI_COMMIT_TAG'
       when: never
     - if: '$CI_PIPELINE_SOURCE == "push" || $CI_PIPELINE_SOURCE == "merge_request_event"'
-      when: on_success
+      when: manual
 
 build_icons_web_package:
   stage: build
@@ -33,7 +32,7 @@ build_icons_web_package:
       when: manual
 
 publish_icons_web_package:
-  stage: publish
+  stage: release
   image: node:20-alpine
   needs:
     - job: build_icons_web_package
@@ -45,7 +44,7 @@ publish_icons_web_package:
       when: manual
 
 deploy_css:
-  stage: deploy
+  stage: release
   image: alpine:3.20
   needs:
     - job: build_css

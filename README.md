@@ -78,9 +78,11 @@ import ProjectIcon from "@101/design-icons-web/monochrome/project.svg?component"
 
 Файл пайплайна: `.gitlab-ci.yml`
 
-Стадии:
+Пайплайн использует две стадии: `build` и `release`.
 
-1. `build_css` — собирает `dist/tokens.css` и сохраняет его как артефакт.
+Jobs в пайплайне:
+
+1. `build_css` — вручную собирает `dist/tokens.css` и сохраняет его как артефакт.
 2. `build_icons_web_package` — вручную собирает staged-пакет `@101/design-icons-web` в `dist/npm/design-icons-web` и валидирует его через `npm pack --dry-run`.
 3. `publish_icons_web_package` — ручной job публикации на ветке по умолчанию; доступен только после успешного `build_icons_web_package` в том же pipeline, проверяет, менялся ли `icons/` с последнего релиза, вычисляет следующую patch-версию, пересобирает пакет с этой версией и публикует его в GitLab Package Registry.
 4. `deploy_css` — вручную загружает `dist/tokens.css` на сервер через `rsync` по SSH.
