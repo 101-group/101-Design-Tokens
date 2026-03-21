@@ -1,15 +1,5 @@
 stages:
-  - build
   - release
-
-build_icons_web_package:
-  stage: build
-  image: node:20-alpine
-  script:
-    - npm run check:icons:web-package
-  rules:
-    - if: '$CI_PIPELINE_SOURCE == "push" || $CI_PIPELINE_SOURCE == "merge_request_event"'
-      when: manual
 
 publish_icons_web_package:
   stage: release
