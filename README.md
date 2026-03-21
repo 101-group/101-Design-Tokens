@@ -1,31 +1,56 @@
-# Пайплайн design-tokens
+# design-tokens
 
-Репозиторий хранит канонические токены, committed CSS и SVG-иконки для web.
+Репозиторий хранит канонические web-иконки, токены и committed CSS для runtime-деплоя.
 
-Структура:
+## Структура
 
-- `tokens/tokens.json` — source of truth для токенов
-- `tokens/web/tokens.css` — committed generated CSS для runtime-деплоя
-- `scripts/generate-css.mjs` — генератор `tokens/tokens.json -> tokens/web/tokens.css`
-- `icons/web/monochrome/*.svg` и `icons/web/multicolor/*.svg` — канонические SVG
-- `icons/icons.json` — metadata map для иконок
+```text
+icons/
+  icons.json
+  web/
+    monochrome/*.svg
+    multicolor/*.svg
+
+tokens/
+  tokens.json
+  web/
+    tokens.css
+
+scripts/
+  generate-css.mjs
+  publish-icons-web-package.mjs
+  publish-tokens.mjs
+```
+
+- `tokens/tokens.json` — source of truth для токенов.
+- `tokens/web/tokens.css` — committed generated CSS, который деплоится как готовый файл.
+- `scripts/generate-css.mjs` — генератор `tokens/tokens.json -> tokens/web/tokens.css`.
+- `icons/web/monochrome/*.svg` и `icons/web/multicolor/*.svg` — канонические SVG для web.
+- `icons/icons.json` — metadata map для иконок.
 
 ## Локальная работа
 
 Требования:
 
-- Node.js 18+
+- `Node.js 18+`
 
-Команды:
+Основные команды:
 
 ```bash
 npm run build:css
 npm run check:icons:web-package
+npm run publish:tokens
 ```
 
-`npm run build:css` регенерирует committed файл `tokens/web/tokens.css`.
+- `npm run build:css` регенерирует committed файл `tokens/web/tokens.css`.
+- `npm run check:icons:web-package` собирает временный npm-пакет `@101/design-icons-web` в системную temp-директорию и валидирует его через `npm pack --dry-run`.
+- `npm run publish:tokens` деплоит уже закоммиченный `tokens/web/tokens.css` через SSH/`rsync`.
 
-`npm run check:icons:web-package` собирает временный npm-пакет `@101/design-icons-web` в системную temp-директорию и валидирует его через `npm pack --dry-run`.
+Правила работы с токенами:
+
+- `tokens/tokens.json` и `tokens/web/tokens.css` должны коммититься вместе.
+- `tokens/web/tokens.css` не редактируется руками.
+- `scripts/generate-css.mjs` коммитится только если менялась логика генерации.
 
 Контракт импорта для потребителя пакета иконок:
 
@@ -35,9 +60,7 @@ import ProjectIcon from "@101/design-icons-web/monochrome/project.svg?component"
 
 ## GitLab CI/CD
 
-Файл пайплайна: `.gitlab-ci.yml`
-
-Пайплайн использует стадии `build` и `release`.
+Пайплайн описан в [`.gitlab-ci.yml`](./.gitlab-ci.yml) и использует стадии `build` и `release`.
 
 Jobs:
 
@@ -56,7 +79,7 @@ Jobs:
 
 - `https://web.101-app.com/assets/tokens.css`
 
-### Обязательные CI/CD-переменные для CSS deploy
+Обязательные CI/CD-переменные для CSS deploy:
 
 - `SSH_HOST`
 - `SSH_PORT` — опционально, по умолчанию `22`
@@ -70,7 +93,11 @@ Jobs:
 
 - `SSH_KNOWN_HOSTS`
 
-### Переменные для публикации npm-пакета иконок
+### Публикация пакета иконок
+
+Публикация иконок использует committed SVG из `icons/web`, собирает временный npm-пакет и публикует его без использования `dist/` в репозитории.
+
+Переменные для публикации npm-пакета:
 
 - `CI_API_V4_URL`
 - `CI_PROJECT_ID`
