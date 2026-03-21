@@ -1,5 +1,6 @@
 #!/usr/bin/env node
-import { writeFile } from "node:fs/promises";
+import { copyFile, mkdir, mkdtemp, readdir, rm, writeFile } from "node:fs/promises";
+import { tmpdir } from "node:os";
 import path from "node:path";
 import process from "node:process";
 import { execFile } from "node:child_process";
@@ -8,9 +9,11 @@ import { promisify } from "node:util";
 const execFileAsync = promisify(execFile);
 
 const ROOT_DIR = process.cwd();
-const PACKAGE_DIST_DIR = path.join(ROOT_DIR, "dist", "npm", "design-icons-web");
+const ICONS_SOURCE_DIR = path.join(ROOT_DIR, "icons", "web");
 const PACKAGE_NAME = "@101/design-icons-web";
 const DEFAULT_INITIAL_VERSION = "1.0.0";
+const DEFAULT_DEVELOPMENT_VERSION = "0.0.0-development";
+const ICON_CATEGORIES = ["monochrome", "multicolor"];
 
 const parseSemver = (version) => {
   const match = version.match(
@@ -58,9 +61,18 @@ const getAuthToken = () => {
   return token;
 };
 
-const writeNpmConfig = async (registryUrl, authToken) => {
+const isSvgFileName = (fileName) => path.extname(fileName).toLowerCase() === ".svg";
+
+const createTempPackageDir = async () => {
+  const tempRoot = await mkdtemp(path.join(tmpdir(), "design-icons-web-"));
+  const packageDir = path.join(tempRoot, "package");
+  await mkdir(packageDir, { recursive: true });
+  return { tempRoot, packageDir };
+};
+
+const writeNpmConfig = async (packageDir, registryUrl, authToken) => {
   const registryHostPath = registryUrl.replace(/^https?:\/\//, "");
-  const npmConfigPath = path.join(PACKAGE_DIST_DIR, ".npmrc");
+  const npmConfigPath = path.join(packageDir, ".npmrc");
   const npmConfig = [
     `@101:registry=${registryUrl}/`,
     `//${registryHostPath}/:_authToken=${authToken}`,
@@ -69,14 +81,62 @@ const writeNpmConfig = async (registryUrl, authToken) => {
   await writeFile(npmConfigPath, `${npmConfig}\n`, "utf8");
 };
 
-const readPublishedField = async (registryUrl, packageVersion, fieldName) => {
+const validateDirectoryEntries = (directoryName, entries) => {
+  const invalidEntry = entries.find((entry) => !entry.isFile() || !isSvgFileName(entry.name));
+  if (!invalidEntry) {
+    return;
+  }
+
+  const entryType = invalidEntry.isDirectory() ? "directory" : "non-SVG file";
+  throw new Error(
+    `Invalid ${entryType} in ${directoryName}: ${invalidEntry.name}. Only top-level .svg files are allowed.`,
+  );
+};
+
+const copyCategoryIcons = async (packageDir, categoryName) => {
+  const sourceDir = path.join(ICONS_SOURCE_DIR, categoryName);
+  const destinationDir = path.join(packageDir, categoryName);
+  const entries = await readdir(sourceDir, { withFileTypes: true });
+
+  validateDirectoryEntries(path.join("icons", "web", categoryName), entries);
+  await mkdir(destinationDir, { recursive: true });
+
+  const svgEntries = entries.filter((entry) => entry.isFile() && isSvgFileName(entry.name));
+  await Promise.all(
+    svgEntries.map((entry) =>
+      copyFile(path.join(sourceDir, entry.name), path.join(destinationDir, entry.name)),
+    ),
+  );
+
+  return svgEntries.length;
+};
+
+const resolveSourceCommit = async () => {
+  const ciCommitSha = process.env.CI_COMMIT_SHA?.trim();
+  if (ciCommitSha) {
+    return ciCommitSha;
+  }
+
+  try {
+    const { stdout } = await execFileAsync("git", ["rev-parse", "HEAD"], {
+      cwd: ROOT_DIR,
+      env: process.env,
+    });
+
+    return stdout.trim() || null;
+  } catch {
+    return null;
+  }
+};
+
+const readPublishedField = async (registryUrl, packageVersion, fieldName, npmEnv) => {
   try {
     const { stdout } = await execFileAsync(
       "npm",
       ["view", `${PACKAGE_NAME}@${packageVersion}`, fieldName, "--registry", `${registryUrl}/`],
       {
         cwd: ROOT_DIR,
-        env: process.env,
+        env: npmEnv,
       },
     );
 
@@ -144,7 +204,7 @@ const ensureIconsChangedSinceLastRelease = async (lastReleasedSourceCommit) => {
   }
 };
 
-const readLatestPublishedVersion = async (registryUrl) => {
+const readLatestPublishedVersion = async (registryUrl, npmEnv) => {
   const explicitVersion = process.env.DESIGN_ICONS_WEB_PACKAGE_VERSION?.trim();
   if (explicitVersion) {
     return explicitVersion;
@@ -156,7 +216,7 @@ const readLatestPublishedVersion = async (registryUrl) => {
       ["view", PACKAGE_NAME, "version", "--registry", `${registryUrl}/`],
       {
         cwd: ROOT_DIR,
-        env: process.env,
+        env: npmEnv,
       },
     );
 
@@ -191,20 +251,64 @@ const resolveNextPatchVersion = async (latestPublishedVersion) => {
   return `${major}.${minor}.${patch + 1}`;
 };
 
-const buildPackage = async (packageVersion) => {
-  const nodeExecutable = process.execPath;
-  const buildScript = path.join(ROOT_DIR, "scripts", "build-icons-web-package.mjs");
-
-  await execFileAsync(nodeExecutable, [buildScript], {
-    cwd: ROOT_DIR,
-    env: {
-      ...process.env,
-      DESIGN_ICONS_WEB_PACKAGE_VERSION: packageVersion,
+const createPackageMetadata = (version, sourceCommit) => {
+  return {
+    name: PACKAGE_NAME,
+    version,
+    private: false,
+    type: "module",
+    files: ["monochrome", "multicolor", "README.md"],
+    sideEffects: false,
+    publishConfig: {
+      access: "restricted",
     },
+    ...(sourceCommit ? { designTokensSourceCommit: sourceCommit } : {}),
+  };
+};
+
+const createReadme = (version) => {
+  return `# ${PACKAGE_NAME}
+
+Version: ${version}
+
+Raw SVG icons for web consumers. Import files directly and let the app bundler transform them.
+
+Example:
+
+\`\`\`ts
+import ProjectIcon from "${PACKAGE_NAME}/monochrome/project.svg?component";
+\`\`\`
+`;
+};
+
+const buildPackage = async (packageDir, packageVersion, sourceCommit) => {
+  let totalFiles = 0;
+
+  for (const categoryName of ICON_CATEGORIES) {
+    totalFiles += await copyCategoryIcons(packageDir, categoryName);
+  }
+
+  await writeFile(
+    path.join(packageDir, "package.json"),
+    `${JSON.stringify(createPackageMetadata(packageVersion, sourceCommit), null, 2)}\n`,
+    "utf8",
+  );
+  await writeFile(path.join(packageDir, "README.md"), createReadme(packageVersion), "utf8");
+
+  console.log(`[publish:icons:web-package] source: ${path.relative(ROOT_DIR, ICONS_SOURCE_DIR)}`);
+  console.log(`[publish:icons:web-package] staging: ${packageDir}`);
+  console.log(`[publish:icons:web-package] package: ${PACKAGE_NAME}@${packageVersion}`);
+  console.log(`[publish:icons:web-package] files: ${totalFiles}`);
+};
+
+const checkPackage = async (packageDir, npmEnv) => {
+  await execFileAsync("npm", ["pack", "--dry-run"], {
+    cwd: packageDir,
+    env: npmEnv,
   });
 };
 
-const publishPackage = async (registryUrl) => {
+const publishPackage = async (packageDir, registryUrl, npmEnv) => {
   await execFileAsync(
     "npm",
     [
@@ -212,37 +316,67 @@ const publishPackage = async (registryUrl) => {
       "--registry",
       `${registryUrl}/`,
       "--userconfig",
-      path.join(PACKAGE_DIST_DIR, ".npmrc"),
+      path.join(packageDir, ".npmrc"),
     ],
     {
-      cwd: PACKAGE_DIST_DIR,
-      env: process.env,
+      cwd: packageDir,
+      env: npmEnv,
     },
   );
 };
 
+const isDryRun = process.argv.includes("--dry-run");
+
 const run = async () => {
+  let tempRoot = null;
+
   try {
+    const sourceCommit = await resolveSourceCommit();
+    const tempPaths = await createTempPackageDir();
+    tempRoot = tempPaths.tempRoot;
+    const packageDir = tempPaths.packageDir;
+    const npmEnv = {
+      ...process.env,
+      NPM_CONFIG_CACHE: path.join(tempRoot, "npm-cache"),
+    };
+
+    if (isDryRun) {
+      const packageVersion =
+        process.env.DESIGN_ICONS_WEB_PACKAGE_VERSION?.trim() || DEFAULT_DEVELOPMENT_VERSION;
+      await buildPackage(packageDir, packageVersion, sourceCommit);
+      await checkPackage(packageDir, npmEnv);
+      console.log("[publish:icons:web-package] dry-run complete");
+      return;
+    }
+
     const registryUrl = getRegistryUrl();
     const authToken = getAuthToken();
-    const latestPublishedVersion = await readLatestPublishedVersion(registryUrl);
+    const latestPublishedVersion = await readLatestPublishedVersion(registryUrl, npmEnv);
     const lastReleasedSourceCommit = latestPublishedVersion
-      ? await readPublishedField(registryUrl, latestPublishedVersion, "designTokensSourceCommit")
+      ? await readPublishedField(
+          registryUrl,
+          latestPublishedVersion,
+          "designTokensSourceCommit",
+          npmEnv,
+        )
       : null;
     await ensureIconsChangedSinceLastRelease(lastReleasedSourceCommit);
     const packageVersion = await resolveNextPatchVersion(latestPublishedVersion);
 
-    await buildPackage(packageVersion);
-    await writeNpmConfig(registryUrl, authToken);
-    await publishPackage(registryUrl);
+    await buildPackage(packageDir, packageVersion, sourceCommit);
+    await writeNpmConfig(packageDir, registryUrl, authToken);
+    await publishPackage(packageDir, registryUrl, npmEnv);
 
-    console.log(`[publish:icons:web-package] package: ${PACKAGE_NAME}@${packageVersion}`);
     console.log(`[publish:icons:web-package] registry: ${registryUrl}/`);
     console.log("[publish:icons:web-package] complete");
   } catch (error) {
     const message = error instanceof Error ? error.message : String(error);
     console.error(`[publish:icons:web-package] failed: ${message}`);
     process.exit(1);
+  } finally {
+    if (tempRoot) {
+      await rm(tempRoot, { recursive: true, force: true });
+    }
   }
 };
 

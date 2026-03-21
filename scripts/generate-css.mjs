@@ -955,8 +955,8 @@ function buildCss(context) {
   return css.join("\n");
 }
 
-const SOURCE_FILE = path.resolve(process.cwd(), "tokens.json");
-const OUTPUT_FILE = path.resolve(process.cwd(), "dist", "tokens.css");
+const SOURCE_FILE = path.resolve(process.cwd(), "tokens", "tokens.json");
+const OUTPUT_FILE = path.resolve(process.cwd(), "tokens", "web", "tokens.css");
 
 function isSourceObject(value) {
   return Boolean(value) && typeof value === "object" && !Array.isArray(value);
@@ -996,7 +996,7 @@ async function run() {
   collectVariableTokens(source.variables, [], tokens);
 
   if (!tokens.length) {
-    throw new Error("No variable tokens with modes were found in tokens.json");
+    throw new Error("No variable tokens with modes were found in tokens/tokens.json");
   }
 
   const cssOutput = buildCss({ tokens, source });

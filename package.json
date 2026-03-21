@@ -4,10 +4,9 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "build:css": "node scripts/build-css.mjs",
-    "build:icons": "node scripts/build-icons.mjs",
-    "build:icons:web-package": "node scripts/build-icons-web-package.mjs",
-    "check:icons:web-package": "npm pack --dry-run ./dist/npm/design-icons-web",
-    "publish:icons:web-package": "node scripts/publish-icons-web-package.mjs"
+    "build:css": "node scripts/generate-css.mjs",
+    "check:icons:web-package": "node scripts/publish-icons-web-package.mjs --dry-run",
+    "publish:icons:web-package": "node scripts/publish-icons-web-package.mjs",
+    "publish:tokens": "node scripts/publish-tokens.mjs"
   }
 }
