@@ -39,7 +39,7 @@
   --color-accent-disabled: #78788029;
   --color-amount-negative: #E5352B;
   --color-amount-positive: #2FB350;
-  --color-border-primary: #E5E5E5;
+  --color-border-primary: #EDEDED;
   --color-border-secondary: #C6C6C8;
   --color-focus-ring: #0088FF;
   --color-highlighter: #3CD3FE61;
@@ -58,8 +58,8 @@
   --color-status-success: #2FB350;
   --color-status-warning: #E58F09;
   --color-surface-0: #F3F3F3;
-  --color-surface-1: #FAFAFA;
-  --color-surface-2: #F9F9F9;
+  --color-surface-1: #FFFFFF;
+  --color-surface-2: #F3F3F3;
   --color-surface-3: #FAFAFA;
   --color-text-primary: #2A2A2C;
   --color-text-secondary: #8A8A8E;
@@ -181,4 +181,3 @@
     0px 4px 6px -4px var(--color-shadow-base),
     0px 10px 15px -3px var(--color-shadow-base);
 }
-
