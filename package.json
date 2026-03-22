@@ -4,7 +4,6 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "build:css": "node scripts/generate-css.mjs",
     "check:icons:web-package": "node scripts/publish-icons-web-package.mjs --dry-run",
     "publish:icons:web-package": "node scripts/publish-icons-web-package.mjs",
     "publish:tokens": "node scripts/publish-tokens.mjs"

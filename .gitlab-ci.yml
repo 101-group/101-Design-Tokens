@@ -10,7 +10,7 @@ publish_icons_web_package:
     - if: '$CI_COMMIT_BRANCH == $CI_DEFAULT_BRANCH'
       when: manual
 
-deploy_css:
+publish_tokens_css:
   stage: release
   image: node:20-alpine
   before_script:

@@ -18,7 +18,6 @@ tokens/
     tokens.css
 
 scripts/
-  generate-css.mjs
   publish-icons-web-package.mjs
   publish-tokens.mjs
 ```
@@ -27,17 +26,17 @@ scripts/
 
 - `tokens/tokens.json` и `tokens/web/tokens.css` коммитятся вместе
 - `tokens/web/tokens.css` руками не редактируется
-- `scripts/generate-css.mjs` меняется только вместе с логикой генерации
 
 ## GitLab
 
 В pipeline только два manual job:
 
 - `publish_icons_web_package`
-- `deploy_css`
+- `publish_tokens_css`
 
+Генератор `tokens.css` живёт в репозитории плагина `tokens-plain-for-figma`.
 `publish_icons_web_package` публикует пакет иконок.
-`deploy_css` публикует уже закоммиченный `tokens/web/tokens.css` в `${TOKENS_DEPLOY_PATH:-$DEPLOY_PATH}/tokens.css`.
+`publish_tokens_css` публикует уже закоммиченный `tokens/web/tokens.css` в `${TOKENS_DEPLOY_PATH:-$DEPLOY_PATH}/tokens.css`.
 
 Если deploy path раздаётся как `/assets`, файл доступен по:
 
