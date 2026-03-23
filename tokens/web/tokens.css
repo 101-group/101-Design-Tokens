@@ -17,6 +17,8 @@
   --motion-easing-exit: cubic-bezier(0.4, 0, 1, 1);
   --size-button-default: 32px;
   --size-button-small: 24px;
+  --size-card-height: 106px;
+  --size-card-width: 640px;
   --size-icon-default: 24px;
   --size-icon-small: 16px;
   --spacing-0: 0px;
