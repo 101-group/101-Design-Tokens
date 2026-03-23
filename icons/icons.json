@@ -751,6 +751,13 @@
       "pageName": "􀥧     Icons"
     },
     {
+      "figmaComponentId": "11190:3450",
+      "path": "icons/web/monochrome/sidebar.svg",
+      "category": "monochrome",
+      "sourceName": "sidebar",
+      "pageName": "􀥧     Icons"
+    },
+    {
       "figmaComponentId": "2941:547",
       "path": "icons/web/monochrome/sort-arrow.svg",
       "category": "monochrome",
