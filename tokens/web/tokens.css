@@ -10,8 +10,8 @@
   --border-width-hairline: 0.5px;
   --border-width-strong: 2px;
   --motion-duration-default: 240ms;
-  --motion-duration-fast: 320ms;
-  --motion-duration-slow: 160ms;
+  --motion-duration-fast: 160ms;
+  --motion-duration-slow: 320ms;
   --motion-easing-default: cubic-bezier(0.2, 0, 0, 1);
   --motion-easing-enter: cubic-bezier(0, 0, 0.2, 1);
   --motion-easing-exit: cubic-bezier(0.4, 0, 1, 1);
