@@ -67,6 +67,7 @@
   --color-surface-2: #FFFFFF;
   --color-surface-3: #FFFFFF;
   --color-text-primary: #2A2A2C;
+  --color-text-quaternary: #DEDEE5;
   --color-text-secondary: #8A8A8E;
   --color-text-tertiary: #BBBBC1;
   --color-transaction-agent-fee: #2B91A0;
@@ -108,6 +109,7 @@
   --color-surface-2: #222222;
   --color-surface-3: #323232;
   --color-text-primary: #ECECF1;
+  --color-text-quaternary: #303034;
   --color-text-secondary: #9F9FA5;
   --color-text-tertiary: #5A5A5F;
   --color-transaction-agent-fee: #2B91A0;
