@@ -912,6 +912,13 @@
       "pageName": "􀥧     Icons"
     },
     {
+      "figmaComponentId": "11540:11998",
+      "path": "icons/web/monochrome/vk.svg",
+      "category": "monochrome",
+      "sourceName": "vk",
+      "pageName": "􀥧     Icons"
+    },
+    {
       "figmaComponentId": "2728:767",
       "path": "icons/web/monochrome/warning-fill.svg",
       "category": "monochrome",
@@ -923,6 +930,13 @@
       "path": "icons/web/monochrome/warning.svg",
       "category": "monochrome",
       "sourceName": "warning",
+      "pageName": "􀥧     Icons"
+    },
+    {
+      "figmaComponentId": "11540:11994",
+      "path": "icons/web/monochrome/youtube.svg",
+      "category": "monochrome",
+      "sourceName": "youtube",
       "pageName": "􀥧     Icons"
     },
     {
