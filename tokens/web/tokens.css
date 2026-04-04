@@ -55,6 +55,8 @@
   --color-shadow-stroke: #0000003D;
   --color-state-disabled: #7878809E;
   --color-state-hover: #0000000A;
+  --color-state-on-accent-hover: #FFFFFF14;
+  --color-state-on-accent-pressed: #FFFFFF1F;
   --color-state-pressed: #00000014;
   --color-state-selected: #0000000F;
   --color-static-black: #0E0E0F;
@@ -97,6 +99,8 @@
   --color-shadow-stroke: #FFFFFF21;
   --color-state-disabled: #78788080;
   --color-state-hover: #FFFFFF14;
+  --color-state-on-accent-hover: #0000000A;
+  --color-state-on-accent-pressed: #0000001F;
   --color-state-pressed: #FFFFFF1F;
   --color-state-selected: #FFFFFF1A;
   --color-static-black: #0E0E0F;
