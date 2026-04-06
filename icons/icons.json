@@ -268,6 +268,13 @@
       "pageName": "􀥧     Icons"
     },
     {
+      "figmaComponentId": "11610:28710",
+      "path": "icons/web/monochrome/contractor.svg",
+      "category": "monochrome",
+      "sourceName": "contractor",
+      "pageName": "􀥧     Icons"
+    },
+    {
       "figmaComponentId": "1069:7007",
       "path": "icons/web/monochrome/copy.svg",
       "category": "monochrome",
@@ -279,6 +286,13 @@
       "path": "icons/web/monochrome/customer.svg",
       "category": "monochrome",
       "sourceName": "customer",
+      "pageName": "􀥧     Icons"
+    },
+    {
+      "figmaComponentId": "11610:28722",
+      "path": "icons/web/monochrome/dark.svg",
+      "category": "monochrome",
+      "sourceName": "dark",
       "pageName": "􀥧     Icons"
     },
     {
@@ -387,6 +401,13 @@
       "pageName": "􀥧     Icons"
     },
     {
+      "figmaComponentId": "11610:28709",
+      "path": "icons/web/monochrome/education.svg",
+      "category": "monochrome",
+      "sourceName": "education",
+      "pageName": "􀥧     Icons"
+    },
+    {
       "figmaComponentId": "7775:32027",
       "path": "icons/web/monochrome/error.svg",
       "category": "monochrome",
@@ -478,6 +499,13 @@
       "pageName": "􀥧     Icons"
     },
     {
+      "figmaComponentId": "11610:28698",
+      "path": "icons/web/monochrome/house.svg",
+      "category": "monochrome",
+      "sourceName": "house",
+      "pageName": "􀥧     Icons"
+    },
+    {
       "figmaComponentId": "2117:28465",
       "path": "icons/web/monochrome/infinity.svg",
       "category": "monochrome",
@@ -489,6 +517,13 @@
       "path": "icons/web/monochrome/info.svg",
       "category": "monochrome",
       "sourceName": "info",
+      "pageName": "􀥧     Icons"
+    },
+    {
+      "figmaComponentId": "11610:28721",
+      "path": "icons/web/monochrome/light.svg",
+      "category": "monochrome",
+      "sourceName": "light",
       "pageName": "􀥧     Icons"
     },
     {
@@ -979,6 +1014,13 @@
       "path": "icons/web/multicolor/balance-project-own.svg",
       "category": "multicolor",
       "sourceName": "balance-project-own",
+      "pageName": "􀥧     Icons"
+    },
+    {
+      "figmaComponentId": "11610:28735",
+      "path": "icons/web/multicolor/club.svg",
+      "category": "multicolor",
+      "sourceName": "club",
       "pageName": "􀥧     Icons"
     },
     {
