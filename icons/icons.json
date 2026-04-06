@@ -2,6 +2,20 @@
   "version": 1,
   "icons": [
     {
+      "figmaComponentId": "11610:28756",
+      "path": "icons/web/monochrome/101.svg",
+      "category": "monochrome",
+      "sourceName": "101",
+      "pageName": "􀥧     Icons"
+    },
+    {
+      "figmaComponentId": "11610:29034",
+      "path": "icons/web/monochrome/101app.svg",
+      "category": "monochrome",
+      "sourceName": "101app",
+      "pageName": "􀥧     Icons"
+    },
+    {
       "figmaComponentId": "1069:6878",
       "path": "icons/web/monochrome/account-fill.svg",
       "category": "monochrome",
@@ -625,6 +639,13 @@
       "pageName": "􀥧     Icons"
     },
     {
+      "figmaComponentId": "11610:29039",
+      "path": "icons/web/monochrome/percent.svg",
+      "category": "monochrome",
+      "sourceName": "percent",
+      "pageName": "􀥧     Icons"
+    },
+    {
       "figmaComponentId": "4986:3279",
       "path": "icons/web/monochrome/phone.svg",
       "category": "monochrome",
@@ -972,6 +993,13 @@
       "path": "icons/web/monochrome/youtube.svg",
       "category": "monochrome",
       "sourceName": "youtube",
+      "pageName": "􀥧     Icons"
+    },
+    {
+      "figmaComponentId": "11610:29025",
+      "path": "icons/web/multicolor/101app.svg",
+      "category": "multicolor",
+      "sourceName": "101app",
       "pageName": "􀥧     Icons"
     },
     {
