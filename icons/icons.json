@@ -940,10 +940,17 @@
       "pageName": "􀥧     Icons"
     },
     {
+      "figmaComponentId": "11661:8549",
+      "path": "icons/web/monochrome/transaction-not-confirmed-trimmed.svg",
+      "category": "monochrome",
+      "sourceName": "transaction-not-confirmed-trimmed",
+      "pageName": "􀥧     Icons"
+    },
+    {
       "figmaComponentId": "3053:535",
       "path": "icons/web/monochrome/transaction-not-confirmed.svg",
       "category": "monochrome",
-      "sourceName": "transaction.not.confirmed",
+      "sourceName": "transaction-not-confirmed",
       "pageName": "􀥧     Icons"
     },
     {
@@ -1045,6 +1052,13 @@
       "pageName": "􀥧     Icons"
     },
     {
+      "figmaComponentId": "11663:8564",
+      "path": "icons/web/multicolor/balance-accountable-trimmed.svg",
+      "category": "multicolor",
+      "sourceName": "balance-accountable-trimmed",
+      "pageName": "􀥧     Icons"
+    },
+    {
       "figmaComponentId": "11378:163",
       "path": "icons/web/multicolor/balance-accountable.svg",
       "category": "multicolor",
@@ -1063,6 +1077,13 @@
       "path": "icons/web/multicolor/balance-foundation-own.svg",
       "category": "multicolor",
       "sourceName": "balance-foundation-own",
+      "pageName": "􀥧     Icons"
+    },
+    {
+      "figmaComponentId": "11663:8565",
+      "path": "icons/web/multicolor/balance-own-trimmed.svg",
+      "category": "multicolor",
+      "sourceName": "balance-own-trimmed",
       "pageName": "􀥧     Icons"
     },
     {
