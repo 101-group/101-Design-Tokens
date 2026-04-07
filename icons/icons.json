@@ -184,6 +184,13 @@
       "pageName": "􀥧     Icons"
     },
     {
+      "figmaComponentId": "11663:8571",
+      "path": "icons/web/monochrome/card-fill-trimmed.svg",
+      "category": "monochrome",
+      "sourceName": "card-fill-trimmed",
+      "pageName": "􀥧     Icons"
+    },
+    {
       "figmaComponentId": "3062:8881",
       "path": "icons/web/monochrome/card-fill.svg",
       "category": "monochrome",
@@ -1108,13 +1115,6 @@
       "pageName": "􀥧     Icons"
     },
     {
-      "figmaComponentId": "11610:28735",
-      "path": "icons/web/multicolor/club.svg",
-      "category": "multicolor",
-      "sourceName": "club",
-      "pageName": "􀥧     Icons"
-    },
-    {
       "figmaComponentId": "2935:22531",
       "path": "icons/web/multicolor/event-status-cancel-customer.svg",
       "category": "multicolor",
@@ -1157,24 +1157,31 @@
       "pageName": "􀥧     Icons"
     },
     {
-      "figmaComponentId": "2121:747",
-      "path": "icons/web/multicolor/pro-plus.svg",
-      "category": "multicolor",
-      "sourceName": "pro-plus",
-      "pageName": "􀥧     Icons"
-    },
-    {
-      "figmaComponentId": "808:10421",
-      "path": "icons/web/multicolor/pro.svg",
-      "category": "multicolor",
-      "sourceName": "pro",
-      "pageName": "􀥧     Icons"
-    },
-    {
       "figmaComponentId": "8637:6162",
       "path": "icons/web/multicolor/receipt-done.svg",
       "category": "multicolor",
       "sourceName": "receipt-done",
+      "pageName": "􀥧     Icons"
+    },
+    {
+      "figmaComponentId": "11610:28735",
+      "path": "icons/web/multicolor/sub-club.svg",
+      "category": "multicolor",
+      "sourceName": "sub-club",
+      "pageName": "􀥧     Icons"
+    },
+    {
+      "figmaComponentId": "2121:747",
+      "path": "icons/web/multicolor/sub-pro-plus.svg",
+      "category": "multicolor",
+      "sourceName": "sub-pro-plus",
+      "pageName": "􀥧     Icons"
+    },
+    {
+      "figmaComponentId": "808:10421",
+      "path": "icons/web/multicolor/sub-pro.svg",
+      "category": "multicolor",
+      "sourceName": "sub-pro",
       "pageName": "􀥧     Icons"
     },
     {
