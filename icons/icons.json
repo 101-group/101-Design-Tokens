@@ -233,6 +233,20 @@
       "pageName": "􀥧     Icons"
     },
     {
+      "figmaComponentId": "11621:5617",
+      "path": "icons/web/monochrome/checkbox-square-selected-fill.svg",
+      "category": "monochrome",
+      "sourceName": "checkbox-square-selected-fill",
+      "pageName": "􀥧     Icons"
+    },
+    {
+      "figmaComponentId": "11621:5618",
+      "path": "icons/web/monochrome/checkbox-square-unselected.svg",
+      "category": "monochrome",
+      "sourceName": "checkbox-square-unselected",
+      "pageName": "􀥧     Icons"
+    },
+    {
       "figmaComponentId": "1069:7065",
       "path": "icons/web/monochrome/checkmark.svg",
       "category": "monochrome",
