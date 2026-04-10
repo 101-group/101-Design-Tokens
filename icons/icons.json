@@ -268,17 +268,17 @@
       "pageName": "􀥧     Icons"
     },
     {
-      "figmaComponentId": "10961:30425",
-      "path": "icons/web/monochrome/chevron-collapse.svg",
+      "figmaComponentId": "10961:30424",
+      "path": "icons/web/monochrome/chevron-collapsed.svg",
       "category": "monochrome",
-      "sourceName": "chevron-collapse",
+      "sourceName": "chevron-collapsed",
       "pageName": "􀥧     Icons"
     },
     {
-      "figmaComponentId": "10961:30424",
-      "path": "icons/web/monochrome/chevron-expand.svg",
+      "figmaComponentId": "10961:30425",
+      "path": "icons/web/monochrome/chevron-expanded.svg",
       "category": "monochrome",
-      "sourceName": "chevron-expand",
+      "sourceName": "chevron-expanded",
       "pageName": "􀥧     Icons"
     },
     {
