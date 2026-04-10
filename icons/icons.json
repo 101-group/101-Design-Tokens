@@ -268,31 +268,31 @@
       "pageName": "􀥧     Icons"
     },
     {
-      "figmaComponentId": "10961:30424",
-      "path": "icons/web/monochrome/chevrone-collapse-off.svg",
+      "figmaComponentId": "10961:30425",
+      "path": "icons/web/monochrome/chevron-collapse.svg",
       "category": "monochrome",
-      "sourceName": "chevrone-collapse-off",
+      "sourceName": "chevron-collapse",
       "pageName": "􀥧     Icons"
     },
     {
-      "figmaComponentId": "10961:30425",
-      "path": "icons/web/monochrome/chevrone-collapse-on.svg",
+      "figmaComponentId": "10961:30424",
+      "path": "icons/web/monochrome/chevron-expand.svg",
       "category": "monochrome",
-      "sourceName": "chevrone-collapse-on",
+      "sourceName": "chevron-expand",
       "pageName": "􀥧     Icons"
     },
     {
       "figmaComponentId": "7769:28293",
-      "path": "icons/web/monochrome/chevrone-left.svg",
+      "path": "icons/web/monochrome/chevron-left.svg",
       "category": "monochrome",
-      "sourceName": "chevrone-left",
+      "sourceName": "chevron-left",
       "pageName": "􀥧     Icons"
     },
     {
       "figmaComponentId": "10961:30401",
-      "path": "icons/web/monochrome/chevrone-right.svg",
+      "path": "icons/web/monochrome/chevron-right.svg",
       "category": "monochrome",
-      "sourceName": "chevrone-right",
+      "sourceName": "chevron-right",
       "pageName": "􀥧     Icons"
     },
     {
