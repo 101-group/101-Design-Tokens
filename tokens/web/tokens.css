@@ -22,6 +22,7 @@
   --size-button-small: 24px;
   --size-card-height: 106px;
   --size-card-width: 640px;
+  --size-field-large: 40px;
   --size-icon-default: 20px;
   --size-icon-large: 24px;
   --size-icon-small: 16px;
@@ -46,6 +47,14 @@
   --color-amount-positive: #2FB350;
   --color-border-primary: #E8E8E8;
   --color-border-secondary: #C6C6C8;
+  --color-event-agent-fee: #2B91A0;
+  --color-event-dividends: #2D9CCF;
+  --color-event-estimate: #6D43F6;
+  --color-event-income: #6E8D44;
+  --color-event-invoice: #C4317A;
+  --color-event-markup: #E58F09;
+  --color-event-transfer-accountable: #C19810;
+  --color-event-transfer-personal: #A65959;
   --color-focus-ring: #0088FF;
   --color-highlighter: #3CD3FE61;
   --color-on-accent-primary: #ECECF1;
@@ -73,14 +82,6 @@
   --color-text-quaternary: #DEDEE5;
   --color-text-secondary: #8A8A8E;
   --color-text-tertiary: #BBBBC1;
-  --color-transaction-agent-fee: #2B91A0;
-  --color-transaction-dividends: #2D9CCF;
-  --color-transaction-estimate: #6D43F6;
-  --color-transaction-income: #6E8D44;
-  --color-transaction-invoice: #C4317A;
-  --color-transaction-markup: #E58F09;
-  --color-transaction-transfer-accountable: #C19810;
-  --color-transaction-transfer-personal: #A65959;
 }
 
 :root[data-theme="dark"] {
@@ -90,6 +91,14 @@
   --color-amount-positive: #34C759;
   --color-border-primary: #222326;
   --color-border-secondary: #202022;
+  --color-event-agent-fee: #2B91A0;
+  --color-event-dividends: #32ADE6;
+  --color-event-estimate: #6D43F6;
+  --color-event-income: #6E8D44;
+  --color-event-invoice: #C4317A;
+  --color-event-markup: #FF9F0A;
+  --color-event-transfer-accountable: #C19810;
+  --color-event-transfer-personal: #A65959;
   --color-focus-ring: #0091FF;
   --color-highlighter: #3CD3FE78;
   --color-on-accent-primary: #1C1C1D;
@@ -117,14 +126,6 @@
   --color-text-quaternary: #303034;
   --color-text-secondary: #9F9FA5;
   --color-text-tertiary: #5A5A5F;
-  --color-transaction-agent-fee: #2B91A0;
-  --color-transaction-dividends: #32ADE6;
-  --color-transaction-estimate: #6D43F6;
-  --color-transaction-income: #6E8D44;
-  --color-transaction-invoice: #C4317A;
-  --color-transaction-markup: #FF9F0A;
-  --color-transaction-transfer-accountable: #C19810;
-  --color-transaction-transfer-personal: #A65959;
 }
 
 .text-body-medium {
