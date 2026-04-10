@@ -53,8 +53,8 @@
   --color-event-income: #6E8D44;
   --color-event-invoice: #C4317A;
   --color-event-markup: #E58F09;
-  --color-event-transfer-accountable: #C19810;
-  --color-event-transfer-personal: #A65959;
+  --color-event-payment-accountable: #C19810;
+  --color-event-payment-personal: #A65959;
   --color-focus-ring: #0088FF;
   --color-highlighter: #3CD3FE61;
   --color-on-accent-primary: #ECECF1;
@@ -97,8 +97,8 @@
   --color-event-income: #6E8D44;
   --color-event-invoice: #C4317A;
   --color-event-markup: #FF9F0A;
-  --color-event-transfer-accountable: #C19810;
-  --color-event-transfer-personal: #A65959;
+  --color-event-payment-accountable: #C19810;
+  --color-event-payment-personal: #A65959;
   --color-focus-ring: #0091FF;
   --color-highlighter: #3CD3FE78;
   --color-on-accent-primary: #1C1C1D;
