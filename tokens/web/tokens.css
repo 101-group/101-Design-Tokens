@@ -83,6 +83,7 @@
   --color-text-quaternary: #DEDEE5;
   --color-text-secondary: #8A8A8E;
   --color-text-tertiary: #BBBBC1;
+  --color-toast: #000000CC;
 }
 
 :root[data-theme="dark"] {
@@ -127,6 +128,7 @@
   --color-text-quaternary: #303034;
   --color-text-secondary: #9F9FA5;
   --color-text-tertiary: #5A5A5F;
+  --color-toast: #000000CC;
 }
 
 .text-body-medium {
