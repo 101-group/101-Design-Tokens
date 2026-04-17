@@ -1129,24 +1129,10 @@
       "pageName": "􀥧     Icons"
     },
     {
-      "figmaComponentId": "12121:568",
-      "path": "icons/web/multicolor/event-status-cancel-customer-trimmed.svg",
-      "category": "multicolor",
-      "sourceName": "event-status-cancel-customer-trimmed",
-      "pageName": "􀥧     Icons"
-    },
-    {
       "figmaComponentId": "2935:22531",
       "path": "icons/web/multicolor/event-status-cancel-customer.svg",
       "category": "multicolor",
       "sourceName": "event-status-cancel-customer",
-      "pageName": "􀥧     Icons"
-    },
-    {
-      "figmaComponentId": "12121:569",
-      "path": "icons/web/multicolor/event-status-cancel-manager-trimmed.svg",
-      "category": "multicolor",
-      "sourceName": "event-status-cancel-manager-trimmed",
       "pageName": "􀥧     Icons"
     },
     {
@@ -1157,13 +1143,6 @@
       "pageName": "􀥧     Icons"
     },
     {
-      "figmaComponentId": "12121:567",
-      "path": "icons/web/multicolor/event-status-confirmed-customer-trimmed.svg",
-      "category": "multicolor",
-      "sourceName": "event-status-confirmed-customer-trimmed",
-      "pageName": "􀥧     Icons"
-    },
-    {
       "figmaComponentId": "2935:22529",
       "path": "icons/web/multicolor/event-status-confirmed-customer.svg",
       "category": "multicolor",
@@ -1171,24 +1150,10 @@
       "pageName": "􀥧     Icons"
     },
     {
-      "figmaComponentId": "12121:566",
-      "path": "icons/web/multicolor/event-status-confirmed-manager-trimmed.svg",
-      "category": "multicolor",
-      "sourceName": "event-status-confirmed-manager-trimmed",
-      "pageName": "􀥧     Icons"
-    },
-    {
       "figmaComponentId": "2935:22527",
       "path": "icons/web/multicolor/event-status-confirmed-manager.svg",
       "category": "multicolor",
       "sourceName": "event-status-confirmed-manager",
-      "pageName": "􀥧     Icons"
-    },
-    {
-      "figmaComponentId": "12121:565",
-      "path": "icons/web/multicolor/event-status-waiting-trimmed.svg",
-      "category": "multicolor",
-      "sourceName": "event-status-waiting-trimmed",
       "pageName": "􀥧     Icons"
     },
     {
