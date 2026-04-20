@@ -485,6 +485,13 @@
       "pageName": "􀥧     Icons"
     },
     {
+      "figmaComponentId": "12163:9824",
+      "path": "icons/web/monochrome/expense-item.svg",
+      "category": "monochrome",
+      "sourceName": "expense-item",
+      "pageName": "􀥧     Icons"
+    },
+    {
       "figmaComponentId": "2941:543",
       "path": "icons/web/monochrome/feedback.svg",
       "category": "monochrome",
