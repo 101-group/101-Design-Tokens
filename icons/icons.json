@@ -9,6 +9,13 @@
       "pageName": "􀥧     Icons"
     },
     {
+      "figmaComponentId": "11611:29105",
+      "path": "icons/web/monochrome/101account.svg",
+      "category": "monochrome",
+      "sourceName": "101account",
+      "pageName": "􀥧     Icons"
+    },
+    {
       "figmaComponentId": "11610:29034",
       "path": "icons/web/monochrome/101app.svg",
       "category": "monochrome",
@@ -1070,13 +1077,6 @@
       "path": "icons/web/monochrome/youtube.svg",
       "category": "monochrome",
       "sourceName": "youtube",
-      "pageName": "􀥧     Icons"
-    },
-    {
-      "figmaComponentId": "11611:29105",
-      "path": "icons/web/multicolor/101account.svg",
-      "category": "multicolor",
-      "sourceName": "101account",
       "pageName": "􀥧     Icons"
     },
     {
