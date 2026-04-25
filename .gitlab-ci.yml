@@ -48,7 +48,7 @@ deploy_prod:
     - |
       export SSH_HOST="${SSH_HOST:-${SERVER_IP:-}}"
       export SSH_USER="${SSH_USER:-www}"
-      export TOKENS_DEPLOY_PATH="${TOKENS_DEPLOY_PATH:-${DEPLOY_PATH:-/home/www/code/101-web/assets}}"
+      export TOKENS_DEPLOY_PATH="${TOKENS_DEPLOY_PATH:-${DEPLOY_PATH:-/home/www/code/101-web}}"
 
       if [ -z "${SSH_HOST:-}" ]; then
         echo "ERROR: SSH host is empty (expected SSH_HOST or SERVER_IP)."
@@ -70,8 +70,8 @@ deploy_prod:
       when: manual
   environment:
     name: production
-    url: https://prod.101-app.com/assets/tokens.css
+    url: https://prod.101-app.com/tokens.css
     deployment_tier: production
     auto_stop_in: never
   after_script:
-    - echo "Production tokens updated - https://prod.101-app.com/assets/tokens.css"
+    - echo "Production tokens updated - https://prod.101-app.com/tokens.css"

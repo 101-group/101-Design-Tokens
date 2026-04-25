@@ -41,8 +41,8 @@ scripts/
 - ключ: `${SSH_PRIVATE_KEY_DEPLOY:-$SSH_PRIVATE_KEY}`
 - сервер: `${SSH_HOST:-$SERVER_IP}`
 - пользователь: `${SSH_USER:-www}`
-- путь: `${TOKENS_DEPLOY_PATH:-${DEPLOY_PATH:-/home/www/code/101-web/assets}}/tokens.css`
+- путь: `${TOKENS_DEPLOY_PATH:-${DEPLOY_PATH:-/home/www/code/101-web}}/tokens.css`
 
-Если deploy path раздаётся как `/assets`, файл доступен по:
+Если deploy path раздаётся как корень сайта, файл доступен по:
 
-- `https://prod.101-app.com/assets/tokens.css`
+- `https://prod.101-app.com/tokens.css`
