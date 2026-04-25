@@ -37,8 +37,7 @@ const requireEnv = (name, value) => {
 const run = async () => {
   const host = requireEnv("SSH_HOST", process.env.SSH_HOST?.trim());
   const user = requireEnv("SSH_USER", process.env.SSH_USER?.trim());
-  const deployPath = process.env.TOKENS_DEPLOY_PATH?.trim() || process.env.DEPLOY_PATH?.trim();
-  requireEnv("TOKENS_DEPLOY_PATH or DEPLOY_PATH", deployPath);
+  const deployPath = process.env.TOKENS_DEPLOY_PATH?.trim() || "/home/www/code/101-web";
 
   await access(CSS_FILE, fsConstants.R_OK);
 

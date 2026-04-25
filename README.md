@@ -41,7 +41,7 @@ scripts/
 - ключ: `${SSH_PRIVATE_KEY_DEPLOY:-$SSH_PRIVATE_KEY}`
 - сервер: `${SSH_HOST:-$SERVER_IP}`
 - пользователь: `${SSH_USER:-www}`
-- путь: `${TOKENS_DEPLOY_PATH:-${DEPLOY_PATH:-/home/www/code/101-web}}/tokens.css`
+- путь: `${TOKENS_DEPLOY_PATH:-/home/www/code/101-web}/tokens.css`
 
 Если deploy path раздаётся как корень сайта, файл доступен по:
 

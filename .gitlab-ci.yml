@@ -48,7 +48,7 @@ deploy_prod:
     - |
       export SSH_HOST="${SSH_HOST:-${SERVER_IP:-}}"
       export SSH_USER="${SSH_USER:-www}"
-      export TOKENS_DEPLOY_PATH="${TOKENS_DEPLOY_PATH:-${DEPLOY_PATH:-/home/www/code/101-web}}"
+      export TOKENS_DEPLOY_PATH="${TOKENS_DEPLOY_PATH:-/home/www/code/101-web}"
 
       if [ -z "${SSH_HOST:-}" ]; then
         echo "ERROR: SSH host is empty (expected SSH_HOST or SERVER_IP)."
