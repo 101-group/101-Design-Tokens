@@ -32,12 +32,17 @@ scripts/
 В pipeline только два manual job:
 
 - `publish_icons_web_package`
-- `publish_tokens_css`
+- `deploy_prod`
 
 Генератор `tokens.css` живёт в репозитории плагина `tokens-plain-for-figma`.
 `publish_icons_web_package` публикует пакет иконок.
-`publish_tokens_css` публикует уже закоммиченный `tokens/web/tokens.css` в `${TOKENS_DEPLOY_PATH:-$DEPLOY_PATH}/tokens.css`.
+`deploy_prod` публикует уже закоммиченный `tokens/web/tokens.css` в production по SSH так же, как репозиторий `web`:
+
+- ключ: `${SSH_PRIVATE_KEY_DEPLOY:-$SSH_PRIVATE_KEY}`
+- сервер: `${SSH_HOST:-$SERVER_IP}`
+- пользователь: `${SSH_USER:-www}`
+- путь: `${TOKENS_DEPLOY_PATH:-${DEPLOY_PATH:-/home/www/code/101-web/assets}}/tokens.css`
 
 Если deploy path раздаётся как `/assets`, файл доступен по:
 
-- `https://web.101-app.com/assets/tokens.css`
+- `https://prod.101-app.com/assets/tokens.css`
