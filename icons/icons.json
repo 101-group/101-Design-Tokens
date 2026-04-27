@@ -499,6 +499,13 @@
       "pageName": "􀥧     Icons"
     },
     {
+      "figmaComponentId": "12376:1226",
+      "path": "icons/web/monochrome/expande.svg",
+      "category": "monochrome",
+      "sourceName": "expande",
+      "pageName": "􀥧     Icons"
+    },
+    {
       "figmaComponentId": "12163:9824",
       "path": "icons/web/monochrome/expense-item.svg",
       "category": "monochrome",
@@ -1000,6 +1007,20 @@
       "path": "icons/web/monochrome/transaction-transfer.svg",
       "category": "monochrome",
       "sourceName": "transaction-transfer",
+      "pageName": "􀥧     Icons"
+    },
+    {
+      "figmaComponentId": "12376:1227",
+      "path": "icons/web/monochrome/triangle-collapsed.svg",
+      "category": "monochrome",
+      "sourceName": "triangle-collapsed",
+      "pageName": "􀥧     Icons"
+    },
+    {
+      "figmaComponentId": "12376:1228",
+      "path": "icons/web/monochrome/triangle-expanded.svg",
+      "category": "monochrome",
+      "sourceName": "triangle-expanded",
       "pageName": "􀥧     Icons"
     },
     {
