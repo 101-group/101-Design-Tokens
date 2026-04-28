@@ -212,6 +212,13 @@
       "pageName": "􀥧     Icons"
     },
     {
+      "figmaComponentId": "12387:1381",
+      "path": "icons/web/monochrome/chart-gantt.svg",
+      "category": "monochrome",
+      "sourceName": "chart-gantt",
+      "pageName": "􀥧     Icons"
+    },
+    {
       "figmaComponentId": "11402:5671",
       "path": "icons/web/monochrome/chat.svg",
       "category": "monochrome",
@@ -692,6 +699,13 @@
       "path": "icons/web/monochrome/notifications.svg",
       "category": "monochrome",
       "sourceName": "notifications",
+      "pageName": "􀥧     Icons"
+    },
+    {
+      "figmaComponentId": "12390:1400",
+      "path": "icons/web/monochrome/ontractor-relations.svg",
+      "category": "monochrome",
+      "sourceName": "сontractor-relations",
       "pageName": "􀥧     Icons"
     },
     {
