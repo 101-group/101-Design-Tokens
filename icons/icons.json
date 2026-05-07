@@ -653,6 +653,34 @@
       "pageName": "􀥧     Icons"
     },
     {
+      "figmaComponentId": "12530:113",
+      "path": "icons/web/monochrome/lock-fill.svg",
+      "category": "monochrome",
+      "sourceName": "lock-fill",
+      "pageName": "􀥧     Icons"
+    },
+    {
+      "figmaComponentId": "12530:112",
+      "path": "icons/web/monochrome/lock-open-fill.svg",
+      "category": "monochrome",
+      "sourceName": "lock-open-fill",
+      "pageName": "􀥧     Icons"
+    },
+    {
+      "figmaComponentId": "12530:102",
+      "path": "icons/web/monochrome/lock-open.svg",
+      "category": "monochrome",
+      "sourceName": "lock-open",
+      "pageName": "􀥧     Icons"
+    },
+    {
+      "figmaComponentId": "12530:101",
+      "path": "icons/web/monochrome/lock.svg",
+      "category": "monochrome",
+      "sourceName": "lock",
+      "pageName": "􀥧     Icons"
+    },
+    {
       "figmaComponentId": "11396:5560",
       "path": "icons/web/monochrome/max.svg",
       "category": "monochrome",
