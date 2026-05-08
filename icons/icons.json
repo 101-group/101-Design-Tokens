@@ -1045,17 +1045,10 @@
       "pageName": "􀥧     Icons"
     },
     {
-      "figmaComponentId": "12534:214",
-      "path": "icons/web/monochrome/transaction-card-transfer-accountable.svg",
-      "category": "monochrome",
-      "sourceName": "transaction-card-transfer-accountable",
-      "pageName": "􀥧     Icons"
-    },
-    {
       "figmaComponentId": "12534:195",
-      "path": "icons/web/monochrome/transaction-card-transfer-own.svg",
+      "path": "icons/web/monochrome/transaction-card-transfer.svg",
       "category": "monochrome",
-      "sourceName": "transaction-card-transfer-own",
+      "sourceName": "transaction-card-transfer",
       "pageName": "􀥧     Icons"
     },
     {
