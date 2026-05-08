@@ -1332,6 +1332,34 @@
       "pageName": "􀥧     Icons"
     },
     {
+      "figmaComponentId": "12534:194",
+      "path": "icons/web/multicolor/transaction-card-estimate.svg",
+      "category": "multicolor",
+      "sourceName": "transaction-card-estimate",
+      "pageName": "􀥧     Icons"
+    },
+    {
+      "figmaComponentId": "12534:196",
+      "path": "icons/web/multicolor/transaction-card-expense.svg",
+      "category": "multicolor",
+      "sourceName": "transaction-card-expense",
+      "pageName": "􀥧     Icons"
+    },
+    {
+      "figmaComponentId": "12534:197",
+      "path": "icons/web/multicolor/transaction-card-income.svg",
+      "category": "multicolor",
+      "sourceName": "transaction-card-income",
+      "pageName": "􀥧     Icons"
+    },
+    {
+      "figmaComponentId": "12534:195",
+      "path": "icons/web/multicolor/transaction-card-transfer.svg",
+      "category": "multicolor",
+      "sourceName": "transaction-card-transfer",
+      "pageName": "􀥧     Icons"
+    },
+    {
       "figmaComponentId": "9879:2868",
       "path": "icons/web/multicolor/transfer-fund-to-project.svg",
       "category": "multicolor",
