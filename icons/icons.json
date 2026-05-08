@@ -1024,6 +1024,41 @@
       "pageName": "􀥧     Icons"
     },
     {
+      "figmaComponentId": "12534:194",
+      "path": "icons/web/monochrome/transaction-card-estimate.svg",
+      "category": "monochrome",
+      "sourceName": "transaction-card-estimate",
+      "pageName": "􀥧     Icons"
+    },
+    {
+      "figmaComponentId": "12534:196",
+      "path": "icons/web/monochrome/transaction-card-expense.svg",
+      "category": "monochrome",
+      "sourceName": "transaction-card-expense",
+      "pageName": "􀥧     Icons"
+    },
+    {
+      "figmaComponentId": "12534:197",
+      "path": "icons/web/monochrome/transaction-card-income.svg",
+      "category": "monochrome",
+      "sourceName": "transaction-card-income",
+      "pageName": "􀥧     Icons"
+    },
+    {
+      "figmaComponentId": "12534:214",
+      "path": "icons/web/monochrome/transaction-card-transfer-accountable.svg",
+      "category": "monochrome",
+      "sourceName": "transaction-card-transfer-accountable",
+      "pageName": "􀥧     Icons"
+    },
+    {
+      "figmaComponentId": "12534:195",
+      "path": "icons/web/monochrome/transaction-card-transfer-own.svg",
+      "category": "monochrome",
+      "sourceName": "transaction-card-transfer-own",
+      "pageName": "􀥧     Icons"
+    },
+    {
       "figmaComponentId": "2941:517",
       "path": "icons/web/monochrome/transaction-estimate.svg",
       "category": "monochrome",
@@ -1329,41 +1364,6 @@
       "path": "icons/web/multicolor/sub-pro.svg",
       "category": "multicolor",
       "sourceName": "sub-pro",
-      "pageName": "􀥧     Icons"
-    },
-    {
-      "figmaComponentId": "12534:194",
-      "path": "icons/web/multicolor/transaction-card-estimate.svg",
-      "category": "multicolor",
-      "sourceName": "transaction-card-estimate",
-      "pageName": "􀥧     Icons"
-    },
-    {
-      "figmaComponentId": "12534:196",
-      "path": "icons/web/multicolor/transaction-card-expense.svg",
-      "category": "multicolor",
-      "sourceName": "transaction-card-expense",
-      "pageName": "􀥧     Icons"
-    },
-    {
-      "figmaComponentId": "12534:197",
-      "path": "icons/web/multicolor/transaction-card-income.svg",
-      "category": "multicolor",
-      "sourceName": "transaction-card-income",
-      "pageName": "􀥧     Icons"
-    },
-    {
-      "figmaComponentId": "12534:214",
-      "path": "icons/web/multicolor/transaction-card-transfer-accountable.svg",
-      "category": "multicolor",
-      "sourceName": "transaction-card-transfer-accountable",
-      "pageName": "􀥧     Icons"
-    },
-    {
-      "figmaComponentId": "12534:195",
-      "path": "icons/web/multicolor/transaction-card-transfer-own.svg",
-      "category": "multicolor",
-      "sourceName": "transaction-card-transfer-own",
       "pageName": "􀥧     Icons"
     },
     {
