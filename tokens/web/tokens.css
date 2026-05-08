@@ -64,7 +64,7 @@
   --color-overlay: #0000009E;
   --color-shadow-base: #00000029;
   --color-shadow-stroke: #00000029;
-  --color-shadow-stroke-light: #00000008;
+  --color-shadow-stroke-light: #0000000D;
   --color-state-disabled: #7878809E;
   --color-state-hover: #0000000A;
   --color-state-on-accent-hover: #FFFFFF3D;
@@ -110,7 +110,7 @@
   --color-overlay: #00000061;
   --color-shadow-base: #00000029;
   --color-shadow-stroke: #FFFFFF21;
-  --color-shadow-stroke-light: #FFFFFF05;
+  --color-shadow-stroke-light: #FFFFFF0A;
   --color-state-disabled: #78788080;
   --color-state-hover: #FFFFFF14;
   --color-state-on-accent-hover: #00000029;
