@@ -1,7 +1,7 @@
 stages:
   - publish
 
-release_icons:
+01_release_icons:
   stage: publish
   image: node:20-alpine
   script:
@@ -11,7 +11,7 @@ release_icons:
       when: manual
       allow_failure: true
 
-deploy_tokens:
+02_deploy_tokens:
   stage: publish
   image: node:20-alpine
   before_script:

@@ -31,12 +31,12 @@ scripts/
 
 В pipeline только два независимых manual job в stage `publish`:
 
-- `release_icons`
-- `deploy_tokens`
+- `01_release_icons`
+- `02_deploy_tokens`
 
 Генератор `tokens.css` живёт в репозитории плагина `tokens-plain-for-figma`.
-`release_icons` публикует пакет иконок.
-`deploy_tokens` публикует уже закоммиченный `tokens/web/tokens.css` в production по SSH так же, как репозиторий `web`:
+`01_release_icons` публикует пакет иконок.
+`02_deploy_tokens` публикует уже закоммиченный `tokens/web/tokens.css` в production по SSH так же, как репозиторий `web`:
 
 - ключ: `${SSH_PRIVATE_KEY_DEPLOY:-$SSH_PRIVATE_KEY}`
 - сервер: `${SSH_HOST:-$SERVER_IP}`
