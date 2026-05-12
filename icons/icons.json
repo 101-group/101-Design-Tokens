@@ -513,6 +513,13 @@
       "pageName": "􀥧     Icons"
     },
     {
+      "figmaComponentId": "12599:11581",
+      "path": "icons/web/monochrome/event-type.svg",
+      "category": "monochrome",
+      "sourceName": "event-type",
+      "pageName": "􀥧     Icons"
+    },
+    {
       "figmaComponentId": "1069:7025",
       "path": "icons/web/monochrome/exit.svg",
       "category": "monochrome",
@@ -594,6 +601,13 @@
       "path": "icons/web/monochrome/grabber.svg",
       "category": "monochrome",
       "sourceName": "grabber",
+      "pageName": "􀥧     Icons"
+    },
+    {
+      "figmaComponentId": "12595:103",
+      "path": "icons/web/monochrome/grouping.svg",
+      "category": "monochrome",
+      "sourceName": "grouping",
       "pageName": "􀥧     Icons"
     },
     {
