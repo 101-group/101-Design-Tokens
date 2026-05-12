@@ -1,9 +1,8 @@
 stages:
-  - release
-  - deploy
+  - publish
 
-publish_icons_web_package:
-  stage: release
+release_icons:
+  stage: publish
   image: node:20-alpine
   script:
     - npm run publish:icons:web-package
@@ -12,8 +11,8 @@ publish_icons_web_package:
       when: manual
       allow_failure: true
 
-deploy_prod:
-  stage: deploy
+deploy_tokens:
+  stage: publish
   image: node:20-alpine
   before_script:
     - apk add --no-cache openssh-client rsync

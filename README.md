@@ -29,14 +29,14 @@ scripts/
 
 ## GitLab
 
-В pipeline только два manual job:
+В pipeline только два независимых manual job в stage `publish`:
 
-- `publish_icons_web_package`
-- `deploy_prod`
+- `release_icons`
+- `deploy_tokens`
 
 Генератор `tokens.css` живёт в репозитории плагина `tokens-plain-for-figma`.
-`publish_icons_web_package` публикует пакет иконок.
-`deploy_prod` публикует уже закоммиченный `tokens/web/tokens.css` в production по SSH так же, как репозиторий `web`:
+`release_icons` публикует пакет иконок.
+`deploy_tokens` публикует уже закоммиченный `tokens/web/tokens.css` в production по SSH так же, как репозиторий `web`:
 
 - ключ: `${SSH_PRIVATE_KEY_DEPLOY:-$SSH_PRIVATE_KEY}`
 - сервер: `${SSH_HOST:-$SERVER_IP}`
