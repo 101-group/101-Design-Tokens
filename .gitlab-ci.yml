@@ -72,4 +72,9 @@ deploy_tokens:
     deployment_tier: production
     auto_stop_in: never
   after_script:
-    - echo "Apex tokens updated - https://101-app.com/assets/tokens.css"
+    - |
+      if [ "${CI_JOB_STATUS:-}" = "success" ]; then
+        echo "Apex tokens updated - https://101-app.com/assets/tokens.css"
+      else
+        echo "Apex tokens deploy did not complete (${CI_JOB_STATUS:-unknown})."
+      fi

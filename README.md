@@ -38,8 +38,13 @@ scripts/
 `release_icons` публикует пакет иконок.
 `deploy_tokens` публикует уже закоммиченный `tokens/web/tokens.css` в production по SSH так же, как apex-деплой репозитория `web`:
 
+Обязательные GitLab CI/CD variables:
+
 - ключ: `$SSH_PRIVATE_KEY_APEX`
 - сервер: `$SSH_HOST_APEX`
+
+Опциональные GitLab CI/CD variables:
+
 - пользователь: `${SSH_USER:-www}`
 - путь: `${TOKENS_DEPLOY_PATH_APEX:-/home/www/code/101-web-apex/dist/assets}/tokens.css`
 
