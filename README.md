@@ -46,8 +46,11 @@ scripts/
 Опциональные GitLab CI/CD variables:
 
 - пользователь: `${SSH_USER:-www}`
-- путь: `${DEPLOY_PATH:-/home/www/code/101-web-apex/dist/assets}/tokens.css`
+- путь: `${DEPLOY_PATH:-/home/www/code/design-tokens-assets}/tokens.css`
 
-Так как apex production раздаёт статику из `101-web-apex/dist`, файл доступен по:
+Файл публикуется в стабильный каталог `/home/www/code/design-tokens-assets/`, который не затирается при релизах web-репозитория. После распаковки бандла deploy-скрипт web создаёт симлинки `dist/tokens.css` и `dist/assets/tokens.css` на этот стабильный файл.
 
-- `https://101-app.com/assets/tokens.css`
+Раздаётся в apex production:
+
+- `https://101-app.com/tokens.css` (через Express SSR из `dist/tokens.css`)
+- `https://101-app.com/assets/tokens.css` (через nginx static из `dist/assets/tokens.css`, legacy совместимость)

@@ -46,7 +46,7 @@ deploy_tokens:
       rm -f "$TMP_SSH_KEY_FILE"
     - |
       export SSH_USER="${SSH_USER:-www}"
-      export DEPLOY_PATH="${DEPLOY_PATH:-/home/www/code/101-web-apex/dist/assets}"
+      export DEPLOY_PATH="${DEPLOY_PATH:-/home/www/code/design-tokens-assets}"
 
       if [ -z "${SSH_HOST:-}" ]; then
         echo "ERROR: SSH host is empty (expected SSH_HOST)."
