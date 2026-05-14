@@ -35,10 +35,9 @@ const requireEnv = (name, value) => {
 };
 
 const run = async () => {
-  const host = requireEnv("SSH_HOST_APEX", process.env.SSH_HOST_APEX?.trim());
+  const host = requireEnv("SSH_HOST", process.env.SSH_HOST?.trim());
   const user = requireEnv("SSH_USER", process.env.SSH_USER?.trim());
-  const deployPath =
-    process.env.TOKENS_DEPLOY_PATH_APEX?.trim() || "/home/www/code/101-web-apex/dist/assets";
+  const deployPath = process.env.DEPLOY_PATH?.trim() || "/home/www/code/101-web-apex/dist/assets";
 
   await access(CSS_FILE, fsConstants.R_OK);
 

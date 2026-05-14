@@ -40,13 +40,13 @@ scripts/
 
 Обязательные GitLab CI/CD variables:
 
-- ключ: `$SSH_PRIVATE_KEY_APEX`
-- сервер: `$SSH_HOST_APEX`
+- ключ: `$SSH_PRIVATE_KEY`
+- сервер: `$SSH_HOST`
 
 Опциональные GitLab CI/CD variables:
 
 - пользователь: `${SSH_USER:-www}`
-- путь: `${TOKENS_DEPLOY_PATH_APEX:-/home/www/code/101-web-apex/dist/assets}/tokens.css`
+- путь: `${DEPLOY_PATH:-/home/www/code/101-web-apex/dist/assets}/tokens.css`
 
 Так как apex production раздаёт статику из `101-web-apex/dist`, файл доступен по:
 
