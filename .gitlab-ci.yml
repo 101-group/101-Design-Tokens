@@ -20,9 +20,9 @@ deploy_tokens:
     - mkdir -p ~/.ssh
     - chmod 700 ~/.ssh
     - |
-      DEPLOY_SSH_KEY="${SSH_PRIVATE_KEY_APEX:-${SSH_PRIVATE_KEY_DEV:-${SSH_PRIVATE_KEY_DEPLOY:-${SSH_PRIVATE_KEY:-}}}}"
+      DEPLOY_SSH_KEY="${SSH_PRIVATE_KEY_APEX:-}"
       if [ -z "${DEPLOY_SSH_KEY:-}" ]; then
-        echo "ERROR: SSH key is empty (expected SSH_PRIVATE_KEY_APEX, SSH_PRIVATE_KEY_DEV, SSH_PRIVATE_KEY_DEPLOY, or SSH_PRIVATE_KEY)."
+        echo "ERROR: SSH key is empty (expected SSH_PRIVATE_KEY_APEX)."
         exit 1
       fi
 
@@ -45,19 +45,18 @@ deploy_tokens:
       ssh-add "$TMP_SSH_KEY_FILE"
       rm -f "$TMP_SSH_KEY_FILE"
     - |
-      export SSH_HOST="${SSH_HOST_APEX:-${SERVER_IP_DEV:-${SSH_HOST:-${SERVER_IP:-}}}}"
       export SSH_USER="${SSH_USER:-www}"
-      export TOKENS_DEPLOY_PATH="${TOKENS_DEPLOY_PATH:-/home/www/code/101-web-apex/dist/assets}"
+      export TOKENS_DEPLOY_PATH_APEX="${TOKENS_DEPLOY_PATH_APEX:-/home/www/code/101-web-apex/dist/assets}"
 
-      if [ -z "${SSH_HOST:-}" ]; then
-        echo "ERROR: SSH host is empty (expected SSH_HOST_APEX, SERVER_IP_DEV, SSH_HOST, or SERVER_IP)."
+      if [ -z "${SSH_HOST_APEX:-}" ]; then
+        echo "ERROR: SSH host is empty (expected SSH_HOST_APEX)."
         exit 1
       fi
 
       if [ -n "$SSH_KNOWN_HOSTS" ]; then
         echo "$SSH_KNOWN_HOSTS" > ~/.ssh/known_hosts
       else
-        ssh-keyscan -p "${SSH_PORT:-22}" "$SSH_HOST" > ~/.ssh/known_hosts
+        ssh-keyscan -p "${SSH_PORT:-22}" "$SSH_HOST_APEX" > ~/.ssh/known_hosts
       fi
     - chmod 644 ~/.ssh/known_hosts
   script:
