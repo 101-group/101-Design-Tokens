@@ -36,13 +36,13 @@ scripts/
 
 Генератор `tokens.css` живёт в репозитории плагина `tokens-plain-for-figma`.
 `release_icons` публикует пакет иконок.
-`deploy_tokens` публикует уже закоммиченный `tokens/web/tokens.css` в production по SSH так же, как репозиторий `web`:
+`deploy_tokens` публикует уже закоммиченный `tokens/web/tokens.css` в production по SSH так же, как apex-деплой репозитория `web`:
 
-- ключ: `${SSH_PRIVATE_KEY_DEPLOY:-$SSH_PRIVATE_KEY}`
-- сервер: `${SSH_HOST:-$SERVER_IP}`
+- ключ: `${SSH_PRIVATE_KEY_APEX:-${SSH_PRIVATE_KEY_DEV:-${SSH_PRIVATE_KEY_DEPLOY:-$SSH_PRIVATE_KEY}}}`
+- сервер: `${SSH_HOST_APEX:-${SERVER_IP_DEV:-${SSH_HOST:-$SERVER_IP}}}`
 - пользователь: `${SSH_USER:-www}`
-- путь: `${TOKENS_DEPLOY_PATH:-/home/www/code/101-web/dist}/tokens.css`
+- путь: `${TOKENS_DEPLOY_PATH:-/home/www/code/101-web-apex/dist/assets}/tokens.css`
 
-Так как production раздаёт статику из `101-web/dist`, файл доступен по:
+Так как apex production раздаёт статику из `101-web-apex/dist`, файл доступен по:
 
-- `https://prod.101-app.com/tokens.css`
+- `https://101-app.com/assets/tokens.css`
