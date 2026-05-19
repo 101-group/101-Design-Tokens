@@ -996,6 +996,13 @@
       "pageName": "􀥧     Icons"
     },
     {
+      "figmaComponentId": "12651:551",
+      "path": "icons/web/monochrome/show-deleted.svg",
+      "category": "monochrome",
+      "sourceName": "show-deleted",
+      "pageName": "􀥧     Icons"
+    },
+    {
       "figmaComponentId": "1069:6933",
       "path": "icons/web/monochrome/show.svg",
       "category": "monochrome",
