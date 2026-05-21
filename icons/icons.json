@@ -996,6 +996,20 @@
       "pageName": "􀥧     Icons"
     },
     {
+      "figmaComponentId": "12679:234",
+      "path": "icons/web/monochrome/screen-share-desktop.svg",
+      "category": "monochrome",
+      "sourceName": "screen-share-desktop",
+      "pageName": "􀥧     Icons"
+    },
+    {
+      "figmaComponentId": "12679:235",
+      "path": "icons/web/monochrome/screen-share-mobile.svg",
+      "category": "monochrome",
+      "sourceName": "screen-share-mobile",
+      "pageName": "􀥧     Icons"
+    },
+    {
       "figmaComponentId": "1069:7023",
       "path": "icons/web/monochrome/search.svg",
       "category": "monochrome",
