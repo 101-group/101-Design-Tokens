@@ -996,17 +996,31 @@
       "pageName": "􀥧     Icons"
     },
     {
-      "figmaComponentId": "12679:234",
-      "path": "icons/web/monochrome/screen-share-desktop.svg",
+      "figmaComponentId": "12683:99",
+      "path": "icons/web/monochrome/screen-share-desktop-off.svg",
       "category": "monochrome",
-      "sourceName": "screen-share-desktop",
+      "sourceName": "screen-share-desktop-off",
+      "pageName": "􀥧     Icons"
+    },
+    {
+      "figmaComponentId": "12679:234",
+      "path": "icons/web/monochrome/screen-share-desktop-on.svg",
+      "category": "monochrome",
+      "sourceName": "screen-share-desktop-on",
+      "pageName": "􀥧     Icons"
+    },
+    {
+      "figmaComponentId": "12683:100",
+      "path": "icons/web/monochrome/screen-share-mobile-off.svg",
+      "category": "monochrome",
+      "sourceName": "screen-share-mobile-off",
       "pageName": "􀥧     Icons"
     },
     {
       "figmaComponentId": "12679:235",
-      "path": "icons/web/monochrome/screen-share-mobile.svg",
+      "path": "icons/web/monochrome/screen-share-mobile-on.svg",
       "category": "monochrome",
-      "sourceName": "screen-share-mobile",
+      "sourceName": "screen-share-mobile-on",
       "pageName": "􀥧     Icons"
     },
     {
