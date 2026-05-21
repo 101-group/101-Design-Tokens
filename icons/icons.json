@@ -716,6 +716,34 @@
       "pageName": "􀥧     Icons"
     },
     {
+      "figmaComponentId": "12669:122",
+      "path": "icons/web/monochrome/microphone-off-fill.svg",
+      "category": "monochrome",
+      "sourceName": "microphone-off-fill",
+      "pageName": "􀥧     Icons"
+    },
+    {
+      "figmaComponentId": "12669:120",
+      "path": "icons/web/monochrome/microphone-off.svg",
+      "category": "monochrome",
+      "sourceName": "microphone-off",
+      "pageName": "􀥧     Icons"
+    },
+    {
+      "figmaComponentId": "12669:121",
+      "path": "icons/web/monochrome/microphone-on-fill.svg",
+      "category": "monochrome",
+      "sourceName": "microphone-on-fill",
+      "pageName": "􀥧     Icons"
+    },
+    {
+      "figmaComponentId": "12669:119",
+      "path": "icons/web/monochrome/microphone-on.svg",
+      "category": "monochrome",
+      "sourceName": "microphone-on",
+      "pageName": "􀥧     Icons"
+    },
+    {
       "figmaComponentId": "11610:29062",
       "path": "icons/web/monochrome/mincifri.svg",
       "category": "monochrome",
@@ -1196,6 +1224,34 @@
       "path": "icons/web/monochrome/video-broadcast.svg",
       "category": "monochrome",
       "sourceName": "video-broadcast",
+      "pageName": "􀥧     Icons"
+    },
+    {
+      "figmaComponentId": "12669:125",
+      "path": "icons/web/monochrome/video-off-fill.svg",
+      "category": "monochrome",
+      "sourceName": "video-off-fill",
+      "pageName": "􀥧     Icons"
+    },
+    {
+      "figmaComponentId": "12669:126",
+      "path": "icons/web/monochrome/video-off.svg",
+      "category": "monochrome",
+      "sourceName": "video-off",
+      "pageName": "􀥧     Icons"
+    },
+    {
+      "figmaComponentId": "12669:124",
+      "path": "icons/web/monochrome/video-on-fill.svg",
+      "category": "monochrome",
+      "sourceName": "video-on-fill",
+      "pageName": "􀥧     Icons"
+    },
+    {
+      "figmaComponentId": "12669:123",
+      "path": "icons/web/monochrome/video-on.svg",
+      "category": "monochrome",
+      "sourceName": "video-on",
       "pageName": "􀥧     Icons"
     },
     {
