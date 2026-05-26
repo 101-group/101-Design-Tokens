@@ -583,6 +583,13 @@
       "pageName": "􀥧     Icons"
     },
     {
+      "figmaComponentId": "12748:4427",
+      "path": "icons/web/monochrome/formula.svg",
+      "category": "monochrome",
+      "sourceName": "formula",
+      "pageName": "􀥧     Icons"
+    },
+    {
       "figmaComponentId": "2941:551",
       "path": "icons/web/monochrome/foundation-fill.svg",
       "category": "monochrome",
@@ -811,6 +818,13 @@
       "path": "icons/web/monochrome/ontractor-relations.svg",
       "category": "monochrome",
       "sourceName": "сontractor-relations",
+      "pageName": "􀥧     Icons"
+    },
+    {
+      "figmaComponentId": "12749:4432",
+      "path": "icons/web/monochrome/parameters.svg",
+      "category": "monochrome",
+      "sourceName": "parameters",
       "pageName": "􀥧     Icons"
     },
     {
