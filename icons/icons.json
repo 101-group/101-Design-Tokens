@@ -1,1516 +1,2317 @@
 {
-  "version": 1,
+  "version": 2,
   "icons": [
     {
       "figmaComponentId": "11610:28756",
-      "path": "icons/web/monochrome/101.svg",
+      "webPath": "icons/web/monochrome/101.svg",
+      "iosAssetName": "design-icon-monochrome-101",
+      "androidResourceName": "design_icon_monochrome_101",
       "category": "monochrome",
       "sourceName": "101",
       "pageName": "􀥧     Icons"
     },
     {
       "figmaComponentId": "11611:29105",
-      "path": "icons/web/monochrome/101account.svg",
+      "webPath": "icons/web/monochrome/101account.svg",
+      "iosAssetName": "design-icon-monochrome-101account",
+      "androidResourceName": "design_icon_monochrome_101account",
       "category": "monochrome",
       "sourceName": "101account",
       "pageName": "􀥧     Icons"
     },
     {
       "figmaComponentId": "11610:29034",
-      "path": "icons/web/monochrome/101app.svg",
+      "webPath": "icons/web/monochrome/101app.svg",
+      "iosAssetName": "design-icon-monochrome-101app",
+      "androidResourceName": "design_icon_monochrome_101app",
       "category": "monochrome",
       "sourceName": "101app",
       "pageName": "􀥧     Icons"
     },
     {
       "figmaComponentId": "1069:6878",
-      "path": "icons/web/monochrome/account-fill.svg",
+      "webPath": "icons/web/monochrome/account-fill.svg",
+      "iosAssetName": "design-icon-monochrome-account-fill",
+      "androidResourceName": "design_icon_monochrome_account_fill",
       "category": "monochrome",
       "sourceName": "account-fill",
       "pageName": "􀥧     Icons"
     },
     {
       "figmaComponentId": "1069:6949",
-      "path": "icons/web/monochrome/account.svg",
+      "webPath": "icons/web/monochrome/account.svg",
+      "iosAssetName": "design-icon-monochrome-account",
+      "androidResourceName": "design_icon_monochrome_account",
       "category": "monochrome",
       "sourceName": "account",
       "pageName": "􀥧     Icons"
     },
     {
       "figmaComponentId": "9244:16863",
-      "path": "icons/web/monochrome/add.svg",
+      "webPath": "icons/web/monochrome/add.svg",
+      "iosAssetName": "design-icon-monochrome-add",
+      "androidResourceName": "design_icon_monochrome_add",
       "category": "monochrome",
       "sourceName": "add",
       "pageName": "􀥧     Icons"
     },
     {
       "figmaComponentId": "9881:1681",
-      "path": "icons/web/monochrome/adress.svg",
+      "webPath": "icons/web/monochrome/adress.svg",
+      "iosAssetName": "design-icon-monochrome-adress",
+      "androidResourceName": "design_icon_monochrome_adress",
       "category": "monochrome",
       "sourceName": "adress",
       "pageName": "􀥧     Icons"
     },
     {
       "figmaComponentId": "9322:4130",
-      "path": "icons/web/monochrome/ai.svg",
+      "webPath": "icons/web/monochrome/ai.svg",
+      "iosAssetName": "design-icon-monochrome-ai",
+      "androidResourceName": "design_icon_monochrome_ai",
       "category": "monochrome",
       "sourceName": "ai",
       "pageName": "􀥧     Icons"
     },
     {
       "figmaComponentId": "2941:557",
-      "path": "icons/web/monochrome/analytics.svg",
+      "webPath": "icons/web/monochrome/analytics.svg",
+      "iosAssetName": "design-icon-monochrome-analytics",
+      "androidResourceName": "design_icon_monochrome_analytics",
       "category": "monochrome",
       "sourceName": "analytics",
       "pageName": "􀥧     Icons"
     },
     {
       "figmaComponentId": "10969:31207",
-      "path": "icons/web/monochrome/api.svg",
+      "webPath": "icons/web/monochrome/api.svg",
+      "iosAssetName": "design-icon-monochrome-api",
+      "androidResourceName": "design_icon_monochrome_api",
       "category": "monochrome",
       "sourceName": "api",
       "pageName": "􀥧     Icons"
     },
     {
       "figmaComponentId": "11611:29138",
-      "path": "icons/web/monochrome/app-mask.svg",
+      "webPath": "icons/web/monochrome/app-mask.svg",
+      "iosAssetName": "design-icon-monochrome-app-mask",
+      "androidResourceName": "design_icon_monochrome_app_mask",
       "category": "monochrome",
       "sourceName": "app-mask",
       "pageName": "􀥧     Icons"
     },
     {
       "figmaComponentId": "7955:36697",
-      "path": "icons/web/monochrome/archive-add.svg",
+      "webPath": "icons/web/monochrome/archive-add.svg",
+      "iosAssetName": "design-icon-monochrome-archive-add",
+      "androidResourceName": "design_icon_monochrome_archive_add",
       "category": "monochrome",
       "sourceName": "archive-add",
       "pageName": "􀥧     Icons"
     },
     {
       "figmaComponentId": "7956:69",
-      "path": "icons/web/monochrome/archive-remove.svg",
+      "webPath": "icons/web/monochrome/archive-remove.svg",
+      "iosAssetName": "design-icon-monochrome-archive-remove",
+      "androidResourceName": "design_icon_monochrome_archive_remove",
       "category": "monochrome",
       "sourceName": "archive-remove",
       "pageName": "􀥧     Icons"
     },
     {
       "figmaComponentId": "2941:535",
-      "path": "icons/web/monochrome/archive.svg",
+      "webPath": "icons/web/monochrome/archive.svg",
+      "iosAssetName": "design-icon-monochrome-archive",
+      "androidResourceName": "design_icon_monochrome_archive",
       "category": "monochrome",
       "sourceName": "archive",
       "pageName": "􀥧     Icons"
     },
     {
       "figmaComponentId": "1069:7039",
-      "path": "icons/web/monochrome/arrow-down.svg",
+      "webPath": "icons/web/monochrome/arrow-down.svg",
+      "iosAssetName": "design-icon-monochrome-arrow-down",
+      "androidResourceName": "design_icon_monochrome_arrow_down",
       "category": "monochrome",
       "sourceName": "arrow-down",
       "pageName": "􀥧     Icons"
     },
     {
       "figmaComponentId": "1069:7033",
-      "path": "icons/web/monochrome/arrow-left.svg",
+      "webPath": "icons/web/monochrome/arrow-left.svg",
+      "iosAssetName": "design-icon-monochrome-arrow-left",
+      "androidResourceName": "design_icon_monochrome_arrow_left",
       "category": "monochrome",
       "sourceName": "arrow-left",
       "pageName": "􀥧     Icons"
     },
     {
       "figmaComponentId": "1069:7035",
-      "path": "icons/web/monochrome/arrow-right.svg",
+      "webPath": "icons/web/monochrome/arrow-right.svg",
+      "iosAssetName": "design-icon-monochrome-arrow-right",
+      "androidResourceName": "design_icon_monochrome_arrow_right",
       "category": "monochrome",
       "sourceName": "arrow-right",
       "pageName": "􀥧     Icons"
     },
     {
       "figmaComponentId": "9592:5189",
-      "path": "icons/web/monochrome/arrow-turn-down-right.svg",
+      "webPath": "icons/web/monochrome/arrow-turn-down-right.svg",
+      "iosAssetName": "design-icon-monochrome-arrow-turn-down-right",
+      "androidResourceName": "design_icon_monochrome_arrow_turn_down_right",
       "category": "monochrome",
       "sourceName": "arrow-turn-down-right",
       "pageName": "􀥧     Icons"
     },
     {
       "figmaComponentId": "2941:746",
-      "path": "icons/web/monochrome/arrow-turn-left-down.svg",
+      "webPath": "icons/web/monochrome/arrow-turn-left-down.svg",
+      "iosAssetName": "design-icon-monochrome-arrow-turn-left-down",
+      "androidResourceName": "design_icon_monochrome_arrow_turn_left_down",
       "category": "monochrome",
       "sourceName": "arrow-turn-left-down",
       "pageName": "􀥧     Icons"
     },
     {
       "figmaComponentId": "1069:7037",
-      "path": "icons/web/monochrome/arrow-up.svg",
+      "webPath": "icons/web/monochrome/arrow-up.svg",
+      "iosAssetName": "design-icon-monochrome-arrow-up",
+      "androidResourceName": "design_icon_monochrome_arrow_up",
       "category": "monochrome",
       "sourceName": "arrow-up",
       "pageName": "􀥧     Icons"
     },
     {
       "figmaComponentId": "11504:10032",
-      "path": "icons/web/monochrome/avatar.svg",
+      "webPath": "icons/web/monochrome/avatar.svg",
+      "iosAssetName": "design-icon-monochrome-avatar",
+      "androidResourceName": "design_icon_monochrome_avatar",
       "category": "monochrome",
       "sourceName": "avatar",
       "pageName": "􀥧     Icons"
     },
     {
       "figmaComponentId": "9466:4465",
-      "path": "icons/web/monochrome/balance.svg",
+      "webPath": "icons/web/monochrome/balance.svg",
+      "iosAssetName": "design-icon-monochrome-balance",
+      "androidResourceName": "design_icon_monochrome_balance",
       "category": "monochrome",
       "sourceName": "balance",
       "pageName": "􀥧     Icons"
     },
     {
       "figmaComponentId": "8302:5100",
-      "path": "icons/web/monochrome/bill.svg",
+      "webPath": "icons/web/monochrome/bill.svg",
+      "iosAssetName": "design-icon-monochrome-bill",
+      "androidResourceName": "design_icon_monochrome_bill",
       "category": "monochrome",
       "sourceName": "bill",
       "pageName": "􀥧     Icons"
     },
     {
       "figmaComponentId": "8766:5197",
-      "path": "icons/web/monochrome/calculator.svg",
+      "webPath": "icons/web/monochrome/calculator.svg",
+      "iosAssetName": "design-icon-monochrome-calculator",
+      "androidResourceName": "design_icon_monochrome_calculator",
       "category": "monochrome",
       "sourceName": "calculator",
       "pageName": "􀥧     Icons"
     },
     {
       "figmaComponentId": "1069:7001",
-      "path": "icons/web/monochrome/calendar.svg",
+      "webPath": "icons/web/monochrome/calendar.svg",
+      "iosAssetName": "design-icon-monochrome-calendar",
+      "androidResourceName": "design_icon_monochrome_calendar",
       "category": "monochrome",
       "sourceName": "calendar",
       "pageName": "􀥧     Icons"
     },
     {
       "figmaComponentId": "1069:6902",
-      "path": "icons/web/monochrome/camera-fill.svg",
+      "webPath": "icons/web/monochrome/camera-fill.svg",
+      "iosAssetName": "design-icon-monochrome-camera-fill",
+      "androidResourceName": "design_icon_monochrome_camera_fill",
       "category": "monochrome",
       "sourceName": "camera-fill",
       "pageName": "􀥧     Icons"
     },
     {
       "figmaComponentId": "1069:6975",
-      "path": "icons/web/monochrome/camera.svg",
+      "webPath": "icons/web/monochrome/camera.svg",
+      "iosAssetName": "design-icon-monochrome-camera",
+      "androidResourceName": "design_icon_monochrome_camera",
       "category": "monochrome",
       "sourceName": "camera",
       "pageName": "􀥧     Icons"
     },
     {
       "figmaComponentId": "11663:8571",
-      "path": "icons/web/monochrome/card-fill-trimmed.svg",
+      "webPath": "icons/web/monochrome/card-fill-trimmed.svg",
+      "iosAssetName": "design-icon-monochrome-card-fill-trimmed",
+      "androidResourceName": "design_icon_monochrome_card_fill_trimmed",
       "category": "monochrome",
       "sourceName": "card-fill-trimmed",
       "pageName": "􀥧     Icons"
     },
     {
       "figmaComponentId": "3062:8881",
-      "path": "icons/web/monochrome/card-fill.svg",
+      "webPath": "icons/web/monochrome/card-fill.svg",
+      "iosAssetName": "design-icon-monochrome-card-fill",
+      "androidResourceName": "design_icon_monochrome_card_fill",
       "category": "monochrome",
       "sourceName": "card-fill",
       "pageName": "􀥧     Icons"
     },
     {
       "figmaComponentId": "3062:8880",
-      "path": "icons/web/monochrome/card.svg",
+      "webPath": "icons/web/monochrome/card.svg",
+      "iosAssetName": "design-icon-monochrome-card",
+      "androidResourceName": "design_icon_monochrome_card",
       "category": "monochrome",
       "sourceName": "card",
       "pageName": "􀥧     Icons"
     },
     {
       "figmaComponentId": "12387:1381",
-      "path": "icons/web/monochrome/chart-gantt.svg",
+      "webPath": "icons/web/monochrome/chart-gantt.svg",
+      "iosAssetName": "design-icon-monochrome-chart-gantt",
+      "androidResourceName": "design_icon_monochrome_chart_gantt",
       "category": "monochrome",
       "sourceName": "chart-gantt",
       "pageName": "􀥧     Icons"
     },
     {
       "figmaComponentId": "11402:5671",
-      "path": "icons/web/monochrome/chat.svg",
+      "webPath": "icons/web/monochrome/chat.svg",
+      "iosAssetName": "design-icon-monochrome-chat",
+      "androidResourceName": "design_icon_monochrome_chat",
       "category": "monochrome",
       "sourceName": "chat",
       "pageName": "􀥧     Icons"
     },
     {
       "figmaComponentId": "6056:5602",
-      "path": "icons/web/monochrome/checkbox-circle-mixed-fill.svg",
+      "webPath": "icons/web/monochrome/checkbox-circle-mixed-fill.svg",
+      "iosAssetName": "design-icon-monochrome-checkbox-circle-mixed-fill",
+      "androidResourceName": "design_icon_monochrome_checkbox_circle_mixed_fill",
       "category": "monochrome",
       "sourceName": "checkbox-circle-mixed-fill",
       "pageName": "􀥧     Icons"
     },
     {
       "figmaComponentId": "5961:7914",
-      "path": "icons/web/monochrome/checkbox-circle-selected-fill.svg",
+      "webPath": "icons/web/monochrome/checkbox-circle-selected-fill.svg",
+      "iosAssetName": "design-icon-monochrome-checkbox-circle-selected-fill",
+      "androidResourceName": "design_icon_monochrome_checkbox_circle_selected_fill",
       "category": "monochrome",
       "sourceName": "checkbox-circle-selected-fill",
       "pageName": "􀥧     Icons"
     },
     {
       "figmaComponentId": "7824:32680",
-      "path": "icons/web/monochrome/checkbox-circle-selected.svg",
+      "webPath": "icons/web/monochrome/checkbox-circle-selected.svg",
+      "iosAssetName": "design-icon-monochrome-checkbox-circle-selected",
+      "androidResourceName": "design_icon_monochrome_checkbox_circle_selected",
       "category": "monochrome",
       "sourceName": "checkbox-circle-selected",
       "pageName": "􀥧     Icons"
     },
     {
       "figmaComponentId": "5961:7917",
-      "path": "icons/web/monochrome/checkbox-circle-unselected.svg",
+      "webPath": "icons/web/monochrome/checkbox-circle-unselected.svg",
+      "iosAssetName": "design-icon-monochrome-checkbox-circle-unselected",
+      "androidResourceName": "design_icon_monochrome_checkbox_circle_unselected",
       "category": "monochrome",
       "sourceName": "checkbox-circle-unselected",
       "pageName": "􀥧     Icons"
     },
     {
       "figmaComponentId": "11684:9515",
-      "path": "icons/web/monochrome/checkbox-square-mixed-fill.svg",
+      "webPath": "icons/web/monochrome/checkbox-square-mixed-fill.svg",
+      "iosAssetName": "design-icon-monochrome-checkbox-square-mixed-fill",
+      "androidResourceName": "design_icon_monochrome_checkbox_square_mixed_fill",
       "category": "monochrome",
       "sourceName": "checkbox-square-mixed-fill",
       "pageName": "􀥧     Icons"
     },
     {
       "figmaComponentId": "12516:169",
-      "path": "icons/web/monochrome/checkbox-square-selected-fill-trimmed.svg",
+      "webPath": "icons/web/monochrome/checkbox-square-selected-fill-trimmed.svg",
+      "iosAssetName": "design-icon-monochrome-checkbox-square-selected-fill-trimmed",
+      "androidResourceName": "design_icon_monochrome_checkbox_square_selected_fill_trimmed",
       "category": "monochrome",
       "sourceName": "checkbox-square-selected-fill-trimmed",
       "pageName": "􀥧     Icons"
     },
     {
       "figmaComponentId": "11621:5617",
-      "path": "icons/web/monochrome/checkbox-square-selected-fill.svg",
+      "webPath": "icons/web/monochrome/checkbox-square-selected-fill.svg",
+      "iosAssetName": "design-icon-monochrome-checkbox-square-selected-fill",
+      "androidResourceName": "design_icon_monochrome_checkbox_square_selected_fill",
       "category": "monochrome",
       "sourceName": "checkbox-square-selected-fill",
       "pageName": "􀥧     Icons"
     },
     {
       "figmaComponentId": "12516:168",
-      "path": "icons/web/monochrome/checkbox-square-unselected-trimmed.svg",
+      "webPath": "icons/web/monochrome/checkbox-square-unselected-trimmed.svg",
+      "iosAssetName": "design-icon-monochrome-checkbox-square-unselected-trimmed",
+      "androidResourceName": "design_icon_monochrome_checkbox_square_unselected_trimmed",
       "category": "monochrome",
       "sourceName": "checkbox-square-unselected-trimmed",
       "pageName": "􀥧     Icons"
     },
     {
       "figmaComponentId": "11621:5618",
-      "path": "icons/web/monochrome/checkbox-square-unselected.svg",
+      "webPath": "icons/web/monochrome/checkbox-square-unselected.svg",
+      "iosAssetName": "design-icon-monochrome-checkbox-square-unselected",
+      "androidResourceName": "design_icon_monochrome_checkbox_square_unselected",
       "category": "monochrome",
       "sourceName": "checkbox-square-unselected",
       "pageName": "􀥧     Icons"
     },
     {
       "figmaComponentId": "1069:7065",
-      "path": "icons/web/monochrome/checkmark.svg",
+      "webPath": "icons/web/monochrome/checkmark.svg",
+      "iosAssetName": "design-icon-monochrome-checkmark",
+      "androidResourceName": "design_icon_monochrome_checkmark",
       "category": "monochrome",
       "sourceName": "checkmark",
       "pageName": "􀥧     Icons"
     },
     {
       "figmaComponentId": "10961:30424",
-      "path": "icons/web/monochrome/chevron-collapsed.svg",
+      "webPath": "icons/web/monochrome/chevron-collapsed.svg",
+      "iosAssetName": "design-icon-monochrome-chevron-collapsed",
+      "androidResourceName": "design_icon_monochrome_chevron_collapsed",
       "category": "monochrome",
       "sourceName": "chevron-collapsed",
       "pageName": "􀥧     Icons"
     },
     {
       "figmaComponentId": "10961:30425",
-      "path": "icons/web/monochrome/chevron-expanded.svg",
+      "webPath": "icons/web/monochrome/chevron-expanded.svg",
+      "iosAssetName": "design-icon-monochrome-chevron-expanded",
+      "androidResourceName": "design_icon_monochrome_chevron_expanded",
       "category": "monochrome",
       "sourceName": "chevron-expanded",
       "pageName": "􀥧     Icons"
     },
     {
       "figmaComponentId": "7769:28293",
-      "path": "icons/web/monochrome/chevron-left.svg",
+      "webPath": "icons/web/monochrome/chevron-left.svg",
+      "iosAssetName": "design-icon-monochrome-chevron-left",
+      "androidResourceName": "design_icon_monochrome_chevron_left",
       "category": "monochrome",
       "sourceName": "chevron-left",
       "pageName": "􀥧     Icons"
     },
     {
       "figmaComponentId": "10961:30401",
-      "path": "icons/web/monochrome/chevron-right.svg",
+      "webPath": "icons/web/monochrome/chevron-right.svg",
+      "iosAssetName": "design-icon-monochrome-chevron-right",
+      "androidResourceName": "design_icon_monochrome_chevron_right",
       "category": "monochrome",
       "sourceName": "chevron-right",
       "pageName": "􀥧     Icons"
     },
     {
       "figmaComponentId": "1069:7059",
-      "path": "icons/web/monochrome/clear.svg",
+      "webPath": "icons/web/monochrome/clear.svg",
+      "iosAssetName": "design-icon-monochrome-clear",
+      "androidResourceName": "design_icon_monochrome_clear",
       "category": "monochrome",
       "sourceName": "clear",
       "pageName": "􀥧     Icons"
     },
     {
       "figmaComponentId": "2563:6342",
-      "path": "icons/web/monochrome/clock.svg",
+      "webPath": "icons/web/monochrome/clock.svg",
+      "iosAssetName": "design-icon-monochrome-clock",
+      "androidResourceName": "design_icon_monochrome_clock",
       "category": "monochrome",
       "sourceName": "clock",
       "pageName": "􀥧     Icons"
     },
     {
       "figmaComponentId": "1069:6914",
-      "path": "icons/web/monochrome/close.svg",
+      "webPath": "icons/web/monochrome/close.svg",
+      "iosAssetName": "design-icon-monochrome-close",
+      "androidResourceName": "design_icon_monochrome_close",
       "category": "monochrome",
       "sourceName": "close",
       "pageName": "􀥧     Icons"
     },
     {
       "figmaComponentId": "12215:10663",
-      "path": "icons/web/monochrome/collapse.svg",
+      "webPath": "icons/web/monochrome/collapse.svg",
+      "iosAssetName": "design-icon-monochrome-collapse",
+      "androidResourceName": "design_icon_monochrome_collapse",
       "category": "monochrome",
       "sourceName": "collapse",
       "pageName": "􀥧     Icons"
     },
     {
       "figmaComponentId": "11610:28710",
-      "path": "icons/web/monochrome/contractor.svg",
+      "webPath": "icons/web/monochrome/contractor.svg",
+      "iosAssetName": "design-icon-monochrome-contractor",
+      "androidResourceName": "design_icon_monochrome_contractor",
       "category": "monochrome",
       "sourceName": "contractor",
       "pageName": "􀥧     Icons"
     },
     {
       "figmaComponentId": "1069:7007",
-      "path": "icons/web/monochrome/copy.svg",
+      "webPath": "icons/web/monochrome/copy.svg",
+      "iosAssetName": "design-icon-monochrome-copy",
+      "androidResourceName": "design_icon_monochrome_copy",
       "category": "monochrome",
       "sourceName": "copy",
       "pageName": "􀥧     Icons"
     },
     {
       "figmaComponentId": "9191:7984",
-      "path": "icons/web/monochrome/customer.svg",
+      "webPath": "icons/web/monochrome/customer.svg",
+      "iosAssetName": "design-icon-monochrome-customer",
+      "androidResourceName": "design_icon_monochrome_customer",
       "category": "monochrome",
       "sourceName": "customer",
       "pageName": "􀥧     Icons"
     },
     {
       "figmaComponentId": "11610:28722",
-      "path": "icons/web/monochrome/dark.svg",
+      "webPath": "icons/web/monochrome/dark.svg",
+      "iosAssetName": "design-icon-monochrome-dark",
+      "androidResourceName": "design_icon_monochrome_dark",
       "category": "monochrome",
       "sourceName": "dark",
       "pageName": "􀥧     Icons"
     },
     {
       "figmaComponentId": "9151:5354",
-      "path": "icons/web/monochrome/deadline.svg",
+      "webPath": "icons/web/monochrome/deadline.svg",
+      "iosAssetName": "design-icon-monochrome-deadline",
+      "androidResourceName": "design_icon_monochrome_deadline",
       "category": "monochrome",
       "sourceName": "deadline",
       "pageName": "􀥧     Icons"
     },
     {
       "figmaComponentId": "1069:6951",
-      "path": "icons/web/monochrome/delete.svg",
+      "webPath": "icons/web/monochrome/delete.svg",
+      "iosAssetName": "design-icon-monochrome-delete",
+      "androidResourceName": "design_icon_monochrome_delete",
       "category": "monochrome",
       "sourceName": "delete",
       "pageName": "􀥧     Icons"
     },
     {
       "figmaComponentId": "8007:428",
-      "path": "icons/web/monochrome/deleted-folder.svg",
+      "webPath": "icons/web/monochrome/deleted-folder.svg",
+      "iosAssetName": "design-icon-monochrome-deleted-folder",
+      "androidResourceName": "design_icon_monochrome_deleted_folder",
       "category": "monochrome",
       "sourceName": "deleted-folder",
       "pageName": "􀥧     Icons"
     },
     {
       "figmaComponentId": "1069:6900",
-      "path": "icons/web/monochrome/doc-excel-fill.svg",
+      "webPath": "icons/web/monochrome/doc-excel-fill.svg",
+      "iosAssetName": "design-icon-monochrome-doc-excel-fill",
+      "androidResourceName": "design_icon_monochrome_doc_excel_fill",
       "category": "monochrome",
       "sourceName": "doc.excel-fill",
       "pageName": "􀥧     Icons"
     },
     {
       "figmaComponentId": "1069:6971",
-      "path": "icons/web/monochrome/doc-excel.svg",
+      "webPath": "icons/web/monochrome/doc-excel.svg",
+      "iosAssetName": "design-icon-monochrome-doc-excel",
+      "androidResourceName": "design_icon_monochrome_doc_excel",
       "category": "monochrome",
       "sourceName": "doc.excel",
       "pageName": "􀥧     Icons"
     },
     {
       "figmaComponentId": "1069:6965",
-      "path": "icons/web/monochrome/doc-export.svg",
+      "webPath": "icons/web/monochrome/doc-export.svg",
+      "iosAssetName": "design-icon-monochrome-doc-export",
+      "androidResourceName": "design_icon_monochrome_doc_export",
       "category": "monochrome",
       "sourceName": "doc-export",
       "pageName": "􀥧     Icons"
     },
     {
       "figmaComponentId": "1069:6969",
-      "path": "icons/web/monochrome/doc-file.svg",
+      "webPath": "icons/web/monochrome/doc-file.svg",
+      "iosAssetName": "design-icon-monochrome-doc-file",
+      "androidResourceName": "design_icon_monochrome_doc_file",
       "category": "monochrome",
       "sourceName": "doc-file",
       "pageName": "􀥧     Icons"
     },
     {
       "figmaComponentId": "1069:6963",
-      "path": "icons/web/monochrome/doc-import.svg",
+      "webPath": "icons/web/monochrome/doc-import.svg",
+      "iosAssetName": "design-icon-monochrome-doc-import",
+      "androidResourceName": "design_icon_monochrome_doc_import",
       "category": "monochrome",
       "sourceName": "doc-import",
       "pageName": "􀥧     Icons"
     },
     {
       "figmaComponentId": "7769:35155",
-      "path": "icons/web/monochrome/doc-pdf-fill.svg",
+      "webPath": "icons/web/monochrome/doc-pdf-fill.svg",
+      "iosAssetName": "design-icon-monochrome-doc-pdf-fill",
+      "androidResourceName": "design_icon_monochrome_doc_pdf_fill",
       "category": "monochrome",
       "sourceName": "doc-pdf-fill",
       "pageName": "􀥧     Icons"
     },
     {
       "figmaComponentId": "7769:35151",
-      "path": "icons/web/monochrome/doc-pdf.svg",
+      "webPath": "icons/web/monochrome/doc-pdf.svg",
+      "iosAssetName": "design-icon-monochrome-doc-pdf",
+      "androidResourceName": "design_icon_monochrome_doc_pdf",
       "category": "monochrome",
       "sourceName": "doc-pdf",
       "pageName": "􀥧     Icons"
     },
     {
       "figmaComponentId": "1069:6967",
-      "path": "icons/web/monochrome/doc.svg",
+      "webPath": "icons/web/monochrome/doc.svg",
+      "iosAssetName": "design-icon-monochrome-doc",
+      "androidResourceName": "design_icon_monochrome_doc",
       "category": "monochrome",
       "sourceName": "doc",
       "pageName": "􀥧     Icons"
     },
     {
       "figmaComponentId": "1069:7003",
-      "path": "icons/web/monochrome/download.svg",
+      "webPath": "icons/web/monochrome/download.svg",
+      "iosAssetName": "design-icon-monochrome-download",
+      "androidResourceName": "design_icon_monochrome_download",
       "category": "monochrome",
       "sourceName": "download",
       "pageName": "􀥧     Icons"
     },
     {
       "figmaComponentId": "11686:9525",
-      "path": "icons/web/monochrome/drag-handle-trimmed.svg",
+      "webPath": "icons/web/monochrome/drag-handle-trimmed.svg",
+      "iosAssetName": "design-icon-monochrome-drag-handle-trimmed",
+      "androidResourceName": "design_icon_monochrome_drag_handle_trimmed",
       "category": "monochrome",
       "sourceName": "drag-handle-trimmed",
       "pageName": "􀥧     Icons"
     },
     {
       "figmaComponentId": "11621:5547",
-      "path": "icons/web/monochrome/drag-handle.svg",
+      "webPath": "icons/web/monochrome/drag-handle.svg",
+      "iosAssetName": "design-icon-monochrome-drag-handle",
+      "androidResourceName": "design_icon_monochrome_drag_handle",
       "category": "monochrome",
       "sourceName": "drag-handle",
       "pageName": "􀥧     Icons"
     },
     {
       "figmaComponentId": "5490:1792",
-      "path": "icons/web/monochrome/dublicate.svg",
+      "webPath": "icons/web/monochrome/dublicate.svg",
+      "iosAssetName": "design-icon-monochrome-dublicate",
+      "androidResourceName": "design_icon_monochrome_dublicate",
       "category": "monochrome",
       "sourceName": "dublicate",
       "pageName": "􀥧     Icons"
     },
     {
       "figmaComponentId": "1069:7069",
-      "path": "icons/web/monochrome/edit-slider.svg",
+      "webPath": "icons/web/monochrome/edit-slider.svg",
+      "iosAssetName": "design-icon-monochrome-edit-slider",
+      "androidResourceName": "design_icon_monochrome_edit_slider",
       "category": "monochrome",
       "sourceName": "edit.slider",
       "pageName": "􀥧     Icons"
     },
     {
       "figmaComponentId": "4696:111",
-      "path": "icons/web/monochrome/edit.svg",
+      "webPath": "icons/web/monochrome/edit.svg",
+      "iosAssetName": "design-icon-monochrome-edit",
+      "androidResourceName": "design_icon_monochrome_edit",
       "category": "monochrome",
       "sourceName": "edit",
       "pageName": "􀥧     Icons"
     },
     {
       "figmaComponentId": "11610:28709",
-      "path": "icons/web/monochrome/education.svg",
+      "webPath": "icons/web/monochrome/education.svg",
+      "iosAssetName": "design-icon-monochrome-education",
+      "androidResourceName": "design_icon_monochrome_education",
       "category": "monochrome",
       "sourceName": "education",
       "pageName": "􀥧     Icons"
     },
     {
       "figmaComponentId": "7775:32027",
-      "path": "icons/web/monochrome/error.svg",
+      "webPath": "icons/web/monochrome/error.svg",
+      "iosAssetName": "design-icon-monochrome-error",
+      "androidResourceName": "design_icon_monochrome_error",
       "category": "monochrome",
       "sourceName": "error",
       "pageName": "􀥧     Icons"
     },
     {
       "figmaComponentId": "12599:11581",
-      "path": "icons/web/monochrome/event-type.svg",
+      "webPath": "icons/web/monochrome/event-type.svg",
+      "iosAssetName": "design-icon-monochrome-event-type",
+      "androidResourceName": "design_icon_monochrome_event_type",
       "category": "monochrome",
       "sourceName": "event-type",
       "pageName": "􀥧     Icons"
     },
     {
       "figmaComponentId": "1069:7025",
-      "path": "icons/web/monochrome/exit.svg",
+      "webPath": "icons/web/monochrome/exit.svg",
+      "iosAssetName": "design-icon-monochrome-exit",
+      "androidResourceName": "design_icon_monochrome_exit",
       "category": "monochrome",
       "sourceName": "exit",
       "pageName": "􀥧     Icons"
     },
     {
       "figmaComponentId": "12376:1226",
-      "path": "icons/web/monochrome/expand.svg",
+      "webPath": "icons/web/monochrome/expand.svg",
+      "iosAssetName": "design-icon-monochrome-expand",
+      "androidResourceName": "design_icon_monochrome_expand",
       "category": "monochrome",
       "sourceName": "expand",
       "pageName": "􀥧     Icons"
     },
     {
       "figmaComponentId": "12163:9824",
-      "path": "icons/web/monochrome/expense-item.svg",
+      "webPath": "icons/web/monochrome/expense-item.svg",
+      "iosAssetName": "design-icon-monochrome-expense-item",
+      "androidResourceName": "design_icon_monochrome_expense_item",
       "category": "monochrome",
       "sourceName": "expense-item",
       "pageName": "􀥧     Icons"
     },
     {
       "figmaComponentId": "2941:543",
-      "path": "icons/web/monochrome/feedback.svg",
+      "webPath": "icons/web/monochrome/feedback.svg",
+      "iosAssetName": "design-icon-monochrome-feedback",
+      "androidResourceName": "design_icon_monochrome_feedback",
       "category": "monochrome",
       "sourceName": "feedback",
       "pageName": "􀥧     Icons"
     },
     {
       "figmaComponentId": "1069:7027",
-      "path": "icons/web/monochrome/file-add.svg",
+      "webPath": "icons/web/monochrome/file-add.svg",
+      "iosAssetName": "design-icon-monochrome-file-add",
+      "androidResourceName": "design_icon_monochrome_file_add",
       "category": "monochrome",
       "sourceName": "file-add",
       "pageName": "􀥧     Icons"
     },
     {
       "figmaComponentId": "2865:1617",
-      "path": "icons/web/monochrome/filter-off.svg",
+      "webPath": "icons/web/monochrome/filter-off.svg",
+      "iosAssetName": "design-icon-monochrome-filter-off",
+      "androidResourceName": "design_icon_monochrome_filter_off",
       "category": "monochrome",
       "sourceName": "filter-off",
       "pageName": "􀥧     Icons"
     },
     {
       "figmaComponentId": "2865:1620",
-      "path": "icons/web/monochrome/filter-on.svg",
+      "webPath": "icons/web/monochrome/filter-on.svg",
+      "iosAssetName": "design-icon-monochrome-filter-on",
+      "androidResourceName": "design_icon_monochrome_filter_on",
       "category": "monochrome",
       "sourceName": "filter-on",
       "pageName": "􀥧     Icons"
     },
     {
       "figmaComponentId": "12721:531",
-      "path": "icons/web/monochrome/financial-chart.svg",
+      "webPath": "icons/web/monochrome/financial-chart.svg",
+      "iosAssetName": "design-icon-monochrome-financial-chart",
+      "androidResourceName": "design_icon_monochrome_financial_chart",
       "category": "monochrome",
       "sourceName": "financial-chart",
       "pageName": "􀥧     Icons"
     },
     {
       "figmaComponentId": "8323:11766",
-      "path": "icons/web/monochrome/folder.svg",
+      "webPath": "icons/web/monochrome/folder.svg",
+      "iosAssetName": "design-icon-monochrome-folder",
+      "androidResourceName": "design_icon_monochrome_folder",
       "category": "monochrome",
       "sourceName": "folder",
       "pageName": "􀥧     Icons"
     },
     {
       "figmaComponentId": "12748:4427",
-      "path": "icons/web/monochrome/formula.svg",
+      "webPath": "icons/web/monochrome/formula.svg",
+      "iosAssetName": "design-icon-monochrome-formula",
+      "androidResourceName": "design_icon_monochrome_formula",
       "category": "monochrome",
       "sourceName": "formula",
       "pageName": "􀥧     Icons"
     },
     {
       "figmaComponentId": "2941:551",
-      "path": "icons/web/monochrome/foundation-fill.svg",
+      "webPath": "icons/web/monochrome/foundation-fill.svg",
+      "iosAssetName": "design-icon-monochrome-foundation-fill",
+      "androidResourceName": "design_icon_monochrome_foundation_fill",
       "category": "monochrome",
       "sourceName": "foundation-fill",
       "pageName": "􀥧     Icons"
     },
     {
       "figmaComponentId": "2941:549",
-      "path": "icons/web/monochrome/foundation.svg",
+      "webPath": "icons/web/monochrome/foundation.svg",
+      "iosAssetName": "design-icon-monochrome-foundation",
+      "androidResourceName": "design_icon_monochrome_foundation",
       "category": "monochrome",
       "sourceName": "foundation",
       "pageName": "􀥧     Icons"
     },
     {
       "figmaComponentId": "2941:579",
-      "path": "icons/web/monochrome/gear.svg",
+      "webPath": "icons/web/monochrome/gear.svg",
+      "iosAssetName": "design-icon-monochrome-gear",
+      "androidResourceName": "design_icon_monochrome_gear",
       "category": "monochrome",
       "sourceName": "gear",
       "pageName": "􀥧     Icons"
     },
     {
       "figmaComponentId": "1143:3704",
-      "path": "icons/web/monochrome/grabber.svg",
+      "webPath": "icons/web/monochrome/grabber.svg",
+      "iosAssetName": "design-icon-monochrome-grabber",
+      "androidResourceName": "design_icon_monochrome_grabber",
       "category": "monochrome",
       "sourceName": "grabber",
       "pageName": "􀥧     Icons"
     },
     {
       "figmaComponentId": "12595:103",
-      "path": "icons/web/monochrome/grouping.svg",
+      "webPath": "icons/web/monochrome/grouping.svg",
+      "iosAssetName": "design-icon-monochrome-grouping",
+      "androidResourceName": "design_icon_monochrome_grouping",
       "category": "monochrome",
       "sourceName": "grouping",
       "pageName": "􀥧     Icons"
     },
     {
       "figmaComponentId": "12542:673",
-      "path": "icons/web/monochrome/help-circle.svg",
+      "webPath": "icons/web/monochrome/help-circle.svg",
+      "iosAssetName": "design-icon-monochrome-help-circle",
+      "androidResourceName": "design_icon_monochrome_help_circle",
       "category": "monochrome",
       "sourceName": "help-circle",
       "pageName": "􀥧     Icons"
     },
     {
       "figmaComponentId": "2941:499",
-      "path": "icons/web/monochrome/help.svg",
+      "webPath": "icons/web/monochrome/help.svg",
+      "iosAssetName": "design-icon-monochrome-help",
+      "androidResourceName": "design_icon_monochrome_help",
       "category": "monochrome",
       "sourceName": "help",
       "pageName": "􀥧     Icons"
     },
     {
       "figmaComponentId": "1069:6935",
-      "path": "icons/web/monochrome/hide.svg",
+      "webPath": "icons/web/monochrome/hide.svg",
+      "iosAssetName": "design-icon-monochrome-hide",
+      "androidResourceName": "design_icon_monochrome_hide",
       "category": "monochrome",
       "sourceName": "hide",
       "pageName": "􀥧     Icons"
     },
     {
       "figmaComponentId": "11610:28698",
-      "path": "icons/web/monochrome/house.svg",
+      "webPath": "icons/web/monochrome/house.svg",
+      "iosAssetName": "design-icon-monochrome-house",
+      "androidResourceName": "design_icon_monochrome_house",
       "category": "monochrome",
       "sourceName": "house",
       "pageName": "􀥧     Icons"
     },
     {
       "figmaComponentId": "12626:1210",
-      "path": "icons/web/monochrome/import.svg",
+      "webPath": "icons/web/monochrome/import.svg",
+      "iosAssetName": "design-icon-monochrome-import",
+      "androidResourceName": "design_icon_monochrome_import",
       "category": "monochrome",
       "sourceName": "import",
       "pageName": "􀥧     Icons"
     },
     {
       "figmaComponentId": "2117:28465",
-      "path": "icons/web/monochrome/infinity.svg",
+      "webPath": "icons/web/monochrome/infinity.svg",
+      "iosAssetName": "design-icon-monochrome-infinity",
+      "androidResourceName": "design_icon_monochrome_infinity",
       "category": "monochrome",
       "sourceName": "infinity",
       "pageName": "􀥧     Icons"
     },
     {
       "figmaComponentId": "1069:6991",
-      "path": "icons/web/monochrome/info.svg",
+      "webPath": "icons/web/monochrome/info.svg",
+      "iosAssetName": "design-icon-monochrome-info",
+      "androidResourceName": "design_icon_monochrome_info",
       "category": "monochrome",
       "sourceName": "info",
       "pageName": "􀥧     Icons"
     },
     {
       "figmaComponentId": "11610:28721",
-      "path": "icons/web/monochrome/light.svg",
+      "webPath": "icons/web/monochrome/light.svg",
+      "iosAssetName": "design-icon-monochrome-light",
+      "androidResourceName": "design_icon_monochrome_light",
       "category": "monochrome",
       "sourceName": "light",
       "pageName": "􀥧     Icons"
     },
     {
       "figmaComponentId": "1069:7031",
-      "path": "icons/web/monochrome/link-arrow.svg",
+      "webPath": "icons/web/monochrome/link-arrow.svg",
+      "iosAssetName": "design-icon-monochrome-link-arrow",
+      "androidResourceName": "design_icon_monochrome_link_arrow",
       "category": "monochrome",
       "sourceName": "link-arrow",
       "pageName": "􀥧     Icons"
     },
     {
       "figmaComponentId": "1069:7029",
-      "path": "icons/web/monochrome/link.svg",
+      "webPath": "icons/web/monochrome/link.svg",
+      "iosAssetName": "design-icon-monochrome-link",
+      "androidResourceName": "design_icon_monochrome_link",
       "category": "monochrome",
       "sourceName": "link",
       "pageName": "􀥧     Icons"
     },
     {
       "figmaComponentId": "12530:113",
-      "path": "icons/web/monochrome/lock-fill.svg",
+      "webPath": "icons/web/monochrome/lock-fill.svg",
+      "iosAssetName": "design-icon-monochrome-lock-fill",
+      "androidResourceName": "design_icon_monochrome_lock_fill",
       "category": "monochrome",
       "sourceName": "lock-fill",
       "pageName": "􀥧     Icons"
     },
     {
       "figmaComponentId": "12530:112",
-      "path": "icons/web/monochrome/lock-open-fill.svg",
+      "webPath": "icons/web/monochrome/lock-open-fill.svg",
+      "iosAssetName": "design-icon-monochrome-lock-open-fill",
+      "androidResourceName": "design_icon_monochrome_lock_open_fill",
       "category": "monochrome",
       "sourceName": "lock-open-fill",
       "pageName": "􀥧     Icons"
     },
     {
       "figmaComponentId": "12530:102",
-      "path": "icons/web/monochrome/lock-open.svg",
+      "webPath": "icons/web/monochrome/lock-open.svg",
+      "iosAssetName": "design-icon-monochrome-lock-open",
+      "androidResourceName": "design_icon_monochrome_lock_open",
       "category": "monochrome",
       "sourceName": "lock-open",
       "pageName": "􀥧     Icons"
     },
     {
       "figmaComponentId": "12530:101",
-      "path": "icons/web/monochrome/lock.svg",
+      "webPath": "icons/web/monochrome/lock.svg",
+      "iosAssetName": "design-icon-monochrome-lock",
+      "androidResourceName": "design_icon_monochrome_lock",
       "category": "monochrome",
       "sourceName": "lock",
       "pageName": "􀥧     Icons"
     },
     {
       "figmaComponentId": "11396:5560",
-      "path": "icons/web/monochrome/max.svg",
+      "webPath": "icons/web/monochrome/max.svg",
+      "iosAssetName": "design-icon-monochrome-max",
+      "androidResourceName": "design_icon_monochrome_max",
       "category": "monochrome",
       "sourceName": "max",
       "pageName": "􀥧     Icons"
     },
     {
       "figmaComponentId": "12669:122",
-      "path": "icons/web/monochrome/microphone-off-fill.svg",
+      "webPath": "icons/web/monochrome/microphone-off-fill.svg",
+      "iosAssetName": "design-icon-monochrome-microphone-off-fill",
+      "androidResourceName": "design_icon_monochrome_microphone_off_fill",
       "category": "monochrome",
       "sourceName": "microphone-off-fill",
       "pageName": "􀥧     Icons"
     },
     {
       "figmaComponentId": "12669:120",
-      "path": "icons/web/monochrome/microphone-off.svg",
+      "webPath": "icons/web/monochrome/microphone-off.svg",
+      "iosAssetName": "design-icon-monochrome-microphone-off",
+      "androidResourceName": "design_icon_monochrome_microphone_off",
       "category": "monochrome",
       "sourceName": "microphone-off",
       "pageName": "􀥧     Icons"
     },
     {
       "figmaComponentId": "12669:121",
-      "path": "icons/web/monochrome/microphone-on-fill.svg",
+      "webPath": "icons/web/monochrome/microphone-on-fill.svg",
+      "iosAssetName": "design-icon-monochrome-microphone-on-fill",
+      "androidResourceName": "design_icon_monochrome_microphone_on_fill",
       "category": "monochrome",
       "sourceName": "microphone-on-fill",
       "pageName": "􀥧     Icons"
     },
     {
       "figmaComponentId": "12669:119",
-      "path": "icons/web/monochrome/microphone-on.svg",
+      "webPath": "icons/web/monochrome/microphone-on.svg",
+      "iosAssetName": "design-icon-monochrome-microphone-on",
+      "androidResourceName": "design_icon_monochrome_microphone_on",
       "category": "monochrome",
       "sourceName": "microphone-on",
       "pageName": "􀥧     Icons"
     },
     {
       "figmaComponentId": "11610:29062",
-      "path": "icons/web/monochrome/mincifri.svg",
+      "webPath": "icons/web/monochrome/mincifri.svg",
+      "iosAssetName": "design-icon-monochrome-mincifri",
+      "androidResourceName": "",
       "category": "monochrome",
       "sourceName": "mincifri",
       "pageName": "􀥧     Icons"
     },
     {
       "figmaComponentId": "7778:20639",
-      "path": "icons/web/monochrome/minus-circle-fill.svg",
+      "webPath": "icons/web/monochrome/minus-circle-fill.svg",
+      "iosAssetName": "design-icon-monochrome-minus-circle-fill",
+      "androidResourceName": "design_icon_monochrome_minus_circle_fill",
       "category": "monochrome",
       "sourceName": "minus-circle-fill",
       "pageName": "􀥧     Icons"
     },
     {
       "figmaComponentId": "7778:20631",
-      "path": "icons/web/monochrome/minus-circle.svg",
+      "webPath": "icons/web/monochrome/minus-circle.svg",
+      "iosAssetName": "design-icon-monochrome-minus-circle",
+      "androidResourceName": "design_icon_monochrome_minus_circle",
       "category": "monochrome",
       "sourceName": "minus-circle",
       "pageName": "􀥧     Icons"
     },
     {
       "figmaComponentId": "1069:7011",
-      "path": "icons/web/monochrome/more.svg",
+      "webPath": "icons/web/monochrome/more.svg",
+      "iosAssetName": "design-icon-monochrome-more",
+      "androidResourceName": "design_icon_monochrome_more",
       "category": "monochrome",
       "sourceName": "more",
       "pageName": "􀥧     Icons"
     },
     {
       "figmaComponentId": "1069:6884",
-      "path": "icons/web/monochrome/notifications-fill.svg",
+      "webPath": "icons/web/monochrome/notifications-fill.svg",
+      "iosAssetName": "design-icon-monochrome-notifications-fill",
+      "androidResourceName": "design_icon_monochrome_notifications_fill",
       "category": "monochrome",
       "sourceName": "notifications-fill",
       "pageName": "􀥧     Icons"
     },
     {
       "figmaComponentId": "1069:6886",
-      "path": "icons/web/monochrome/notifications-unread-fill.svg",
+      "webPath": "icons/web/monochrome/notifications-unread-fill.svg",
+      "iosAssetName": "design-icon-monochrome-notifications-unread-fill",
+      "androidResourceName": "design_icon_monochrome_notifications_unread_fill",
       "category": "monochrome",
       "sourceName": "notifications-unread-fill",
       "pageName": "􀥧     Icons"
     },
     {
       "figmaComponentId": "1069:6957",
-      "path": "icons/web/monochrome/notifications-unread.svg",
+      "webPath": "icons/web/monochrome/notifications-unread.svg",
+      "iosAssetName": "design-icon-monochrome-notifications-unread",
+      "androidResourceName": "design_icon_monochrome_notifications_unread",
       "category": "monochrome",
       "sourceName": "notifications-unread",
       "pageName": "􀥧     Icons"
     },
     {
       "figmaComponentId": "1069:6955",
-      "path": "icons/web/monochrome/notifications.svg",
+      "webPath": "icons/web/monochrome/notifications.svg",
+      "iosAssetName": "design-icon-monochrome-notifications",
+      "androidResourceName": "design_icon_monochrome_notifications",
       "category": "monochrome",
       "sourceName": "notifications",
       "pageName": "􀥧     Icons"
     },
     {
       "figmaComponentId": "12390:1400",
-      "path": "icons/web/monochrome/ontractor-relations.svg",
+      "webPath": "icons/web/monochrome/ontractor-relations.svg",
+      "iosAssetName": "design-icon-monochrome-ontractor-relations",
+      "androidResourceName": "design_icon_monochrome_ontractor_relations",
       "category": "monochrome",
       "sourceName": "сontractor-relations",
       "pageName": "􀥧     Icons"
     },
     {
       "figmaComponentId": "12749:4432",
-      "path": "icons/web/monochrome/parameters.svg",
+      "webPath": "icons/web/monochrome/parameters.svg",
+      "iosAssetName": "design-icon-monochrome-parameters",
+      "androidResourceName": "design_icon_monochrome_parameters",
       "category": "monochrome",
       "sourceName": "parameters",
       "pageName": "􀥧     Icons"
     },
     {
       "figmaComponentId": "1069:6931",
-      "path": "icons/web/monochrome/password.svg",
+      "webPath": "icons/web/monochrome/password.svg",
+      "iosAssetName": "design-icon-monochrome-password",
+      "androidResourceName": "design_icon_monochrome_password",
       "category": "monochrome",
       "sourceName": "password",
       "pageName": "􀥧     Icons"
     },
     {
       "figmaComponentId": "2941:583",
-      "path": "icons/web/monochrome/past-down.svg",
+      "webPath": "icons/web/monochrome/past-down.svg",
+      "iosAssetName": "design-icon-monochrome-past-down",
+      "androidResourceName": "design_icon_monochrome_past_down",
       "category": "monochrome",
       "sourceName": "past-down",
       "pageName": "􀥧     Icons"
     },
     {
       "figmaComponentId": "2941:581",
-      "path": "icons/web/monochrome/past-up.svg",
+      "webPath": "icons/web/monochrome/past-up.svg",
+      "iosAssetName": "design-icon-monochrome-past-up",
+      "androidResourceName": "design_icon_monochrome_past_up",
       "category": "monochrome",
       "sourceName": "past-up",
       "pageName": "􀥧     Icons"
     },
     {
       "figmaComponentId": "7770:1102",
-      "path": "icons/web/monochrome/paste.svg",
+      "webPath": "icons/web/monochrome/paste.svg",
+      "iosAssetName": "design-icon-monochrome-paste",
+      "androidResourceName": "design_icon_monochrome_paste",
       "category": "monochrome",
       "sourceName": "paste",
       "pageName": "􀥧     Icons"
     },
     {
       "figmaComponentId": "11610:29039",
-      "path": "icons/web/monochrome/percent.svg",
+      "webPath": "icons/web/monochrome/percent.svg",
+      "iosAssetName": "design-icon-monochrome-percent",
+      "androidResourceName": "design_icon_monochrome_percent",
       "category": "monochrome",
       "sourceName": "percent",
       "pageName": "􀥧     Icons"
     },
     {
       "figmaComponentId": "4986:3279",
-      "path": "icons/web/monochrome/phone.svg",
+      "webPath": "icons/web/monochrome/phone.svg",
+      "iosAssetName": "design-icon-monochrome-phone",
+      "androidResourceName": "design_icon_monochrome_phone",
       "category": "monochrome",
       "sourceName": "phone",
       "pageName": "􀥧     Icons"
     },
     {
       "figmaComponentId": "2941:525",
-      "path": "icons/web/monochrome/photo.svg",
+      "webPath": "icons/web/monochrome/photo.svg",
+      "iosAssetName": "design-icon-monochrome-photo",
+      "androidResourceName": "design_icon_monochrome_photo",
       "category": "monochrome",
       "sourceName": "photo",
       "pageName": "􀥧     Icons"
     },
     {
       "figmaComponentId": "2941:527",
-      "path": "icons/web/monochrome/photo2.svg",
+      "webPath": "icons/web/monochrome/photo2.svg",
+      "iosAssetName": "design-icon-monochrome-photo2",
+      "androidResourceName": "design_icon_monochrome_photo2",
       "category": "monochrome",
       "sourceName": "photo2",
       "pageName": "􀥧     Icons"
     },
     {
       "figmaComponentId": "2941:531",
-      "path": "icons/web/monochrome/plus-circle-fill.svg",
+      "webPath": "icons/web/monochrome/plus-circle-fill.svg",
+      "iosAssetName": "design-icon-monochrome-plus-circle-fill",
+      "androidResourceName": "design_icon_monochrome_plus_circle_fill",
       "category": "monochrome",
       "sourceName": "plus-circle-fill",
       "pageName": "􀥧     Icons"
     },
     {
       "figmaComponentId": "5961:7911",
-      "path": "icons/web/monochrome/plus-circle.svg",
+      "webPath": "icons/web/monochrome/plus-circle.svg",
+      "iosAssetName": "design-icon-monochrome-plus-circle",
+      "androidResourceName": "design_icon_monochrome_plus_circle",
       "category": "monochrome",
       "sourceName": "plus-circle",
       "pageName": "􀥧     Icons"
     },
     {
       "figmaComponentId": "1069:7061",
-      "path": "icons/web/monochrome/plus.svg",
+      "webPath": "icons/web/monochrome/plus.svg",
+      "iosAssetName": "design-icon-monochrome-plus",
+      "androidResourceName": "design_icon_monochrome_plus",
       "category": "monochrome",
       "sourceName": "plus",
       "pageName": "􀥧     Icons"
     },
     {
       "figmaComponentId": "2941:507",
-      "path": "icons/web/monochrome/policy.svg",
+      "webPath": "icons/web/monochrome/policy.svg",
+      "iosAssetName": "design-icon-monochrome-policy",
+      "androidResourceName": "design_icon_monochrome_policy",
       "category": "monochrome",
       "sourceName": "policy",
       "pageName": "􀥧     Icons"
     },
     {
       "figmaComponentId": "12439:1432",
-      "path": "icons/web/monochrome/position-manual.svg",
+      "webPath": "icons/web/monochrome/position-manual.svg",
+      "iosAssetName": "design-icon-monochrome-position-manual",
+      "androidResourceName": "design_icon_monochrome_position_manual",
       "category": "monochrome",
       "sourceName": "position-manual",
       "pageName": "􀥧     Icons"
     },
     {
       "figmaComponentId": "1069:6939",
-      "path": "icons/web/monochrome/pricelist.svg",
+      "webPath": "icons/web/monochrome/pricelist.svg",
+      "iosAssetName": "design-icon-monochrome-pricelist",
+      "androidResourceName": "design_icon_monochrome_pricelist",
       "category": "monochrome",
       "sourceName": "pricelist",
       "pageName": "􀥧     Icons"
     },
     {
       "figmaComponentId": "2941:567",
-      "path": "icons/web/monochrome/privacy.svg",
+      "webPath": "icons/web/monochrome/privacy.svg",
+      "iosAssetName": "design-icon-monochrome-privacy",
+      "androidResourceName": "design_icon_monochrome_privacy",
       "category": "monochrome",
       "sourceName": "privacy",
       "pageName": "􀥧     Icons"
     },
     {
       "figmaComponentId": "9691:1082",
-      "path": "icons/web/monochrome/products.svg",
+      "webPath": "icons/web/monochrome/products.svg",
+      "iosAssetName": "design-icon-monochrome-products",
+      "androidResourceName": "design_icon_monochrome_products",
       "category": "monochrome",
       "sourceName": "products",
       "pageName": "􀥧     Icons"
     },
     {
       "figmaComponentId": "9151:5339",
-      "path": "icons/web/monochrome/project-manager.svg",
+      "webPath": "icons/web/monochrome/project-manager.svg",
+      "iosAssetName": "design-icon-monochrome-project-manager",
+      "androidResourceName": "design_icon_monochrome_project_manager",
       "category": "monochrome",
       "sourceName": "project-manager",
       "pageName": "􀥧     Icons"
     },
     {
       "figmaComponentId": "2941:533",
-      "path": "icons/web/monochrome/project.svg",
+      "webPath": "icons/web/monochrome/project.svg",
+      "iosAssetName": "design-icon-monochrome-project",
+      "androidResourceName": "design_icon_monochrome_project",
       "category": "monochrome",
       "sourceName": "project",
       "pageName": "􀥧     Icons"
     },
     {
       "figmaComponentId": "2941:509",
-      "path": "icons/web/monochrome/qrcode-scan.svg",
+      "webPath": "icons/web/monochrome/qrcode-scan.svg",
+      "iosAssetName": "design-icon-monochrome-qrcode-scan",
+      "androidResourceName": "design_icon_monochrome_qrcode_scan",
       "category": "monochrome",
       "sourceName": "qrcode-scan",
       "pageName": "􀥧     Icons"
     },
     {
       "figmaComponentId": "2941:511",
-      "path": "icons/web/monochrome/qrcode.svg",
+      "webPath": "icons/web/monochrome/qrcode.svg",
+      "iosAssetName": "design-icon-monochrome-qrcode",
+      "androidResourceName": "design_icon_monochrome_qrcode",
       "category": "monochrome",
       "sourceName": "qrcode",
       "pageName": "􀥧     Icons"
     },
     {
       "figmaComponentId": "3148:2819",
-      "path": "icons/web/monochrome/receipt.svg",
+      "webPath": "icons/web/monochrome/receipt.svg",
+      "iosAssetName": "design-icon-monochrome-receipt",
+      "androidResourceName": "design_icon_monochrome_receipt",
       "category": "monochrome",
       "sourceName": "receipt",
       "pageName": "􀥧     Icons"
     },
     {
       "figmaComponentId": "1805:7179",
-      "path": "icons/web/monochrome/refresh.svg",
+      "webPath": "icons/web/monochrome/refresh.svg",
+      "iosAssetName": "design-icon-monochrome-refresh",
+      "androidResourceName": "design_icon_monochrome_refresh",
       "category": "monochrome",
       "sourceName": "refresh",
       "pageName": "􀥧     Icons"
     },
     {
       "figmaComponentId": "3557:25950",
-      "path": "icons/web/monochrome/return-from-deleted.svg",
+      "webPath": "icons/web/monochrome/return-from-deleted.svg",
+      "iosAssetName": "design-icon-monochrome-return-from-deleted",
+      "androidResourceName": "design_icon_monochrome_return_from_deleted",
       "category": "monochrome",
       "sourceName": "return-from-deleted",
       "pageName": "􀥧     Icons"
     },
     {
       "figmaComponentId": "9098:6229",
-      "path": "icons/web/monochrome/roulette-fill.svg",
+      "webPath": "icons/web/monochrome/roulette-fill.svg",
+      "iosAssetName": "design-icon-monochrome-roulette-fill",
+      "androidResourceName": "design_icon_monochrome_roulette_fill",
       "category": "monochrome",
       "sourceName": "roulette-fill",
       "pageName": "􀥧     Icons"
     },
     {
       "figmaComponentId": "9098:6225",
-      "path": "icons/web/monochrome/roulette.svg",
+      "webPath": "icons/web/monochrome/roulette.svg",
+      "iosAssetName": "design-icon-monochrome-roulette",
+      "androidResourceName": "design_icon_monochrome_roulette",
       "category": "monochrome",
       "sourceName": "roulette",
       "pageName": "􀥧     Icons"
     },
     {
       "figmaComponentId": "8508:4994",
-      "path": "icons/web/monochrome/safari.svg",
+      "webPath": "icons/web/monochrome/safari.svg",
+      "iosAssetName": "design-icon-monochrome-safari",
+      "androidResourceName": "design_icon_monochrome_safari",
       "category": "monochrome",
       "sourceName": "safari",
       "pageName": "􀥧     Icons"
     },
     {
       "figmaComponentId": "1069:6941",
-      "path": "icons/web/monochrome/sales.svg",
+      "webPath": "icons/web/monochrome/sales.svg",
+      "iosAssetName": "design-icon-monochrome-sales",
+      "androidResourceName": "design_icon_monochrome_sales",
       "category": "monochrome",
       "sourceName": "sales",
       "pageName": "􀥧     Icons"
     },
     {
       "figmaComponentId": "12683:99",
-      "path": "icons/web/monochrome/screen-share-desktop-off.svg",
+      "webPath": "icons/web/monochrome/screen-share-desktop-off.svg",
+      "iosAssetName": "design-icon-monochrome-screen-share-desktop-off",
+      "androidResourceName": "design_icon_monochrome_screen_share_desktop_off",
       "category": "monochrome",
       "sourceName": "screen-share-desktop-off",
       "pageName": "􀥧     Icons"
     },
     {
       "figmaComponentId": "12679:234",
-      "path": "icons/web/monochrome/screen-share-desktop-on.svg",
+      "webPath": "icons/web/monochrome/screen-share-desktop-on.svg",
+      "iosAssetName": "design-icon-monochrome-screen-share-desktop-on",
+      "androidResourceName": "design_icon_monochrome_screen_share_desktop_on",
       "category": "monochrome",
       "sourceName": "screen-share-desktop-on",
       "pageName": "􀥧     Icons"
     },
     {
       "figmaComponentId": "12683:100",
-      "path": "icons/web/monochrome/screen-share-mobile-off.svg",
+      "webPath": "icons/web/monochrome/screen-share-mobile-off.svg",
+      "iosAssetName": "design-icon-monochrome-screen-share-mobile-off",
+      "androidResourceName": "design_icon_monochrome_screen_share_mobile_off",
       "category": "monochrome",
       "sourceName": "screen-share-mobile-off",
       "pageName": "􀥧     Icons"
     },
     {
       "figmaComponentId": "12679:235",
-      "path": "icons/web/monochrome/screen-share-mobile-on.svg",
+      "webPath": "icons/web/monochrome/screen-share-mobile-on.svg",
+      "iosAssetName": "design-icon-monochrome-screen-share-mobile-on",
+      "androidResourceName": "design_icon_monochrome_screen_share_mobile_on",
       "category": "monochrome",
       "sourceName": "screen-share-mobile-on",
       "pageName": "􀥧     Icons"
     },
     {
       "figmaComponentId": "1069:7023",
-      "path": "icons/web/monochrome/search.svg",
+      "webPath": "icons/web/monochrome/search.svg",
+      "iosAssetName": "design-icon-monochrome-search",
+      "androidResourceName": "design_icon_monochrome_search",
       "category": "monochrome",
       "sourceName": "search",
       "pageName": "􀥧     Icons"
     },
     {
       "figmaComponentId": "9607:11224",
-      "path": "icons/web/monochrome/settings.svg",
+      "webPath": "icons/web/monochrome/settings.svg",
+      "iosAssetName": "design-icon-monochrome-settings",
+      "androidResourceName": "design_icon_monochrome_settings",
       "category": "monochrome",
       "sourceName": "settings",
       "pageName": "􀥧     Icons"
     },
     {
       "figmaComponentId": "2941:491",
-      "path": "icons/web/monochrome/share-android.svg",
+      "webPath": "icons/web/monochrome/share-android.svg",
+      "iosAssetName": "design-icon-monochrome-share-android",
+      "androidResourceName": "design_icon_monochrome_share_android",
       "category": "monochrome",
       "sourceName": "share-android",
       "pageName": "􀥧     Icons"
     },
     {
       "figmaComponentId": "1069:7005",
-      "path": "icons/web/monochrome/share-ios.svg",
+      "webPath": "icons/web/monochrome/share-ios.svg",
+      "iosAssetName": "design-icon-monochrome-share-ios",
+      "androidResourceName": "design_icon_monochrome_share_ios",
       "category": "monochrome",
       "sourceName": "share-ios",
       "pageName": "􀥧     Icons"
     },
     {
       "figmaComponentId": "12651:551",
-      "path": "icons/web/monochrome/show-deleted.svg",
+      "webPath": "icons/web/monochrome/show-deleted.svg",
+      "iosAssetName": "design-icon-monochrome-show-deleted",
+      "androidResourceName": "design_icon_monochrome_show_deleted",
       "category": "monochrome",
       "sourceName": "show-deleted",
       "pageName": "􀥧     Icons"
     },
     {
       "figmaComponentId": "1069:6933",
-      "path": "icons/web/monochrome/show.svg",
+      "webPath": "icons/web/monochrome/show.svg",
+      "iosAssetName": "design-icon-monochrome-show",
+      "androidResourceName": "design_icon_monochrome_show",
       "category": "monochrome",
       "sourceName": "show",
       "pageName": "􀥧     Icons"
     },
     {
       "figmaComponentId": "11190:3450",
-      "path": "icons/web/monochrome/sidebar.svg",
+      "webPath": "icons/web/monochrome/sidebar.svg",
+      "iosAssetName": "design-icon-monochrome-sidebar",
+      "androidResourceName": "design_icon_monochrome_sidebar",
       "category": "monochrome",
       "sourceName": "sidebar",
       "pageName": "􀥧     Icons"
     },
     {
       "figmaComponentId": "2941:547",
-      "path": "icons/web/monochrome/sort-arrow.svg",
+      "webPath": "icons/web/monochrome/sort-arrow.svg",
+      "iosAssetName": "design-icon-monochrome-sort-arrow",
+      "androidResourceName": "design_icon_monochrome_sort_arrow",
       "category": "monochrome",
       "sourceName": "sort-arrow",
       "pageName": "􀥧     Icons"
     },
     {
       "figmaComponentId": "1069:7053",
-      "path": "icons/web/monochrome/sort-chevron.svg",
+      "webPath": "icons/web/monochrome/sort-chevron.svg",
+      "iosAssetName": "design-icon-monochrome-sort-chevron",
+      "androidResourceName": "design_icon_monochrome_sort_chevron",
       "category": "monochrome",
       "sourceName": "sort-chevron",
       "pageName": "􀥧     Icons"
     },
     {
       "figmaComponentId": "2941:537",
-      "path": "icons/web/monochrome/tag.svg",
+      "webPath": "icons/web/monochrome/tag.svg",
+      "iosAssetName": "design-icon-monochrome-tag",
+      "androidResourceName": "design_icon_monochrome_tag",
       "category": "monochrome",
       "sourceName": "tag",
       "pageName": "􀥧     Icons"
     },
     {
       "figmaComponentId": "1069:6906",
-      "path": "icons/web/monochrome/telegram-fill.svg",
+      "webPath": "icons/web/monochrome/telegram-fill.svg",
+      "iosAssetName": "design-icon-monochrome-telegram-fill",
+      "androidResourceName": "design_icon_monochrome_telegram_fill",
       "category": "monochrome",
       "sourceName": "telegram-fill",
       "pageName": "􀥧     Icons"
     },
     {
       "figmaComponentId": "1069:6979",
-      "path": "icons/web/monochrome/telegram.svg",
+      "webPath": "icons/web/monochrome/telegram.svg",
+      "iosAssetName": "design-icon-monochrome-telegram",
+      "androidResourceName": "design_icon_monochrome_telegram",
       "category": "monochrome",
       "sourceName": "telegram",
       "pageName": "􀥧     Icons"
     },
     {
       "figmaComponentId": "10049:6199",
-      "path": "icons/web/monochrome/template.svg",
+      "webPath": "icons/web/monochrome/template.svg",
+      "iosAssetName": "design-icon-monochrome-template",
+      "androidResourceName": "design_icon_monochrome_template",
       "category": "monochrome",
       "sourceName": "template",
       "pageName": "􀥧     Icons"
     },
     {
       "figmaComponentId": "12534:194",
-      "path": "icons/web/monochrome/transaction-card-estimate.svg",
+      "webPath": "icons/web/monochrome/transaction-card-estimate.svg",
+      "iosAssetName": "design-icon-monochrome-transaction-card-estimate",
+      "androidResourceName": "design_icon_monochrome_transaction_card_estimate",
       "category": "monochrome",
       "sourceName": "transaction-card-estimate",
       "pageName": "􀥧     Icons"
     },
     {
       "figmaComponentId": "12534:196",
-      "path": "icons/web/monochrome/transaction-card-expense.svg",
+      "webPath": "icons/web/monochrome/transaction-card-expense.svg",
+      "iosAssetName": "design-icon-monochrome-transaction-card-expense",
+      "androidResourceName": "design_icon_monochrome_transaction_card_expense",
       "category": "monochrome",
       "sourceName": "transaction-card-expense",
       "pageName": "􀥧     Icons"
     },
     {
       "figmaComponentId": "12534:197",
-      "path": "icons/web/monochrome/transaction-card-income.svg",
+      "webPath": "icons/web/monochrome/transaction-card-income.svg",
+      "iosAssetName": "design-icon-monochrome-transaction-card-income",
+      "androidResourceName": "design_icon_monochrome_transaction_card_income",
       "category": "monochrome",
       "sourceName": "transaction-card-income",
       "pageName": "􀥧     Icons"
     },
     {
       "figmaComponentId": "12534:195",
-      "path": "icons/web/monochrome/transaction-card-transfer.svg",
+      "webPath": "icons/web/monochrome/transaction-card-transfer.svg",
+      "iosAssetName": "design-icon-monochrome-transaction-card-transfer",
+      "androidResourceName": "design_icon_monochrome_transaction_card_transfer",
       "category": "monochrome",
       "sourceName": "transaction-card-transfer",
       "pageName": "􀥧     Icons"
     },
     {
       "figmaComponentId": "2941:517",
-      "path": "icons/web/monochrome/transaction-estimate.svg",
+      "webPath": "icons/web/monochrome/transaction-estimate.svg",
+      "iosAssetName": "design-icon-monochrome-transaction-estimate",
+      "androidResourceName": "design_icon_monochrome_transaction_estimate",
       "category": "monochrome",
       "sourceName": "transaction-estimate",
       "pageName": "􀥧     Icons"
     },
     {
       "figmaComponentId": "2941:515",
-      "path": "icons/web/monochrome/transaction-income.svg",
+      "webPath": "icons/web/monochrome/transaction-income.svg",
+      "iosAssetName": "design-icon-monochrome-transaction-income",
+      "androidResourceName": "design_icon_monochrome_transaction_income",
       "category": "monochrome",
       "sourceName": "transaction-income",
       "pageName": "􀥧     Icons"
     },
     {
       "figmaComponentId": "2941:519",
-      "path": "icons/web/monochrome/transaction-invoice.svg",
+      "webPath": "icons/web/monochrome/transaction-invoice.svg",
+      "iosAssetName": "design-icon-monochrome-transaction-invoice",
+      "androidResourceName": "design_icon_monochrome_transaction_invoice",
       "category": "monochrome",
       "sourceName": "transaction-invoice",
       "pageName": "􀥧     Icons"
     },
     {
       "figmaComponentId": "1069:7019",
-      "path": "icons/web/monochrome/transaction-list.svg",
+      "webPath": "icons/web/monochrome/transaction-list.svg",
+      "iosAssetName": "design-icon-monochrome-transaction-list",
+      "androidResourceName": "design_icon_monochrome_transaction_list",
       "category": "monochrome",
       "sourceName": "transaction-list",
       "pageName": "􀥧     Icons"
     },
     {
       "figmaComponentId": "11661:8549",
-      "path": "icons/web/monochrome/transaction-not-confirmed-trimmed.svg",
+      "webPath": "icons/web/monochrome/transaction-not-confirmed-trimmed.svg",
+      "iosAssetName": "design-icon-monochrome-transaction-not-confirmed-trimmed",
+      "androidResourceName": "design_icon_monochrome_transaction_not_confirmed_trimmed",
       "category": "monochrome",
       "sourceName": "transaction-not-confirmed-trimmed",
       "pageName": "􀥧     Icons"
     },
     {
       "figmaComponentId": "3053:535",
-      "path": "icons/web/monochrome/transaction-not-confirmed.svg",
+      "webPath": "icons/web/monochrome/transaction-not-confirmed.svg",
+      "iosAssetName": "design-icon-monochrome-transaction-not-confirmed",
+      "androidResourceName": "design_icon_monochrome_transaction_not_confirmed",
       "category": "monochrome",
       "sourceName": "transaction-not-confirmed",
       "pageName": "􀥧     Icons"
     },
     {
       "figmaComponentId": "2941:523",
-      "path": "icons/web/monochrome/transaction-transfer.svg",
+      "webPath": "icons/web/monochrome/transaction-transfer.svg",
+      "iosAssetName": "design-icon-monochrome-transaction-transfer",
+      "androidResourceName": "design_icon_monochrome_transaction_transfer",
       "category": "monochrome",
       "sourceName": "transaction-transfer",
       "pageName": "􀥧     Icons"
     },
     {
       "figmaComponentId": "12376:1227",
-      "path": "icons/web/monochrome/triangle-collapsed.svg",
+      "webPath": "icons/web/monochrome/triangle-collapsed.svg",
+      "iosAssetName": "design-icon-monochrome-triangle-collapsed",
+      "androidResourceName": "design_icon_monochrome_triangle_collapsed",
       "category": "monochrome",
       "sourceName": "triangle-collapsed",
       "pageName": "􀥧     Icons"
     },
     {
       "figmaComponentId": "12376:1228",
-      "path": "icons/web/monochrome/triangle-expanded.svg",
+      "webPath": "icons/web/monochrome/triangle-expanded.svg",
+      "iosAssetName": "design-icon-monochrome-triangle-expanded",
+      "androidResourceName": "design_icon_monochrome_triangle_expanded",
       "category": "monochrome",
       "sourceName": "triangle-expanded",
       "pageName": "􀥧     Icons"
     },
     {
       "figmaComponentId": "9099:22664",
-      "path": "icons/web/monochrome/undo.svg",
+      "webPath": "icons/web/monochrome/undo.svg",
+      "iosAssetName": "design-icon-monochrome-undo",
+      "androidResourceName": "design_icon_monochrome_undo",
       "category": "monochrome",
       "sourceName": "undo",
       "pageName": "􀥧     Icons"
     },
     {
       "figmaComponentId": "1069:6995",
-      "path": "icons/web/monochrome/user-details.svg",
+      "webPath": "icons/web/monochrome/user-details.svg",
+      "iosAssetName": "design-icon-monochrome-user-details",
+      "androidResourceName": "design_icon_monochrome_user_details",
       "category": "monochrome",
       "sourceName": "user-details",
       "pageName": "􀥧     Icons"
     },
     {
       "figmaComponentId": "1069:6874",
-      "path": "icons/web/monochrome/user-fill.svg",
+      "webPath": "icons/web/monochrome/user-fill.svg",
+      "iosAssetName": "design-icon-monochrome-user-fill",
+      "androidResourceName": "design_icon_monochrome_user_fill",
       "category": "monochrome",
       "sourceName": "user-fill",
       "pageName": "􀥧     Icons"
     },
     {
       "figmaComponentId": "1069:6945",
-      "path": "icons/web/monochrome/user.svg",
+      "webPath": "icons/web/monochrome/user.svg",
+      "iosAssetName": "design-icon-monochrome-user",
+      "androidResourceName": "design_icon_monochrome_user",
       "category": "monochrome",
       "sourceName": "user",
       "pageName": "􀥧     Icons"
     },
     {
       "figmaComponentId": "1069:6872",
-      "path": "icons/web/monochrome/user2-fill.svg",
+      "webPath": "icons/web/monochrome/user2-fill.svg",
+      "iosAssetName": "design-icon-monochrome-user2-fill",
+      "androidResourceName": "design_icon_monochrome_user2_fill",
       "category": "monochrome",
       "sourceName": "user2-fill",
       "pageName": "􀥧     Icons"
     },
     {
       "figmaComponentId": "1069:6943",
-      "path": "icons/web/monochrome/user2.svg",
+      "webPath": "icons/web/monochrome/user2.svg",
+      "iosAssetName": "design-icon-monochrome-user2",
+      "androidResourceName": "design_icon_monochrome_user2",
       "category": "monochrome",
       "sourceName": "user2",
       "pageName": "􀥧     Icons"
     },
     {
       "figmaComponentId": "2941:513",
-      "path": "icons/web/monochrome/video-broadcast.svg",
+      "webPath": "icons/web/monochrome/video-broadcast.svg",
+      "iosAssetName": "design-icon-monochrome-video-broadcast",
+      "androidResourceName": "design_icon_monochrome_video_broadcast",
       "category": "monochrome",
       "sourceName": "video-broadcast",
       "pageName": "􀥧     Icons"
     },
     {
       "figmaComponentId": "12669:125",
-      "path": "icons/web/monochrome/video-off-fill.svg",
+      "webPath": "icons/web/monochrome/video-off-fill.svg",
+      "iosAssetName": "design-icon-monochrome-video-off-fill",
+      "androidResourceName": "design_icon_monochrome_video_off_fill",
       "category": "monochrome",
       "sourceName": "video-off-fill",
       "pageName": "􀥧     Icons"
     },
     {
       "figmaComponentId": "12669:126",
-      "path": "icons/web/monochrome/video-off.svg",
+      "webPath": "icons/web/monochrome/video-off.svg",
+      "iosAssetName": "design-icon-monochrome-video-off",
+      "androidResourceName": "design_icon_monochrome_video_off",
       "category": "monochrome",
       "sourceName": "video-off",
       "pageName": "􀥧     Icons"
     },
     {
       "figmaComponentId": "12669:124",
-      "path": "icons/web/monochrome/video-on-fill.svg",
+      "webPath": "icons/web/monochrome/video-on-fill.svg",
+      "iosAssetName": "design-icon-monochrome-video-on-fill",
+      "androidResourceName": "design_icon_monochrome_video_on_fill",
       "category": "monochrome",
       "sourceName": "video-on-fill",
       "pageName": "􀥧     Icons"
     },
     {
       "figmaComponentId": "12669:123",
-      "path": "icons/web/monochrome/video-on.svg",
+      "webPath": "icons/web/monochrome/video-on.svg",
+      "iosAssetName": "design-icon-monochrome-video-on",
+      "androidResourceName": "design_icon_monochrome_video_on",
       "category": "monochrome",
       "sourceName": "video-on",
       "pageName": "􀥧     Icons"
     },
     {
       "figmaComponentId": "11540:11998",
-      "path": "icons/web/monochrome/vk.svg",
+      "webPath": "icons/web/monochrome/vk.svg",
+      "iosAssetName": "design-icon-monochrome-vk",
+      "androidResourceName": "design_icon_monochrome_vk",
       "category": "monochrome",
       "sourceName": "vk",
       "pageName": "􀥧     Icons"
     },
     {
       "figmaComponentId": "2728:767",
-      "path": "icons/web/monochrome/warning-fill.svg",
+      "webPath": "icons/web/monochrome/warning-fill.svg",
+      "iosAssetName": "design-icon-monochrome-warning-fill",
+      "androidResourceName": "design_icon_monochrome_warning_fill",
       "category": "monochrome",
       "sourceName": "warning-fill",
       "pageName": "􀥧     Icons"
     },
     {
       "figmaComponentId": "2728:770",
-      "path": "icons/web/monochrome/warning.svg",
+      "webPath": "icons/web/monochrome/warning.svg",
+      "iosAssetName": "design-icon-monochrome-warning",
+      "androidResourceName": "design_icon_monochrome_warning",
       "category": "monochrome",
       "sourceName": "warning",
       "pageName": "􀥧     Icons"
     },
     {
       "figmaComponentId": "11540:11994",
-      "path": "icons/web/monochrome/youtube.svg",
+      "webPath": "icons/web/monochrome/youtube.svg",
+      "iosAssetName": "design-icon-monochrome-youtube",
+      "androidResourceName": "design_icon_monochrome_youtube",
       "category": "monochrome",
       "sourceName": "youtube",
       "pageName": "􀥧     Icons"
     },
     {
       "figmaComponentId": "11610:29025",
-      "path": "icons/web/multicolor/101app.svg",
+      "webPath": "icons/web/multicolor/101app.svg",
+      "iosAssetName": "design-icon-multicolor-101app",
+      "androidResourceName": "",
       "category": "multicolor",
       "sourceName": "101app",
       "pageName": "􀥧     Icons"
     },
     {
       "figmaComponentId": "11663:8564",
-      "path": "icons/web/multicolor/balance-accountable-trimmed.svg",
+      "webPath": "icons/web/multicolor/balance-accountable-trimmed.svg",
+      "iosAssetName": "design-icon-multicolor-balance-accountable-trimmed",
+      "androidResourceName": "design_icon_multicolor_balance_accountable_trimmed",
       "category": "multicolor",
       "sourceName": "balance-accountable-trimmed",
       "pageName": "􀥧     Icons"
     },
     {
       "figmaComponentId": "11378:163",
-      "path": "icons/web/multicolor/balance-accountable.svg",
+      "webPath": "icons/web/multicolor/balance-accountable.svg",
+      "iosAssetName": "design-icon-multicolor-balance-accountable",
+      "androidResourceName": "design_icon_multicolor_balance_accountable",
       "category": "multicolor",
       "sourceName": "balance-accountable",
       "pageName": "􀥧     Icons"
     },
     {
       "figmaComponentId": "2941:609",
-      "path": "icons/web/multicolor/balance-foundation-accountable.svg",
+      "webPath": "icons/web/multicolor/balance-foundation-accountable.svg",
+      "iosAssetName": "design-icon-multicolor-balance-foundation-accountable",
+      "androidResourceName": "design_icon_multicolor_balance_foundation_accountable",
       "category": "multicolor",
       "sourceName": "balance-foundation-accountable",
       "pageName": "􀥧     Icons"
     },
     {
       "figmaComponentId": "2941:611",
-      "path": "icons/web/multicolor/balance-foundation-own.svg",
+      "webPath": "icons/web/multicolor/balance-foundation-own.svg",
+      "iosAssetName": "design-icon-multicolor-balance-foundation-own",
+      "androidResourceName": "design_icon_multicolor_balance_foundation_own",
       "category": "multicolor",
       "sourceName": "balance-foundation-own",
       "pageName": "􀥧     Icons"
     },
     {
       "figmaComponentId": "11663:8565",
-      "path": "icons/web/multicolor/balance-own-trimmed.svg",
+      "webPath": "icons/web/multicolor/balance-own-trimmed.svg",
+      "iosAssetName": "design-icon-multicolor-balance-own-trimmed",
+      "androidResourceName": "design_icon_multicolor_balance_own_trimmed",
       "category": "multicolor",
       "sourceName": "balance-own-trimmed",
       "pageName": "􀥧     Icons"
     },
     {
       "figmaComponentId": "11371:101",
-      "path": "icons/web/multicolor/balance-own.svg",
+      "webPath": "icons/web/multicolor/balance-own.svg",
+      "iosAssetName": "design-icon-multicolor-balance-own",
+      "androidResourceName": "design_icon_multicolor_balance_own",
       "category": "multicolor",
       "sourceName": "balance-own",
       "pageName": "􀥧     Icons"
     },
     {
       "figmaComponentId": "3062:8868",
-      "path": "icons/web/multicolor/balance-project-accountable.svg",
+      "webPath": "icons/web/multicolor/balance-project-accountable.svg",
+      "iosAssetName": "design-icon-multicolor-balance-project-accountable",
+      "androidResourceName": "design_icon_multicolor_balance_project_accountable",
       "category": "multicolor",
       "sourceName": "balance-project-accountable",
       "pageName": "􀥧     Icons"
     },
     {
       "figmaComponentId": "7770:873",
-      "path": "icons/web/multicolor/balance-project-own.svg",
+      "webPath": "icons/web/multicolor/balance-project-own.svg",
+      "iosAssetName": "design-icon-multicolor-balance-project-own",
+      "androidResourceName": "design_icon_multicolor_balance_project_own",
       "category": "multicolor",
       "sourceName": "balance-project-own",
       "pageName": "􀥧     Icons"
     },
     {
       "figmaComponentId": "12124:577",
-      "path": "icons/web/multicolor/event-status-cancel-customer-trimmed.svg",
+      "webPath": "icons/web/multicolor/event-status-cancel-customer-trimmed.svg",
+      "iosAssetName": "design-icon-multicolor-event-status-cancel-customer-trimmed",
+      "androidResourceName": "design_icon_multicolor_event_status_cancel_customer_trimmed",
       "category": "multicolor",
       "sourceName": "event-status-cancel-customer-trimmed",
       "pageName": "􀥧     Icons"
     },
     {
       "figmaComponentId": "2935:22531",
-      "path": "icons/web/multicolor/event-status-cancel-customer.svg",
+      "webPath": "icons/web/multicolor/event-status-cancel-customer.svg",
+      "iosAssetName": "design-icon-multicolor-event-status-cancel-customer",
+      "androidResourceName": "design_icon_multicolor_event_status_cancel_customer",
       "category": "multicolor",
       "sourceName": "event-status-cancel-customer",
       "pageName": "􀥧     Icons"
     },
     {
       "figmaComponentId": "12124:578",
-      "path": "icons/web/multicolor/event-status-cancel-manager-trimmed.svg",
+      "webPath": "icons/web/multicolor/event-status-cancel-manager-trimmed.svg",
+      "iosAssetName": "design-icon-multicolor-event-status-cancel-manager-trimmed",
+      "androidResourceName": "design_icon_multicolor_event_status_cancel_manager_trimmed",
       "category": "multicolor",
       "sourceName": "event-status-cancel-manager-trimmed",
       "pageName": "􀥧     Icons"
     },
     {
       "figmaComponentId": "2935:22533",
-      "path": "icons/web/multicolor/event-status-cancel-manager.svg",
+      "webPath": "icons/web/multicolor/event-status-cancel-manager.svg",
+      "iosAssetName": "design-icon-multicolor-event-status-cancel-manager",
+      "androidResourceName": "design_icon_multicolor_event_status_cancel_manager",
       "category": "multicolor",
       "sourceName": "event-status-cancel-manager",
       "pageName": "􀥧     Icons"
     },
     {
       "figmaComponentId": "12124:579",
-      "path": "icons/web/multicolor/event-status-confirmed-customer-trimmed.svg",
+      "webPath": "icons/web/multicolor/event-status-confirmed-customer-trimmed.svg",
+      "iosAssetName": "design-icon-multicolor-event-status-confirmed-customer-trimmed",
+      "androidResourceName": "design_icon_multicolor_event_status_confirmed_customer_trimmed",
       "category": "multicolor",
       "sourceName": "event-status-confirmed-customer-trimmed",
       "pageName": "􀥧     Icons"
     },
     {
       "figmaComponentId": "2935:22529",
-      "path": "icons/web/multicolor/event-status-confirmed-customer.svg",
+      "webPath": "icons/web/multicolor/event-status-confirmed-customer.svg",
+      "iosAssetName": "design-icon-multicolor-event-status-confirmed-customer",
+      "androidResourceName": "design_icon_multicolor_event_status_confirmed_customer",
       "category": "multicolor",
       "sourceName": "event-status-confirmed-customer",
       "pageName": "􀥧     Icons"
     },
     {
       "figmaComponentId": "12124:580",
-      "path": "icons/web/multicolor/event-status-confirmed-manager-trimmed.svg",
+      "webPath": "icons/web/multicolor/event-status-confirmed-manager-trimmed.svg",
+      "iosAssetName": "design-icon-multicolor-event-status-confirmed-manager-trimmed",
+      "androidResourceName": "",
       "category": "multicolor",
       "sourceName": "event-status-confirmed-manager-trimmed",
       "pageName": "􀥧     Icons"
     },
     {
       "figmaComponentId": "2935:22527",
-      "path": "icons/web/multicolor/event-status-confirmed-manager.svg",
+      "webPath": "icons/web/multicolor/event-status-confirmed-manager.svg",
+      "iosAssetName": "design-icon-multicolor-event-status-confirmed-manager",
+      "androidResourceName": "",
       "category": "multicolor",
       "sourceName": "event-status-confirmed-manager",
       "pageName": "􀥧     Icons"
     },
     {
       "figmaComponentId": "12124:581",
-      "path": "icons/web/multicolor/event-status-waiting-trimmed.svg",
+      "webPath": "icons/web/multicolor/event-status-waiting-trimmed.svg",
+      "iosAssetName": "design-icon-multicolor-event-status-waiting-trimmed",
+      "androidResourceName": "design_icon_multicolor_event_status_waiting_trimmed",
       "category": "multicolor",
       "sourceName": "event-status-waiting-trimmed",
       "pageName": "􀥧     Icons"
     },
     {
       "figmaComponentId": "2935:22525",
-      "path": "icons/web/multicolor/event-status-waiting.svg",
+      "webPath": "icons/web/multicolor/event-status-waiting.svg",
+      "iosAssetName": "design-icon-multicolor-event-status-waiting",
+      "androidResourceName": "design_icon_multicolor_event_status_waiting",
       "category": "multicolor",
       "sourceName": "event-status-waiting",
       "pageName": "􀥧     Icons"
     },
     {
       "figmaComponentId": "2941:597",
-      "path": "icons/web/multicolor/loader.svg",
+      "webPath": "icons/web/multicolor/loader.svg",
+      "iosAssetName": "design-icon-multicolor-loader",
+      "androidResourceName": "",
       "category": "multicolor",
       "sourceName": "loader",
       "pageName": "􀥧     Icons"
     },
     {
       "figmaComponentId": "8637:6162",
-      "path": "icons/web/multicolor/receipt-done.svg",
+      "webPath": "icons/web/multicolor/receipt-done.svg",
+      "iosAssetName": "design-icon-multicolor-receipt-done",
+      "androidResourceName": "design_icon_multicolor_receipt_done",
       "category": "multicolor",
       "sourceName": "receipt-done",
       "pageName": "􀥧     Icons"
     },
     {
       "figmaComponentId": "11610:28735",
-      "path": "icons/web/multicolor/sub-club.svg",
+      "webPath": "icons/web/multicolor/sub-club.svg",
+      "iosAssetName": "design-icon-multicolor-sub-club",
+      "androidResourceName": "design_icon_multicolor_sub_club",
       "category": "multicolor",
       "sourceName": "sub-club",
       "pageName": "􀥧     Icons"
     },
     {
       "figmaComponentId": "2121:747",
-      "path": "icons/web/multicolor/sub-pro-plus.svg",
+      "webPath": "icons/web/multicolor/sub-pro-plus.svg",
+      "iosAssetName": "design-icon-multicolor-sub-pro-plus",
+      "androidResourceName": "design_icon_multicolor_sub_pro_plus",
       "category": "multicolor",
       "sourceName": "sub-pro-plus",
       "pageName": "􀥧     Icons"
     },
     {
       "figmaComponentId": "808:10421",
-      "path": "icons/web/multicolor/sub-pro.svg",
+      "webPath": "icons/web/multicolor/sub-pro.svg",
+      "iosAssetName": "design-icon-multicolor-sub-pro",
+      "androidResourceName": "design_icon_multicolor_sub_pro",
       "category": "multicolor",
       "sourceName": "sub-pro",
       "pageName": "􀥧     Icons"
     },
     {
       "figmaComponentId": "9879:2868",
-      "path": "icons/web/multicolor/transfer-fund-to-project.svg",
+      "webPath": "icons/web/multicolor/transfer-fund-to-project.svg",
+      "iosAssetName": "design-icon-multicolor-transfer-fund-to-project",
+      "androidResourceName": "design_icon_multicolor_transfer_fund_to_project",
       "category": "multicolor",
       "sourceName": "transfer-fund-to-project",
       "pageName": "􀥧     Icons"
     },
     {
       "figmaComponentId": "9879:2867",
-      "path": "icons/web/multicolor/transfer-project-to-fund.svg",
+      "webPath": "icons/web/multicolor/transfer-project-to-fund.svg",
+      "iosAssetName": "design-icon-multicolor-transfer-project-to-fund",
+      "androidResourceName": "",
       "category": "multicolor",
       "sourceName": "transfer-project-to-fund",
+      "pageName": "􀥧     Icons"
+    },
+    {
+      "figmaComponentId": "12849:55",
+      "webPath": "icons/web/weather/cloud-bolt-fill.svg",
+      "iosAssetName": "design-icon-weather-cloud-bolt-fill",
+      "androidResourceName": "design_icon_weather_cloud_bolt_fill",
+      "category": "weather",
+      "sourceName": "cloud.bolt.fill",
+      "pageName": "􀥧     Icons"
+    },
+    {
+      "figmaComponentId": "12849:57",
+      "webPath": "icons/web/weather/cloud-bolt-rain-fill.svg",
+      "iosAssetName": "design-icon-weather-cloud-bolt-rain-fill",
+      "androidResourceName": "design_icon_weather_cloud_bolt_rain_fill",
+      "category": "weather",
+      "sourceName": "cloud.bolt.rain.fill",
+      "pageName": "􀥧     Icons"
+    },
+    {
+      "figmaComponentId": "12853:68",
+      "webPath": "icons/web/weather/cloud-bolt-rain.svg",
+      "iosAssetName": "design-icon-weather-cloud-bolt-rain",
+      "androidResourceName": "design_icon_weather_cloud_bolt_rain",
+      "category": "weather",
+      "sourceName": "cloud.bolt.rain",
+      "pageName": "􀥧     Icons"
+    },
+    {
+      "figmaComponentId": "12853:65",
+      "webPath": "icons/web/weather/cloud-bolt.svg",
+      "iosAssetName": "design-icon-weather-cloud-bolt",
+      "androidResourceName": "design_icon_weather_cloud_bolt",
+      "category": "weather",
+      "sourceName": "cloud.bolt",
+      "pageName": "􀥧     Icons"
+    },
+    {
+      "figmaComponentId": "12849:41",
+      "webPath": "icons/web/weather/cloud-drizzle-fill.svg",
+      "iosAssetName": "design-icon-weather-cloud-drizzle-fill",
+      "androidResourceName": "design_icon_weather_cloud_drizzle_fill",
+      "category": "weather",
+      "sourceName": "cloud.drizzle.fill",
+      "pageName": "􀥧     Icons"
+    },
+    {
+      "figmaComponentId": "12853:44",
+      "webPath": "icons/web/weather/cloud-drizzle.svg",
+      "iosAssetName": "design-icon-weather-cloud-drizzle",
+      "androidResourceName": "design_icon_weather_cloud_drizzle",
+      "category": "weather",
+      "sourceName": "cloud.drizzle",
+      "pageName": "􀥧     Icons"
+    },
+    {
+      "figmaComponentId": "12849:39",
+      "webPath": "icons/web/weather/cloud-fill.svg",
+      "iosAssetName": "design-icon-weather-cloud-fill",
+      "androidResourceName": "design_icon_weather_cloud_fill",
+      "category": "weather",
+      "sourceName": "cloud.fill",
+      "pageName": "􀥧     Icons"
+    },
+    {
+      "figmaComponentId": "12849:47",
+      "webPath": "icons/web/weather/cloud-fog-fill.svg",
+      "iosAssetName": "design-icon-weather-cloud-fog-fill",
+      "androidResourceName": "design_icon_weather_cloud_fog_fill",
+      "category": "weather",
+      "sourceName": "cloud.fog.fill",
+      "pageName": "􀥧     Icons"
+    },
+    {
+      "figmaComponentId": "12853:53",
+      "webPath": "icons/web/weather/cloud-fog.svg",
+      "iosAssetName": "design-icon-weather-cloud-fog",
+      "androidResourceName": "design_icon_weather_cloud_fog",
+      "category": "weather",
+      "sourceName": "cloud.fog",
+      "pageName": "􀥧     Icons"
+    },
+    {
+      "figmaComponentId": "12849:49",
+      "webPath": "icons/web/weather/cloud-hail-fill.svg",
+      "iosAssetName": "design-icon-weather-cloud-hail-fill",
+      "androidResourceName": "design_icon_weather_cloud_hail_fill",
+      "category": "weather",
+      "sourceName": "cloud.hail.fill",
+      "pageName": "􀥧     Icons"
+    },
+    {
+      "figmaComponentId": "12853:56",
+      "webPath": "icons/web/weather/cloud-hail.svg",
+      "iosAssetName": "design-icon-weather-cloud-hail",
+      "androidResourceName": "design_icon_weather_cloud_hail",
+      "category": "weather",
+      "sourceName": "cloud.hail",
+      "pageName": "􀥧     Icons"
+    },
+    {
+      "figmaComponentId": "12849:45",
+      "webPath": "icons/web/weather/cloud-heavyrain-fill.svg",
+      "iosAssetName": "design-icon-weather-cloud-heavyrain-fill",
+      "androidResourceName": "design_icon_weather_cloud_heavyrain_fill",
+      "category": "weather",
+      "sourceName": "cloud.heavyrain.fill",
+      "pageName": "􀥧     Icons"
+    },
+    {
+      "figmaComponentId": "12853:50",
+      "webPath": "icons/web/weather/cloud-heavyrain.svg",
+      "iosAssetName": "design-icon-weather-cloud-heavyrain",
+      "androidResourceName": "design_icon_weather_cloud_heavyrain",
+      "category": "weather",
+      "sourceName": "cloud.heavyrain",
+      "pageName": "􀥧     Icons"
+    },
+    {
+      "figmaComponentId": "12849:69",
+      "webPath": "icons/web/weather/cloud-moon-bolt-fill.svg",
+      "iosAssetName": "design-icon-weather-cloud-moon-bolt-fill",
+      "androidResourceName": "design_icon_weather_cloud_moon_bolt_fill",
+      "category": "weather",
+      "sourceName": "cloud.moon.bolt.fill",
+      "pageName": "􀥧     Icons"
+    },
+    {
+      "figmaComponentId": "12853:86",
+      "webPath": "icons/web/weather/cloud-moon-bolt.svg",
+      "iosAssetName": "design-icon-weather-cloud-moon-bolt",
+      "androidResourceName": "design_icon_weather_cloud_moon_bolt",
+      "category": "weather",
+      "sourceName": "cloud.moon.bolt",
+      "pageName": "􀥧     Icons"
+    },
+    {
+      "figmaComponentId": "12849:65",
+      "webPath": "icons/web/weather/cloud-moon-fill.svg",
+      "iosAssetName": "design-icon-weather-cloud-moon-fill",
+      "androidResourceName": "design_icon_weather_cloud_moon_fill",
+      "category": "weather",
+      "sourceName": "cloud.moon.fill",
+      "pageName": "􀥧     Icons"
+    },
+    {
+      "figmaComponentId": "12849:67",
+      "webPath": "icons/web/weather/cloud-moon-rain-fill.svg",
+      "iosAssetName": "design-icon-weather-cloud-moon-rain-fill",
+      "androidResourceName": "design_icon_weather_cloud_moon_rain_fill",
+      "category": "weather",
+      "sourceName": "cloud.moon.rain.fill",
+      "pageName": "􀥧     Icons"
+    },
+    {
+      "figmaComponentId": "12853:83",
+      "webPath": "icons/web/weather/cloud-moon-rain.svg",
+      "iosAssetName": "design-icon-weather-cloud-moon-rain",
+      "androidResourceName": "design_icon_weather_cloud_moon_rain",
+      "category": "weather",
+      "sourceName": "cloud.moon.rain",
+      "pageName": "􀥧     Icons"
+    },
+    {
+      "figmaComponentId": "12853:80",
+      "webPath": "icons/web/weather/cloud-moon.svg",
+      "iosAssetName": "design-icon-weather-cloud-moon",
+      "androidResourceName": "design_icon_weather_cloud_moon",
+      "category": "weather",
+      "sourceName": "cloud.moon",
+      "pageName": "􀥧     Icons"
+    },
+    {
+      "figmaComponentId": "12849:43",
+      "webPath": "icons/web/weather/cloud-rain-fill.svg",
+      "iosAssetName": "design-icon-weather-cloud-rain-fill",
+      "androidResourceName": "design_icon_weather_cloud_rain_fill",
+      "category": "weather",
+      "sourceName": "cloud.rain.fill",
+      "pageName": "􀥧     Icons"
+    },
+    {
+      "figmaComponentId": "12853:47",
+      "webPath": "icons/web/weather/cloud-rain.svg",
+      "iosAssetName": "design-icon-weather-cloud-rain",
+      "androidResourceName": "design_icon_weather_cloud_rain",
+      "category": "weather",
+      "sourceName": "cloud.rain",
+      "pageName": "􀥧     Icons"
+    },
+    {
+      "figmaComponentId": "12849:53",
+      "webPath": "icons/web/weather/cloud-sleet-fill.svg",
+      "iosAssetName": "design-icon-weather-cloud-sleet-fill",
+      "androidResourceName": "design_icon_weather_cloud_sleet_fill",
+      "category": "weather",
+      "sourceName": "cloud.sleet.fill",
+      "pageName": "􀥧     Icons"
+    },
+    {
+      "figmaComponentId": "12853:62",
+      "webPath": "icons/web/weather/cloud-sleet.svg",
+      "iosAssetName": "design-icon-weather-cloud-sleet",
+      "androidResourceName": "design_icon_weather_cloud_sleet",
+      "category": "weather",
+      "sourceName": "cloud.sleet",
+      "pageName": "􀥧     Icons"
+    },
+    {
+      "figmaComponentId": "12849:51",
+      "webPath": "icons/web/weather/cloud-snow-fill.svg",
+      "iosAssetName": "design-icon-weather-cloud-snow-fill",
+      "androidResourceName": "design_icon_weather_cloud_snow_fill",
+      "category": "weather",
+      "sourceName": "cloud.snow.fill",
+      "pageName": "􀥧     Icons"
+    },
+    {
+      "figmaComponentId": "12853:59",
+      "webPath": "icons/web/weather/cloud-snow.svg",
+      "iosAssetName": "design-icon-weather-cloud-snow",
+      "androidResourceName": "design_icon_weather_cloud_snow",
+      "category": "weather",
+      "sourceName": "cloud.snow",
+      "pageName": "􀥧     Icons"
+    },
+    {
+      "figmaComponentId": "12849:63",
+      "webPath": "icons/web/weather/cloud-sun-bolt-fill.svg",
+      "iosAssetName": "design-icon-weather-cloud-sun-bolt-fill",
+      "androidResourceName": "design_icon_weather_cloud_sun_bolt_fill",
+      "category": "weather",
+      "sourceName": "cloud.sun.bolt.fill",
+      "pageName": "􀥧     Icons"
+    },
+    {
+      "figmaComponentId": "12853:77",
+      "webPath": "icons/web/weather/cloud-sun-bolt.svg",
+      "iosAssetName": "design-icon-weather-cloud-sun-bolt",
+      "androidResourceName": "design_icon_weather_cloud_sun_bolt",
+      "category": "weather",
+      "sourceName": "cloud.sun.bolt",
+      "pageName": "􀥧     Icons"
+    },
+    {
+      "figmaComponentId": "12849:59",
+      "webPath": "icons/web/weather/cloud-sun-fill.svg",
+      "iosAssetName": "design-icon-weather-cloud-sun-fill",
+      "androidResourceName": "design_icon_weather_cloud_sun_fill",
+      "category": "weather",
+      "sourceName": "cloud.sun.fill",
+      "pageName": "􀥧     Icons"
+    },
+    {
+      "figmaComponentId": "12849:61",
+      "webPath": "icons/web/weather/cloud-sun-rain-fill.svg",
+      "iosAssetName": "design-icon-weather-cloud-sun-rain-fill",
+      "androidResourceName": "design_icon_weather_cloud_sun_rain_fill",
+      "category": "weather",
+      "sourceName": "cloud.sun.rain.fill",
+      "pageName": "􀥧     Icons"
+    },
+    {
+      "figmaComponentId": "12853:74",
+      "webPath": "icons/web/weather/cloud-sun-rain.svg",
+      "iosAssetName": "design-icon-weather-cloud-sun-rain",
+      "androidResourceName": "design_icon_weather_cloud_sun_rain",
+      "category": "weather",
+      "sourceName": "cloud.sun.rain",
+      "pageName": "􀥧     Icons"
+    },
+    {
+      "figmaComponentId": "12853:71",
+      "webPath": "icons/web/weather/cloud-sun.svg",
+      "iosAssetName": "design-icon-weather-cloud-sun",
+      "androidResourceName": "design_icon_weather_cloud_sun",
+      "category": "weather",
+      "sourceName": "cloud.sun",
+      "pageName": "􀥧     Icons"
+    },
+    {
+      "figmaComponentId": "12853:41",
+      "webPath": "icons/web/weather/cloud.svg",
+      "iosAssetName": "design-icon-weather-cloud",
+      "androidResourceName": "design_icon_weather_cloud",
+      "category": "weather",
+      "sourceName": "cloud",
+      "pageName": "􀥧     Icons"
+    },
+    {
+      "figmaComponentId": "12849:71",
+      "webPath": "icons/web/weather/smoke-fill.svg",
+      "iosAssetName": "design-icon-weather-smoke-fill",
+      "androidResourceName": "design_icon_weather_smoke_fill",
+      "category": "weather",
+      "sourceName": "smoke.fill",
+      "pageName": "􀥧     Icons"
+    },
+    {
+      "figmaComponentId": "12853:89",
+      "webPath": "icons/web/weather/smoke.svg",
+      "iosAssetName": "design-icon-weather-smoke",
+      "androidResourceName": "design_icon_weather_smoke",
+      "category": "weather",
+      "sourceName": "smoke",
+      "pageName": "􀥧     Icons"
+    },
+    {
+      "figmaComponentId": "12853:94",
+      "webPath": "icons/web/weather/snowflake.svg",
+      "iosAssetName": "design-icon-weather-snowflake",
+      "androidResourceName": "design_icon_weather_snowflake",
+      "category": "weather",
+      "sourceName": "snowflake",
+      "pageName": "􀥧     Icons"
+    },
+    {
+      "figmaComponentId": "12849:37",
+      "webPath": "icons/web/weather/sun-max-fill.svg",
+      "iosAssetName": "design-icon-weather-sun-max-fill",
+      "androidResourceName": "design_icon_weather_sun_max_fill",
+      "category": "weather",
+      "sourceName": "sun.max.fill",
+      "pageName": "􀥧     Icons"
+    },
+    {
+      "figmaComponentId": "12853:38",
+      "webPath": "icons/web/weather/sun-max.svg",
+      "iosAssetName": "design-icon-weather-sun-max",
+      "androidResourceName": "design_icon_weather_sun_max",
+      "category": "weather",
+      "sourceName": "sun.max",
+      "pageName": "􀥧     Icons"
+    },
+    {
+      "figmaComponentId": "12849:35",
+      "webPath": "icons/web/weather/sun-min-fill.svg",
+      "iosAssetName": "design-icon-weather-sun-min-fill",
+      "androidResourceName": "design_icon_weather_sun_min_fill",
+      "category": "weather",
+      "sourceName": "sun.min.fill",
+      "pageName": "􀥧     Icons"
+    },
+    {
+      "figmaComponentId": "12853:35",
+      "webPath": "icons/web/weather/sun-min.svg",
+      "iosAssetName": "design-icon-weather-sun-min",
+      "androidResourceName": "design_icon_weather_sun_min",
+      "category": "weather",
+      "sourceName": "sun.min",
+      "pageName": "􀥧     Icons"
+    },
+    {
+      "figmaComponentId": "12849:75",
+      "webPath": "icons/web/weather/wind-snow.svg",
+      "iosAssetName": "design-icon-weather-wind-snow",
+      "androidResourceName": "design_icon_weather_wind_snow",
+      "category": "weather",
+      "sourceName": "wind.snow",
+      "pageName": "􀥧     Icons"
+    },
+    {
+      "figmaComponentId": "12849:73",
+      "webPath": "icons/web/weather/wind.svg",
+      "iosAssetName": "design-icon-weather-wind",
+      "androidResourceName": "design_icon_weather_wind",
+      "category": "weather",
+      "sourceName": "wind",
       "pageName": "􀥧     Icons"
     }
   ]
