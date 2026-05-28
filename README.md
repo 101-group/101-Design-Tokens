@@ -9,8 +9,11 @@
 icons/
   icons.json
   web/
-    monochrome/*.svg
-    multicolor/*.svg
+    <section-folder>/*.svg
+  android/
+    res/drawable/*.xml
+  ios/
+    DesignIcons.xcassets/*.imageset/
 
 tokens/
   tokens.json
@@ -35,7 +38,7 @@ scripts/
 - `deploy_tokens`
 
 Генератор `tokens.css` живёт в репозитории плагина `tokens-plain-for-figma`.
-`release_icons` публикует пакет иконок.
+`release_icons` публикует web-пакет иконок из всех папок внутри `icons/web`.
 `deploy_tokens` публикует уже закоммиченный `tokens/web/tokens.css` в production по SSH так же, как apex-деплой репозитория `web`:
 
 Обязательные GitLab CI/CD variables:

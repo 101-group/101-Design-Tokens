@@ -13,7 +13,6 @@ const ICONS_SOURCE_DIR = path.join(ROOT_DIR, "icons", "web");
 const PACKAGE_NAME = "@101/design-icons-web";
 const DEFAULT_INITIAL_VERSION = "1.0.0";
 const DEFAULT_DEVELOPMENT_VERSION = "0.0.0-development";
-const ICON_CATEGORIES = ["monochrome", "multicolor"];
 
 const parseSemver = (version) => {
   const match = version.match(
@@ -91,6 +90,26 @@ const validateDirectoryEntries = (directoryName, entries) => {
   throw new Error(
     `Invalid ${entryType} in ${directoryName}: ${invalidEntry.name}. Only top-level .svg files are allowed.`,
   );
+};
+
+const readIconCategories = async () => {
+  const entries = await readdir(ICONS_SOURCE_DIR, { withFileTypes: true });
+  const invalidEntry = entries.find((entry) => !entry.isDirectory());
+  if (invalidEntry) {
+    const entryType = invalidEntry.isFile() ? "file" : "non-directory entry";
+    throw new Error(
+      `Invalid ${entryType} in icons/web: ${invalidEntry.name}. Only section directories are allowed.`,
+    );
+  }
+
+  const categoryNames = entries
+    .filter((entry) => entry.isDirectory())
+    .map((entry) => entry.name)
+    .sort((first, second) => first.localeCompare(second, undefined, { numeric: true, sensitivity: "base" }));
+  if (!categoryNames.length) {
+    throw new Error("No icon section directories found in icons/web.");
+  }
+  return categoryNames;
 };
 
 const copyCategoryIcons = async (packageDir, categoryName) => {
@@ -251,13 +270,13 @@ const resolveNextPatchVersion = async (latestPublishedVersion) => {
   return `${major}.${minor}.${patch + 1}`;
 };
 
-const createPackageMetadata = (version, sourceCommit) => {
+const createPackageMetadata = (version, sourceCommit, categoryNames) => {
   return {
     name: PACKAGE_NAME,
     version,
     private: false,
     type: "module",
-    files: ["monochrome", "multicolor", "README.md"],
+    files: [...categoryNames, "README.md"],
     sideEffects: false,
     publishConfig: {
       access: "restricted",
@@ -266,38 +285,46 @@ const createPackageMetadata = (version, sourceCommit) => {
   };
 };
 
-const createReadme = (version) => {
+const createReadme = (version, categoryNames) => {
+  const categoriesList = categoryNames.map((categoryName) => `- \`${categoryName}/\``).join("\n");
+  const exampleCategory = categoryNames[0] || "icons";
   return `# ${PACKAGE_NAME}
 
 Version: ${version}
 
 Raw SVG icons for web consumers. Import files directly and let the app bundler transform them.
 
+Included folders:
+
+${categoriesList}
+
 Example:
 
 \`\`\`ts
-import ProjectIcon from "${PACKAGE_NAME}/monochrome/project.svg?component";
+import ProjectIcon from "${PACKAGE_NAME}/${exampleCategory}/project.svg?component";
 \`\`\`
 `;
 };
 
 const buildPackage = async (packageDir, packageVersion, sourceCommit) => {
   let totalFiles = 0;
+  const categoryNames = await readIconCategories();
 
-  for (const categoryName of ICON_CATEGORIES) {
+  for (const categoryName of categoryNames) {
     totalFiles += await copyCategoryIcons(packageDir, categoryName);
   }
 
   await writeFile(
     path.join(packageDir, "package.json"),
-    `${JSON.stringify(createPackageMetadata(packageVersion, sourceCommit), null, 2)}\n`,
+    `${JSON.stringify(createPackageMetadata(packageVersion, sourceCommit, categoryNames), null, 2)}\n`,
     "utf8",
   );
-  await writeFile(path.join(packageDir, "README.md"), createReadme(packageVersion), "utf8");
+  await writeFile(path.join(packageDir, "README.md"), createReadme(packageVersion, categoryNames), "utf8");
 
   console.log(`[publish:icons:web-package] source: ${path.relative(ROOT_DIR, ICONS_SOURCE_DIR)}`);
   console.log(`[publish:icons:web-package] staging: ${packageDir}`);
   console.log(`[publish:icons:web-package] package: ${PACKAGE_NAME}@${packageVersion}`);
+  console.log(`[publish:icons:web-package] folders: ${categoryNames.join(", ")}`);
   console.log(`[publish:icons:web-package] files: ${totalFiles}`);
 };
 
