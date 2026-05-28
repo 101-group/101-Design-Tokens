@@ -44,8 +44,8 @@
 :root[data-theme="light"] {
   --color-accent-blue: #0088FF;
   --color-accent-default: #0E0E0F;
-  --color-amount-negative: #E5352B;
-  --color-amount-positive: #2FB350;
+  --color-amount-negative: #F40017;
+  --color-amount-positive: #00A530;
   --color-border-primary: #E8E8E8;
   --color-border-secondary: #C6C6C8;
   --color-event-agent-fee: #2B91A0;
@@ -94,8 +94,8 @@
 :root[data-theme="dark"] {
   --color-accent-blue: #0091FF;
   --color-accent-default: #FFFFFF;
-  --color-amount-negative: #FF3B30;
-  --color-amount-positive: #34C759;
+  --color-amount-negative: #F40017;
+  --color-amount-positive: #00A530;
   --color-border-primary: #343438;
   --color-border-secondary: #202022;
   --color-event-agent-fee: #2B91A0;
