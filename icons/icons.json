@@ -2390,6 +2390,18 @@
       "pageName": "􀥧     Icons"
     },
     {
+      "figmaComponentId": "12886:101",
+      "webPath": "icons/web/multicolor/delete.svg",
+      "iosAssetName": "design-icon-multicolor-delete",
+      "iosImagesetPath": "icons/ios/DesignIcons.xcassets/design-icon-multicolor-delete.imageset/Contents.json",
+      "iosPdfPath": "icons/ios/DesignIcons.xcassets/design-icon-multicolor-delete.imageset/design-icon-multicolor-delete.pdf",
+      "androidResourceName": "design_icon_multicolor_delete",
+      "androidPath": "icons/android/res/drawable/design_icon_multicolor_delete.xml",
+      "category": "multicolor",
+      "sourceName": "Delete",
+      "pageName": "􀥧     Icons"
+    },
+    {
       "figmaComponentId": "12124:577",
       "webPath": "icons/web/multicolor/event-status-cancel-customer-trimmed.svg",
       "iosAssetName": "design-icon-multicolor-event-status-cancel-customer-trimmed",
@@ -2510,6 +2522,18 @@
       "pageName": "􀥧     Icons"
     },
     {
+      "figmaComponentId": "12886:99",
+      "webPath": "icons/web/multicolor/get.svg",
+      "iosAssetName": "design-icon-multicolor-get",
+      "iosImagesetPath": "icons/ios/DesignIcons.xcassets/design-icon-multicolor-get.imageset/Contents.json",
+      "iosPdfPath": "icons/ios/DesignIcons.xcassets/design-icon-multicolor-get.imageset/design-icon-multicolor-get.pdf",
+      "androidResourceName": "design_icon_multicolor_get",
+      "androidPath": "icons/android/res/drawable/design_icon_multicolor_get.xml",
+      "category": "multicolor",
+      "sourceName": "Get",
+      "pageName": "􀥧     Icons"
+    },
+    {
       "figmaComponentId": "2941:597",
       "webPath": "icons/web/multicolor/loader.svg",
       "iosAssetName": "design-icon-multicolor-loader",
@@ -2519,6 +2543,30 @@
       "androidPath": "",
       "category": "multicolor",
       "sourceName": "loader",
+      "pageName": "􀥧     Icons"
+    },
+    {
+      "figmaComponentId": "12886:100",
+      "webPath": "icons/web/multicolor/patch.svg",
+      "iosAssetName": "design-icon-multicolor-patch",
+      "iosImagesetPath": "icons/ios/DesignIcons.xcassets/design-icon-multicolor-patch.imageset/Contents.json",
+      "iosPdfPath": "icons/ios/DesignIcons.xcassets/design-icon-multicolor-patch.imageset/design-icon-multicolor-patch.pdf",
+      "androidResourceName": "design_icon_multicolor_patch",
+      "androidPath": "icons/android/res/drawable/design_icon_multicolor_patch.xml",
+      "category": "multicolor",
+      "sourceName": "Patch",
+      "pageName": "􀥧     Icons"
+    },
+    {
+      "figmaComponentId": "12886:102",
+      "webPath": "icons/web/multicolor/put.svg",
+      "iosAssetName": "design-icon-multicolor-put",
+      "iosImagesetPath": "icons/ios/DesignIcons.xcassets/design-icon-multicolor-put.imageset/Contents.json",
+      "iosPdfPath": "icons/ios/DesignIcons.xcassets/design-icon-multicolor-put.imageset/design-icon-multicolor-put.pdf",
+      "androidResourceName": "design_icon_multicolor_put",
+      "androidPath": "icons/android/res/drawable/design_icon_multicolor_put.xml",
+      "category": "multicolor",
+      "sourceName": "Put",
       "pageName": "􀥧     Icons"
     },
     {
