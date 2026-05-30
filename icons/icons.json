@@ -2114,18 +2114,6 @@
       "pageName": "􀥧     Icons"
     },
     {
-      "figmaComponentId": "12889:192",
-      "webPath": "icons/web/monochrome/upload.svg",
-      "iosAssetName": "design-icon-monochrome-upload",
-      "iosImagesetPath": "icons/ios/DesignIcons.xcassets/design-icon-monochrome-upload.imageset/Contents.json",
-      "iosPdfPath": "icons/ios/DesignIcons.xcassets/design-icon-monochrome-upload.imageset/design-icon-monochrome-upload.pdf",
-      "androidResourceName": "design_icon_monochrome_upload",
-      "androidPath": "icons/android/res/drawable/design_icon_monochrome_upload.xml",
-      "category": "monochrome",
-      "sourceName": "upload",
-      "pageName": "􀥧     Icons"
-    },
-    {
       "figmaComponentId": "1069:6995",
       "webPath": "icons/web/monochrome/user-details.svg",
       "iosAssetName": "design-icon-monochrome-user-details",
@@ -2723,6 +2711,18 @@
       "androidPath": "",
       "category": "multicolor",
       "sourceName": "transfer-project-to-fund",
+      "pageName": "􀥧     Icons"
+    },
+    {
+      "figmaComponentId": "12889:192",
+      "webPath": "icons/web/multicolor/upload.svg",
+      "iosAssetName": "design-icon-multicolor-upload",
+      "iosImagesetPath": "icons/ios/DesignIcons.xcassets/design-icon-multicolor-upload.imageset/Contents.json",
+      "iosPdfPath": "icons/ios/DesignIcons.xcassets/design-icon-multicolor-upload.imageset/design-icon-multicolor-upload.pdf",
+      "androidResourceName": "design_icon_multicolor_upload",
+      "androidPath": "icons/android/res/drawable/design_icon_multicolor_upload.xml",
+      "category": "multicolor",
+      "sourceName": "upload",
       "pageName": "􀥧     Icons"
     },
     {
