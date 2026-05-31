@@ -1802,6 +1802,18 @@
       "pageName": "􀥧     Icons"
     },
     {
+      "figmaComponentId": "12895:853",
+      "webPath": "icons/web/monochrome/server.svg",
+      "iosAssetName": "design-icon-monochrome-server",
+      "iosImagesetPath": "icons/ios/DesignIcons.xcassets/design-icon-monochrome-server.imageset/Contents.json",
+      "iosPdfPath": "icons/ios/DesignIcons.xcassets/design-icon-monochrome-server.imageset/design-icon-monochrome-server.pdf",
+      "androidResourceName": "design_icon_monochrome_server",
+      "androidPath": "icons/android/res/drawable/design_icon_monochrome_server.xml",
+      "category": "monochrome",
+      "sourceName": "server",
+      "pageName": "􀥧     Icons"
+    },
+    {
       "figmaComponentId": "9607:11224",
       "webPath": "icons/web/monochrome/settings.svg",
       "iosAssetName": "design-icon-monochrome-settings",
