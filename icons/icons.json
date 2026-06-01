@@ -650,6 +650,18 @@
       "pageName": "􀥧     Icons"
     },
     {
+      "figmaComponentId": "12943:99",
+      "webPath": "icons/web/monochrome/cut.svg",
+      "iosAssetName": "design-icon-monochrome-cut",
+      "iosImagesetPath": "icons/ios/DesignIcons.xcassets/design-icon-monochrome-cut.imageset/Contents.json",
+      "iosPdfPath": "icons/ios/DesignIcons.xcassets/design-icon-monochrome-cut.imageset/design-icon-monochrome-cut.pdf",
+      "androidResourceName": "design_icon_monochrome_cut",
+      "androidPath": "icons/android/res/drawable/design_icon_monochrome_cut.xml",
+      "category": "monochrome",
+      "sourceName": "cut",
+      "pageName": "􀥧     Icons"
+    },
+    {
       "figmaComponentId": "11610:28722",
       "webPath": "icons/web/monochrome/dark.svg",
       "iosAssetName": "design-icon-monochrome-dark",
