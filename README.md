@@ -14,9 +14,16 @@ icons/
     res/drawable/*.xml
   ios/
     DesignIcons.xcassets/*.imageset/
+    DesignColor.swift
+    DesignFont.swift
 
 tokens/
   tokens.json
+  android/
+    res/values/colors.xml
+    res/values-night/colors.xml
+    res/values/dimens.xml
+    res/values/styles.xml
   web/
     tokens.css
 
@@ -31,6 +38,8 @@ scripts/
 - `tokens/web/tokens.css` руками не редактируется
 - iOS-иконки подключаются как Swift Package из этого Git repo по semver-тегу; `Package.swift` отдаёт `icons/ios/DesignIcons.xcassets` как ресурсы target `DesignIcons`
 - iOS asset names имеют формат `icon-<section>-<name>`, например `icon-monochrome-search`; enum `DesignIcon` даёт типизированные имена: `DesignIcon.monochromeSearch.imageName`
+- iOS цвета и шрифты генерируются в том же Swift Package: `DesignColor.<token>.uiColor`, `DesignColor.<token>.color`, `UIColor.grp<Token>` и `UIFont.grp<Token>`
+- Android цвета и шрифты генерируются как resources: `tokens/android/res/values/colors.xml`, `values-night/colors.xml`, `dimens.xml`, `styles.xml`; цвета доступны как `R.color.color_*`, текстовые стили как `@style/Text*`
 
 ## GitLab
 

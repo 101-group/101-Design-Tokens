@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="TextWebBodyMedium" parent="TextAppearance.AppCompat.Body1">
+        <item name="android:textSize">@dimen/font_size_web_body_medium</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="android:fontFeatureSettings">tnum</item>
+    </style>
+
+    <style name="TextWebBodyRegular" parent="TextAppearance.AppCompat.Body1">
+        <item name="android:textSize">@dimen/font_size_web_body_regular</item>
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:fontFeatureSettings">tnum</item>
+    </style>
+
+    <style name="TextWebFootnoteMedium" parent="TextAppearance.AppCompat.Body1">
+        <item name="android:textSize">@dimen/font_size_web_footnote_medium</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="android:fontFeatureSettings">tnum</item>
+    </style>
+
+    <style name="TextWebFootnoteRegular" parent="TextAppearance.AppCompat.Body1">
+        <item name="android:textSize">@dimen/font_size_web_footnote_regular</item>
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:fontFeatureSettings">tnum</item>
+    </style>
+
+    <style name="TextWebSubheadMedium" parent="TextAppearance.AppCompat.Body1">
+        <item name="android:textSize">@dimen/font_size_web_subhead_medium</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="android:fontFeatureSettings">tnum</item>
+    </style>
+
+    <style name="TextWebSubheadRegular" parent="TextAppearance.AppCompat.Body1">
+        <item name="android:textSize">@dimen/font_size_web_subhead_regular</item>
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:fontFeatureSettings">tnum</item>
+    </style>
+
+    <style name="TextWebTitleMedium" parent="TextAppearance.AppCompat.Body1">
+        <item name="android:textSize">@dimen/font_size_web_title_medium</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+    </style>
+
+    <style name="TextWebTitleRegular" parent="TextAppearance.AppCompat.Body1">
+        <item name="android:textSize">@dimen/font_size_web_title_regular</item>
+        <item name="android:fontFamily">sans-serif</item>
+    </style>
+</resources>
