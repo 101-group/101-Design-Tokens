@@ -30,6 +30,7 @@ scripts/
 - `tokens/tokens.json` и `tokens/web/tokens.css` коммитятся вместе
 - `tokens/web/tokens.css` руками не редактируется
 - iOS-иконки подключаются как Swift Package из этого Git repo по semver-тегу; `Package.swift` отдаёт `icons/ios/DesignIcons.xcassets` как ресурсы target `DesignIcons`
+- iOS asset names имеют формат `icon-<section>-<name>`, например `icon-monochrome-search`; enum `DesignIcon` даёт типизированные имена: `DesignIcon.monochromeSearch.imageName`
 
 ## GitLab
 
