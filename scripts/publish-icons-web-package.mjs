@@ -13,6 +13,7 @@ const ICONS_SOURCE_DIR = path.join(ROOT_DIR, "icons", "web");
 const PACKAGE_NAME = "@101/design-icons-web";
 const DEFAULT_INITIAL_VERSION = "1.0.0";
 const DEFAULT_DEVELOPMENT_VERSION = "0.0.0-development";
+const TAG_VERSION = process.env.CI_COMMIT_TAG?.trim() || "";
 
 const parseSemver = (version) => {
   const match = version.match(
@@ -28,6 +29,31 @@ const parseSemver = (version) => {
     minor: Number(match.groups.minor),
     patch: Number(match.groups.patch),
   };
+};
+
+const isSemver = (version) => {
+  try {
+    parseSemver(version);
+    return true;
+  } catch {
+    return false;
+  }
+};
+
+const getExplicitPackageVersion = () => {
+  const explicitVersion = process.env.DESIGN_ICONS_WEB_PACKAGE_VERSION?.trim();
+  if (explicitVersion) {
+    return explicitVersion;
+  }
+
+  if (TAG_VERSION) {
+    if (!isSemver(TAG_VERSION)) {
+      throw new Error(`CI_COMMIT_TAG must be a semver version to publish icons: ${TAG_VERSION}`);
+    }
+    return TAG_VERSION;
+  }
+
+  return "";
 };
 
 const getRegistryUrl = () => {
@@ -224,11 +250,6 @@ const ensureIconsChangedSinceLastRelease = async (lastReleasedSourceCommit) => {
 };
 
 const readLatestPublishedVersion = async (registryUrl, npmEnv) => {
-  const explicitVersion = process.env.DESIGN_ICONS_WEB_PACKAGE_VERSION?.trim();
-  if (explicitVersion) {
-    return explicitVersion;
-  }
-
   try {
     const { stdout } = await execFileAsync(
       "npm",
@@ -258,7 +279,7 @@ const readLatestPublishedVersion = async (registryUrl, npmEnv) => {
 };
 
 const resolveNextPatchVersion = async (latestPublishedVersion) => {
-  const explicitVersion = process.env.DESIGN_ICONS_WEB_PACKAGE_VERSION?.trim();
+  const explicitVersion = getExplicitPackageVersion();
   if (explicitVersion) {
     return explicitVersion;
   }
@@ -368,8 +389,7 @@ const run = async () => {
     };
 
     if (isDryRun) {
-      const packageVersion =
-        process.env.DESIGN_ICONS_WEB_PACKAGE_VERSION?.trim() || DEFAULT_DEVELOPMENT_VERSION;
+      const packageVersion = getExplicitPackageVersion() || DEFAULT_DEVELOPMENT_VERSION;
       await buildPackage(packageDir, packageVersion, sourceCommit);
       await checkPackage(packageDir, npmEnv);
       console.log("[publish:icons:web-package] dry-run complete");

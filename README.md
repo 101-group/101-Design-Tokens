@@ -32,13 +32,13 @@ scripts/
 
 ## GitLab
 
-В pipeline только два независимых manual job в stage `publish`:
+В pipeline два независимых job в stage `publish`:
 
 - `release_icons`
 - `deploy_tokens`
 
 Генератор `tokens.css` живёт в репозитории плагина `tokens-plain-for-figma`.
-`release_icons` публикует web-пакет иконок из всех папок внутри `icons/web`.
+`release_icons` автоматически публикует web-пакет иконок из всех папок внутри `icons/web` при Git tag формата `1.2.3`. Версия web-пакета равна тегу. На `main` этот job остаётся manual для ручной публикации следующего patch.
 `deploy_tokens` публикует уже закоммиченный `tokens/web/tokens.css` в production по SSH так же, как apex-деплой репозитория `web`:
 
 Обязательные GitLab CI/CD variables:
