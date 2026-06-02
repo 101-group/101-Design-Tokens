@@ -29,6 +29,7 @@ scripts/
 
 - `tokens/tokens.json` и `tokens/web/tokens.css` коммитятся вместе
 - `tokens/web/tokens.css` руками не редактируется
+- iOS-иконки подключаются как Swift Package из этого Git repo по semver-тегу; `Package.swift` отдаёт `icons/ios/DesignIcons.xcassets` как ресурсы target `DesignIcons`
 
 ## GitLab
 
@@ -38,7 +39,7 @@ scripts/
 - `deploy_tokens`
 
 Генератор `tokens.css` живёт в репозитории плагина `tokens-plain-for-figma`.
-`release_icons` автоматически публикует web-пакет иконок из всех папок внутри `icons/web` при Git tag формата `1.2.3`. Версия web-пакета равна тегу. На `main` этот job остаётся manual для ручной публикации следующего patch.
+`release_icons` автоматически публикует web-пакет иконок из всех папок внутри `icons/web` при Git tag формата `1.2.3`. Версия web-пакета равна тегу. Этот же tag является версией Swift Package для iOS. На `main` этот job остаётся manual для ручной публикации следующего patch.
 `deploy_tokens` публикует уже закоммиченный `tokens/web/tokens.css` в production по SSH так же, как apex-деплой репозитория `web`:
 
 Обязательные GitLab CI/CD variables:
