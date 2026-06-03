@@ -145,6 +145,429 @@
 
 .text-body-medium {
   font-family: "Roboto", sans-serif;
+  font-size: 17px;
+  font-weight: 500;
+  line-height: 22px;
+  letter-spacing: 0px;
+  text-decoration-line: none;
+  font-feature-settings: "clig" 0, "liga" 0, "ss01" 1, "ss02" 1;
+}
+
+.text-body-regular {
+  font-family: "Roboto", sans-serif;
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 22px;
+  letter-spacing: 0px;
+  text-decoration-line: none;
+}
+
+.text-body-semibold {
+  font-family: "Roboto", sans-serif;
+  font-size: 17px;
+  font-weight: 600;
+  line-height: 22px;
+  letter-spacing: 0px;
+  text-decoration-line: none;
+}
+
+.text-caption1-medium {
+  font-family: "Roboto", sans-serif;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 16px;
+  letter-spacing: 0px;
+  text-decoration-line: none;
+}
+
+.text-caption1-regular {
+  font-family: "Roboto", sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16px;
+  letter-spacing: 0px;
+  text-decoration-line: none;
+}
+
+.text-caption2-regular {
+  font-family: "Roboto", sans-serif;
+  font-size: 11px;
+  font-weight: 400;
+  line-height: 13px;
+  letter-spacing: 0px;
+  text-decoration-line: none;
+  font-feature-settings: "clig" 0, "liga" 0, "lnum" 1, "ss01" 1, "ss02" 1, "tnum" 1;
+}
+
+.text-caption2-semibold {
+  font-family: "Roboto", sans-serif;
+  font-size: 11px;
+  font-weight: 600;
+  line-height: 13px;
+  letter-spacing: 0px;
+  text-decoration-line: none;
+  font-feature-settings: "clig" 0, "liga" 0, "lnum" 1, "ss01" 1, "ss02" 1, "tnum" 1;
+}
+
+.text-footnote-medium {
+  font-family: "Roboto", sans-serif;
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 18px;
+  letter-spacing: 0px;
+  text-decoration-line: none;
+  font-feature-settings: "clig" 0, "liga" 0, "lnum" 1, "ss01" 1, "ss02" 1, "tnum" 1;
+}
+
+.text-footnote-regular {
+  font-family: "Roboto", sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 18px;
+  letter-spacing: 0px;
+  text-decoration-line: none;
+  font-feature-settings: "clig" 0, "liga" 0, "lnum" 1, "ss01" 1, "ss02" 1, "tnum" 1;
+}
+
+.text-footnote-semibold {
+  font-family: "Roboto", sans-serif;
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 18px;
+  letter-spacing: 0px;
+  text-decoration-line: none;
+  font-feature-settings: "clig" 0, "liga" 0, "ss01" 1, "ss02" 1;
+}
+
+.text-large-title-bold {
+  font-family: "Roboto", sans-serif;
+  font-size: 34px;
+  font-weight: 700;
+  line-height: 41px;
+  letter-spacing: 0px;
+  text-decoration-line: none;
+  font-feature-settings: "clig" 0, "liga" 0;
+}
+
+.text-large-title-regular {
+  font-family: "Roboto", sans-serif;
+  font-size: 34px;
+  font-weight: 400;
+  line-height: 41px;
+  letter-spacing: 0px;
+  text-decoration-line: none;
+  font-feature-settings: "clig" 0, "liga" 0;
+}
+
+.text-subhead-medium {
+  font-family: "Roboto", sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: 0px;
+  text-decoration-line: none;
+}
+
+.text-subhead-regular {
+  font-family: "Roboto", sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0px;
+  text-decoration-line: none;
+}
+
+.text-subhead-semibold {
+  font-family: "Roboto", sans-serif;
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 20px;
+  letter-spacing: 0px;
+  text-decoration-line: none;
+}
+
+.text-title1-bold {
+  font-family: "Roboto", sans-serif;
+  font-size: 28px;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0px;
+  text-decoration-line: none;
+  font-feature-settings: "clig" 0, "liga" 0;
+}
+
+.text-title1-regular {
+  font-family: "Roboto", sans-serif;
+  font-size: 28px;
+  font-weight: 400;
+  line-height: 34px;
+  letter-spacing: 0px;
+  text-decoration-line: none;
+  font-feature-settings: "clig" 0, "liga" 0;
+}
+
+.text-title2-bold {
+  font-family: "Roboto", sans-serif;
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 28px;
+  letter-spacing: 0px;
+  text-decoration-line: none;
+  font-feature-settings: "clig" 0, "liga" 0;
+}
+
+.text-title2-regular {
+  font-family: "Roboto", sans-serif;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 28px;
+  letter-spacing: 0px;
+  text-decoration-line: none;
+  font-feature-settings: "clig" 0, "liga" 0;
+}
+
+.text-title3-bold {
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0px;
+  text-decoration-line: none;
+  font-feature-settings: "clig" 0, "liga" 0;
+}
+
+.text-title3-regular {
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 25px;
+  letter-spacing: 0px;
+  text-decoration-line: none;
+  font-feature-settings: "clig" 0, "liga" 0;
+}
+
+.text-body-medium {
+  font-family: "SF Pro", sans-serif;
+  font-size: 17px;
+  font-weight: 500;
+  line-height: 22px;
+  letter-spacing: -0.43px;
+  text-decoration-line: none;
+  font-feature-settings: "clig" 0, "liga" 0, "ss01" 1, "ss02" 1;
+}
+
+.text-body-regular {
+  font-family: "SF Pro", sans-serif;
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 22px;
+  letter-spacing: -0.43px;
+  text-decoration-line: none;
+  font-feature-settings: "clig" 0, "liga" 0, "lnum" 1, "ss01" 1, "ss02" 1, "tnum" 1;
+}
+
+.text-body-semibold {
+  font-family: "SF Pro", sans-serif;
+  font-size: 17px;
+  font-weight: 600;
+  line-height: 22px;
+  letter-spacing: -0.43px;
+  text-decoration-line: none;
+  font-feature-settings: "clig" 0, "liga" 0, "ss01" 1, "ss02" 1;
+}
+
+.text-caption1-medium {
+  font-family: "SF Pro", sans-serif;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 16px;
+  letter-spacing: 0px;
+  text-decoration-line: none;
+  font-feature-settings: "clig" 0, "liga" 0, "lnum" 1, "ss01" 1, "ss02" 1, "tnum" 1;
+}
+
+.text-caption1-regular {
+  font-family: "SF Pro", sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16px;
+  letter-spacing: 0px;
+  text-decoration-line: none;
+  font-feature-settings: "clig" 0, "liga" 0, "lnum" 1, "ss01" 1, "ss02" 1, "tnum" 1;
+}
+
+.text-caption2-medium {
+  font-family: "SF Pro", sans-serif;
+  font-size: 11px;
+  font-weight: 500;
+  line-height: 13px;
+  letter-spacing: 0.06px;
+  text-decoration-line: none;
+  font-feature-settings: "clig" 0, "liga" 0, "lnum" 1, "ss01" 1, "ss02" 1, "tnum" 1;
+}
+
+.text-caption2-regular {
+  font-family: "SF Pro", sans-serif;
+  font-size: 11px;
+  font-weight: 400;
+  line-height: 13px;
+  letter-spacing: 0.06px;
+  text-decoration-line: none;
+  font-feature-settings: "clig" 0, "liga" 0, "lnum" 1, "ss01" 1, "ss02" 1, "tnum" 1;
+}
+
+.text-caption2-semibold {
+  font-family: "SF Pro", sans-serif;
+  font-size: 11px;
+  font-weight: 600;
+  line-height: 13px;
+  letter-spacing: 0.06px;
+  text-decoration-line: none;
+  font-feature-settings: "clig" 0, "liga" 0, "lnum" 1, "ss01" 1, "ss02" 1, "tnum" 1;
+}
+
+.text-footnote-medium {
+  font-family: "SF Pro", sans-serif;
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 18px;
+  letter-spacing: -0.08px;
+  text-decoration-line: none;
+  font-feature-settings: "clig" 0, "liga" 0, "lnum" 1, "ss01" 1, "ss02" 1, "tnum" 1;
+}
+
+.text-footnote-regular {
+  font-family: "SF Pro", sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 18px;
+  letter-spacing: -0.08px;
+  text-decoration-line: none;
+  font-feature-settings: "clig" 0, "liga" 0, "lnum" 1, "ss01" 1, "ss02" 1, "tnum" 1;
+}
+
+.text-footnote-semibold {
+  font-family: "SF Pro", sans-serif;
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 18px;
+  letter-spacing: -0.08px;
+  text-decoration-line: none;
+  font-feature-settings: "clig" 0, "liga" 0, "lnum" 1, "ss01" 1, "ss02" 1, "tnum" 1;
+}
+
+.text-large-title-bold {
+  font-family: "SF Pro", sans-serif;
+  font-size: 34px;
+  font-weight: 700;
+  line-height: 41px;
+  letter-spacing: 0.4px;
+  text-decoration-line: none;
+  font-feature-settings: "clig" 0, "liga" 0, "lnum" 1, "ss01" 1, "ss02" 1, "tnum" 1;
+}
+
+.text-large-title-regular {
+  font-family: "SF Pro", sans-serif;
+  font-size: 34px;
+  font-weight: 400;
+  line-height: 41px;
+  letter-spacing: 0.4px;
+  text-decoration-line: none;
+  font-feature-settings: "clig" 0, "liga" 0, "lnum" 1, "ss01" 1, "ss02" 1, "tnum" 1;
+}
+
+.text-subhead-medium {
+  font-family: "SF Pro", sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: -0.23px;
+  text-decoration-line: none;
+  font-feature-settings: "clig" 0, "liga" 0, "lnum" 1, "ss01" 1, "ss02" 1, "tnum" 1;
+}
+
+.text-subhead-regular {
+  font-family: "SF Pro", sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: -0.23px;
+  text-decoration-line: none;
+  font-feature-settings: "clig" 0, "liga" 0, "lnum" 1, "ss01" 1, "ss02" 1, "tnum" 1;
+}
+
+.text-subhead-semibold {
+  font-family: "SF Pro", sans-serif;
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 20px;
+  letter-spacing: -0.23px;
+  text-decoration-line: none;
+  font-feature-settings: "clig" 0, "liga" 0, "lnum" 1, "ss01" 1, "ss02" 1, "tnum" 1;
+}
+
+.text-title1-bold {
+  font-family: "SF Pro", sans-serif;
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 34px;
+  letter-spacing: 0.38px;
+  text-decoration-line: none;
+  font-feature-settings: "clig" 0, "liga" 0, "lnum" 1, "ss01" 1, "ss02" 1, "tnum" 1;
+}
+
+.text-title1-regular {
+  font-family: "SF Pro", sans-serif;
+  font-size: 28px;
+  font-weight: 400;
+  line-height: 34px;
+  letter-spacing: 0.38px;
+  text-decoration-line: none;
+  font-feature-settings: "clig" 0, "liga" 0, "lnum" 1, "ss01" 1, "ss02" 1, "tnum" 1;
+}
+
+.text-title2-bold {
+  font-family: "SF Pro", sans-serif;
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 28px;
+  letter-spacing: -0.26px;
+  text-decoration-line: none;
+  font-feature-settings: "clig" 0, "liga" 0, "lnum" 1, "ss01" 1, "ss02" 1, "tnum" 1;
+}
+
+.text-title2-regular {
+  font-family: "SF Pro", sans-serif;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 28px;
+  letter-spacing: -0.26px;
+  text-decoration-line: none;
+  font-feature-settings: "clig" 0, "liga" 0, "lnum" 1, "ss01" 1, "ss02" 1, "tnum" 1;
+}
+
+.text-title3-bold {
+  font-family: "SF Pro", sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 25px;
+  letter-spacing: -0.45px;
+  text-decoration-line: none;
+  font-feature-settings: "clig" 0, "liga" 0, "lnum" 1, "ss01" 1, "ss02" 1, "tnum" 1;
+}
+
+.text-title3-regular {
+  font-family: "SF Pro", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 25px;
+  letter-spacing: -0.45px;
+  text-decoration-line: none;
+  font-feature-settings: "clig" 0, "liga" 0, "lnum" 1, "ss01" 1, "ss02" 1, "tnum" 1;
+}
+
+.text-body-medium {
+  font-family: "Roboto", sans-serif;
   font-size: 16px;
   font-weight: 500;
   line-height: normal;
