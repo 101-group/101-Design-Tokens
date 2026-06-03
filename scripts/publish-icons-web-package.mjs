@@ -9,7 +9,7 @@ import { promisify } from "node:util";
 const execFileAsync = promisify(execFile);
 
 const ROOT_DIR = process.cwd();
-const ICONS_SOURCE_DIR = path.join(ROOT_DIR, "icons", "web");
+const ICONS_SOURCE_DIR = path.join(ROOT_DIR, "web", "icons");
 const PACKAGE_NAME = "@101/design-icons-web";
 const DEFAULT_INITIAL_VERSION = "1.0.0";
 const DEFAULT_DEVELOPMENT_VERSION = "0.0.0-development";
@@ -120,11 +120,12 @@ const validateDirectoryEntries = (directoryName, entries) => {
 
 const readIconCategories = async () => {
   const entries = await readdir(ICONS_SOURCE_DIR, { withFileTypes: true });
-  const invalidEntry = entries.find((entry) => !entry.isDirectory());
+  const isManifestFile = (entry) => entry.isFile() && entry.name === "icons.json";
+  const invalidEntry = entries.find((entry) => !entry.isDirectory() && !isManifestFile(entry));
   if (invalidEntry) {
     const entryType = invalidEntry.isFile() ? "file" : "non-directory entry";
     throw new Error(
-      `Invalid ${entryType} in icons/web: ${invalidEntry.name}. Only section directories are allowed.`,
+      `Invalid ${entryType} in web/icons: ${invalidEntry.name}. Only section directories and icons.json are allowed.`,
     );
   }
 
@@ -133,7 +134,7 @@ const readIconCategories = async () => {
     .map((entry) => entry.name)
     .sort((first, second) => first.localeCompare(second, undefined, { numeric: true, sensitivity: "base" }));
   if (!categoryNames.length) {
-    throw new Error("No icon section directories found in icons/web.");
+    throw new Error("No icon section directories found in web/icons.");
   }
   return categoryNames;
 };
@@ -143,7 +144,7 @@ const copyCategoryIcons = async (packageDir, categoryName) => {
   const destinationDir = path.join(packageDir, categoryName);
   const entries = await readdir(sourceDir, { withFileTypes: true });
 
-  validateDirectoryEntries(path.join("icons", "web", categoryName), entries);
+  validateDirectoryEntries(path.join("web", "icons", categoryName), entries);
   await mkdir(destinationDir, { recursive: true });
 
   const svgEntries = entries.filter((entry) => entry.isFile() && isSvgFileName(entry.name));
@@ -237,7 +238,7 @@ const ensureIconsChangedSinceLastRelease = async (lastReleasedSourceCommit) => {
 
   const { stdout } = await execFileAsync(
     "git",
-    ["diff", "--name-only", `${lastReleasedSourceCommit}..HEAD`, "--", "icons"],
+    ["diff", "--name-only", `${lastReleasedSourceCommit}..HEAD`, "--", "web/icons", "ios", "android/res", "tokens.json", "web/tokens.css"],
     {
       cwd: ROOT_DIR,
       env: process.env,
@@ -245,7 +246,7 @@ const ensureIconsChangedSinceLastRelease = async (lastReleasedSourceCommit) => {
   );
 
   if (!stdout.trim()) {
-    throw new Error("No changes detected in icons/ since the last published version.");
+    throw new Error("No changes detected in release artifacts since the last published version.");
   }
 };
 

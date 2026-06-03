@@ -6,7 +6,7 @@ import process from "node:process";
 import { constants as fsConstants } from "node:fs";
 
 const ROOT_DIR = process.cwd();
-const CSS_FILE = path.join(ROOT_DIR, "tokens", "web", "tokens.css");
+const CSS_FILE = path.join(ROOT_DIR, "web", "tokens.css");
 
 const runCommand = (command, args, options = {}) =>
   new Promise((resolve, reject) => {

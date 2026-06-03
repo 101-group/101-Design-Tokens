@@ -16,9 +16,9 @@ let package = Package(
     targets: [
         .target(
             name: "DesignIcons",
-            path: "icons/ios",
+            path: "ios",
             resources: [
-                .process("DesignIcons.xcassets")
+                .process("Icons.xcassets")
             ]
         )
     ]

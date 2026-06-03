@@ -1,6 +1,10 @@
 import Foundation
 
-public enum DesignIcon: String, CaseIterable, Equatable {
+public enum DesignIcons {
+    public static let bundle = Bundle.module
+}
+
+public enum Icons: String, CaseIterable, Equatable {
     case monochrome101 = "icon-monochrome-101"
     case monochrome101account = "icon-monochrome-101account"
     case monochrome101app = "icon-monochrome-101app"

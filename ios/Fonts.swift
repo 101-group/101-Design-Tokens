@@ -2,7 +2,7 @@
 import CoreText
 import UIKit
 
-public enum DesignFont: String, CaseIterable, Equatable {
+public enum Fonts: String, CaseIterable, Equatable {
     case webBodyMedium = "text-web-body-medium"
     case webBodyRegular = "text-web-body-regular"
     case webFootnoteMedium = "text-web-footnote-medium"
@@ -68,35 +68,35 @@ public enum DesignFont: String, CaseIterable, Equatable {
 
 public extension UIFont {
     @nonobjc final class var grpWebBodyMedium: UIFont {
-        DesignFont.webBodyMedium.uiFont
+        Fonts.webBodyMedium.uiFont
     }
 
     @nonobjc final class var grpWebBodyRegular: UIFont {
-        DesignFont.webBodyRegular.uiFont
+        Fonts.webBodyRegular.uiFont
     }
 
     @nonobjc final class var grpWebFootnoteMedium: UIFont {
-        DesignFont.webFootnoteMedium.uiFont
+        Fonts.webFootnoteMedium.uiFont
     }
 
     @nonobjc final class var grpWebFootnoteRegular: UIFont {
-        DesignFont.webFootnoteRegular.uiFont
+        Fonts.webFootnoteRegular.uiFont
     }
 
     @nonobjc final class var grpWebSubheadMedium: UIFont {
-        DesignFont.webSubheadMedium.uiFont
+        Fonts.webSubheadMedium.uiFont
     }
 
     @nonobjc final class var grpWebSubheadRegular: UIFont {
-        DesignFont.webSubheadRegular.uiFont
+        Fonts.webSubheadRegular.uiFont
     }
 
     @nonobjc final class var grpWebTitleMedium: UIFont {
-        DesignFont.webTitleMedium.uiFont
+        Fonts.webTitleMedium.uiFont
     }
 
     @nonobjc final class var grpWebTitleRegular: UIFont {
-        DesignFont.webTitleRegular.uiFont
+        Fonts.webTitleRegular.uiFont
     }
 }
 #endif

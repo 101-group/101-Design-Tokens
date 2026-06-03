@@ -4,8 +4,11 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "check:icons:web-package": "node scripts/publish-icons-web-package.mjs --dry-run",
-    "publish:icons:web-package": "node scripts/publish-icons-web-package.mjs",
-    "publish:tokens": "node scripts/publish-tokens.mjs"
+    "check:release": "node scripts/publish-icons-web-package.mjs --dry-run",
+    "check:icons:web-package": "npm run check:release",
+    "release:icons-colors-fonts": "node scripts/publish-icons-web-package.mjs",
+    "publish:icons:web-package": "npm run release:icons-colors-fonts",
+    "deploy:web-css": "node scripts/publish-tokens.mjs",
+    "publish:tokens": "npm run deploy:web-css"
   }
 }

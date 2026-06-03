@@ -2,7 +2,7 @@
 import SwiftUI
 import UIKit
 
-public enum DesignColor: String, CaseIterable, Equatable {
+public enum Colors: String, CaseIterable, Equatable {
     case accentBlue = "color-accent-blue"
     case accentDefault = "color-accent-default"
     case amountNegative = "color-amount-negative"
@@ -201,195 +201,195 @@ public enum DesignColor: String, CaseIterable, Equatable {
 
 public extension UIColor {
     @nonobjc final class var grpAccentBlue: UIColor {
-        DesignColor.accentBlue.uiColor
+        Colors.accentBlue.uiColor
     }
 
     @nonobjc final class var grpAccentDefault: UIColor {
-        DesignColor.accentDefault.uiColor
+        Colors.accentDefault.uiColor
     }
 
     @nonobjc final class var grpAmountNegative: UIColor {
-        DesignColor.amountNegative.uiColor
+        Colors.amountNegative.uiColor
     }
 
     @nonobjc final class var grpAmountPositive: UIColor {
-        DesignColor.amountPositive.uiColor
+        Colors.amountPositive.uiColor
     }
 
     @nonobjc final class var grpBorderPrimary: UIColor {
-        DesignColor.borderPrimary.uiColor
+        Colors.borderPrimary.uiColor
     }
 
     @nonobjc final class var grpBorderSecondary: UIColor {
-        DesignColor.borderSecondary.uiColor
+        Colors.borderSecondary.uiColor
     }
 
     @nonobjc final class var grpEventAgentFee: UIColor {
-        DesignColor.eventAgentFee.uiColor
+        Colors.eventAgentFee.uiColor
     }
 
     @nonobjc final class var grpEventDividends: UIColor {
-        DesignColor.eventDividends.uiColor
+        Colors.eventDividends.uiColor
     }
 
     @nonobjc final class var grpEventEstimate: UIColor {
-        DesignColor.eventEstimate.uiColor
+        Colors.eventEstimate.uiColor
     }
 
     @nonobjc final class var grpEventEstimateMuted: UIColor {
-        DesignColor.eventEstimateMuted.uiColor
+        Colors.eventEstimateMuted.uiColor
     }
 
     @nonobjc final class var grpEventExpense: UIColor {
-        DesignColor.eventExpense.uiColor
+        Colors.eventExpense.uiColor
     }
 
     @nonobjc final class var grpEventExpenseMuted: UIColor {
-        DesignColor.eventExpenseMuted.uiColor
+        Colors.eventExpenseMuted.uiColor
     }
 
     @nonobjc final class var grpEventIncome: UIColor {
-        DesignColor.eventIncome.uiColor
+        Colors.eventIncome.uiColor
     }
 
     @nonobjc final class var grpEventMarkup: UIColor {
-        DesignColor.eventMarkup.uiColor
+        Colors.eventMarkup.uiColor
     }
 
     @nonobjc final class var grpEventPaymentOwn: UIColor {
-        DesignColor.eventPaymentOwn.uiColor
+        Colors.eventPaymentOwn.uiColor
     }
 
     @nonobjc final class var grpEventPaymentWorking: UIColor {
-        DesignColor.eventPaymentWorking.uiColor
+        Colors.eventPaymentWorking.uiColor
     }
 
     @nonobjc final class var grpFocusRing: UIColor {
-        DesignColor.focusRing.uiColor
+        Colors.focusRing.uiColor
     }
 
     @nonobjc final class var grpHighlightCalendar: UIColor {
-        DesignColor.highlightCalendar.uiColor
+        Colors.highlightCalendar.uiColor
     }
 
     @nonobjc final class var grpHighlightText: UIColor {
-        DesignColor.highlightText.uiColor
+        Colors.highlightText.uiColor
     }
 
     @nonobjc final class var grpHighlighter: UIColor {
-        DesignColor.highlighter.uiColor
+        Colors.highlighter.uiColor
     }
 
     @nonobjc final class var grpOnAccentPrimary: UIColor {
-        DesignColor.onAccentPrimary.uiColor
+        Colors.onAccentPrimary.uiColor
     }
 
     @nonobjc final class var grpOnAccentSecondary: UIColor {
-        DesignColor.onAccentSecondary.uiColor
+        Colors.onAccentSecondary.uiColor
     }
 
     @nonobjc final class var grpOnAccentTertiary: UIColor {
-        DesignColor.onAccentTertiary.uiColor
+        Colors.onAccentTertiary.uiColor
     }
 
     @nonobjc final class var grpOverlay: UIColor {
-        DesignColor.overlay.uiColor
+        Colors.overlay.uiColor
     }
 
     @nonobjc final class var grpShadowBase: UIColor {
-        DesignColor.shadowBase.uiColor
+        Colors.shadowBase.uiColor
     }
 
     @nonobjc final class var grpShadowStroke: UIColor {
-        DesignColor.shadowStroke.uiColor
+        Colors.shadowStroke.uiColor
     }
 
     @nonobjc final class var grpShadowStrokeLight: UIColor {
-        DesignColor.shadowStrokeLight.uiColor
+        Colors.shadowStrokeLight.uiColor
     }
 
     @nonobjc final class var grpStateDisabled: UIColor {
-        DesignColor.stateDisabled.uiColor
+        Colors.stateDisabled.uiColor
     }
 
     @nonobjc final class var grpStateHover: UIColor {
-        DesignColor.stateHover.uiColor
+        Colors.stateHover.uiColor
     }
 
     @nonobjc final class var grpStateOnAccentHover: UIColor {
-        DesignColor.stateOnAccentHover.uiColor
+        Colors.stateOnAccentHover.uiColor
     }
 
     @nonobjc final class var grpStateOnAccentPressed: UIColor {
-        DesignColor.stateOnAccentPressed.uiColor
+        Colors.stateOnAccentPressed.uiColor
     }
 
     @nonobjc final class var grpStatePressed: UIColor {
-        DesignColor.statePressed.uiColor
+        Colors.statePressed.uiColor
     }
 
     @nonobjc final class var grpStateSelected: UIColor {
-        DesignColor.stateSelected.uiColor
+        Colors.stateSelected.uiColor
     }
 
     @nonobjc final class var grpStaticBlack: UIColor {
-        DesignColor.staticBlack.uiColor
+        Colors.staticBlack.uiColor
     }
 
     @nonobjc final class var grpStaticWhite: UIColor {
-        DesignColor.staticWhite.uiColor
+        Colors.staticWhite.uiColor
     }
 
     @nonobjc final class var grpStatusError: UIColor {
-        DesignColor.statusError.uiColor
+        Colors.statusError.uiColor
     }
 
     @nonobjc final class var grpStatusSuccess: UIColor {
-        DesignColor.statusSuccess.uiColor
+        Colors.statusSuccess.uiColor
     }
 
     @nonobjc final class var grpStatusWarning: UIColor {
-        DesignColor.statusWarning.uiColor
+        Colors.statusWarning.uiColor
     }
 
     @nonobjc final class var grpSurface0: UIColor {
-        DesignColor.surface0.uiColor
+        Colors.surface0.uiColor
     }
 
     @nonobjc final class var grpSurface1: UIColor {
-        DesignColor.surface1.uiColor
+        Colors.surface1.uiColor
     }
 
     @nonobjc final class var grpSurface2: UIColor {
-        DesignColor.surface2.uiColor
+        Colors.surface2.uiColor
     }
 
     @nonobjc final class var grpSurface3: UIColor {
-        DesignColor.surface3.uiColor
+        Colors.surface3.uiColor
     }
 
     @nonobjc final class var grpSurfaceInverse: UIColor {
-        DesignColor.surfaceInverse.uiColor
+        Colors.surfaceInverse.uiColor
     }
 
     @nonobjc final class var grpTextPrimary: UIColor {
-        DesignColor.textPrimary.uiColor
+        Colors.textPrimary.uiColor
     }
 
     @nonobjc final class var grpTextQuaternary: UIColor {
-        DesignColor.textQuaternary.uiColor
+        Colors.textQuaternary.uiColor
     }
 
     @nonobjc final class var grpTextSecondary: UIColor {
-        DesignColor.textSecondary.uiColor
+        Colors.textSecondary.uiColor
     }
 
     @nonobjc final class var grpTextTertiary: UIColor {
-        DesignColor.textTertiary.uiColor
+        Colors.textTertiary.uiColor
     }
 
     @nonobjc final class var grpToast: UIColor {
-        DesignColor.toast.uiColor
+        Colors.toast.uiColor
     }
 }
 #endif

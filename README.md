@@ -1,70 +1,61 @@
 # design-tokens
 
-Канонические токены, committed CSS и web-иконки.
-Генерация токенов и `tokens.css` происходит в плагине. Этот репозиторий хранит committed файлы и публикует их.
+Канонические токены, committed CSS, web-иконки и native resources.
+Генерация происходит в Figma-плагине. Этот репозиторий хранит committed файлы и публикует их.
 
 ## Структура
 
 ```text
-icons/
-  icons.json
-  web/
+tokens.json
+
+web/
+  tokens.css
+  icons/
     <section-folder>/*.svg
-  android/
-    res/drawable/*.xml
-  ios/
-    DesignIcons.xcassets/*.imageset/
-    DesignColor.swift
-    DesignFont.swift
+    icons.json
 
-tokens/
-  tokens.json
-  android/
-    res/values/colors.xml
-    res/values-night/colors.xml
-    res/values/dimens.xml
-    res/values/styles.xml
-  web/
-    tokens.css
+ios/
+  Icons.swift
+  Colors.swift
+  Fonts.swift
+  Icons.xcassets/
 
-scripts/
-  publish-icons-web-package.mjs
-  publish-tokens.mjs
+android/
+  res/
+    drawable/*.xml
+    values/colors.xml
+    values/fonts.xml
+    values-night/colors.xml
 ```
 
 ## Правила
 
-- `tokens/tokens.json` и `tokens/web/tokens.css` коммитятся вместе
-- `tokens/web/tokens.css` руками не редактируется
-- iOS-иконки подключаются как Swift Package из этого Git repo по semver-тегу; `Package.swift` отдаёт `icons/ios/DesignIcons.xcassets` как ресурсы target `DesignIcons`
-- iOS asset names имеют формат `icon-<section>-<name>`, например `icon-monochrome-search`; enum `DesignIcon` даёт типизированные имена: `DesignIcon.monochromeSearch.imageName`
-- iOS цвета и шрифты генерируются в том же Swift Package: `DesignColor.<token>.uiColor`, `DesignColor.<token>.color`, `UIColor.grp<Token>` и `UIFont.grp<Token>`
-- Android цвета и шрифты генерируются как resources: `tokens/android/res/values/colors.xml`, `values-night/colors.xml`, `dimens.xml`, `styles.xml`; цвета доступны как `R.color.color_*`, текстовые стили как `@style/Text*`
+- `tokens.json` и `web/tokens.css` коммитятся вместе.
+- `web/tokens.css` руками не редактируется.
+- `web/icons/icons.json` нужен плагину как manifest для rename/delete sync.
+- iOS подключается как Swift Package из этого Git repo по semver-тегу. `Package.swift` отдаёт папку `ios/`, где лежат Swift-файлы и `Icons.xcassets`.
+- iOS иконки доступны через `Icons.<name>.imageName`, bundle helper остаётся `DesignIcons.bundle`.
+- iOS цвета и шрифты доступны через `Colors.<token>.uiColor`, `Colors.<token>.color`, `UIFont.grp<Token>` и `Fonts.<token>.uiFont`.
+- Android иконки лежат в `android/res/drawable`, цвета в `values/colors.xml` и `values-night/colors.xml`, шрифты и text styles в `values/fonts.xml`.
 
-## GitLab
+## GitLab CI
 
-В pipeline два независимых job в stage `publish`:
+В pipeline две ручные кнопки на `main`:
 
-- `release_icons`
-- `deploy_tokens`
+- `Deploy Web CSS` публикует `web/tokens.css` на production.
+- `Release Icons/Colors/Fonts` публикует web npm package иконок. На semver-теге `1.2.3` job запускается автоматически; этот же тег является версией Swift Package для iOS.
 
-Генератор `tokens.css` живёт в репозитории плагина `tokens-plain-for-figma`.
-`release_icons` автоматически публикует web-пакет иконок из всех папок внутри `icons/web` при Git tag формата `1.2.3`. Версия web-пакета равна тегу. Этот же tag является версией Swift Package для iOS. На `main` этот job остаётся manual для ручной публикации следующего patch.
-`deploy_tokens` публикует уже закоммиченный `tokens/web/tokens.css` в production по SSH так же, как apex-деплой репозитория `web`:
+Для `Deploy Web CSS` нужны GitLab CI/CD variables:
 
-Обязательные GitLab CI/CD variables:
+- `SSH_PRIVATE_KEY`
+- `SSH_HOST`
 
-- ключ: `$SSH_PRIVATE_KEY`
-- сервер: `$SSH_HOST`
+Опционально:
 
-Опциональные GitLab CI/CD variables:
+- `SSH_USER`, по умолчанию `www`
+- `DEPLOY_PATH`, по умолчанию `/home/www/code/design-tokens-assets`
 
-- пользователь: `${SSH_USER:-www}`
-- путь: `${DEPLOY_PATH:-/home/www/code/design-tokens-assets}/tokens.css`
+CSS раздаётся в production:
 
-Файл публикуется в стабильный каталог `/home/www/code/design-tokens-assets/`, который не затирается при релизах web-репозитория. После распаковки бандла deploy-скрипт web создаёт симлинки `dist/tokens.css` и `dist/assets/tokens.css` на этот стабильный файл.
-
-Раздаётся в apex production:
-
-- `https://101-app.com/tokens.css` (через Express SSR из `dist/tokens.css`)
-- `https://101-app.com/assets/tokens.css` (через nginx static из `dist/assets/tokens.css`, legacy совместимость)
+- `https://101-app.com/tokens.css`
+- `https://101-app.com/assets/tokens.css`

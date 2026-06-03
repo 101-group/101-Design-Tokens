@@ -1,6 +1,14 @@
-<?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <style name="TextWebBodyMedium" parent="TextAppearance.AppCompat.Body1">
+<dimen name="font_size_web_body_medium">16sp</dimen>
+    <dimen name="font_size_web_body_regular">16sp</dimen>
+    <dimen name="font_size_web_footnote_medium">12sp</dimen>
+    <dimen name="font_size_web_footnote_regular">12sp</dimen>
+    <dimen name="font_size_web_subhead_medium">14sp</dimen>
+    <dimen name="font_size_web_subhead_regular">14sp</dimen>
+    <dimen name="font_size_web_title_medium">18sp</dimen>
+    <dimen name="font_size_web_title_regular">18sp</dimen>
+
+<style name="TextWebBodyMedium" parent="TextAppearance.AppCompat.Body1">
         <item name="android:textSize">@dimen/font_size_web_body_medium</item>
         <item name="android:fontFamily">sans-serif-medium</item>
         <item name="android:fontFeatureSettings">tnum</item>
