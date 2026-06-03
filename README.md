@@ -53,7 +53,7 @@ android/
 Опционально:
 
 - `SSH_USER`, по умолчанию `www`
-- `DEPLOY_PATH`, по умолчанию `/home/www/code/design-tokens-assets`
+- `DEPLOY_PATH`
 
 CSS раздаётся в production:
 
