@@ -7,6 +7,69 @@ public enum Colors: String, CaseIterable, Equatable {
     case accentDefault = "color-accent-default"
     case amountNegative = "color-amount-negative"
     case amountPositive = "color-amount-positive"
+    case baseBlue300 = "color-base-blue-300"
+    case baseBlue350 = "color-base-blue-350"
+    case baseBlue400 = "color-base-blue-400"
+    case baseBlue450 = "color-base-blue-450"
+    case baseBlue500 = "color-base-blue-500"
+    case baseBlue550 = "color-base-blue-550"
+    case baseBlue600 = "color-base-blue-600"
+    case baseCyan300 = "color-base-cyan-300"
+    case baseCyan350 = "color-base-cyan-350"
+    case baseCyan400 = "color-base-cyan-400"
+    case baseCyan450 = "color-base-cyan-450"
+    case baseCyan500 = "color-base-cyan-500"
+    case baseCyan550 = "color-base-cyan-550"
+    case baseCyan600 = "color-base-cyan-600"
+    case baseDefault50 = "color-base-default-50"
+    case baseDefault100 = "color-base-default-100"
+    case baseDefault150 = "color-base-default-150"
+    case baseDefault200 = "color-base-default-200"
+    case baseDefault300 = "color-base-default-300"
+    case baseDefault350 = "color-base-default-350"
+    case baseDefault400 = "color-base-default-400"
+    case baseDefault450 = "color-base-default-450"
+    case baseDefault500 = "color-base-default-500"
+    case baseDefault550 = "color-base-default-550"
+    case baseDefault600 = "color-base-default-600"
+    case baseDefault900 = "color-base-default-900"
+    case baseDefault950 = "color-base-default-950"
+    case baseDefault1000 = "color-base-default-1000"
+    case baseGreen300 = "color-base-green-300"
+    case baseGreen350 = "color-base-green-350"
+    case baseGreen400 = "color-base-green-400"
+    case baseGreen450 = "color-base-green-450"
+    case baseGreen500 = "color-base-green-500"
+    case baseGreen550 = "color-base-green-550"
+    case baseGreen600 = "color-base-green-600"
+    case baseIndigo300 = "color-base-indigo-300"
+    case baseIndigo350 = "color-base-indigo-350"
+    case baseIndigo400 = "color-base-indigo-400"
+    case baseIndigo450 = "color-base-indigo-450"
+    case baseIndigo500 = "color-base-indigo-500"
+    case baseIndigo550 = "color-base-indigo-550"
+    case baseIndigo600 = "color-base-indigo-600"
+    case baseOrange300 = "color-base-orange-300"
+    case baseOrange350 = "color-base-orange-350"
+    case baseOrange400 = "color-base-orange-400"
+    case baseOrange450 = "color-base-orange-450"
+    case baseOrange500 = "color-base-orange-500"
+    case baseOrange550 = "color-base-orange-550"
+    case baseOrange600 = "color-base-orange-600"
+    case baseRed300 = "color-base-red-300"
+    case baseRed350 = "color-base-red-350"
+    case baseRed400 = "color-base-red-400"
+    case baseRed450 = "color-base-red-450"
+    case baseRed500 = "color-base-red-500"
+    case baseRed550 = "color-base-red-550"
+    case baseRed600 = "color-base-red-600"
+    case baseYellow300 = "color-base-yellow-300"
+    case baseYellow350 = "color-base-yellow-350"
+    case baseYellow400 = "color-base-yellow-400"
+    case baseYellow450 = "color-base-yellow-450"
+    case baseYellow500 = "color-base-yellow-500"
+    case baseYellow550 = "color-base-yellow-550"
+    case baseYellow600 = "color-base-yellow-600"
     case borderPrimary = "color-border-primary"
     case borderSecondary = "color-border-secondary"
     case eventAgentFee = "color-event-agent-fee"
@@ -66,6 +129,132 @@ public enum Colors: String, CaseIterable, Equatable {
             return Self.dynamicColor(light: "#F40017", dark: "#F40017")
         case .amountPositive:
             return Self.dynamicColor(light: "#00A530", dark: "#00A530")
+        case .baseBlue300:
+            return Self.dynamicColor(light: "#004999", dark: "#004999")
+        case .baseBlue350:
+            return Self.dynamicColor(light: "#0055B2", dark: "#0055B2")
+        case .baseBlue400:
+            return Self.dynamicColor(light: "#0062CC", dark: "#0062CC")
+        case .baseBlue450:
+            return Self.dynamicColor(light: "#006EE5", dark: "#006EE5")
+        case .baseBlue500:
+            return Self.dynamicColor(light: "#007AFF", dark: "#007AFF")
+        case .baseBlue550:
+            return Self.dynamicColor(light: "#1A87FF", dark: "#1A87FF")
+        case .baseBlue600:
+            return Self.dynamicColor(light: "#3395FF", dark: "#3395FF")
+        case .baseCyan300:
+            return Self.dynamicColor(light: "#1E688A", dark: "#1E688A")
+        case .baseCyan350:
+            return Self.dynamicColor(light: "#2379A1", dark: "#2379A1")
+        case .baseCyan400:
+            return Self.dynamicColor(light: "#288AB8", dark: "#288AB8")
+        case .baseCyan450:
+            return Self.dynamicColor(light: "#2D9CCF", dark: "#2D9CCF")
+        case .baseCyan500:
+            return Self.dynamicColor(light: "#32ADE6", dark: "#32ADE6")
+        case .baseCyan550:
+            return Self.dynamicColor(light: "#47B5E8", dark: "#47B5E8")
+        case .baseCyan600:
+            return Self.dynamicColor(light: "#5BBDEB", dark: "#5BBDEB")
+        case .baseDefault50:
+            return Self.dynamicColor(light: "#0E0E0F", dark: "#0E0E0F")
+        case .baseDefault100:
+            return Self.dynamicColor(light: "#1C1C1D", dark: "#1C1C1D")
+        case .baseDefault150:
+            return Self.dynamicColor(light: "#2B2B2C", dark: "#2B2B2C")
+        case .baseDefault200:
+            return Self.dynamicColor(light: "#39393B", dark: "#39393B")
+        case .baseDefault300:
+            return Self.dynamicColor(light: "#555558", dark: "#555558")
+        case .baseDefault350:
+            return Self.dynamicColor(light: "#636367", dark: "#636367")
+        case .baseDefault400:
+            return Self.dynamicColor(light: "#727276", dark: "#727276")
+        case .baseDefault450:
+            return Self.dynamicColor(light: "#808084", dark: "#808084")
+        case .baseDefault500:
+            return Self.dynamicColor(light: "#8E8E93", dark: "#8E8E93")
+        case .baseDefault550:
+            return Self.dynamicColor(light: "#99999E", dark: "#99999E")
+        case .baseDefault600:
+            return Self.dynamicColor(light: "#A5A5A9", dark: "#A5A5A9")
+        case .baseDefault900:
+            return Self.dynamicColor(light: "#E5E5E5", dark: "#E5E5E5")
+        case .baseDefault950:
+            return Self.dynamicColor(light: "#F2F2F7", dark: "#F2F2F7")
+        case .baseDefault1000:
+            return Self.dynamicColor(light: "#FFFFFF", dark: "#FFFFFF")
+        case .baseGreen300:
+            return Self.dynamicColor(light: "#1F7735", dark: "#1F7735")
+        case .baseGreen350:
+            return Self.dynamicColor(light: "#248B3E", dark: "#248B3E")
+        case .baseGreen400:
+            return Self.dynamicColor(light: "#2A9F47", dark: "#2A9F47")
+        case .baseGreen450:
+            return Self.dynamicColor(light: "#2FB350", dark: "#2FB350")
+        case .baseGreen500:
+            return Self.dynamicColor(light: "#34C759", dark: "#34C759")
+        case .baseGreen550:
+            return Self.dynamicColor(light: "#48CD6A", dark: "#48CD6A")
+        case .baseGreen600:
+            return Self.dynamicColor(light: "#5DD27A", dark: "#5DD27A")
+        case .baseIndigo300:
+            return Self.dynamicColor(light: "#353480", dark: "#353480")
+        case .baseIndigo350:
+            return Self.dynamicColor(light: "#3E3C96", dark: "#3E3C96")
+        case .baseIndigo400:
+            return Self.dynamicColor(light: "#4645AB", dark: "#4645AB")
+        case .baseIndigo450:
+            return Self.dynamicColor(light: "#4F4DC1", dark: "#4F4DC1")
+        case .baseIndigo500:
+            return Self.dynamicColor(light: "#5856D6", dark: "#5856D6")
+        case .baseIndigo550:
+            return Self.dynamicColor(light: "#6967DA", dark: "#6967DA")
+        case .baseIndigo600:
+            return Self.dynamicColor(light: "#7978DE", dark: "#7978DE")
+        case .baseOrange300:
+            return Self.dynamicColor(light: "#995F06", dark: "#995F06")
+        case .baseOrange350:
+            return Self.dynamicColor(light: "#B26F07", dark: "#B26F07")
+        case .baseOrange400:
+            return Self.dynamicColor(light: "#CC7F08", dark: "#CC7F08")
+        case .baseOrange450:
+            return Self.dynamicColor(light: "#E58F09", dark: "#E58F09")
+        case .baseOrange500:
+            return Self.dynamicColor(light: "#FF9F0A", dark: "#FF9F0A")
+        case .baseOrange550:
+            return Self.dynamicColor(light: "#FFA923", dark: "#FFA923")
+        case .baseOrange600:
+            return Self.dynamicColor(light: "#FFB23B", dark: "#FFB23B")
+        case .baseRed300:
+            return Self.dynamicColor(light: "#99231D", dark: "#99231D")
+        case .baseRed350:
+            return Self.dynamicColor(light: "#B22922", dark: "#B22922")
+        case .baseRed400:
+            return Self.dynamicColor(light: "#CC2F26", dark: "#CC2F26")
+        case .baseRed450:
+            return Self.dynamicColor(light: "#E5352B", dark: "#E5352B")
+        case .baseRed500:
+            return Self.dynamicColor(light: "#FF3B30", dark: "#FF3B30")
+        case .baseRed550:
+            return Self.dynamicColor(light: "#FF4F45", dark: "#FF4F45")
+        case .baseRed600:
+            return Self.dynamicColor(light: "#FF6259", dark: "#FF6259")
+        case .baseYellow300:
+            return Self.dynamicColor(light: "#997A00", dark: "#997A00")
+        case .baseYellow350:
+            return Self.dynamicColor(light: "#B28F00", dark: "#B28F00")
+        case .baseYellow400:
+            return Self.dynamicColor(light: "#CCA300", dark: "#CCA300")
+        case .baseYellow450:
+            return Self.dynamicColor(light: "#E5B800", dark: "#E5B800")
+        case .baseYellow500:
+            return Self.dynamicColor(light: "#FFCC00", dark: "#FFCC00")
+        case .baseYellow550:
+            return Self.dynamicColor(light: "#FFD11A", dark: "#FFD11A")
+        case .baseYellow600:
+            return Self.dynamicColor(light: "#FFD633", dark: "#FFD633")
         case .borderPrimary:
             return Self.dynamicColor(light: "#E8E8E8", dark: "#343438")
         case .borderSecondary:
@@ -214,6 +403,258 @@ public extension UIColor {
 
     @nonobjc final class var grpAmountPositive: UIColor {
         Colors.amountPositive.uiColor
+    }
+
+    @nonobjc final class var grpBaseBlue300: UIColor {
+        Colors.baseBlue300.uiColor
+    }
+
+    @nonobjc final class var grpBaseBlue350: UIColor {
+        Colors.baseBlue350.uiColor
+    }
+
+    @nonobjc final class var grpBaseBlue400: UIColor {
+        Colors.baseBlue400.uiColor
+    }
+
+    @nonobjc final class var grpBaseBlue450: UIColor {
+        Colors.baseBlue450.uiColor
+    }
+
+    @nonobjc final class var grpBaseBlue500: UIColor {
+        Colors.baseBlue500.uiColor
+    }
+
+    @nonobjc final class var grpBaseBlue550: UIColor {
+        Colors.baseBlue550.uiColor
+    }
+
+    @nonobjc final class var grpBaseBlue600: UIColor {
+        Colors.baseBlue600.uiColor
+    }
+
+    @nonobjc final class var grpBaseCyan300: UIColor {
+        Colors.baseCyan300.uiColor
+    }
+
+    @nonobjc final class var grpBaseCyan350: UIColor {
+        Colors.baseCyan350.uiColor
+    }
+
+    @nonobjc final class var grpBaseCyan400: UIColor {
+        Colors.baseCyan400.uiColor
+    }
+
+    @nonobjc final class var grpBaseCyan450: UIColor {
+        Colors.baseCyan450.uiColor
+    }
+
+    @nonobjc final class var grpBaseCyan500: UIColor {
+        Colors.baseCyan500.uiColor
+    }
+
+    @nonobjc final class var grpBaseCyan550: UIColor {
+        Colors.baseCyan550.uiColor
+    }
+
+    @nonobjc final class var grpBaseCyan600: UIColor {
+        Colors.baseCyan600.uiColor
+    }
+
+    @nonobjc final class var grpBaseDefault50: UIColor {
+        Colors.baseDefault50.uiColor
+    }
+
+    @nonobjc final class var grpBaseDefault100: UIColor {
+        Colors.baseDefault100.uiColor
+    }
+
+    @nonobjc final class var grpBaseDefault150: UIColor {
+        Colors.baseDefault150.uiColor
+    }
+
+    @nonobjc final class var grpBaseDefault200: UIColor {
+        Colors.baseDefault200.uiColor
+    }
+
+    @nonobjc final class var grpBaseDefault300: UIColor {
+        Colors.baseDefault300.uiColor
+    }
+
+    @nonobjc final class var grpBaseDefault350: UIColor {
+        Colors.baseDefault350.uiColor
+    }
+
+    @nonobjc final class var grpBaseDefault400: UIColor {
+        Colors.baseDefault400.uiColor
+    }
+
+    @nonobjc final class var grpBaseDefault450: UIColor {
+        Colors.baseDefault450.uiColor
+    }
+
+    @nonobjc final class var grpBaseDefault500: UIColor {
+        Colors.baseDefault500.uiColor
+    }
+
+    @nonobjc final class var grpBaseDefault550: UIColor {
+        Colors.baseDefault550.uiColor
+    }
+
+    @nonobjc final class var grpBaseDefault600: UIColor {
+        Colors.baseDefault600.uiColor
+    }
+
+    @nonobjc final class var grpBaseDefault900: UIColor {
+        Colors.baseDefault900.uiColor
+    }
+
+    @nonobjc final class var grpBaseDefault950: UIColor {
+        Colors.baseDefault950.uiColor
+    }
+
+    @nonobjc final class var grpBaseDefault1000: UIColor {
+        Colors.baseDefault1000.uiColor
+    }
+
+    @nonobjc final class var grpBaseGreen300: UIColor {
+        Colors.baseGreen300.uiColor
+    }
+
+    @nonobjc final class var grpBaseGreen350: UIColor {
+        Colors.baseGreen350.uiColor
+    }
+
+    @nonobjc final class var grpBaseGreen400: UIColor {
+        Colors.baseGreen400.uiColor
+    }
+
+    @nonobjc final class var grpBaseGreen450: UIColor {
+        Colors.baseGreen450.uiColor
+    }
+
+    @nonobjc final class var grpBaseGreen500: UIColor {
+        Colors.baseGreen500.uiColor
+    }
+
+    @nonobjc final class var grpBaseGreen550: UIColor {
+        Colors.baseGreen550.uiColor
+    }
+
+    @nonobjc final class var grpBaseGreen600: UIColor {
+        Colors.baseGreen600.uiColor
+    }
+
+    @nonobjc final class var grpBaseIndigo300: UIColor {
+        Colors.baseIndigo300.uiColor
+    }
+
+    @nonobjc final class var grpBaseIndigo350: UIColor {
+        Colors.baseIndigo350.uiColor
+    }
+
+    @nonobjc final class var grpBaseIndigo400: UIColor {
+        Colors.baseIndigo400.uiColor
+    }
+
+    @nonobjc final class var grpBaseIndigo450: UIColor {
+        Colors.baseIndigo450.uiColor
+    }
+
+    @nonobjc final class var grpBaseIndigo500: UIColor {
+        Colors.baseIndigo500.uiColor
+    }
+
+    @nonobjc final class var grpBaseIndigo550: UIColor {
+        Colors.baseIndigo550.uiColor
+    }
+
+    @nonobjc final class var grpBaseIndigo600: UIColor {
+        Colors.baseIndigo600.uiColor
+    }
+
+    @nonobjc final class var grpBaseOrange300: UIColor {
+        Colors.baseOrange300.uiColor
+    }
+
+    @nonobjc final class var grpBaseOrange350: UIColor {
+        Colors.baseOrange350.uiColor
+    }
+
+    @nonobjc final class var grpBaseOrange400: UIColor {
+        Colors.baseOrange400.uiColor
+    }
+
+    @nonobjc final class var grpBaseOrange450: UIColor {
+        Colors.baseOrange450.uiColor
+    }
+
+    @nonobjc final class var grpBaseOrange500: UIColor {
+        Colors.baseOrange500.uiColor
+    }
+
+    @nonobjc final class var grpBaseOrange550: UIColor {
+        Colors.baseOrange550.uiColor
+    }
+
+    @nonobjc final class var grpBaseOrange600: UIColor {
+        Colors.baseOrange600.uiColor
+    }
+
+    @nonobjc final class var grpBaseRed300: UIColor {
+        Colors.baseRed300.uiColor
+    }
+
+    @nonobjc final class var grpBaseRed350: UIColor {
+        Colors.baseRed350.uiColor
+    }
+
+    @nonobjc final class var grpBaseRed400: UIColor {
+        Colors.baseRed400.uiColor
+    }
+
+    @nonobjc final class var grpBaseRed450: UIColor {
+        Colors.baseRed450.uiColor
+    }
+
+    @nonobjc final class var grpBaseRed500: UIColor {
+        Colors.baseRed500.uiColor
+    }
+
+    @nonobjc final class var grpBaseRed550: UIColor {
+        Colors.baseRed550.uiColor
+    }
+
+    @nonobjc final class var grpBaseRed600: UIColor {
+        Colors.baseRed600.uiColor
+    }
+
+    @nonobjc final class var grpBaseYellow300: UIColor {
+        Colors.baseYellow300.uiColor
+    }
+
+    @nonobjc final class var grpBaseYellow350: UIColor {
+        Colors.baseYellow350.uiColor
+    }
+
+    @nonobjc final class var grpBaseYellow400: UIColor {
+        Colors.baseYellow400.uiColor
+    }
+
+    @nonobjc final class var grpBaseYellow450: UIColor {
+        Colors.baseYellow450.uiColor
+    }
+
+    @nonobjc final class var grpBaseYellow500: UIColor {
+        Colors.baseYellow500.uiColor
+    }
+
+    @nonobjc final class var grpBaseYellow550: UIColor {
+        Colors.baseYellow550.uiColor
+    }
+
+    @nonobjc final class var grpBaseYellow600: UIColor {
+        Colors.baseYellow600.uiColor
     }
 
     @nonobjc final class var grpBorderPrimary: UIColor {
