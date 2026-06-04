@@ -1,10 +1,10 @@
 # 101 Design Tokens
 
-Public design tokens and generated platform resources for Web, iOS, and Android.
+Публичные дизайн-токены и сгенерированные ресурсы для Web, iOS и Android.
 
-Use a Git tag for stable integration, for example `1.0.104`.
+Для стабильного подключения используйте Git tag, например `1.0.104`.
 
-## Contents
+## Что внутри
 
 ```text
 tokens.json
@@ -29,20 +29,20 @@ android/
 
 ## Web
 
-- CSS tokens: `web/tokens.css`
-- SVG icons: `web/icons/<section>/*.svg`
+- CSS-токены: `web/tokens.css`
+- SVG-иконки: `web/icons/<section>/*.svg`
 
 ## iOS
 
-Add this repository as a Swift Package:
+Подключите репозиторий как Swift Package:
 
 ```text
 https://github.com/101-group/101-Design-Tokens
 ```
 
-Use the product `DesignIcons`.
+Используйте продукт `DesignIcons`.
 
-Examples:
+Примеры:
 
 ```swift
 UIImage(
@@ -60,9 +60,9 @@ UIFont.grpIosBodyRegular
 
 ## Android
 
-Use `android/res` as Android resources.
+Используйте `android/res` как Android resources.
 
-Examples:
+Примеры:
 
 ```kotlin
 R.drawable.icon_monochrome_adress
@@ -71,8 +71,8 @@ R.dimen.font_size_android_body_medium
 R.style.TextAndroidBodyMedium
 ```
 
-Dark theme colors are in `android/res/values-night/colors.xml`.
+Цвета для тёмной темы лежат в `android/res/values-night/colors.xml`.
 
-## Source
+## Источник
 
-Files are generated from Figma tokens and icons. Do not edit generated platform files manually.
+Файлы генерируются из Figma-токенов и иконок. Не редактируйте сгенерированные platform-файлы вручную.
