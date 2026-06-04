@@ -1,8 +1,8 @@
 # 101 Design Tokens
 
-Публичные дизайн-токены и сгенерированные ресурсы для Web, iOS и Android.
+Публичная библиотека дизайн-токенов и сгенерированных ресурсов для Web, iOS и Android.
 
-Для стабильного подключения используйте Git tag, например `1.0.104`.
+Один релиз = одна версия, например `1.0.108`. Внутри релиза лежат все платформы: web, iOS и Android.
 
 ## Что внутри
 
@@ -29,8 +29,23 @@ android/
 
 ## Web
 
-- CSS-токены: `web/tokens.css`
-- SVG-иконки: `web/icons/<section>/*.svg`
+Установите npm package:
+
+```bash
+npm install @101/design-tokens
+```
+
+CSS:
+
+```ts
+import "@101/design-tokens/tokens.css";
+```
+
+Иконки:
+
+```ts
+import IconAdd from "@101/design-tokens/web/icons/monochrome/add.svg";
+```
 
 ## iOS
 
@@ -40,14 +55,14 @@ android/
 https://github.com/101-group/101-Design-Tokens
 ```
 
-Используйте продукт `DesignIcons`.
+Используйте продукт `DesignTokens` и нужную версию Git tag.
 
 Примеры:
 
 ```swift
 UIImage(
     named: Icons.monochromeAdress.imageName,
-    in: DesignIcons.bundle,
+    in: DesignTokens.bundle,
     compatibleWith: nil
 )
 
@@ -60,7 +75,7 @@ UIFont.grpIosBodyRegular
 
 ## Android
 
-Используйте `android/res` как Android resources.
+Подключите `android/res` как Android resources из нужной версии Git tag.
 
 Примеры:
 
@@ -72,6 +87,12 @@ R.style.TextAndroidBodyMedium
 ```
 
 Цвета для тёмной темы лежат в `android/res/values-night/colors.xml`.
+
+## Релиз
+
+Релиз запускается в GitHub Actions кнопкой `Release Design Tokens`.
+
+Нужно ввести версию `1.0.N`. Workflow создаст Git tag с этой же версией и опубликует npm package `@101/design-tokens`.
 
 ## Источник
 

@@ -3,19 +3,19 @@
 import PackageDescription
 
 let package = Package(
-    name: "DesignIcons",
+    name: "DesignTokens",
     platforms: [
         .iOS(.v13)
     ],
     products: [
         .library(
-            name: "DesignIcons",
-            targets: ["DesignIcons"]
+            name: "DesignTokens",
+            targets: ["DesignTokens"]
         )
     ],
     targets: [
         .target(
-            name: "DesignIcons",
+            name: "DesignTokens",
             path: "ios",
             resources: [
                 .process("Icons.xcassets")

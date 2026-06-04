@@ -1,6 +1,6 @@
 import Foundation
 
-public enum DesignIcons {
+public enum DesignTokens {
     public static let bundle = Bundle.module
 }
 

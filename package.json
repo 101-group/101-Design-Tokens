@@ -1,14 +1,14 @@
 {
-  "name": "design-tokens",
+  "name": "@101/design-tokens",
   "version": "1.0.0",
-  "private": true,
+  "private": false,
+  "description": "101 design tokens and generated assets for Web, iOS, and Android.",
   "type": "module",
   "scripts": {
-    "check:release": "node scripts/publish-icons-web-package.mjs --dry-run",
-    "check:icons:web-package": "npm run check:release",
-    "release:icons-colors-fonts": "node scripts/publish-icons-web-package.mjs",
-    "publish:icons:web-package": "npm run release:icons-colors-fonts",
-    "deploy:web-css": "node scripts/publish-tokens.mjs",
-    "publish:tokens": "npm run deploy:web-css"
+    "check:release": "node scripts/publish-design-tokens-package.mjs --dry-run",
+    "release:design-tokens": "node scripts/publish-design-tokens-package.mjs"
+  },
+  "publishConfig": {
+    "access": "public"
   }
 }
