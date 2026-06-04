@@ -42,10 +42,45 @@ jobs:
           registry-url: "https://registry.npmjs.org"
           scope: "@101app"
 
-      - name: Check package contents
+      - name: Setup Java
+        uses: actions/setup-java@v4
+        with:
+          distribution: "temurin"
+          java-version: "17"
+
+      - name: Setup Android SDK
+        uses: android-actions/setup-android@v3
+
+      - name: Install Android SDK platform
+        run: |
+          yes | sdkmanager --licenses
+          sdkmanager "platforms;android-35"
+
+      - name: Setup Gradle
+        uses: gradle/actions/setup-gradle@v4
+        with:
+          gradle-version: "8.9"
+
+      - name: Check platform files
+        run: |
+          test -f Package.swift
+          test -f ios/Icons.swift
+          test -f ios/Colors.swift
+          test -f ios/Fonts.swift
+          test -d ios/Icons.xcassets
+          test -f android/build.gradle.kts
+          test -f android/AndroidManifest.xml
+          test -d android/res
+
+      - name: Check web npm package contents
         env:
           DESIGN_TOKENS_PACKAGE_VERSION: ${{ env.VERSION }}
         run: npm run check:release
+
+      - name: Check Android Gradle package
+        env:
+          DESIGN_TOKENS_PACKAGE_VERSION: ${{ env.VERSION }}
+        run: gradle :android:publishToMavenLocal --no-daemon
 
       - name: Validate npm token
         env:

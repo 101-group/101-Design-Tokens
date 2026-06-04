@@ -1,0 +1,9 @@
+jdk:
+  - openjdk17
+
+before_install:
+  - yes | sdkmanager --licenses
+  - sdkmanager "platforms;android-35"
+
+install:
+  - gradle :android:publishToMavenLocal

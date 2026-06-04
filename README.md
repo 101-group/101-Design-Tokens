@@ -20,6 +20,8 @@ ios/
   Icons.xcassets/
 
 android/
+  build.gradle.kts
+  AndroidManifest.xml
   res/
     drawable/
     values/colors.xml
@@ -75,7 +77,32 @@ UIFont.grpIosBodyRegular
 
 ## Android
 
-Подключите `android/res` как Android resources из нужной версии Git tag.
+Android использует Gradle dependency через JitPack. Добавьте JitPack repository в `settings.gradle.kts`:
+
+```kotlin
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+        google()
+        mavenCentral()
+        maven("https://jitpack.io")
+    }
+}
+```
+
+Подключите Android package нужной версии:
+
+```kotlin
+dependencies {
+    implementation("com.github.101-group.101-Design-Tokens:android:<version>")
+}
+```
+
+При новом релизе обновляйте только номер версии:
+
+```text
+1.0.106 -> 1.0.107
+```
 
 Примеры:
 
@@ -92,7 +119,7 @@ R.style.TextAndroidBodyMedium
 
 Релиз запускается в GitHub Actions кнопкой `Release Design Tokens`.
 
-Версию вводить не нужно. Workflow сам найдёт последний Git tag `1.0.N`, создаст следующий tag для iOS/Android и опубликует web npm package `@101app/design-tokens-web` с этой же версией.
+Версию вводить не нужно. Workflow сам найдёт последний Git tag `1.0.N`, проверит web npm package, проверит Android Gradle package, создаст следующий tag для iOS/Android и опубликует web npm package `@101app/design-tokens-web` с этой же версией.
 
 ## Источник
 
