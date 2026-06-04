@@ -1,5 +1,5 @@
 {
-  "name": "@101/design-tokens",
+  "name": "@101app/design-tokens",
   "version": "1.0.0",
   "private": false,
   "description": "101 design tokens and generated assets for Web, iOS, and Android.",

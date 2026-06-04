@@ -9,7 +9,7 @@ import { promisify } from "node:util";
 const execFileAsync = promisify(execFile);
 
 const ROOT_DIR = process.cwd();
-const PACKAGE_NAME = "@101/design-tokens";
+const PACKAGE_NAME = "@101app/design-tokens";
 const DEFAULT_DEVELOPMENT_VERSION = "0.0.0-development";
 const DEFAULT_REGISTRY_URL = "https://registry.npmjs.org";
 

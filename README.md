@@ -32,19 +32,19 @@ android/
 Установите npm package:
 
 ```bash
-npm install @101/design-tokens
+npm install @101app/design-tokens
 ```
 
 CSS:
 
 ```ts
-import "@101/design-tokens/tokens.css";
+import "@101app/design-tokens/tokens.css";
 ```
 
 Иконки:
 
 ```ts
-import IconAdd from "@101/design-tokens/web/icons/monochrome/add.svg";
+import IconAdd from "@101app/design-tokens/web/icons/monochrome/add.svg";
 ```
 
 ## iOS
@@ -92,7 +92,7 @@ R.style.TextAndroidBodyMedium
 
 Релиз запускается в GitHub Actions кнопкой `Release Design Tokens`.
 
-Версию вводить не нужно. Workflow сам найдёт последний Git tag `1.0.N`, создаст следующий tag и опубликует npm package `@101/design-tokens` с этой же версией.
+Версию вводить не нужно. Workflow сам найдёт последний Git tag `1.0.N`, создаст следующий tag и опубликует npm package `@101app/design-tokens` с этой же версией.
 
 ## Источник
 

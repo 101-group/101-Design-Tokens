@@ -8,7 +8,7 @@ permissions:
 
 jobs:
   release:
-    name: Publish @101/design-tokens
+    name: Publish @101app/design-tokens
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -40,7 +40,7 @@ jobs:
         with:
           node-version: "20"
           registry-url: "https://registry.npmjs.org"
-          scope: "@101"
+          scope: "@101app"
 
       - name: Check package contents
         env:
@@ -59,8 +59,8 @@ jobs:
 
       - name: Check npm version
         run: |
-          if npm view "@101/design-tokens@$VERSION" version --registry "https://registry.npmjs.org" >/dev/null 2>&1; then
-            echo "npm package version already exists: @101/design-tokens@$VERSION"
+          if npm view "@101app/design-tokens@$VERSION" version --registry "https://registry.npmjs.org" >/dev/null 2>&1; then
+            echo "npm package version already exists: @101app/design-tokens@$VERSION"
             exit 1
           fi
 
