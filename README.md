@@ -87,3 +87,13 @@ R.style.TextAndroidBodyMedium
 ```
 
 Цвета для тёмной темы лежат в `android/res/values-night/colors.xml`.
+
+## Релиз
+
+Релиз запускается в GitHub Actions кнопкой `Release Design Tokens`.
+
+Версию вводить не нужно. Workflow сам найдёт последний Git tag `1.0.N`, создаст следующий tag и опубликует npm package `@101/design-tokens` с этой же версией.
+
+## Источник
+
+Файлы генерируются из Figma-токенов и иконок. Не редактируйте сгенерированные platform-файлы вручную.

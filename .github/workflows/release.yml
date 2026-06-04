@@ -2,11 +2,6 @@ name: Release Design Tokens
 
 on:
   workflow_dispatch:
-    inputs:
-      version:
-        description: "Release version, for example 1.0.108"
-        required: true
-        type: string
 
 permissions:
   contents: write
@@ -21,17 +16,24 @@ jobs:
         with:
           fetch-depth: 0
 
-      - name: Validate version
+      - name: Resolve next version
         run: |
-          VERSION="${{ inputs.version }}"
-          if ! printf '%s' "$VERSION" | grep -Eq '^[0-9]+\.[0-9]+\.[0-9]+([+-][0-9A-Za-z.-]+)?$'; then
-            echo "Version must be semver, for example 1.0.108"
-            exit 1
+          LATEST_VERSION="$(git tag --list '[0-9]*.[0-9]*.[0-9]*' | sort -V | tail -n 1)"
+          if [ -z "$LATEST_VERSION" ]; then
+            VERSION="1.0.0"
+          else
+            MAJOR="$(printf '%s' "$LATEST_VERSION" | cut -d. -f1)"
+            MINOR="$(printf '%s' "$LATEST_VERSION" | cut -d. -f2)"
+            PATCH="$(printf '%s' "$LATEST_VERSION" | cut -d. -f3)"
+            VERSION="$MAJOR.$MINOR.$((PATCH + 1))"
           fi
+
           if git rev-parse "$VERSION" >/dev/null 2>&1; then
             echo "Git tag already exists: $VERSION"
             exit 1
           fi
+          echo "Resolved release version: $VERSION"
+          echo "VERSION=$VERSION" >> "$GITHUB_ENV"
 
       - name: Setup Node
         uses: actions/setup-node@v4
@@ -42,7 +44,7 @@ jobs:
 
       - name: Check package contents
         env:
-          DESIGN_TOKENS_PACKAGE_VERSION: ${{ inputs.version }}
+          DESIGN_TOKENS_PACKAGE_VERSION: ${{ env.VERSION }}
         run: npm run check:release
 
       - name: Validate npm token
@@ -53,10 +55,17 @@ jobs:
             echo "Missing GitHub Actions secret: NPM_TOKEN"
             exit 1
           fi
+          npm whoami --registry "https://registry.npmjs.org"
+
+      - name: Check npm version
+        run: |
+          if npm view "@101/design-tokens@$VERSION" version --registry "https://registry.npmjs.org" >/dev/null 2>&1; then
+            echo "npm package version already exists: @101/design-tokens@$VERSION"
+            exit 1
+          fi
 
       - name: Create Git tag
         run: |
-          VERSION="${{ inputs.version }}"
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git tag "$VERSION"
@@ -64,6 +73,6 @@ jobs:
 
       - name: Publish package
         env:
-          DESIGN_TOKENS_PACKAGE_VERSION: ${{ inputs.version }}
+          DESIGN_TOKENS_PACKAGE_VERSION: ${{ env.VERSION }}
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
         run: npm run release:design-tokens
