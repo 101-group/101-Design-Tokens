@@ -2,32 +2,9 @@
 
 Ресурсы дизайна 101 для Web, iOS и Android.
 
-Один релиз = одна версия, например `1.0.108`. Версия общая для всех платформ, но каждая платформа подключается своим способом.
+У Web, iOS и Android одна общая версия, например `1.0.108`. Каждая платформа подключается своим способом.
 
-## Что внутри
-
-```text
-tokens.json
-
-web/
-  tokens.css
-  icons/
-
-ios/
-  Icons.swift
-  Colors.swift
-  Fonts.swift
-  Icons.xcassets/
-
-android/
-  build.gradle.kts
-  AndroidManifest.xml
-  res/
-    drawable/
-    values/colors.xml
-    values/fonts.xml
-    values-night/colors.xml
-```
+Последнюю версию можно смотреть в GitHub Releases / Tags этого репозитория. Для Web версия также доступна на npm в package `@101app/design-tokens-web`.
 
 ## Web
 
@@ -156,7 +133,7 @@ dependencies {
 }
 ```
 
-При новом релизе обновляйте только номер версии:
+При обновлении меняйте только номер версии:
 
 ```text
 1.0.106 -> 1.0.107
@@ -209,13 +186,3 @@ https://github.com/101-group/101-Design-Tokens
 После обновления пересобери проект и проверь, что R.drawable.*, R.color.*, R.dimen.* и R.style.* доступны.
 Если какие-то ресурсы были переименованы, поправь места использования в проекте.
 ```
-
-## Релиз
-
-Релиз запускается в GitHub Actions кнопкой `Release Design Tokens`.
-
-Версию вводить не нужно. Workflow сам найдёт последний Git tag `1.0.N`, проверит web npm package, проверит Android Gradle package, создаст следующий tag для iOS/Android и опубликует web npm package `@101app/design-tokens-web` с этой же версией.
-
-## Источник
-
-Файлы генерируются из Figma-токенов и иконок. Не редактируйте сгенерированные platform-файлы вручную.
