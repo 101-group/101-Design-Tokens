@@ -6,12 +6,15 @@
 
 Последнюю версию можно смотреть в GitHub Releases / Tags этого репозитория. Для Web версия также доступна на npm в package `@101app/design-tokens-web`.
 
-## Web
+<details>
+<summary><strong>Web</strong></summary>
 
 Web использует отдельный npm package. В него попадают только нужные web-файлы: `tokens.css` и `icons/`.
 
+### Подключение
+
 ```bash
-npm install @101app/design-tokens-web
+npm install @101app/design-tokens-web@latest
 ```
 
 CSS:
@@ -26,7 +29,7 @@ import "@101app/design-tokens-web/tokens.css";
 import IconAdd from "@101app/design-tokens-web/icons/monochrome/add.svg";
 ```
 
-### Промт для подключения Web
+### Промт для подключения
 
 ```text
 Подключи дизайн-ресурсы 101 в web-проект.
@@ -43,7 +46,7 @@ import IconAdd from "@101app/design-tokens-web/icons/monochrome/add.svg";
 Версию пакета бери последнюю доступную.
 ```
 
-### Промт для обновления Web
+### Промт для обновления
 
 ```text
 Обнови дизайн-ресурсы 101 в web-проекте.
@@ -54,9 +57,14 @@ import IconAdd from "@101app/design-tokens-web/icons/monochrome/add.svg";
 Если после обновления появились изменения в названиях иконок или CSS-переменных, аккуратно поправь импорты и использования.
 ```
 
-## iOS
+</details>
 
-Подключите репозиторий как Swift Package:
+<details>
+<summary><strong>iOS</strong></summary>
+
+iOS использует этот репозиторий как Swift Package.
+
+### Подключение
 
 ```text
 https://github.com/101-group/101-Design-Tokens
@@ -80,7 +88,7 @@ Fonts.iosBodyRegular.uiFont
 UIFont.grpIosBodyRegular
 ```
 
-### Промт для подключения iOS
+### Промт для подключения
 
 ```text
 Подключи дизайн-ресурсы 101 в iOS-проект.
@@ -99,7 +107,7 @@ https://github.com/101-group/101-Design-Tokens
 Проверь на экране, что иконки находятся через DesignTokens.bundle, цвета работают в light/dark theme, а шрифты применяются без ручного копирования файлов из репозитория токенов.
 ```
 
-### Промт для обновления iOS
+### Промт для обновления
 
 ```text
 Обнови дизайн-ресурсы 101 в iOS-проекте.
@@ -110,9 +118,16 @@ https://github.com/101-group/101-Design-Tokens
 Если какие-то иконки, цвета или шрифты были переименованы, поправь места использования в проекте.
 ```
 
-## Android
+</details>
 
-Android использует Gradle dependency через JitPack. Добавьте JitPack repository в `settings.gradle.kts`:
+<details>
+<summary><strong>Android</strong></summary>
+
+Android использует Gradle dependency через JitPack.
+
+### Подключение
+
+Добавьте JitPack repository в `settings.gradle.kts`:
 
 ```kotlin
 dependencyResolutionManagement {
@@ -136,7 +151,7 @@ dependencies {
 При обновлении меняйте только номер версии:
 
 ```text
-1.0.106 -> 1.0.107
+<old-version> -> <new-version>
 ```
 
 Примеры:
@@ -150,7 +165,7 @@ R.style.TextAndroidBodyMedium
 
 Цвета для тёмной темы лежат в `android/res/values-night/colors.xml`.
 
-### Промт для подключения Android
+### Промт для подключения
 
 ```text
 Подключи дизайн-ресурсы 101 в Android-проект.
@@ -172,7 +187,7 @@ implementation("com.github.101-group.101-Design-Tokens:android:<version>")
 Проверь, что проект собирается, ресурсы доступны через R, светлая и тёмная тема подхватывают нужные цвета, а локально копировать android/res из репозитория токенов не нужно.
 ```
 
-### Промт для обновления Android
+### Промт для обновления
 
 ```text
 Обнови дизайн-ресурсы 101 в Android-проекте.
@@ -186,3 +201,5 @@ https://github.com/101-group/101-Design-Tokens
 После обновления пересобери проект и проверь, что R.drawable.*, R.color.*, R.dimen.* и R.style.* доступны.
 Если какие-то ресурсы были переименованы, поправь места использования в проекте.
 ```
+
+</details>
