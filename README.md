@@ -1,9 +1,10 @@
-# design-tokens
+# 101 Design Tokens
 
-Канонические токены, committed CSS, web-иконки и native resources.
-Генерация происходит в Figma-плагине. Этот репозиторий хранит committed файлы и публикует их.
+Public design tokens and generated platform resources for Web, iOS, and Android.
 
-## Структура
+Use a Git tag for stable integration, for example `1.0.104`.
+
+## Contents
 
 ```text
 tokens.json
@@ -11,8 +12,6 @@ tokens.json
 web/
   tokens.css
   icons/
-    <section-folder>/*.svg
-    icons.json
 
 ios/
   Icons.swift
@@ -22,40 +21,58 @@ ios/
 
 android/
   res/
-    drawable/*.xml
+    drawable/
     values/colors.xml
     values/fonts.xml
     values-night/colors.xml
 ```
 
-## Правила
+## Web
 
-- `tokens.json` и `web/tokens.css` коммитятся вместе.
-- `web/tokens.css` руками не редактируется.
-- `web/icons/icons.json` нужен плагину как manifest для rename/delete sync.
-- iOS подключается как Swift Package из этого Git repo по semver-тегу. `Package.swift` отдаёт папку `ios/`, где лежат Swift-файлы и `Icons.xcassets`.
-- iOS иконки доступны через `Icons.<name>.imageName`, bundle helper остаётся `DesignIcons.bundle`.
-- iOS цвета и шрифты доступны через `Colors.<token>.uiColor`, `Colors.<token>.color`, `UIFont.grp<Token>` и `Fonts.<token>.uiFont`.
-- Android иконки лежат в `android/res/drawable`, цвета в `values/colors.xml` и `values-night/colors.xml`, шрифты и text styles в `values/fonts.xml`.
+- CSS tokens: `web/tokens.css`
+- SVG icons: `web/icons/<section>/*.svg`
 
-## GitLab CI
+## iOS
 
-В pipeline две ручные кнопки на `main`:
+Add this repository as a Swift Package:
 
-- `Deploy Web CSS` публикует `web/tokens.css` на production.
-- `Release Icons/Colors/Fonts` публикует web npm package иконок. На semver-теге `1.2.3` job запускается автоматически; этот же тег является версией Swift Package для iOS.
+```text
+https://github.com/101-group/101-Design-Tokens
+```
 
-Для `Deploy Web CSS` нужны GitLab CI/CD variables:
+Use the product `DesignIcons`.
 
-- `SSH_PRIVATE_KEY`
-- `SSH_HOST`
+Examples:
 
-Опционально:
+```swift
+UIImage(
+    named: Icons.monochromeAdress.imageName,
+    in: DesignIcons.bundle,
+    compatibleWith: nil
+)
 
-- `SSH_USER`, по умолчанию `www`
-- `DEPLOY_PATH`
+Colors.textPrimary.uiColor
+Colors.textPrimary.color
 
-CSS раздаётся в production:
+Fonts.iosBodyRegular.uiFont
+UIFont.grpIosBodyRegular
+```
 
-- `https://101-app.com/tokens.css`
-- `https://101-app.com/assets/tokens.css`
+## Android
+
+Use `android/res` as Android resources.
+
+Examples:
+
+```kotlin
+R.drawable.icon_monochrome_adress
+R.color.color_text_primary
+R.dimen.font_size_android_body_medium
+R.style.TextAndroidBodyMedium
+```
+
+Dark theme colors are in `android/res/values-night/colors.xml`.
+
+## Source
+
+Files are generated from Figma tokens and icons. Do not edit generated platform files manually.
