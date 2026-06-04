@@ -8,7 +8,7 @@ permissions:
 
 jobs:
   release:
-    name: Publish @101app/design-tokens
+    name: Release all platforms and publish @101app/design-tokens-web
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -57,21 +57,21 @@ jobs:
           fi
           npm whoami --registry "https://registry.npmjs.org"
 
-      - name: Check npm version
+      - name: Check web npm version
         run: |
-          if npm view "@101app/design-tokens@$VERSION" version --registry "https://registry.npmjs.org" >/dev/null 2>&1; then
-            echo "npm package version already exists: @101app/design-tokens@$VERSION"
+          if npm view "@101app/design-tokens-web@$VERSION" version --registry "https://registry.npmjs.org" >/dev/null 2>&1; then
+            echo "npm package version already exists: @101app/design-tokens-web@$VERSION"
             exit 1
           fi
 
-      - name: Create Git tag
+      - name: Create Git tag for iOS and Android
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git tag "$VERSION"
           git push origin "$VERSION"
 
-      - name: Publish package
+      - name: Publish web npm package
         env:
           DESIGN_TOKENS_PACKAGE_VERSION: ${{ env.VERSION }}
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}

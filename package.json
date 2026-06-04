@@ -1,14 +1,11 @@
 {
-  "name": "@101app/design-tokens",
+  "name": "101-design-tokens-release",
   "version": "1.0.0",
-  "private": false,
-  "description": "101 design tokens and generated assets for Web, iOS, and Android.",
+  "private": true,
+  "description": "Release tooling for 101 design tokens and generated platform assets.",
   "type": "module",
   "scripts": {
     "check:release": "node scripts/publish-design-tokens-package.mjs --dry-run",
     "release:design-tokens": "node scripts/publish-design-tokens-package.mjs"
-  },
-  "publishConfig": {
-    "access": "public"
   }
 }

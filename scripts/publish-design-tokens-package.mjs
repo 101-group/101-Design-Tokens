@@ -9,21 +9,14 @@ import { promisify } from "node:util";
 const execFileAsync = promisify(execFile);
 
 const ROOT_DIR = process.cwd();
-const PACKAGE_NAME = "@101app/design-tokens";
+const PACKAGE_NAME = "@101app/design-tokens-web";
+const PACKAGE_SCOPE = "@101app";
 const DEFAULT_DEVELOPMENT_VERSION = "0.0.0-development";
 const DEFAULT_REGISTRY_URL = "https://registry.npmjs.org";
 
 const RELEASE_PATHS = [
-  "tokens.json",
-  "Package.swift",
-  "README.md",
   "web/tokens.css",
   "web/icons",
-  "ios/Icons.swift",
-  "ios/Colors.swift",
-  "ios/Fonts.swift",
-  "ios/Icons.xcassets",
-  "android/res",
 ];
 
 const isDryRun = process.argv.includes("--dry-run");
@@ -150,11 +143,8 @@ const copyPath = async (sourcePath, destinationPath) => {
 };
 
 const copyReleasePaths = async (packageDir) => {
-  for (const relativePath of RELEASE_PATHS) {
-    await copyPath(path.join(ROOT_DIR, relativePath), path.join(packageDir, relativePath));
-  }
-
   await copyFile(path.join(ROOT_DIR, "web", "tokens.css"), path.join(packageDir, "tokens.css"));
+  await copyPath(path.join(ROOT_DIR, "web", "icons"), path.join(packageDir, "icons"));
 };
 
 const createPackageMetadata = (version, sourceCommit) => {
@@ -162,18 +152,15 @@ const createPackageMetadata = (version, sourceCommit) => {
     name: PACKAGE_NAME,
     version,
     private: false,
-    description: "101 design tokens and generated assets for Web, iOS, and Android.",
+    description: "101 web design tokens and generated SVG icons.",
     type: "module",
     style: "tokens.css",
-    files: [
-      "tokens.css",
-      "tokens.json",
-      "web",
-      "ios",
-      "android",
-      "Package.swift",
-      "README.md",
-    ],
+    exports: {
+      "./tokens.css": "./tokens.css",
+      "./icons/*": "./icons/*",
+      "./package.json": "./package.json",
+    },
+    files: ["tokens.css", "icons"],
     sideEffects: ["*.css", "**/*.css"],
     publishConfig: {
       access: "public",
@@ -194,7 +181,7 @@ const writeNpmConfig = async (packageDir, registryUrl, authToken) => {
   const registryHostPath = registryUrl.replace(/^https?:\/\//, "");
   const npmConfigPath = path.join(packageDir, ".npmrc");
   const npmConfig = [
-    `@101:registry=${registryUrl}/`,
+    `${PACKAGE_SCOPE}:registry=${registryUrl}/`,
     `//${registryHostPath}/:_authToken=${authToken}`,
   ].join("\n");
   await writeFile(npmConfigPath, `${npmConfig}\n`, "utf8");
@@ -206,7 +193,7 @@ const npmEnvFor = (tempRoot) => ({
 });
 
 const runNpmPackDryRun = async (packageDir, npmEnv) => {
-  const { stdout } = await execFileAsync("npm", ["pack", "--dry-run"], {
+  const { stdout } = await execFileAsync("npm", ["pack", "--dry-run", "--json"], {
     cwd: packageDir,
     env: npmEnv,
   });
@@ -242,22 +229,22 @@ const run = async () => {
     const npmEnv = npmEnvFor(tempRoot);
     await runNpmPackDryRun(packageDir, npmEnv);
 
-    console.log(`[publish:design-tokens] package: ${PACKAGE_NAME}@${packageVersion}`);
-    console.log(`[publish:design-tokens] staging: ${packageDir}`);
+    console.log(`[publish:design-tokens-web] package: ${PACKAGE_NAME}@${packageVersion}`);
+    console.log(`[publish:design-tokens-web] staging: ${packageDir}`);
 
     if (isDryRun) {
-      console.log("[publish:design-tokens] dry-run complete");
+      console.log("[publish:design-tokens-web] dry-run complete");
       return;
     }
 
     const registryUrl = getRegistryUrl();
     await writeNpmConfig(packageDir, registryUrl, getAuthToken());
     await publishPackage(packageDir, registryUrl, npmEnv);
-    console.log(`[publish:design-tokens] registry: ${registryUrl}/`);
-    console.log("[publish:design-tokens] complete");
+    console.log(`[publish:design-tokens-web] registry: ${registryUrl}/`);
+    console.log("[publish:design-tokens-web] complete");
   } catch (error) {
     const message = error instanceof Error ? error.message : String(error);
-    console.error(`[publish:design-tokens] failed: ${message}`);
+    console.error(`[publish:design-tokens-web] failed: ${message}`);
     process.exit(1);
   } finally {
     if (tempRoot) {

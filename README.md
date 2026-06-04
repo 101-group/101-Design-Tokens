@@ -1,8 +1,8 @@
 # 101 Design Tokens
 
-Публичная библиотека дизайн-токенов и сгенерированных ресурсов для Web, iOS и Android.
+Публичный репозиторий дизайн-токенов и сгенерированных ресурсов для Web, iOS и Android.
 
-Один релиз = одна версия, например `1.0.108`. Внутри релиза лежат все платформы: web, iOS и Android.
+Один релиз = одна версия, например `1.0.108`. Версия общая для всех платформ, но каждая платформа подключается своим способом.
 
 ## Что внутри
 
@@ -29,22 +29,22 @@ android/
 
 ## Web
 
-Установите npm package:
+Web использует отдельный npm package. В него попадают только `tokens.css` и `icons/`.
 
 ```bash
-npm install @101app/design-tokens
+npm install @101app/design-tokens-web
 ```
 
 CSS:
 
 ```ts
-import "@101app/design-tokens/tokens.css";
+import "@101app/design-tokens-web/tokens.css";
 ```
 
 Иконки:
 
 ```ts
-import IconAdd from "@101app/design-tokens/web/icons/monochrome/add.svg";
+import IconAdd from "@101app/design-tokens-web/icons/monochrome/add.svg";
 ```
 
 ## iOS
@@ -92,7 +92,7 @@ R.style.TextAndroidBodyMedium
 
 Релиз запускается в GitHub Actions кнопкой `Release Design Tokens`.
 
-Версию вводить не нужно. Workflow сам найдёт последний Git tag `1.0.N`, создаст следующий tag и опубликует npm package `@101app/design-tokens` с этой же версией.
+Версию вводить не нужно. Workflow сам найдёт последний Git tag `1.0.N`, создаст следующий tag для iOS/Android и опубликует web npm package `@101app/design-tokens-web` с этой же версией.
 
 ## Источник
 
