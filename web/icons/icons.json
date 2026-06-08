@@ -626,6 +626,54 @@
       "pageName": "􀥧     Icons"
     },
     {
+      "figmaComponentId": "13038:167",
+      "webPath": "web/icons/monochrome/copy-paste-down.svg",
+      "iosAssetName": "icon-monochrome-copy-paste-down",
+      "iosImagesetPath": "ios/Icons.xcassets/icon-monochrome-copy-paste-down.imageset/Contents.json",
+      "iosPdfPath": "ios/Icons.xcassets/icon-monochrome-copy-paste-down.imageset/icon-monochrome-copy-paste-down.pdf",
+      "androidResourceName": "icon_monochrome_copy_paste_down",
+      "androidPath": "android/res/drawable/icon_monochrome_copy_paste_down.xml",
+      "category": "monochrome",
+      "sourceName": "copy-paste-down",
+      "pageName": "􀥧     Icons"
+    },
+    {
+      "figmaComponentId": "13038:182",
+      "webPath": "web/icons/monochrome/copy-paste-left.svg",
+      "iosAssetName": "icon-monochrome-copy-paste-left",
+      "iosImagesetPath": "ios/Icons.xcassets/icon-monochrome-copy-paste-left.imageset/Contents.json",
+      "iosPdfPath": "ios/Icons.xcassets/icon-monochrome-copy-paste-left.imageset/icon-monochrome-copy-paste-left.pdf",
+      "androidResourceName": "icon_monochrome_copy_paste_left",
+      "androidPath": "android/res/drawable/icon_monochrome_copy_paste_left.xml",
+      "category": "monochrome",
+      "sourceName": "copy-paste-left",
+      "pageName": "􀥧     Icons"
+    },
+    {
+      "figmaComponentId": "13038:189",
+      "webPath": "web/icons/monochrome/copy-paste-right.svg",
+      "iosAssetName": "icon-monochrome-copy-paste-right",
+      "iosImagesetPath": "ios/Icons.xcassets/icon-monochrome-copy-paste-right.imageset/Contents.json",
+      "iosPdfPath": "ios/Icons.xcassets/icon-monochrome-copy-paste-right.imageset/icon-monochrome-copy-paste-right.pdf",
+      "androidResourceName": "icon_monochrome_copy_paste_right",
+      "androidPath": "android/res/drawable/icon_monochrome_copy_paste_right.xml",
+      "category": "monochrome",
+      "sourceName": "copy-paste-right",
+      "pageName": "􀥧     Icons"
+    },
+    {
+      "figmaComponentId": "13038:155",
+      "webPath": "web/icons/monochrome/copy-paste-up.svg",
+      "iosAssetName": "icon-monochrome-copy-paste-up",
+      "iosImagesetPath": "ios/Icons.xcassets/icon-monochrome-copy-paste-up.imageset/Contents.json",
+      "iosPdfPath": "ios/Icons.xcassets/icon-monochrome-copy-paste-up.imageset/icon-monochrome-copy-paste-up.pdf",
+      "androidResourceName": "icon_monochrome_copy_paste_up",
+      "androidPath": "android/res/drawable/icon_monochrome_copy_paste_up.xml",
+      "category": "monochrome",
+      "sourceName": "copy-paste-up",
+      "pageName": "􀥧     Icons"
+    },
+    {
       "figmaComponentId": "1069:7007",
       "webPath": "web/icons/monochrome/copy.svg",
       "iosAssetName": "icon-monochrome-copy",
@@ -1607,6 +1655,18 @@
       "androidPath": "android/res/drawable/icon_monochrome_pricelist.xml",
       "category": "monochrome",
       "sourceName": "pricelist",
+      "pageName": "􀥧     Icons"
+    },
+    {
+      "figmaComponentId": "13038:192",
+      "webPath": "web/icons/monochrome/printer.svg",
+      "iosAssetName": "icon-monochrome-printer",
+      "iosImagesetPath": "ios/Icons.xcassets/icon-monochrome-printer.imageset/Contents.json",
+      "iosPdfPath": "ios/Icons.xcassets/icon-monochrome-printer.imageset/icon-monochrome-printer.pdf",
+      "androidResourceName": "icon_monochrome_printer",
+      "androidPath": "android/res/drawable/icon_monochrome_printer.xml",
+      "category": "monochrome",
+      "sourceName": "printer",
       "pageName": "􀥧     Icons"
     },
     {
