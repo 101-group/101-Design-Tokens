@@ -2774,6 +2774,18 @@
       "pageName": "􀥧     Icons"
     },
     {
+      "figmaComponentId": "13051:108",
+      "webPath": "web/icons/multicolor/sub-free.svg",
+      "iosAssetName": "icon-multicolor-sub-free",
+      "iosImagesetPath": "ios/Icons.xcassets/icon-multicolor-sub-free.imageset/Contents.json",
+      "iosPdfPath": "ios/Icons.xcassets/icon-multicolor-sub-free.imageset/icon-multicolor-sub-free.pdf",
+      "androidResourceName": "icon_multicolor_sub_free",
+      "androidPath": "android/res/drawable/icon_multicolor_sub_free.xml",
+      "category": "multicolor",
+      "sourceName": "sub-free",
+      "pageName": "􀥧     Icons"
+    },
+    {
       "figmaComponentId": "2121:747",
       "webPath": "web/icons/multicolor/sub-pro-plus.svg",
       "iosAssetName": "icon-multicolor-sub-pro-plus",

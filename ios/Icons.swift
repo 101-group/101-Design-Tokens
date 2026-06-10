@@ -236,6 +236,7 @@ public enum Icons: String, CaseIterable, Equatable {
     case multicolorPut2 = "icon-multicolor-put2"
     case multicolorReceiptDone = "icon-multicolor-receipt-done"
     case multicolorSubClub = "icon-multicolor-sub-club"
+    case multicolorSubFree = "icon-multicolor-sub-free"
     case multicolorSubPro = "icon-multicolor-sub-pro"
     case multicolorSubProPlus = "icon-multicolor-sub-pro-plus"
     case multicolorTransferFundToProject = "icon-multicolor-transfer-fund-to-project"
