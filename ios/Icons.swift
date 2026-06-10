@@ -153,6 +153,7 @@ public enum Icons: String, CaseIterable, Equatable {
     case monochromeQrcode = "icon-monochrome-qrcode"
     case monochromeQrcodeScan = "icon-monochrome-qrcode-scan"
     case monochromeReceipt = "icon-monochrome-receipt"
+    case monochromeRecord = "icon-monochrome-record"
     case monochromeRefresh = "icon-monochrome-refresh"
     case monochromeReturnFromDeleted = "icon-monochrome-return-from-deleted"
     case monochromeRoulette = "icon-monochrome-roulette"

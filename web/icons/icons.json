@@ -1778,6 +1778,18 @@
       "pageName": "􀥧     Icons"
     },
     {
+      "figmaComponentId": "13084:108",
+      "webPath": "web/icons/monochrome/record.svg",
+      "iosAssetName": "icon-monochrome-record",
+      "iosImagesetPath": "ios/Icons.xcassets/icon-monochrome-record.imageset/Contents.json",
+      "iosPdfPath": "ios/Icons.xcassets/icon-monochrome-record.imageset/icon-monochrome-record.pdf",
+      "androidResourceName": "icon_monochrome_record",
+      "androidPath": "android/res/drawable/icon_monochrome_record.xml",
+      "category": "monochrome",
+      "sourceName": "record",
+      "pageName": "􀥧     Icons"
+    },
+    {
       "figmaComponentId": "1805:7179",
       "webPath": "web/icons/monochrome/refresh.svg",
       "iosAssetName": "icon-monochrome-refresh",
