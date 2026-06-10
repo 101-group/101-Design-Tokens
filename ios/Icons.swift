@@ -98,6 +98,7 @@ public enum Icons: String, CaseIterable, Equatable {
     case monochromeFormula = "icon-monochrome-formula"
     case monochromeFoundation = "icon-monochrome-foundation"
     case monochromeFoundationFill = "icon-monochrome-foundation-fill"
+    case monochromeFunnel = "icon-monochrome-funnel"
     case monochromeGear = "icon-monochrome-gear"
     case monochromeGrabber = "icon-monochrome-grabber"
     case monochromeGrouping = "icon-monochrome-grouping"
