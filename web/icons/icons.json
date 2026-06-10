@@ -1118,6 +1118,18 @@
       "pageName": "􀥧     Icons"
     },
     {
+      "figmaComponentId": "13075:972",
+      "webPath": "web/icons/monochrome/funnel.svg",
+      "iosAssetName": "icon-monochrome-funnel",
+      "iosImagesetPath": "ios/Icons.xcassets/icon-monochrome-funnel.imageset/Contents.json",
+      "iosPdfPath": "ios/Icons.xcassets/icon-monochrome-funnel.imageset/icon-monochrome-funnel.pdf",
+      "androidResourceName": "icon_monochrome_funnel",
+      "androidPath": "android/res/drawable/icon_monochrome_funnel.xml",
+      "category": "monochrome",
+      "sourceName": "funnel",
+      "pageName": "􀥧     Icons"
+    },
+    {
       "figmaComponentId": "2941:579",
       "webPath": "web/icons/monochrome/gear.svg",
       "iosAssetName": "icon-monochrome-gear",
