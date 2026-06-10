@@ -242,6 +242,18 @@
       "pageName": "􀥧     Icons"
     },
     {
+      "figmaComponentId": "13065:784",
+      "webPath": "web/icons/monochrome/attributes.svg",
+      "iosAssetName": "icon-monochrome-attributes",
+      "iosImagesetPath": "ios/Icons.xcassets/icon-monochrome-attributes.imageset/Contents.json",
+      "iosPdfPath": "ios/Icons.xcassets/icon-monochrome-attributes.imageset/icon-monochrome-attributes.pdf",
+      "androidResourceName": "icon_monochrome_attributes",
+      "androidPath": "android/res/drawable/icon_monochrome_attributes.xml",
+      "category": "monochrome",
+      "sourceName": "attributes",
+      "pageName": "􀥧     Icons"
+    },
+    {
       "figmaComponentId": "11504:10032",
       "webPath": "web/icons/monochrome/avatar.svg",
       "iosAssetName": "icon-monochrome-avatar",
