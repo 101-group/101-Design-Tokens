@@ -1742,6 +1742,42 @@
       "pageName": "􀥧     Icons"
     },
     {
+      "figmaComponentId": "13116:136",
+      "webPath": "web/icons/monochrome/qr-failed.svg",
+      "iosAssetName": "icon-monochrome-qr-failed",
+      "iosImagesetPath": "ios/Icons.xcassets/icon-monochrome-qr-failed.imageset/Contents.json",
+      "iosPdfPath": "ios/Icons.xcassets/icon-monochrome-qr-failed.imageset/icon-monochrome-qr-failed.pdf",
+      "androidResourceName": "icon_monochrome_qr_failed",
+      "androidPath": "android/res/drawable/icon_monochrome_qr_failed.xml",
+      "category": "monochrome",
+      "sourceName": "qr_failed",
+      "pageName": "􀥧     Icons"
+    },
+    {
+      "figmaComponentId": "13116:124",
+      "webPath": "web/icons/monochrome/qr-pending.svg",
+      "iosAssetName": "icon-monochrome-qr-pending",
+      "iosImagesetPath": "ios/Icons.xcassets/icon-monochrome-qr-pending.imageset/Contents.json",
+      "iosPdfPath": "ios/Icons.xcassets/icon-monochrome-qr-pending.imageset/icon-monochrome-qr-pending.pdf",
+      "androidResourceName": "icon_monochrome_qr_pending",
+      "androidPath": "android/res/drawable/icon_monochrome_qr_pending.xml",
+      "category": "monochrome",
+      "sourceName": "qr-pending",
+      "pageName": "􀥧     Icons"
+    },
+    {
+      "figmaComponentId": "3148:2819",
+      "webPath": "web/icons/monochrome/qr-recognized.svg",
+      "iosAssetName": "icon-monochrome-qr-recognized",
+      "iosImagesetPath": "ios/Icons.xcassets/icon-monochrome-qr-recognized.imageset/Contents.json",
+      "iosPdfPath": "ios/Icons.xcassets/icon-monochrome-qr-recognized.imageset/icon-monochrome-qr-recognized.pdf",
+      "androidResourceName": "icon_monochrome_qr_recognized",
+      "androidPath": "android/res/drawable/icon_monochrome_qr_recognized.xml",
+      "category": "monochrome",
+      "sourceName": "qr_recognized",
+      "pageName": "􀥧     Icons"
+    },
+    {
       "figmaComponentId": "2941:509",
       "webPath": "web/icons/monochrome/qrcode-scan.svg",
       "iosAssetName": "icon-monochrome-qrcode-scan",
@@ -1763,18 +1799,6 @@
       "androidPath": "android/res/drawable/icon_monochrome_qrcode.xml",
       "category": "monochrome",
       "sourceName": "qrcode",
-      "pageName": "􀥧     Icons"
-    },
-    {
-      "figmaComponentId": "3148:2819",
-      "webPath": "web/icons/monochrome/receipt.svg",
-      "iosAssetName": "icon-monochrome-receipt",
-      "iosImagesetPath": "ios/Icons.xcassets/icon-monochrome-receipt.imageset/Contents.json",
-      "iosPdfPath": "ios/Icons.xcassets/icon-monochrome-receipt.imageset/icon-monochrome-receipt.pdf",
-      "androidResourceName": "icon_monochrome_receipt",
-      "androidPath": "android/res/drawable/icon_monochrome_receipt.xml",
-      "category": "monochrome",
-      "sourceName": "receipt",
       "pageName": "􀥧     Icons"
     },
     {
