@@ -2582,18 +2582,6 @@
       "pageName": "􀥧     Icons"
     },
     {
-      "figmaComponentId": "12889:836",
-      "webPath": "web/icons/multicolor/delete2.svg",
-      "iosAssetName": "icon-multicolor-delete2",
-      "iosImagesetPath": "ios/Icons.xcassets/icon-multicolor-delete2.imageset/Contents.json",
-      "iosPdfPath": "ios/Icons.xcassets/icon-multicolor-delete2.imageset/icon-multicolor-delete2.pdf",
-      "androidResourceName": "icon_multicolor_delete2",
-      "androidPath": "android/res/drawable/icon_multicolor_delete2.xml",
-      "category": "multicolor",
-      "sourceName": "Delete2",
-      "pageName": "􀥧     Icons"
-    },
-    {
       "figmaComponentId": "12124:577",
       "webPath": "web/icons/multicolor/event-status-cancel-customer-trimmed.svg",
       "iosAssetName": "icon-multicolor-event-status-cancel-customer-trimmed",
@@ -2726,18 +2714,6 @@
       "pageName": "􀥧     Icons"
     },
     {
-      "figmaComponentId": "12889:834",
-      "webPath": "web/icons/multicolor/get2.svg",
-      "iosAssetName": "icon-multicolor-get2",
-      "iosImagesetPath": "ios/Icons.xcassets/icon-multicolor-get2.imageset/Contents.json",
-      "iosPdfPath": "ios/Icons.xcassets/icon-multicolor-get2.imageset/icon-multicolor-get2.pdf",
-      "androidResourceName": "icon_multicolor_get2",
-      "androidPath": "android/res/drawable/icon_multicolor_get2.xml",
-      "category": "multicolor",
-      "sourceName": "Get2",
-      "pageName": "􀥧     Icons"
-    },
-    {
       "figmaComponentId": "2941:597",
       "webPath": "web/icons/multicolor/loader.svg",
       "iosAssetName": "icon-multicolor-loader",
@@ -2762,18 +2738,6 @@
       "pageName": "􀥧     Icons"
     },
     {
-      "figmaComponentId": "12889:835",
-      "webPath": "web/icons/multicolor/patch2.svg",
-      "iosAssetName": "icon-multicolor-patch2",
-      "iosImagesetPath": "ios/Icons.xcassets/icon-multicolor-patch2.imageset/Contents.json",
-      "iosPdfPath": "ios/Icons.xcassets/icon-multicolor-patch2.imageset/icon-multicolor-patch2.pdf",
-      "androidResourceName": "icon_multicolor_patch2",
-      "androidPath": "android/res/drawable/icon_multicolor_patch2.xml",
-      "category": "multicolor",
-      "sourceName": "Patch2",
-      "pageName": "􀥧     Icons"
-    },
-    {
       "figmaComponentId": "12888:169",
       "webPath": "web/icons/multicolor/post.svg",
       "iosAssetName": "icon-multicolor-post",
@@ -2786,18 +2750,6 @@
       "pageName": "􀥧     Icons"
     },
     {
-      "figmaComponentId": "12889:838",
-      "webPath": "web/icons/multicolor/post2.svg",
-      "iosAssetName": "icon-multicolor-post2",
-      "iosImagesetPath": "ios/Icons.xcassets/icon-multicolor-post2.imageset/Contents.json",
-      "iosPdfPath": "ios/Icons.xcassets/icon-multicolor-post2.imageset/icon-multicolor-post2.pdf",
-      "androidResourceName": "icon_multicolor_post2",
-      "androidPath": "android/res/drawable/icon_multicolor_post2.xml",
-      "category": "multicolor",
-      "sourceName": "Post2",
-      "pageName": "􀥧     Icons"
-    },
-    {
       "figmaComponentId": "12886:102",
       "webPath": "web/icons/multicolor/put.svg",
       "iosAssetName": "icon-multicolor-put",
@@ -2807,18 +2759,6 @@
       "androidPath": "android/res/drawable/icon_multicolor_put.xml",
       "category": "multicolor",
       "sourceName": "Put",
-      "pageName": "􀥧     Icons"
-    },
-    {
-      "figmaComponentId": "12889:837",
-      "webPath": "web/icons/multicolor/put2.svg",
-      "iosAssetName": "icon-multicolor-put2",
-      "iosImagesetPath": "ios/Icons.xcassets/icon-multicolor-put2.imageset/Contents.json",
-      "iosPdfPath": "ios/Icons.xcassets/icon-multicolor-put2.imageset/icon-multicolor-put2.pdf",
-      "androidResourceName": "icon_multicolor_put2",
-      "androidPath": "android/res/drawable/icon_multicolor_put2.xml",
-      "category": "multicolor",
-      "sourceName": "Put2",
       "pageName": "􀥧     Icons"
     },
     {
