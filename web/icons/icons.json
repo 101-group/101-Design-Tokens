@@ -1358,6 +1358,18 @@
       "pageName": "􀥧     Icons"
     },
     {
+      "figmaComponentId": "13144:459",
+      "webPath": "web/icons/monochrome/mcp.svg",
+      "iosAssetName": "icon-monochrome-mcp",
+      "iosImagesetPath": "ios/Icons.xcassets/icon-monochrome-mcp.imageset/Contents.json",
+      "iosPdfPath": "ios/Icons.xcassets/icon-monochrome-mcp.imageset/icon-monochrome-mcp.pdf",
+      "androidResourceName": "icon_monochrome_mcp",
+      "androidPath": "android/res/drawable/icon_monochrome_mcp.xml",
+      "category": "monochrome",
+      "sourceName": "mcp",
+      "pageName": "􀥧     Icons"
+    },
+    {
       "figmaComponentId": "12669:122",
       "webPath": "web/icons/monochrome/microphone-off-fill.svg",
       "iosAssetName": "icon-monochrome-microphone-off-fill",

@@ -118,6 +118,7 @@ public enum Icons: String, CaseIterable, Equatable {
     case monochromeLockOpen = "icon-monochrome-lock-open"
     case monochromeLockOpenFill = "icon-monochrome-lock-open-fill"
     case monochromeMax = "icon-monochrome-max"
+    case monochromeMcp = "icon-monochrome-mcp"
     case monochromeMicrophoneOff = "icon-monochrome-microphone-off"
     case monochromeMicrophoneOffFill = "icon-monochrome-microphone-off-fill"
     case monochromeMicrophoneOn = "icon-monochrome-microphone-on"
