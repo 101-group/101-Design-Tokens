@@ -1694,6 +1694,18 @@
       "pageName": "􀥧     Icons"
     },
     {
+      "figmaComponentId": "13150:109",
+      "webPath": "web/icons/monochrome/prelead.svg",
+      "iosAssetName": "icon-monochrome-prelead",
+      "iosImagesetPath": "ios/Icons.xcassets/icon-monochrome-prelead.imageset/Contents.json",
+      "iosPdfPath": "ios/Icons.xcassets/icon-monochrome-prelead.imageset/icon-monochrome-prelead.pdf",
+      "androidResourceName": "icon_monochrome_prelead",
+      "androidPath": "android/res/drawable/icon_monochrome_prelead.xml",
+      "category": "monochrome",
+      "sourceName": "prelead",
+      "pageName": "􀥧     Icons"
+    },
+    {
       "figmaComponentId": "1069:6939",
       "webPath": "web/icons/monochrome/pricelist.svg",
       "iosAssetName": "icon-monochrome-pricelist",
