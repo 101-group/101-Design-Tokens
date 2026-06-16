@@ -146,6 +146,7 @@ public enum Icons: String, CaseIterable, Equatable {
     case monochromePlusCircleFill = "icon-monochrome-plus-circle-fill"
     case monochromePolicy = "icon-monochrome-policy"
     case monochromePositionManual = "icon-monochrome-position-manual"
+    case monochromePrelead = "icon-monochrome-prelead"
     case monochromePricelist = "icon-monochrome-pricelist"
     case monochromePrinter = "icon-monochrome-printer"
     case monochromePrivacy = "icon-monochrome-privacy"
