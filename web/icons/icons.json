@@ -278,6 +278,18 @@
       "pageName": "􀥧     Icons"
     },
     {
+      "figmaComponentId": "13159:119",
+      "webPath": "web/icons/monochrome/bank.svg",
+      "iosAssetName": "icon-monochrome-bank",
+      "iosImagesetPath": "ios/Icons.xcassets/icon-monochrome-bank.imageset/Contents.json",
+      "iosPdfPath": "ios/Icons.xcassets/icon-monochrome-bank.imageset/icon-monochrome-bank.pdf",
+      "androidResourceName": "icon_monochrome_bank",
+      "androidPath": "android/res/drawable/icon_monochrome_bank.xml",
+      "category": "monochrome",
+      "sourceName": "bank",
+      "pageName": "􀥧     Icons"
+    },
+    {
       "figmaComponentId": "8302:5100",
       "webPath": "web/icons/monochrome/bill.svg",
       "iosAssetName": "icon-monochrome-bill",
@@ -1367,6 +1379,30 @@
       "androidPath": "android/res/drawable/icon_monochrome_mcp.xml",
       "category": "monochrome",
       "sourceName": "mcp",
+      "pageName": "􀥧     Icons"
+    },
+    {
+      "figmaComponentId": "13159:146",
+      "webPath": "web/icons/monochrome/message-read.svg",
+      "iosAssetName": "icon-monochrome-message-read",
+      "iosImagesetPath": "ios/Icons.xcassets/icon-monochrome-message-read.imageset/Contents.json",
+      "iosPdfPath": "ios/Icons.xcassets/icon-monochrome-message-read.imageset/icon-monochrome-message-read.pdf",
+      "androidResourceName": "icon_monochrome_message_read",
+      "androidPath": "android/res/drawable/icon_monochrome_message_read.xml",
+      "category": "monochrome",
+      "sourceName": "message-read",
+      "pageName": "􀥧     Icons"
+    },
+    {
+      "figmaComponentId": "13159:145",
+      "webPath": "web/icons/monochrome/message-sent.svg",
+      "iosAssetName": "icon-monochrome-message-sent",
+      "iosImagesetPath": "ios/Icons.xcassets/icon-monochrome-message-sent.imageset/Contents.json",
+      "iosPdfPath": "ios/Icons.xcassets/icon-monochrome-message-sent.imageset/icon-monochrome-message-sent.pdf",
+      "androidResourceName": "icon_monochrome_message_sent",
+      "androidPath": "android/res/drawable/icon_monochrome_message_sent.xml",
+      "category": "monochrome",
+      "sourceName": "message-sent",
       "pageName": "􀥧     Icons"
     },
     {
