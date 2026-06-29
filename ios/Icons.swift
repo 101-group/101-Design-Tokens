@@ -90,7 +90,6 @@ public enum Icons: String, CaseIterable, Equatable {
     case monochromeExit = "icon-monochrome-exit"
     case monochromeExpand = "icon-monochrome-expand"
     case monochromeExpenseItem = "icon-monochrome-expense-item"
-    case monochromeFeedback = "icon-monochrome-feedback"
     case monochromeFileAdd = "icon-monochrome-file-add"
     case monochromeFilterOff = "icon-monochrome-filter-off"
     case monochromeFilterOn = "icon-monochrome-filter-on"
