@@ -398,7 +398,7 @@
       "pageName": "􀥧     Icons"
     },
     {
-      "figmaComponentId": "11402:5671",
+      "figmaComponentId": "2941:543",
       "webPath": "web/icons/monochrome/chat.svg",
       "iosAssetName": "icon-monochrome-chat",
       "iosImagesetPath": "ios/Icons.xcassets/icon-monochrome-chat.imageset/Contents.json",
@@ -1019,18 +1019,6 @@
       "androidPath": "android/res/drawable/icon_monochrome_expense_item.xml",
       "category": "monochrome",
       "sourceName": "expense-item",
-      "pageName": "􀥧     Icons"
-    },
-    {
-      "figmaComponentId": "2941:543",
-      "webPath": "web/icons/monochrome/feedback.svg",
-      "iosAssetName": "icon-monochrome-feedback",
-      "iosImagesetPath": "ios/Icons.xcassets/icon-monochrome-feedback.imageset/Contents.json",
-      "iosPdfPath": "ios/Icons.xcassets/icon-monochrome-feedback.imageset/icon-monochrome-feedback.pdf",
-      "androidResourceName": "icon_monochrome_feedback",
-      "androidPath": "android/res/drawable/icon_monochrome_feedback.xml",
-      "category": "monochrome",
-      "sourceName": "feedback",
       "pageName": "􀥧     Icons"
     },
     {
