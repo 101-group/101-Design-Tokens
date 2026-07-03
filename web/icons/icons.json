@@ -2498,6 +2498,18 @@
       "pageName": "􀥧     Icons"
     },
     {
+      "figmaComponentId": "13199:108",
+      "webPath": "web/icons/monochrome/wiki.svg",
+      "iosAssetName": "icon-monochrome-wiki",
+      "iosImagesetPath": "ios/Icons.xcassets/icon-monochrome-wiki.imageset/Contents.json",
+      "iosPdfPath": "ios/Icons.xcassets/icon-monochrome-wiki.imageset/icon-monochrome-wiki.pdf",
+      "androidResourceName": "icon_monochrome_wiki",
+      "androidPath": "android/res/drawable/icon_monochrome_wiki.xml",
+      "category": "monochrome",
+      "sourceName": "wiki",
+      "pageName": "􀥧     Icons"
+    },
+    {
       "figmaComponentId": "11540:11994",
       "webPath": "web/icons/monochrome/youtube.svg",
       "iosAssetName": "icon-monochrome-youtube",
