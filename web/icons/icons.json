@@ -1238,6 +1238,18 @@
       "pageName": "􀥧     Icons"
     },
     {
+      "figmaComponentId": "13242:110",
+      "webPath": "web/icons/monochrome/info-circle.svg",
+      "iosAssetName": "icon-monochrome-info-circle",
+      "iosImagesetPath": "ios/Icons.xcassets/icon-monochrome-info-circle.imageset/Contents.json",
+      "iosPdfPath": "ios/Icons.xcassets/icon-monochrome-info-circle.imageset/icon-monochrome-info-circle.pdf",
+      "androidResourceName": "icon_monochrome_info_circle",
+      "androidPath": "android/res/drawable/icon_monochrome_info_circle.xml",
+      "category": "monochrome",
+      "sourceName": "info-circle",
+      "pageName": "􀥧     Icons"
+    },
+    {
       "figmaComponentId": "1069:6991",
       "webPath": "web/icons/monochrome/info.svg",
       "iosAssetName": "icon-monochrome-info",
