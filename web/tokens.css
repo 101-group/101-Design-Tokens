@@ -146,7 +146,7 @@
 
 .text-body-medium {
   font-family: "Roboto", sans-serif;
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 500;
   line-height: normal;
   letter-spacing: calc(1em * 0 / 100);
@@ -156,7 +156,7 @@
 
 .text-body-regular {
   font-family: "Roboto", sans-serif;
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 400;
   line-height: normal;
   letter-spacing: calc(1em * 0 / 100);
@@ -202,6 +202,33 @@
   letter-spacing: calc(1em * 0 / 100);
   text-decoration-line: none;
   font-feature-settings: "lnum" 1, "tnum" 1;
+}
+
+.text-title-1-medium {
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: calc(1em * 0 / 100);
+  text-decoration-line: none;
+}
+
+.text-title-2-medium {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: calc(1em * 0 / 100);
+  text-decoration-line: none;
+}
+
+.text-title-3-medium {
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: calc(1em * 0 / 100);
+  text-decoration-line: none;
 }
 
 .text-title-medium {
