@@ -770,18 +770,6 @@
       "pageName": "􀥧     Icons"
     },
     {
-      "figmaComponentId": "8007:428",
-      "webPath": "web/icons/monochrome/deleted-folder.svg",
-      "iosAssetName": "icon-monochrome-deleted-folder",
-      "iosImagesetPath": "ios/Icons.xcassets/icon-monochrome-deleted-folder.imageset/Contents.json",
-      "iosPdfPath": "ios/Icons.xcassets/icon-monochrome-deleted-folder.imageset/icon-monochrome-deleted-folder.pdf",
-      "androidResourceName": "icon_monochrome_deleted_folder",
-      "androidPath": "android/res/drawable/icon_monochrome_deleted_folder.xml",
-      "category": "monochrome",
-      "sourceName": "deleted-folder",
-      "pageName": "􀥧     Icons"
-    },
-    {
       "figmaComponentId": "1069:6900",
       "webPath": "web/icons/monochrome/doc-excel-fill.svg",
       "iosAssetName": "icon-monochrome-doc-excel-fill",
