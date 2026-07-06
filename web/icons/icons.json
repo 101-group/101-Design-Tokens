@@ -110,6 +110,18 @@
       "pageName": "􀥧     Icons"
     },
     {
+      "figmaComponentId": "13260:119",
+      "webPath": "web/icons/monochrome/android.svg",
+      "iosAssetName": "icon-monochrome-android",
+      "iosImagesetPath": "ios/Icons.xcassets/icon-monochrome-android.imageset/Contents.json",
+      "iosPdfPath": "ios/Icons.xcassets/icon-monochrome-android.imageset/icon-monochrome-android.pdf",
+      "androidResourceName": "icon_monochrome_android",
+      "androidPath": "android/res/drawable/icon_monochrome_android.xml",
+      "category": "monochrome",
+      "sourceName": "android",
+      "pageName": "􀥧     Icons"
+    },
+    {
       "figmaComponentId": "10969:31207",
       "webPath": "web/icons/monochrome/api.svg",
       "iosAssetName": "icon-monochrome-api",
@@ -770,6 +782,18 @@
       "pageName": "􀥧     Icons"
     },
     {
+      "figmaComponentId": "13260:121",
+      "webPath": "web/icons/monochrome/desktop.svg",
+      "iosAssetName": "icon-monochrome-desktop",
+      "iosImagesetPath": "ios/Icons.xcassets/icon-monochrome-desktop.imageset/Contents.json",
+      "iosPdfPath": "ios/Icons.xcassets/icon-monochrome-desktop.imageset/icon-monochrome-desktop.pdf",
+      "androidResourceName": "icon_monochrome_desktop",
+      "androidPath": "android/res/drawable/icon_monochrome_desktop.xml",
+      "category": "monochrome",
+      "sourceName": "desktop",
+      "pageName": "􀥧     Icons"
+    },
+    {
       "figmaComponentId": "1069:6900",
       "webPath": "web/icons/monochrome/doc-excel-fill.svg",
       "iosAssetName": "icon-monochrome-doc-excel-fill",
@@ -1247,6 +1271,18 @@
       "androidPath": "android/res/drawable/icon_monochrome_info.xml",
       "category": "monochrome",
       "sourceName": "info",
+      "pageName": "􀥧     Icons"
+    },
+    {
+      "figmaComponentId": "13260:120",
+      "webPath": "web/icons/monochrome/ios.svg",
+      "iosAssetName": "icon-monochrome-ios",
+      "iosImagesetPath": "ios/Icons.xcassets/icon-monochrome-ios.imageset/Contents.json",
+      "iosPdfPath": "ios/Icons.xcassets/icon-monochrome-ios.imageset/icon-monochrome-ios.pdf",
+      "androidResourceName": "icon_monochrome_ios",
+      "androidPath": "android/res/drawable/icon_monochrome_ios.xml",
+      "category": "monochrome",
+      "sourceName": "ios",
       "pageName": "􀥧     Icons"
     },
     {
