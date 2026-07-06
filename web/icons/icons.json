@@ -1574,30 +1574,6 @@
       "pageName": "􀥧     Icons"
     },
     {
-      "figmaComponentId": "2941:583",
-      "webPath": "web/icons/monochrome/past-down.svg",
-      "iosAssetName": "icon-monochrome-past-down",
-      "iosImagesetPath": "ios/Icons.xcassets/icon-monochrome-past-down.imageset/Contents.json",
-      "iosPdfPath": "ios/Icons.xcassets/icon-monochrome-past-down.imageset/icon-monochrome-past-down.pdf",
-      "androidResourceName": "icon_monochrome_past_down",
-      "androidPath": "android/res/drawable/icon_monochrome_past_down.xml",
-      "category": "monochrome",
-      "sourceName": "past-down",
-      "pageName": "􀥧     Icons"
-    },
-    {
-      "figmaComponentId": "2941:581",
-      "webPath": "web/icons/monochrome/past-up.svg",
-      "iosAssetName": "icon-monochrome-past-up",
-      "iosImagesetPath": "ios/Icons.xcassets/icon-monochrome-past-up.imageset/Contents.json",
-      "iosPdfPath": "ios/Icons.xcassets/icon-monochrome-past-up.imageset/icon-monochrome-past-up.pdf",
-      "androidResourceName": "icon_monochrome_past_up",
-      "androidPath": "android/res/drawable/icon_monochrome_past_up.xml",
-      "category": "monochrome",
-      "sourceName": "past-up",
-      "pageName": "􀥧     Icons"
-    },
-    {
       "figmaComponentId": "7770:1102",
       "webPath": "web/icons/monochrome/paste.svg",
       "iosAssetName": "icon-monochrome-paste",
