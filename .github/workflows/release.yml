@@ -56,6 +56,11 @@ jobs:
           yes | sdkmanager --licenses
           sdkmanager "platforms;android-35"
 
+      - name: Setup Gradle
+        uses: gradle/actions/setup-gradle@v4
+        with:
+          gradle-version: "8.9"
+
       - name: Check platform files
         run: |
           test -f Package.swift
@@ -75,7 +80,7 @@ jobs:
       - name: Check Android Gradle package
         env:
           DESIGN_TOKENS_PACKAGE_VERSION: ${{ env.VERSION }}
-        run: ./gradlew :android:publishToMavenLocal --no-daemon
+        run: gradle :android:publishToMavenLocal --no-daemon
 
       - name: Validate npm token
         env:
