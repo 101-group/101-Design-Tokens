@@ -56,9 +56,6 @@ jobs:
           yes | sdkmanager --licenses
           sdkmanager "platforms;android-35"
 
-      - name: Setup Gradle
-        uses: gradle/actions/setup-gradle@v4
-
       - name: Check platform files
         run: |
           test -f Package.swift
