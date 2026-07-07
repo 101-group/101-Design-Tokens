@@ -58,8 +58,6 @@ jobs:
 
       - name: Setup Gradle
         uses: gradle/actions/setup-gradle@v4
-        with:
-          gradle-version: "8.9"
 
       - name: Check platform files
         run: |
@@ -80,7 +78,7 @@ jobs:
       - name: Check Android Gradle package
         env:
           DESIGN_TOKENS_PACKAGE_VERSION: ${{ env.VERSION }}
-        run: gradle :android:publishToMavenLocal --no-daemon
+        run: ./gradlew :android:publishToMavenLocal --no-daemon
 
       - name: Validate npm token
         env:
