@@ -1622,6 +1622,30 @@
       "pageName": "􀥧     Icons"
     },
     {
+      "figmaComponentId": "13318:127",
+      "webPath": "web/icons/monochrome/pause-circle-fill.svg",
+      "iosAssetName": "icon-monochrome-pause-circle-fill",
+      "iosImagesetPath": "ios/Icons.xcassets/icon-monochrome-pause-circle-fill.imageset/Contents.json",
+      "iosPdfPath": "ios/Icons.xcassets/icon-monochrome-pause-circle-fill.imageset/icon-monochrome-pause-circle-fill.pdf",
+      "androidResourceName": "icon_monochrome_pause_circle_fill",
+      "androidPath": "android/res/drawable/icon_monochrome_pause_circle_fill.xml",
+      "category": "monochrome",
+      "sourceName": "pause-circle-fill",
+      "pageName": "􀥧     Icons"
+    },
+    {
+      "figmaComponentId": "13318:124",
+      "webPath": "web/icons/monochrome/pause-fill.svg",
+      "iosAssetName": "icon-monochrome-pause-fill",
+      "iosImagesetPath": "ios/Icons.xcassets/icon-monochrome-pause-fill.imageset/Contents.json",
+      "iosPdfPath": "ios/Icons.xcassets/icon-monochrome-pause-fill.imageset/icon-monochrome-pause-fill.pdf",
+      "androidResourceName": "icon_monochrome_pause_fill",
+      "androidPath": "android/res/drawable/icon_monochrome_pause_fill.xml",
+      "category": "monochrome",
+      "sourceName": "pause-fill",
+      "pageName": "􀥧     Icons"
+    },
+    {
       "figmaComponentId": "11610:29039",
       "webPath": "web/icons/monochrome/percent.svg",
       "iosAssetName": "icon-monochrome-percent",
@@ -1667,6 +1691,30 @@
       "androidPath": "android/res/drawable/icon_monochrome_photo2.xml",
       "category": "monochrome",
       "sourceName": "photo2",
+      "pageName": "􀥧     Icons"
+    },
+    {
+      "figmaComponentId": "13318:125",
+      "webPath": "web/icons/monochrome/play-circle-fill.svg",
+      "iosAssetName": "icon-monochrome-play-circle-fill",
+      "iosImagesetPath": "ios/Icons.xcassets/icon-monochrome-play-circle-fill.imageset/Contents.json",
+      "iosPdfPath": "ios/Icons.xcassets/icon-monochrome-play-circle-fill.imageset/icon-monochrome-play-circle-fill.pdf",
+      "androidResourceName": "icon_monochrome_play_circle_fill",
+      "androidPath": "android/res/drawable/icon_monochrome_play_circle_fill.xml",
+      "category": "monochrome",
+      "sourceName": "play-circle-fill",
+      "pageName": "􀥧     Icons"
+    },
+    {
+      "figmaComponentId": "13318:122",
+      "webPath": "web/icons/monochrome/play-fill.svg",
+      "iosAssetName": "icon-monochrome-play-fill",
+      "iosImagesetPath": "ios/Icons.xcassets/icon-monochrome-play-fill.imageset/Contents.json",
+      "iosPdfPath": "ios/Icons.xcassets/icon-monochrome-play-fill.imageset/icon-monochrome-play-fill.pdf",
+      "androidResourceName": "icon_monochrome_play_fill",
+      "androidPath": "android/res/drawable/icon_monochrome_play_fill.xml",
+      "category": "monochrome",
+      "sourceName": "play-fill",
       "pageName": "􀥧     Icons"
     },
     {
@@ -2135,6 +2183,30 @@
       "androidPath": "android/res/drawable/icon_monochrome_sort_chevron.xml",
       "category": "monochrome",
       "sourceName": "sort-chevron",
+      "pageName": "􀥧     Icons"
+    },
+    {
+      "figmaComponentId": "13318:126",
+      "webPath": "web/icons/monochrome/stop-circle-fill.svg",
+      "iosAssetName": "icon-monochrome-stop-circle-fill",
+      "iosImagesetPath": "ios/Icons.xcassets/icon-monochrome-stop-circle-fill.imageset/Contents.json",
+      "iosPdfPath": "ios/Icons.xcassets/icon-monochrome-stop-circle-fill.imageset/icon-monochrome-stop-circle-fill.pdf",
+      "androidResourceName": "icon_monochrome_stop_circle_fill",
+      "androidPath": "android/res/drawable/icon_monochrome_stop_circle_fill.xml",
+      "category": "monochrome",
+      "sourceName": "stop-circle-fill",
+      "pageName": "􀥧     Icons"
+    },
+    {
+      "figmaComponentId": "13318:123",
+      "webPath": "web/icons/monochrome/stop-fill.svg",
+      "iosAssetName": "icon-monochrome-stop-fill",
+      "iosImagesetPath": "ios/Icons.xcassets/icon-monochrome-stop-fill.imageset/Contents.json",
+      "iosPdfPath": "ios/Icons.xcassets/icon-monochrome-stop-fill.imageset/icon-monochrome-stop-fill.pdf",
+      "androidResourceName": "icon_monochrome_stop_fill",
+      "androidPath": "android/res/drawable/icon_monochrome_stop_fill.xml",
+      "category": "monochrome",
+      "sourceName": "stop-fill",
       "pageName": "􀥧     Icons"
     },
     {
