@@ -144,6 +144,16 @@
   --color-toast: #000000CC;
 }
 
+.text-body-light {
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: normal;
+  letter-spacing: calc(1em * 0 / 100);
+  text-decoration-line: none;
+  font-feature-settings: "lnum" 1, "tnum" 1;
+}
+
 .text-body-medium {
   font-family: "Roboto", sans-serif;
   font-size: 14px;
