@@ -177,6 +177,7 @@ public enum Icons: String, CaseIterable, Equatable {
     case monochromeSettings = "icon-monochrome-settings"
     case monochromeShareAndroid = "icon-monochrome-share-android"
     case monochromeShareIos = "icon-monochrome-share-ios"
+    case monochromeShares = "icon-monochrome-shares"
     case monochromeShow = "icon-monochrome-show"
     case monochromeShowDeleted = "icon-monochrome-show-deleted"
     case monochromeSidebar = "icon-monochrome-sidebar"

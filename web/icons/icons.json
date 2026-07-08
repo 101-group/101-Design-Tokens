@@ -2066,6 +2066,18 @@
       "pageName": "􀥧     Icons"
     },
     {
+      "figmaComponentId": "13309:1271",
+      "webPath": "web/icons/monochrome/shares.svg",
+      "iosAssetName": "icon-monochrome-shares",
+      "iosImagesetPath": "ios/Icons.xcassets/icon-monochrome-shares.imageset/Contents.json",
+      "iosPdfPath": "ios/Icons.xcassets/icon-monochrome-shares.imageset/icon-monochrome-shares.pdf",
+      "androidResourceName": "icon_monochrome_shares",
+      "androidPath": "android/res/drawable/icon_monochrome_shares.xml",
+      "category": "monochrome",
+      "sourceName": "shares",
+      "pageName": "􀥧     Icons"
+    },
+    {
       "figmaComponentId": "12651:551",
       "webPath": "web/icons/monochrome/show-deleted.svg",
       "iosAssetName": "icon-monochrome-show-deleted",
