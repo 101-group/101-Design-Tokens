@@ -650,6 +650,18 @@
       "pageName": "􀥧     Icons"
     },
     {
+      "figmaComponentId": "13329:108",
+      "webPath": "web/icons/monochrome/comment.svg",
+      "iosAssetName": "icon-monochrome-comment",
+      "iosImagesetPath": "ios/Icons.xcassets/icon-monochrome-comment.imageset/Contents.json",
+      "iosPdfPath": "ios/Icons.xcassets/icon-monochrome-comment.imageset/icon-monochrome-comment.pdf",
+      "androidResourceName": "icon_monochrome_comment",
+      "androidPath": "android/res/drawable/icon_monochrome_comment.xml",
+      "category": "monochrome",
+      "sourceName": "comment",
+      "pageName": "􀥧     Icons"
+    },
+    {
       "figmaComponentId": "11610:28710",
       "webPath": "web/icons/monochrome/contractor.svg",
       "iosAssetName": "icon-monochrome-contractor",
