@@ -161,6 +161,7 @@ public enum Icons: String, CaseIterable, Equatable {
     case monochromeProducts = "icon-monochrome-products"
     case monochromeProject = "icon-monochrome-project"
     case monochromeProjectManager = "icon-monochrome-project-manager"
+    case monochromePublish = "icon-monochrome-publish"
     case monochromeQrFailed = "icon-monochrome-qr-failed"
     case monochromeQrPending = "icon-monochrome-qr-pending"
     case monochromeQrRecognized = "icon-monochrome-qr-recognized"

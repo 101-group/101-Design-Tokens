@@ -1874,6 +1874,18 @@
       "pageName": "􀥧     Icons"
     },
     {
+      "figmaComponentId": "13333:108",
+      "webPath": "web/icons/monochrome/publish.svg",
+      "iosAssetName": "icon-monochrome-publish",
+      "iosImagesetPath": "ios/Icons.xcassets/icon-monochrome-publish.imageset/Contents.json",
+      "iosPdfPath": "ios/Icons.xcassets/icon-monochrome-publish.imageset/icon-monochrome-publish.pdf",
+      "androidResourceName": "icon_monochrome_publish",
+      "androidPath": "android/res/drawable/icon_monochrome_publish.xml",
+      "category": "monochrome",
+      "sourceName": "publish",
+      "pageName": "􀥧     Icons"
+    },
+    {
       "figmaComponentId": "13116:136",
       "webPath": "web/icons/monochrome/qr-failed.svg",
       "iosAssetName": "icon-monochrome-qr-failed",
