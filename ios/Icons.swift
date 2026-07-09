@@ -59,6 +59,7 @@ public enum Icons: String, CaseIterable, Equatable {
     case monochromeClock = "icon-monochrome-clock"
     case monochromeClose = "icon-monochrome-close"
     case monochromeCollapse = "icon-monochrome-collapse"
+    case monochromeComment = "icon-monochrome-comment"
     case monochromeContractor = "icon-monochrome-contractor"
     case monochromeCopy = "icon-monochrome-copy"
     case monochromeCopyPasteDown = "icon-monochrome-copy-paste-down"
