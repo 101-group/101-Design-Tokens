@@ -209,6 +209,7 @@ public enum Icons: String, CaseIterable, Equatable {
     case monochromeTriangleCollapsed = "icon-monochrome-triangle-collapsed"
     case monochromeTriangleExpanded = "icon-monochrome-triangle-expanded"
     case monochromeUndo = "icon-monochrome-undo"
+    case monochromeUnpublish = "icon-monochrome-unpublish"
     case monochromeUpload = "icon-monochrome-upload"
     case monochromeUser = "icon-monochrome-user"
     case monochromeUserDetails = "icon-monochrome-user-details"

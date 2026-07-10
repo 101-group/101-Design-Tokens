@@ -2450,6 +2450,18 @@
       "pageName": "􀥧     Icons"
     },
     {
+      "figmaComponentId": "13341:116",
+      "webPath": "web/icons/monochrome/unpublish.svg",
+      "iosAssetName": "icon-monochrome-unpublish",
+      "iosImagesetPath": "ios/Icons.xcassets/icon-monochrome-unpublish.imageset/Contents.json",
+      "iosPdfPath": "ios/Icons.xcassets/icon-monochrome-unpublish.imageset/icon-monochrome-unpublish.pdf",
+      "androidResourceName": "icon_monochrome_unpublish",
+      "androidPath": "android/res/drawable/icon_monochrome_unpublish.xml",
+      "category": "monochrome",
+      "sourceName": "unpublish",
+      "pageName": "􀥧     Icons"
+    },
+    {
       "figmaComponentId": "12889:192",
       "webPath": "web/icons/monochrome/upload.svg",
       "iosAssetName": "icon-monochrome-upload",
