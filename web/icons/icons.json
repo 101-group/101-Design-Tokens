@@ -1970,6 +1970,18 @@
       "pageName": "􀥧     Icons"
     },
     {
+      "figmaComponentId": "13361:123",
+      "webPath": "web/icons/monochrome/reply.svg",
+      "iosAssetName": "icon-monochrome-reply",
+      "iosImagesetPath": "ios/Icons.xcassets/icon-monochrome-reply.imageset/Contents.json",
+      "iosPdfPath": "ios/Icons.xcassets/icon-monochrome-reply.imageset/icon-monochrome-reply.pdf",
+      "androidResourceName": "icon_monochrome_reply",
+      "androidPath": "android/res/drawable/icon_monochrome_reply.xml",
+      "category": "monochrome",
+      "sourceName": "reply",
+      "pageName": "􀥧     Icons"
+    },
+    {
       "figmaComponentId": "3557:25950",
       "webPath": "web/icons/monochrome/return-from-deleted.svg",
       "iosAssetName": "icon-monochrome-return-from-deleted",
