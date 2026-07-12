@@ -1706,6 +1706,18 @@
       "pageName": "􀥧     Icons"
     },
     {
+      "figmaComponentId": "13362:654",
+      "webPath": "web/icons/monochrome/pin.svg",
+      "iosAssetName": "icon-monochrome-pin",
+      "iosImagesetPath": "ios/Icons.xcassets/icon-monochrome-pin.imageset/Contents.json",
+      "iosPdfPath": "ios/Icons.xcassets/icon-monochrome-pin.imageset/icon-monochrome-pin.pdf",
+      "androidResourceName": "icon_monochrome_pin",
+      "androidPath": "android/res/drawable/icon_monochrome_pin.xml",
+      "category": "monochrome",
+      "sourceName": "pin",
+      "pageName": "􀥧     Icons"
+    },
+    {
       "figmaComponentId": "13318:125",
       "webPath": "web/icons/monochrome/play-circle-fill.svg",
       "iosAssetName": "icon-monochrome-play-circle-fill",
