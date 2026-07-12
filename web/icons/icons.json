@@ -1706,6 +1706,18 @@
       "pageName": "􀥧     Icons"
     },
     {
+      "figmaComponentId": "13363:664",
+      "webPath": "web/icons/monochrome/pin-fill.svg",
+      "iosAssetName": "icon-monochrome-pin-fill",
+      "iosImagesetPath": "ios/Icons.xcassets/icon-monochrome-pin-fill.imageset/Contents.json",
+      "iosPdfPath": "ios/Icons.xcassets/icon-monochrome-pin-fill.imageset/icon-monochrome-pin-fill.pdf",
+      "androidResourceName": "icon_monochrome_pin_fill",
+      "androidPath": "android/res/drawable/icon_monochrome_pin_fill.xml",
+      "category": "monochrome",
+      "sourceName": "pin-fill",
+      "pageName": "􀥧     Icons"
+    },
+    {
       "figmaComponentId": "13362:654",
       "webPath": "web/icons/monochrome/pin.svg",
       "iosAssetName": "icon-monochrome-pin",
@@ -2471,6 +2483,18 @@
       "androidPath": "android/res/drawable/icon_monochrome_undo.xml",
       "category": "monochrome",
       "sourceName": "undo",
+      "pageName": "􀥧     Icons"
+    },
+    {
+      "figmaComponentId": "13363:659",
+      "webPath": "web/icons/monochrome/unpin.svg",
+      "iosAssetName": "icon-monochrome-unpin",
+      "iosImagesetPath": "ios/Icons.xcassets/icon-monochrome-unpin.imageset/Contents.json",
+      "iosPdfPath": "ios/Icons.xcassets/icon-monochrome-unpin.imageset/icon-monochrome-unpin.pdf",
+      "androidResourceName": "icon_monochrome_unpin",
+      "androidPath": "android/res/drawable/icon_monochrome_unpin.xml",
+      "category": "monochrome",
+      "sourceName": "unpin",
       "pageName": "􀥧     Icons"
     },
     {
