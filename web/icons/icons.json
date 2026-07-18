@@ -2295,6 +2295,18 @@
     },
     {
       "figmaComponentId": "13392:136",
+      "webPath": "web/icons/monochrome/task-pause-repeat.svg",
+      "iosAssetName": "icon-monochrome-task-pause-repeat",
+      "iosImagesetPath": "ios/Icons.xcassets/icon-monochrome-task-pause-repeat.imageset/Contents.json",
+      "iosPdfPath": "ios/Icons.xcassets/icon-monochrome-task-pause-repeat.imageset/icon-monochrome-task-pause-repeat.pdf",
+      "androidResourceName": "icon_monochrome_task_pause_repeat",
+      "androidPath": "android/res/drawable/icon_monochrome_task_pause_repeat.xml",
+      "category": "monochrome",
+      "sourceName": "task-pause-repeat",
+      "pageName": "􀥧     Icons"
+    },
+    {
+      "figmaComponentId": "13395:707",
       "webPath": "web/icons/monochrome/task-pause.svg",
       "iosAssetName": "icon-monochrome-task-pause",
       "iosImagesetPath": "ios/Icons.xcassets/icon-monochrome-task-pause.imageset/Contents.json",
@@ -2307,6 +2319,18 @@
     },
     {
       "figmaComponentId": "13392:135",
+      "webPath": "web/icons/monochrome/task-play-repeat.svg",
+      "iosAssetName": "icon-monochrome-task-play-repeat",
+      "iosImagesetPath": "ios/Icons.xcassets/icon-monochrome-task-play-repeat.imageset/Contents.json",
+      "iosPdfPath": "ios/Icons.xcassets/icon-monochrome-task-play-repeat.imageset/icon-monochrome-task-play-repeat.pdf",
+      "androidResourceName": "icon_monochrome_task_play_repeat",
+      "androidPath": "android/res/drawable/icon_monochrome_task_play_repeat.xml",
+      "category": "monochrome",
+      "sourceName": "task-play-repeat",
+      "pageName": "􀥧     Icons"
+    },
+    {
+      "figmaComponentId": "13395:706",
       "webPath": "web/icons/monochrome/task-play.svg",
       "iosAssetName": "icon-monochrome-task-play",
       "iosImagesetPath": "ios/Icons.xcassets/icon-monochrome-task-play.imageset/Contents.json",
@@ -2315,6 +2339,30 @@
       "androidPath": "android/res/drawable/icon_monochrome_task_play.xml",
       "category": "monochrome",
       "sourceName": "task-play",
+      "pageName": "􀥧     Icons"
+    },
+    {
+      "figmaComponentId": "13395:709",
+      "webPath": "web/icons/monochrome/task-stop-repeat.svg",
+      "iosAssetName": "icon-monochrome-task-stop-repeat",
+      "iosImagesetPath": "ios/Icons.xcassets/icon-monochrome-task-stop-repeat.imageset/Contents.json",
+      "iosPdfPath": "ios/Icons.xcassets/icon-monochrome-task-stop-repeat.imageset/icon-monochrome-task-stop-repeat.pdf",
+      "androidResourceName": "icon_monochrome_task_stop_repeat",
+      "androidPath": "android/res/drawable/icon_monochrome_task_stop_repeat.xml",
+      "category": "monochrome",
+      "sourceName": "task-stop-repeat",
+      "pageName": "􀥧     Icons"
+    },
+    {
+      "figmaComponentId": "13395:708",
+      "webPath": "web/icons/monochrome/task-stop.svg",
+      "iosAssetName": "icon-monochrome-task-stop",
+      "iosImagesetPath": "ios/Icons.xcassets/icon-monochrome-task-stop.imageset/Contents.json",
+      "iosPdfPath": "ios/Icons.xcassets/icon-monochrome-task-stop.imageset/icon-monochrome-task-stop.pdf",
+      "androidResourceName": "icon_monochrome_task_stop",
+      "androidPath": "android/res/drawable/icon_monochrome_task_stop.xml",
+      "category": "monochrome",
+      "sourceName": "task-stop",
       "pageName": "􀥧     Icons"
     },
     {
