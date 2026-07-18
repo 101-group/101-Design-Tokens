@@ -1250,18 +1250,6 @@
       "pageName": "􀥧     Icons"
     },
     {
-      "figmaComponentId": "13392:134",
-      "webPath": "web/icons/monochrome/in-progress.svg",
-      "iosAssetName": "icon-monochrome-in-progress",
-      "iosImagesetPath": "ios/Icons.xcassets/icon-monochrome-in-progress.imageset/Contents.json",
-      "iosPdfPath": "ios/Icons.xcassets/icon-monochrome-in-progress.imageset/icon-monochrome-in-progress.pdf",
-      "androidResourceName": "icon_monochrome_in_progress",
-      "androidPath": "android/res/drawable/icon_monochrome_in_progress.xml",
-      "category": "monochrome",
-      "sourceName": "in-progress",
-      "pageName": "􀥧     Icons"
-    },
-    {
       "figmaComponentId": "2117:28465",
       "webPath": "web/icons/monochrome/infinity.svg",
       "iosAssetName": "icon-monochrome-infinity",
@@ -1670,18 +1658,6 @@
       "pageName": "􀥧     Icons"
     },
     {
-      "figmaComponentId": "13392:136",
-      "webPath": "web/icons/monochrome/pause-in-progress.svg",
-      "iosAssetName": "icon-monochrome-pause-in-progress",
-      "iosImagesetPath": "ios/Icons.xcassets/icon-monochrome-pause-in-progress.imageset/Contents.json",
-      "iosPdfPath": "ios/Icons.xcassets/icon-monochrome-pause-in-progress.imageset/icon-monochrome-pause-in-progress.pdf",
-      "androidResourceName": "icon_monochrome_pause_in_progress",
-      "androidPath": "android/res/drawable/icon_monochrome_pause_in_progress.xml",
-      "category": "monochrome",
-      "sourceName": "pause-in-progress",
-      "pageName": "􀥧     Icons"
-    },
-    {
       "figmaComponentId": "11610:29039",
       "webPath": "web/icons/monochrome/percent.svg",
       "iosAssetName": "icon-monochrome-percent",
@@ -1775,18 +1751,6 @@
       "androidPath": "android/res/drawable/icon_monochrome_play_fill.xml",
       "category": "monochrome",
       "sourceName": "play-fill",
-      "pageName": "􀥧     Icons"
-    },
-    {
-      "figmaComponentId": "13392:135",
-      "webPath": "web/icons/monochrome/play-in-progress.svg",
-      "iosAssetName": "icon-monochrome-play-in-progress",
-      "iosImagesetPath": "ios/Icons.xcassets/icon-monochrome-play-in-progress.imageset/Contents.json",
-      "iosPdfPath": "ios/Icons.xcassets/icon-monochrome-play-in-progress.imageset/icon-monochrome-play-in-progress.pdf",
-      "androidResourceName": "icon_monochrome_play_in_progress",
-      "androidPath": "android/res/drawable/icon_monochrome_play_in_progress.xml",
-      "category": "monochrome",
-      "sourceName": "play-in-progress",
       "pageName": "􀥧     Icons"
     },
     {
@@ -2315,6 +2279,42 @@
       "androidPath": "android/res/drawable/icon_monochrome_tag.xml",
       "category": "monochrome",
       "sourceName": "tag",
+      "pageName": "􀥧     Icons"
+    },
+    {
+      "figmaComponentId": "13392:134",
+      "webPath": "web/icons/monochrome/task-in-progress.svg",
+      "iosAssetName": "icon-monochrome-task-in-progress",
+      "iosImagesetPath": "ios/Icons.xcassets/icon-monochrome-task-in-progress.imageset/Contents.json",
+      "iosPdfPath": "ios/Icons.xcassets/icon-monochrome-task-in-progress.imageset/icon-monochrome-task-in-progress.pdf",
+      "androidResourceName": "icon_monochrome_task_in_progress",
+      "androidPath": "android/res/drawable/icon_monochrome_task_in_progress.xml",
+      "category": "monochrome",
+      "sourceName": "task-in-progress",
+      "pageName": "􀥧     Icons"
+    },
+    {
+      "figmaComponentId": "13392:136",
+      "webPath": "web/icons/monochrome/task-pause.svg",
+      "iosAssetName": "icon-monochrome-task-pause",
+      "iosImagesetPath": "ios/Icons.xcassets/icon-monochrome-task-pause.imageset/Contents.json",
+      "iosPdfPath": "ios/Icons.xcassets/icon-monochrome-task-pause.imageset/icon-monochrome-task-pause.pdf",
+      "androidResourceName": "icon_monochrome_task_pause",
+      "androidPath": "android/res/drawable/icon_monochrome_task_pause.xml",
+      "category": "monochrome",
+      "sourceName": "task-pause",
+      "pageName": "􀥧     Icons"
+    },
+    {
+      "figmaComponentId": "13392:135",
+      "webPath": "web/icons/monochrome/task-play.svg",
+      "iosAssetName": "icon-monochrome-task-play",
+      "iosImagesetPath": "ios/Icons.xcassets/icon-monochrome-task-play.imageset/Contents.json",
+      "iosPdfPath": "ios/Icons.xcassets/icon-monochrome-task-play.imageset/icon-monochrome-task-play.pdf",
+      "androidResourceName": "icon_monochrome_task_play",
+      "androidPath": "android/res/drawable/icon_monochrome_task_play.xml",
+      "category": "monochrome",
+      "sourceName": "task-play",
       "pageName": "􀥧     Icons"
     },
     {
