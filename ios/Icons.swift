@@ -216,6 +216,7 @@ public enum Icons: String, CaseIterable, Equatable {
     case monochromeTransactionNotConfirmed = "icon-monochrome-transaction-not-confirmed"
     case monochromeTransactionNotConfirmedTrimmed = "icon-monochrome-transaction-not-confirmed-trimmed"
     case monochromeTransactionTransfer = "icon-monochrome-transaction-transfer"
+    case monochromeTranscribe = "icon-monochrome-transcribe"
     case monochromeTriangleCollapsed = "icon-monochrome-triangle-collapsed"
     case monochromeTriangleExpanded = "icon-monochrome-triangle-expanded"
     case monochromeUndo = "icon-monochrome-undo"
