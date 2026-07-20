@@ -2534,6 +2534,18 @@
       "pageName": "􀥧     Icons"
     },
     {
+      "figmaComponentId": "13401:1466",
+      "webPath": "web/icons/monochrome/transcribe.svg",
+      "iosAssetName": "icon-monochrome-transcribe",
+      "iosImagesetPath": "ios/Icons.xcassets/icon-monochrome-transcribe.imageset/Contents.json",
+      "iosPdfPath": "ios/Icons.xcassets/icon-monochrome-transcribe.imageset/icon-monochrome-transcribe.pdf",
+      "androidResourceName": "icon_monochrome_transcribe",
+      "androidPath": "android/res/drawable/icon_monochrome_transcribe.xml",
+      "category": "monochrome",
+      "sourceName": "transcribe",
+      "pageName": "􀥧     Icons"
+    },
+    {
       "figmaComponentId": "12376:1227",
       "webPath": "web/icons/monochrome/triangle-collapsed.svg",
       "iosAssetName": "icon-monochrome-triangle-collapsed",
