@@ -518,6 +518,18 @@
       "pageName": "􀥧     Icons"
     },
     {
+      "figmaComponentId": "13411:108",
+      "webPath": "web/icons/monochrome/checkbox-square-selected.svg",
+      "iosAssetName": "icon-monochrome-checkbox-square-selected",
+      "iosImagesetPath": "ios/Icons.xcassets/icon-monochrome-checkbox-square-selected.imageset/Contents.json",
+      "iosPdfPath": "ios/Icons.xcassets/icon-monochrome-checkbox-square-selected.imageset/icon-monochrome-checkbox-square-selected.pdf",
+      "androidResourceName": "icon_monochrome_checkbox_square_selected",
+      "androidPath": "android/res/drawable/icon_monochrome_checkbox_square_selected.xml",
+      "category": "monochrome",
+      "sourceName": "checkbox-square-selected",
+      "pageName": "􀥧     Icons"
+    },
+    {
       "figmaComponentId": "12516:168",
       "webPath": "web/icons/monochrome/checkbox-square-unselected-trimmed.svg",
       "iosAssetName": "icon-monochrome-checkbox-square-unselected-trimmed",
@@ -2279,6 +2291,18 @@
       "androidPath": "android/res/drawable/icon_monochrome_tag.xml",
       "category": "monochrome",
       "sourceName": "tag",
+      "pageName": "􀥧     Icons"
+    },
+    {
+      "figmaComponentId": "13411:117",
+      "webPath": "web/icons/monochrome/task-cancelled.svg",
+      "iosAssetName": "icon-monochrome-task-cancelled",
+      "iosImagesetPath": "ios/Icons.xcassets/icon-monochrome-task-cancelled.imageset/Contents.json",
+      "iosPdfPath": "ios/Icons.xcassets/icon-monochrome-task-cancelled.imageset/icon-monochrome-task-cancelled.pdf",
+      "androidResourceName": "icon_monochrome_task_cancelled",
+      "androidPath": "android/res/drawable/icon_monochrome_task_cancelled.xml",
+      "category": "monochrome",
+      "sourceName": "task-cancelled",
       "pageName": "􀥧     Icons"
     },
     {
