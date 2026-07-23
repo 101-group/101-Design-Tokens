@@ -97,7 +97,7 @@ public enum Colors: String, CaseIterable, Equatable {
         case .highlightText:
             return Self.dynamicColor(light: "#3CD3FE61", dark: "#3CD3FE78")
         case .highlighter:
-            return Self.dynamicColor(light: "#3CD3FE61", dark: "#3CD3FE78")
+            return Self.dynamicColor(light: "#3CD3FE61", dark: "#3CD3FE4F")
         case .onAccentPrimary:
             return Self.dynamicColor(light: "#ECECF1", dark: "#1C1C1D")
         case .onAccentSecondary:
