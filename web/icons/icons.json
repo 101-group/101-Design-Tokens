@@ -470,18 +470,6 @@
       "pageName": "􀥧     Icons"
     },
     {
-      "figmaComponentId": "12906:888",
-      "webPath": "web/icons/monochrome/checkbox-in-progress.svg",
-      "iosAssetName": "icon-monochrome-checkbox-in-progress",
-      "iosImagesetPath": "ios/Icons.xcassets/icon-monochrome-checkbox-in-progress.imageset/Contents.json",
-      "iosPdfPath": "ios/Icons.xcassets/icon-monochrome-checkbox-in-progress.imageset/icon-monochrome-checkbox-in-progress.pdf",
-      "androidResourceName": "icon_monochrome_checkbox_in_progress",
-      "androidPath": "android/res/drawable/icon_monochrome_checkbox_in_progress.xml",
-      "category": "monochrome",
-      "sourceName": "checkbox-in-progress",
-      "pageName": "􀥧     Icons"
-    },
-    {
       "figmaComponentId": "11684:9515",
       "webPath": "web/icons/monochrome/checkbox-square-mixed-fill.svg",
       "iosAssetName": "icon-monochrome-checkbox-square-mixed-fill",
@@ -2306,7 +2294,19 @@
       "pageName": "􀥧     Icons"
     },
     {
-      "figmaComponentId": "13392:134",
+      "figmaComponentId": "13441:129",
+      "webPath": "web/icons/monochrome/task-done.svg",
+      "iosAssetName": "icon-monochrome-task-done",
+      "iosImagesetPath": "ios/Icons.xcassets/icon-monochrome-task-done.imageset/Contents.json",
+      "iosPdfPath": "ios/Icons.xcassets/icon-monochrome-task-done.imageset/icon-monochrome-task-done.pdf",
+      "androidResourceName": "icon_monochrome_task_done",
+      "androidPath": "android/res/drawable/icon_monochrome_task_done.xml",
+      "category": "monochrome",
+      "sourceName": "task-done",
+      "pageName": "􀥧     Icons"
+    },
+    {
+      "figmaComponentId": "13441:110",
       "webPath": "web/icons/monochrome/task-in-progress.svg",
       "iosAssetName": "icon-monochrome-task-in-progress",
       "iosImagesetPath": "ios/Icons.xcassets/icon-monochrome-task-in-progress.imageset/Contents.json",
@@ -2318,15 +2318,15 @@
       "pageName": "􀥧     Icons"
     },
     {
-      "figmaComponentId": "13392:136",
-      "webPath": "web/icons/monochrome/task-pause-repeat.svg",
-      "iosAssetName": "icon-monochrome-task-pause-repeat",
-      "iosImagesetPath": "ios/Icons.xcassets/icon-monochrome-task-pause-repeat.imageset/Contents.json",
-      "iosPdfPath": "ios/Icons.xcassets/icon-monochrome-task-pause-repeat.imageset/icon-monochrome-task-pause-repeat.pdf",
-      "androidResourceName": "icon_monochrome_task_pause_repeat",
-      "androidPath": "android/res/drawable/icon_monochrome_task_pause_repeat.xml",
+      "figmaComponentId": "13441:146",
+      "webPath": "web/icons/monochrome/task-in-review.svg",
+      "iosAssetName": "icon-monochrome-task-in-review",
+      "iosImagesetPath": "ios/Icons.xcassets/icon-monochrome-task-in-review.imageset/Contents.json",
+      "iosPdfPath": "ios/Icons.xcassets/icon-monochrome-task-in-review.imageset/icon-monochrome-task-in-review.pdf",
+      "androidResourceName": "icon_monochrome_task_in_review",
+      "androidPath": "android/res/drawable/icon_monochrome_task_in_review.xml",
       "category": "monochrome",
-      "sourceName": "task-pause-repeat",
+      "sourceName": "task-In-review",
       "pageName": "􀥧     Icons"
     },
     {
@@ -2342,51 +2342,27 @@
       "pageName": "􀥧     Icons"
     },
     {
-      "figmaComponentId": "13392:135",
-      "webPath": "web/icons/monochrome/task-play-repeat.svg",
-      "iosAssetName": "icon-monochrome-task-play-repeat",
-      "iosImagesetPath": "ios/Icons.xcassets/icon-monochrome-task-play-repeat.imageset/Contents.json",
-      "iosPdfPath": "ios/Icons.xcassets/icon-monochrome-task-play-repeat.imageset/icon-monochrome-task-play-repeat.pdf",
-      "androidResourceName": "icon_monochrome_task_play_repeat",
-      "androidPath": "android/res/drawable/icon_monochrome_task_play_repeat.xml",
+      "figmaComponentId": "13441:124",
+      "webPath": "web/icons/monochrome/task-repeat.svg",
+      "iosAssetName": "icon-monochrome-task-repeat",
+      "iosImagesetPath": "ios/Icons.xcassets/icon-monochrome-task-repeat.imageset/Contents.json",
+      "iosPdfPath": "ios/Icons.xcassets/icon-monochrome-task-repeat.imageset/icon-monochrome-task-repeat.pdf",
+      "androidResourceName": "icon_monochrome_task_repeat",
+      "androidPath": "android/res/drawable/icon_monochrome_task_repeat.xml",
       "category": "monochrome",
-      "sourceName": "task-play-repeat",
+      "sourceName": "task-repeat",
       "pageName": "􀥧     Icons"
     },
     {
-      "figmaComponentId": "13395:706",
-      "webPath": "web/icons/monochrome/task-play.svg",
-      "iosAssetName": "icon-monochrome-task-play",
-      "iosImagesetPath": "ios/Icons.xcassets/icon-monochrome-task-play.imageset/Contents.json",
-      "iosPdfPath": "ios/Icons.xcassets/icon-monochrome-task-play.imageset/icon-monochrome-task-play.pdf",
-      "androidResourceName": "icon_monochrome_task_play",
-      "androidPath": "android/res/drawable/icon_monochrome_task_play.xml",
+      "figmaComponentId": "13441:151",
+      "webPath": "web/icons/monochrome/task-to-do.svg",
+      "iosAssetName": "icon-monochrome-task-to-do",
+      "iosImagesetPath": "ios/Icons.xcassets/icon-monochrome-task-to-do.imageset/Contents.json",
+      "iosPdfPath": "ios/Icons.xcassets/icon-monochrome-task-to-do.imageset/icon-monochrome-task-to-do.pdf",
+      "androidResourceName": "icon_monochrome_task_to_do",
+      "androidPath": "android/res/drawable/icon_monochrome_task_to_do.xml",
       "category": "monochrome",
-      "sourceName": "task-play",
-      "pageName": "􀥧     Icons"
-    },
-    {
-      "figmaComponentId": "13395:709",
-      "webPath": "web/icons/monochrome/task-stop-repeat.svg",
-      "iosAssetName": "icon-monochrome-task-stop-repeat",
-      "iosImagesetPath": "ios/Icons.xcassets/icon-monochrome-task-stop-repeat.imageset/Contents.json",
-      "iosPdfPath": "ios/Icons.xcassets/icon-monochrome-task-stop-repeat.imageset/icon-monochrome-task-stop-repeat.pdf",
-      "androidResourceName": "icon_monochrome_task_stop_repeat",
-      "androidPath": "android/res/drawable/icon_monochrome_task_stop_repeat.xml",
-      "category": "monochrome",
-      "sourceName": "task-stop-repeat",
-      "pageName": "􀥧     Icons"
-    },
-    {
-      "figmaComponentId": "13395:708",
-      "webPath": "web/icons/monochrome/task-stop.svg",
-      "iosAssetName": "icon-monochrome-task-stop",
-      "iosImagesetPath": "ios/Icons.xcassets/icon-monochrome-task-stop.imageset/Contents.json",
-      "iosPdfPath": "ios/Icons.xcassets/icon-monochrome-task-stop.imageset/icon-monochrome-task-stop.pdf",
-      "androidResourceName": "icon_monochrome_task_stop",
-      "androidPath": "android/res/drawable/icon_monochrome_task_stop.xml",
-      "category": "monochrome",
-      "sourceName": "task-stop",
+      "sourceName": "task-to-do",
       "pageName": "􀥧     Icons"
     },
     {
