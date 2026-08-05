@@ -56,7 +56,7 @@
   --color-event-expense: #C4317A;
   --color-event-expense-muted: #D796C0;
   --color-event-income: #6E8D44;
-  --color-event-markup: #E58F09;
+  --color-event-markup: #CC7F08;
   --color-event-payment-own: #A65959;
   --color-event-payment-working: #C19810;
   --color-focus-ring: #0088FF;
@@ -80,7 +80,7 @@
   --color-static-white: #FFFFFF;
   --color-status-error: #F75951;
   --color-status-success: #2FB350;
-  --color-status-warning: #E58F09;
+  --color-status-warning: #CC7F08;
   --color-surface-0: #EFEFEF;
   --color-surface-1: #F9F9F9;
   --color-surface-2: #FFFFFF;
@@ -107,7 +107,7 @@
   --color-event-expense: #C4317A;
   --color-event-expense-muted: #8E637F;
   --color-event-income: #6E8D44;
-  --color-event-markup: #FF9F0A;
+  --color-event-markup: #E58F09;
   --color-event-payment-own: #A65959;
   --color-event-payment-working: #C19810;
   --color-focus-ring: #0091FF;
@@ -131,7 +131,7 @@
   --color-static-white: #FFFFFF;
   --color-status-error: #F75951;
   --color-status-success: #34C759;
-  --color-status-warning: #FF9F0A;
+  --color-status-warning: #E58F09;
   --color-surface-0: #101010;
   --color-surface-1: #191919;
   --color-surface-2: #222222;

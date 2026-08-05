@@ -13,7 +13,7 @@
     <color name="color_event_expense">#C4317A</color>
     <color name="color_event_expense_muted">#D796C0</color>
     <color name="color_event_income">#6E8D44</color>
-    <color name="color_event_markup">#E58F09</color>
+    <color name="color_event_markup">#CC7F08</color>
     <color name="color_event_payment_own">#A65959</color>
     <color name="color_event_payment_working">#C19810</color>
     <color name="color_focus_ring">#0088FF</color>
@@ -37,7 +37,7 @@
     <color name="color_static_white">#FFFFFF</color>
     <color name="color_status_error">#F75951</color>
     <color name="color_status_success">#2FB350</color>
-    <color name="color_status_warning">#E58F09</color>
+    <color name="color_status_warning">#CC7F08</color>
     <color name="color_surface_0">#EFEFEF</color>
     <color name="color_surface_1">#F9F9F9</color>
     <color name="color_surface_2">#FFFFFF</color>
