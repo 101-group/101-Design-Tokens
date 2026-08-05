@@ -2642,6 +2642,18 @@
       "pageName": "􀥧     Icons"
     },
     {
+      "figmaComponentId": "13455:10338",
+      "webPath": "web/icons/monochrome/user-invite.svg",
+      "iosAssetName": "icon-monochrome-user-invite",
+      "iosImagesetPath": "ios/Icons.xcassets/icon-monochrome-user-invite.imageset/Contents.json",
+      "iosPdfPath": "ios/Icons.xcassets/icon-monochrome-user-invite.imageset/icon-monochrome-user-invite.pdf",
+      "androidResourceName": "icon_monochrome_user_invite",
+      "androidPath": "android/res/drawable/icon_monochrome_user_invite.xml",
+      "category": "monochrome",
+      "sourceName": "user-invite",
+      "pageName": "􀥧     Icons"
+    },
+    {
       "figmaComponentId": "1069:6945",
       "webPath": "web/icons/monochrome/user.svg",
       "iosAssetName": "icon-monochrome-user",
