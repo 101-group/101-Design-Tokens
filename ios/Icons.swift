@@ -226,6 +226,7 @@ public enum Icons: String, CaseIterable, Equatable {
     case monochromeUser = "icon-monochrome-user"
     case monochromeUserDetails = "icon-monochrome-user-details"
     case monochromeUserFill = "icon-monochrome-user-fill"
+    case monochromeUserInvite = "icon-monochrome-user-invite"
     case monochromeUser2 = "icon-monochrome-user2"
     case monochromeUser2Fill = "icon-monochrome-user2-fill"
     case monochromeVideoBroadcast = "icon-monochrome-video-broadcast"
