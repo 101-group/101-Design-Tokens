@@ -1742,15 +1742,27 @@
       "pageName": "􀥧     Icons"
     },
     {
-      "figmaComponentId": "13475:10362",
-      "webPath": "web/icons/monochrome/play-continuous.svg",
-      "iosAssetName": "icon-monochrome-play-continuous",
-      "iosImagesetPath": "ios/Icons.xcassets/icon-monochrome-play-continuous.imageset/Contents.json",
-      "iosPdfPath": "ios/Icons.xcassets/icon-monochrome-play-continuous.imageset/icon-monochrome-play-continuous.pdf",
-      "androidResourceName": "icon_monochrome_play_continuous",
-      "androidPath": "android/res/drawable/icon_monochrome_play_continuous.xml",
+      "figmaComponentId": "13477:10432",
+      "webPath": "web/icons/monochrome/play-continuous-off.svg",
+      "iosAssetName": "icon-monochrome-play-continuous-off",
+      "iosImagesetPath": "ios/Icons.xcassets/icon-monochrome-play-continuous-off.imageset/Contents.json",
+      "iosPdfPath": "ios/Icons.xcassets/icon-monochrome-play-continuous-off.imageset/icon-monochrome-play-continuous-off.pdf",
+      "androidResourceName": "icon_monochrome_play_continuous_off",
+      "androidPath": "android/res/drawable/icon_monochrome_play_continuous_off.xml",
       "category": "monochrome",
-      "sourceName": "play-continuous",
+      "sourceName": "play-continuous-off",
+      "pageName": "􀥧     Icons"
+    },
+    {
+      "figmaComponentId": "13475:10362",
+      "webPath": "web/icons/monochrome/play-continuous-on.svg",
+      "iosAssetName": "icon-monochrome-play-continuous-on",
+      "iosImagesetPath": "ios/Icons.xcassets/icon-monochrome-play-continuous-on.imageset/Contents.json",
+      "iosPdfPath": "ios/Icons.xcassets/icon-monochrome-play-continuous-on.imageset/icon-monochrome-play-continuous-on.pdf",
+      "androidResourceName": "icon_monochrome_play_continuous_on",
+      "androidPath": "android/res/drawable/icon_monochrome_play_continuous_on.xml",
+      "category": "monochrome",
+      "sourceName": "play-continuous-on",
       "pageName": "􀥧     Icons"
     },
     {
@@ -1763,18 +1775,6 @@
       "androidPath": "android/res/drawable/icon_monochrome_play_fill.xml",
       "category": "monochrome",
       "sourceName": "play-fill",
-      "pageName": "􀥧     Icons"
-    },
-    {
-      "figmaComponentId": "13475:10363",
-      "webPath": "web/icons/monochrome/play-single.svg",
-      "iosAssetName": "icon-monochrome-play-single",
-      "iosImagesetPath": "ios/Icons.xcassets/icon-monochrome-play-single.imageset/Contents.json",
-      "iosPdfPath": "ios/Icons.xcassets/icon-monochrome-play-single.imageset/icon-monochrome-play-single.pdf",
-      "androidResourceName": "icon_monochrome_play_single",
-      "androidPath": "android/res/drawable/icon_monochrome_play_single.xml",
-      "category": "monochrome",
-      "sourceName": "play-single",
       "pageName": "􀥧     Icons"
     },
     {
