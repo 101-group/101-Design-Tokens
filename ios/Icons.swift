@@ -243,6 +243,7 @@ public enum Icons: String, CaseIterable, Equatable {
     case monochromeWarning = "icon-monochrome-warning"
     case monochromeWarningFill = "icon-monochrome-warning-fill"
     case monochromeWiki = "icon-monochrome-wiki"
+    case monochromeYandexDisk = "icon-monochrome-yandex-disk"
     case monochromeYoutube = "icon-monochrome-youtube"
     case multicolor101app = "icon-multicolor-101app"
     case multicolorBalanceAccountable = "icon-multicolor-balance-accountable"

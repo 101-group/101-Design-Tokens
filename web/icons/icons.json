@@ -2858,6 +2858,18 @@
       "pageName": "􀥧     Icons"
     },
     {
+      "figmaComponentId": "13482:116",
+      "webPath": "web/icons/monochrome/yandex-disk.svg",
+      "iosAssetName": "icon-monochrome-yandex-disk",
+      "iosImagesetPath": "ios/Icons.xcassets/icon-monochrome-yandex-disk.imageset/Contents.json",
+      "iosPdfPath": "ios/Icons.xcassets/icon-monochrome-yandex-disk.imageset/icon-monochrome-yandex-disk.pdf",
+      "androidResourceName": "icon_monochrome_yandex_disk",
+      "androidPath": "android/res/drawable/icon_monochrome_yandex_disk.xml",
+      "category": "monochrome",
+      "sourceName": "yandex-disk",
+      "pageName": "􀥧     Icons"
+    },
+    {
       "figmaComponentId": "11540:11994",
       "webPath": "web/icons/monochrome/youtube.svg",
       "iosAssetName": "icon-monochrome-youtube",
