@@ -203,6 +203,7 @@ public enum Icons: String, CaseIterable, Equatable {
     case monochromeTaskInReview = "icon-monochrome-task-in-review"
     case monochromeTaskPause = "icon-monochrome-task-pause"
     case monochromeTaskRepeat = "icon-monochrome-task-repeat"
+    case monochromeTaskStatus = "icon-monochrome-task-status"
     case monochromeTaskToDo = "icon-monochrome-task-to-do"
     case monochromeTelegram = "icon-monochrome-telegram"
     case monochromeTelegramFill = "icon-monochrome-telegram-fill"
