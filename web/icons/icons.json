@@ -2378,6 +2378,18 @@
       "pageName": "􀥧     Icons"
     },
     {
+      "figmaComponentId": "13494:114",
+      "webPath": "web/icons/monochrome/task-status.svg",
+      "iosAssetName": "icon-monochrome-task-status",
+      "iosImagesetPath": "ios/Icons.xcassets/icon-monochrome-task-status.imageset/Contents.json",
+      "iosPdfPath": "ios/Icons.xcassets/icon-monochrome-task-status.imageset/icon-monochrome-task-status.pdf",
+      "androidResourceName": "icon_monochrome_task_status",
+      "androidPath": "android/res/drawable/icon_monochrome_task_status.xml",
+      "category": "monochrome",
+      "sourceName": "task-status",
+      "pageName": "􀥧     Icons"
+    },
+    {
       "figmaComponentId": "13441:151",
       "webPath": "web/icons/monochrome/task-to-do.svg",
       "iosAssetName": "icon-monochrome-task-to-do",
