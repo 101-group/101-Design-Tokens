@@ -114,6 +114,7 @@ public enum Icons: String, CaseIterable, Equatable {
     case monochromeInfoCircle = "icon-monochrome-info-circle"
     case monochromeIos = "icon-monochrome-ios"
     case monochromeKey = "icon-monochrome-key"
+    case monochromeLanguage = "icon-monochrome-language"
     case monochromeLight = "icon-monochrome-light"
     case monochromeLink = "icon-monochrome-link"
     case monochromeLinkArrow = "icon-monochrome-link-arrow"
