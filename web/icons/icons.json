@@ -2006,6 +2006,18 @@
       "pageName": "􀥧     Icons"
     },
     {
+      "figmaComponentId": "13543:737",
+      "webPath": "web/icons/monochrome/quit.svg",
+      "iosAssetName": "icon-monochrome-quit",
+      "iosImagesetPath": "ios/Icons.xcassets/icon-monochrome-quit.imageset/Contents.json",
+      "iosPdfPath": "ios/Icons.xcassets/icon-monochrome-quit.imageset/icon-monochrome-quit.pdf",
+      "androidResourceName": "icon_monochrome_quit",
+      "androidPath": "android/res/drawable/icon_monochrome_quit.xml",
+      "category": "monochrome",
+      "sourceName": "quit",
+      "pageName": "􀥧     Icons"
+    },
+    {
       "figmaComponentId": "13084:108",
       "webPath": "web/icons/monochrome/record.svg",
       "iosAssetName": "icon-monochrome-record",
