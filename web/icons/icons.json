@@ -950,6 +950,18 @@
       "pageName": "􀥧     Icons"
     },
     {
+      "figmaComponentId": "13584:989",
+      "webPath": "web/icons/monochrome/echo.svg",
+      "iosAssetName": "icon-monochrome-echo",
+      "iosImagesetPath": "ios/Icons.xcassets/icon-monochrome-echo.imageset/Contents.json",
+      "iosPdfPath": "ios/Icons.xcassets/icon-monochrome-echo.imageset/icon-monochrome-echo.pdf",
+      "androidResourceName": "icon_monochrome_echo",
+      "androidPath": "android/res/drawable/icon_monochrome_echo.xml",
+      "category": "monochrome",
+      "sourceName": "echo",
+      "pageName": "􀥧     Icons"
+    },
+    {
       "figmaComponentId": "1069:7069",
       "webPath": "web/icons/monochrome/edit-slider.svg",
       "iosAssetName": "icon-monochrome-edit-slider",
@@ -2006,18 +2018,6 @@
       "pageName": "􀥧     Icons"
     },
     {
-      "figmaComponentId": "13543:737",
-      "webPath": "web/icons/monochrome/quit.svg",
-      "iosAssetName": "icon-monochrome-quit",
-      "iosImagesetPath": "ios/Icons.xcassets/icon-monochrome-quit.imageset/Contents.json",
-      "iosPdfPath": "ios/Icons.xcassets/icon-monochrome-quit.imageset/icon-monochrome-quit.pdf",
-      "androidResourceName": "icon_monochrome_quit",
-      "androidPath": "android/res/drawable/icon_monochrome_quit.xml",
-      "category": "monochrome",
-      "sourceName": "quit",
-      "pageName": "􀥧     Icons"
-    },
-    {
       "figmaComponentId": "13084:108",
       "webPath": "web/icons/monochrome/record.svg",
       "iosAssetName": "icon-monochrome-record",
@@ -2750,6 +2750,18 @@
       "pageName": "􀥧     Icons"
     },
     {
+      "figmaComponentId": "13581:975",
+      "webPath": "web/icons/monochrome/video-background.svg",
+      "iosAssetName": "icon-monochrome-video-background",
+      "iosImagesetPath": "ios/Icons.xcassets/icon-monochrome-video-background.imageset/Contents.json",
+      "iosPdfPath": "ios/Icons.xcassets/icon-monochrome-video-background.imageset/icon-monochrome-video-background.pdf",
+      "androidResourceName": "icon_monochrome_video_background",
+      "androidPath": "android/res/drawable/icon_monochrome_video_background.xml",
+      "category": "monochrome",
+      "sourceName": "video-background",
+      "pageName": "􀥧     Icons"
+    },
+    {
       "figmaComponentId": "2941:513",
       "webPath": "web/icons/monochrome/video-broadcast.svg",
       "iosAssetName": "icon-monochrome-video-broadcast",
@@ -2819,6 +2831,30 @@
       "androidPath": "android/res/drawable/icon_monochrome_vk.xml",
       "category": "monochrome",
       "sourceName": "vk",
+      "pageName": "􀥧     Icons"
+    },
+    {
+      "figmaComponentId": "13584:991",
+      "webPath": "web/icons/monochrome/voice-leveling.svg",
+      "iosAssetName": "icon-monochrome-voice-leveling",
+      "iosImagesetPath": "ios/Icons.xcassets/icon-monochrome-voice-leveling.imageset/Contents.json",
+      "iosPdfPath": "ios/Icons.xcassets/icon-monochrome-voice-leveling.imageset/icon-monochrome-voice-leveling.pdf",
+      "androidResourceName": "icon_monochrome_voice_leveling",
+      "androidPath": "android/res/drawable/icon_monochrome_voice_leveling.xml",
+      "category": "monochrome",
+      "sourceName": "voice-leveling",
+      "pageName": "􀥧     Icons"
+    },
+    {
+      "figmaComponentId": "13584:990",
+      "webPath": "web/icons/monochrome/voice.svg",
+      "iosAssetName": "icon-monochrome-voice",
+      "iosImagesetPath": "ios/Icons.xcassets/icon-monochrome-voice.imageset/Contents.json",
+      "iosPdfPath": "ios/Icons.xcassets/icon-monochrome-voice.imageset/icon-monochrome-voice.pdf",
+      "androidResourceName": "icon_monochrome_voice",
+      "androidPath": "android/res/drawable/icon_monochrome_voice.xml",
+      "category": "monochrome",
+      "sourceName": "voice",
       "pageName": "􀥧     Icons"
     },
     {
