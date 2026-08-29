@@ -2294,6 +2294,18 @@
       "pageName": "􀥧     Icons"
     },
     {
+      "figmaComponentId": "13599:1009",
+      "webPath": "web/icons/monochrome/speed.svg",
+      "iosAssetName": "icon-monochrome-speed",
+      "iosImagesetPath": "ios/Icons.xcassets/icon-monochrome-speed.imageset/Contents.json",
+      "iosPdfPath": "ios/Icons.xcassets/icon-monochrome-speed.imageset/icon-monochrome-speed.pdf",
+      "androidResourceName": "icon_monochrome_speed",
+      "androidPath": "android/res/drawable/icon_monochrome_speed.xml",
+      "category": "monochrome",
+      "sourceName": "speed",
+      "pageName": "􀥧     Icons"
+    },
+    {
       "figmaComponentId": "13318:126",
       "webPath": "web/icons/monochrome/stop-circle-fill.svg",
       "iosAssetName": "icon-monochrome-stop-circle-fill",

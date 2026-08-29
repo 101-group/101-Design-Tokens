@@ -196,6 +196,7 @@ public enum Icons: String, CaseIterable, Equatable {
     case monochromeSidebar = "icon-monochrome-sidebar"
     case monochromeSortArrow = "icon-monochrome-sort-arrow"
     case monochromeSortChevron = "icon-monochrome-sort-chevron"
+    case monochromeSpeed = "icon-monochrome-speed"
     case monochromeStopCircleFill = "icon-monochrome-stop-circle-fill"
     case monochromeStopFill = "icon-monochrome-stop-fill"
     case monochromeTag = "icon-monochrome-tag"
