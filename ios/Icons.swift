@@ -11,6 +11,7 @@ public enum Icons: String, CaseIterable, Equatable {
     case monochromeAccount = "icon-monochrome-account"
     case monochromeAccountFill = "icon-monochrome-account-fill"
     case monochromeAdd = "icon-monochrome-add"
+    case monochromeAdmin = "icon-monochrome-admin"
     case monochromeAdress = "icon-monochrome-adress"
     case monochromeAi = "icon-monochrome-ai"
     case monochromeAnalytics = "icon-monochrome-analytics"
