@@ -74,6 +74,18 @@
       "pageName": "􀥧     Icons"
     },
     {
+      "figmaComponentId": "13605:1680",
+      "webPath": "web/icons/monochrome/admin.svg",
+      "iosAssetName": "icon-monochrome-admin",
+      "iosImagesetPath": "ios/Icons.xcassets/icon-monochrome-admin.imageset/Contents.json",
+      "iosPdfPath": "ios/Icons.xcassets/icon-monochrome-admin.imageset/icon-monochrome-admin.pdf",
+      "androidResourceName": "icon_monochrome_admin",
+      "androidPath": "android/res/drawable/icon_monochrome_admin.xml",
+      "category": "monochrome",
+      "sourceName": "admin",
+      "pageName": "􀥧     Icons"
+    },
+    {
       "figmaComponentId": "9881:1681",
       "webPath": "web/icons/monochrome/adress.svg",
       "iosAssetName": "icon-monochrome-adress",
