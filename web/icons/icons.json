@@ -2858,6 +2858,18 @@
       "pageName": "􀥧     Icons"
     },
     {
+      "figmaComponentId": "13615:108",
+      "webPath": "web/icons/monochrome/voice-chat.svg",
+      "iosAssetName": "icon-monochrome-voice-chat",
+      "iosImagesetPath": "ios/Icons.xcassets/icon-monochrome-voice-chat.imageset/Contents.json",
+      "iosPdfPath": "ios/Icons.xcassets/icon-monochrome-voice-chat.imageset/icon-monochrome-voice-chat.pdf",
+      "androidResourceName": "icon_monochrome_voice_chat",
+      "androidPath": "android/res/drawable/icon_monochrome_voice_chat.xml",
+      "category": "monochrome",
+      "sourceName": "voice-chat",
+      "pageName": "􀥧     Icons"
+    },
+    {
       "figmaComponentId": "13584:991",
       "webPath": "web/icons/monochrome/voice-leveling.svg",
       "iosAssetName": "icon-monochrome-voice-leveling",
