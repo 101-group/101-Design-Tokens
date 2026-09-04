@@ -1358,6 +1358,18 @@
       "pageName": "􀥧     Icons"
     },
     {
+      "figmaComponentId": "13629:108",
+      "webPath": "web/icons/monochrome/line-chart.svg",
+      "iosAssetName": "icon-monochrome-line-chart",
+      "iosImagesetPath": "ios/Icons.xcassets/icon-monochrome-line-chart.imageset/Contents.json",
+      "iosPdfPath": "ios/Icons.xcassets/icon-monochrome-line-chart.imageset/icon-monochrome-line-chart.pdf",
+      "androidResourceName": "icon_monochrome_line_chart",
+      "androidPath": "android/res/drawable/icon_monochrome_line_chart.xml",
+      "category": "monochrome",
+      "sourceName": "line-chart",
+      "pageName": "􀥧     Icons"
+    },
+    {
       "figmaComponentId": "1069:7031",
       "webPath": "web/icons/monochrome/link-arrow.svg",
       "iosAssetName": "icon-monochrome-link-arrow",
