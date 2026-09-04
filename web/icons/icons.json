@@ -2486,6 +2486,18 @@
       "pageName": "􀥧     Icons"
     },
     {
+      "figmaComponentId": "13624:168",
+      "webPath": "web/icons/monochrome/theme.svg",
+      "iosAssetName": "icon-monochrome-theme",
+      "iosImagesetPath": "ios/Icons.xcassets/icon-monochrome-theme.imageset/Contents.json",
+      "iosPdfPath": "ios/Icons.xcassets/icon-monochrome-theme.imageset/icon-monochrome-theme.pdf",
+      "androidResourceName": "icon_monochrome_theme",
+      "androidPath": "android/res/drawable/icon_monochrome_theme.xml",
+      "category": "monochrome",
+      "sourceName": "theme",
+      "pageName": "􀥧     Icons"
+    },
+    {
       "figmaComponentId": "12534:194",
       "webPath": "web/icons/monochrome/transaction-card-estimate.svg",
       "iosAssetName": "icon-monochrome-transaction-card-estimate",
