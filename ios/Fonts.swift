@@ -47,13 +47,13 @@ public enum Fonts: String, CaseIterable, Equatable {
         case .iosCaption2Regular:
             return Self.makeFont(size: 11, weight: .regular, monospacedNumbers: true, stylisticAltOne: true, stylisticAltTwo: true)
         case .iosCaption2Semibold:
-            return Self.makeFont(size: 11, weight: .bold, monospacedNumbers: true, stylisticAltOne: true, stylisticAltTwo: true)
+            return Self.makeFont(size: 11, weight: .medium, monospacedNumbers: true, stylisticAltOne: true, stylisticAltTwo: true)
         case .iosFootnoteMedium:
             return Self.makeFont(size: 13, weight: .medium, monospacedNumbers: true, stylisticAltOne: true, stylisticAltTwo: true)
         case .iosFootnoteRegular:
             return Self.makeFont(size: 13, weight: .regular, monospacedNumbers: true, stylisticAltOne: true, stylisticAltTwo: true)
         case .iosFootnoteSemibold:
-            return Self.makeFont(size: 13, weight: .bold, monospacedNumbers: true, stylisticAltOne: true, stylisticAltTwo: true)
+            return Self.makeFont(size: 13, weight: .medium, monospacedNumbers: true, stylisticAltOne: true, stylisticAltTwo: true)
         case .iosLargeTitleBold:
             return Self.makeFont(size: 34, weight: .bold, monospacedNumbers: true, stylisticAltOne: true, stylisticAltTwo: true)
         case .iosLargeTitleRegular:
@@ -63,7 +63,7 @@ public enum Fonts: String, CaseIterable, Equatable {
         case .iosSubheadRegular:
             return Self.makeFont(size: 15, weight: .regular, monospacedNumbers: true, stylisticAltOne: true, stylisticAltTwo: true)
         case .iosSubheadSemibold:
-            return Self.makeFont(size: 15, weight: .bold, monospacedNumbers: true, stylisticAltOne: true, stylisticAltTwo: true)
+            return Self.makeFont(size: 15, weight: .medium, monospacedNumbers: true, stylisticAltOne: true, stylisticAltTwo: true)
         case .iosTitle1Bold:
             return Self.makeFont(size: 28, weight: .bold, monospacedNumbers: true, stylisticAltOne: true, stylisticAltTwo: true)
         case .iosTitle1Regular:
