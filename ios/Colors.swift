@@ -67,9 +67,9 @@ public enum Colors: String, CaseIterable, Equatable {
         case .amountPositive:
             return Self.dynamicColor(light: "#00A530", dark: "#00A530")
         case .borderPrimary:
-            return Self.dynamicColor(light: "#E8E8E8", dark: "#343438")
+            return Self.dynamicColor(light: "#C6C6C8", dark: "#343438")
         case .borderSecondary:
-            return Self.dynamicColor(light: "#C6C6C8", dark: "#202022")
+            return Self.dynamicColor(light: "#E8E8E8", dark: "#202022")
         case .eventAgentFee:
             return Self.dynamicColor(light: "#2B91A0", dark: "#2B91A0")
         case .eventDividends:
@@ -111,7 +111,7 @@ public enum Colors: String, CaseIterable, Equatable {
         case .shadowStroke:
             return Self.dynamicColor(light: "#00000029", dark: "#FFFFFF21")
         case .shadowStrokeLight:
-            return Self.dynamicColor(light: "#0000000D", dark: "#FFFFFF0A")
+            return Self.dynamicColor(light: "#0000000D", dark: "#FFFFFF05")
         case .stateDisabled:
             return Self.dynamicColor(light: "#7878809E", dark: "#78788080")
         case .stateHover:

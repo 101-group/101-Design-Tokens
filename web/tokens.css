@@ -47,8 +47,8 @@
   --color-accent-default: #0E0E0F;
   --color-amount-negative: #F40017;
   --color-amount-positive: #00A530;
-  --color-border-primary: #E8E8E8;
-  --color-border-secondary: #C6C6C8;
+  --color-border-primary: #C6C6C8;
+  --color-border-secondary: #E8E8E8;
   --color-event-agent-fee: #2B91A0;
   --color-event-dividends: #2D9CCF;
   --color-event-estimate: #6D43F6;
@@ -120,7 +120,7 @@
   --color-overlay: #00000061;
   --color-shadow-base: #00000029;
   --color-shadow-stroke: #FFFFFF21;
-  --color-shadow-stroke-light: #FFFFFF0A;
+  --color-shadow-stroke-light: #FFFFFF05;
   --color-state-disabled: #78788080;
   --color-state-hover: #FFFFFF14;
   --color-state-on-accent-hover: #00000029;

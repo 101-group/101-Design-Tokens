@@ -26,7 +26,7 @@
     <color name="color_overlay">#61000000</color>
     <color name="color_shadow_base">#29000000</color>
     <color name="color_shadow_stroke">#21FFFFFF</color>
-    <color name="color_shadow_stroke_light">#0AFFFFFF</color>
+    <color name="color_shadow_stroke_light">#05FFFFFF</color>
     <color name="color_state_disabled">#80787880</color>
     <color name="color_state_hover">#14FFFFFF</color>
     <color name="color_state_on_accent_hover">#29000000</color>
