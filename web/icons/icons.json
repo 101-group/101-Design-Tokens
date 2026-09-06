@@ -3014,6 +3014,18 @@
       "pageName": "􀥧     Icons"
     },
     {
+      "figmaComponentId": "13645:11801",
+      "webPath": "web/icons/multicolor/101ai.svg",
+      "iosAssetName": "icon-multicolor-101ai",
+      "iosImagesetPath": "ios/Icons.xcassets/icon-multicolor-101ai.imageset/Contents.json",
+      "iosPdfPath": "ios/Icons.xcassets/icon-multicolor-101ai.imageset/icon-multicolor-101ai.pdf",
+      "androidResourceName": "",
+      "androidPath": "",
+      "category": "multicolor",
+      "sourceName": "101ai",
+      "pageName": "􀥧     Icons"
+    },
+    {
       "figmaComponentId": "11610:29025",
       "webPath": "web/icons/multicolor/101app.svg",
       "iosAssetName": "icon-multicolor-101app",
